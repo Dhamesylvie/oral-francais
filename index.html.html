@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Révision Oral Français</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Révision pour l'Oral de Français</h1>
+
+        <!-- Écran de Sélection du Texte et Mode -->
+        <div id="selection-screen">
+            <h2>1. Choisissez un mode de révision :</h2>
+            <div id="mode-selection">
+                <label>
+                    <input type="radio" name="gameMode" value="total20" checked>
+                    Mode 1 : Répondre à au moins 20 questions au total.
+                </label>
+                <label>
+                    <input type="radio" name="gameMode" value="streak20">
+                    Mode 2 : Réussir une série de 20 réponses correctes consécutives.
+                </label>
+                <label> <!-- NOUVELLE OPTION -->
+                    <input type="radio" name="gameMode" value="mastery">
+                    Mode 3 : Maîtriser toutes les questions (1 bonne réponse par question).
+                </label>
+            </div>
+
+            <h2>2. Choisissez un texte à réviser :</h2>
+            <div id="text-list">
+                <!-- Les boutons des textes seront ajoutés ici par JavaScript -->
+            </div>
+        </div>
+
+        <!-- Écran de Révision -->
+        <div id="revision-screen" class="hidden">
+             <!-- ... (reste identique) ... -->
+             <h2 id="current-text-title"></h2>
+            <div id="session-info">
+                 Mode : <span id="current-mode-info"></span> |
+                 Questions répondues : <span id="questions-answered">0</span> |
+                 Série correcte : <span id="correct-streak">0</span> |
+                 Score : <span id="current-score">0</span>
+                 <!-- Ajout optionnel: Suivi Maîtrise -->
+                 | Questions maîtrisées : <span id="mastered-count">0</span> / <span id="total-questions">0</span>
+            </div>
+            <div id="question-container">
+                <p id="question-text"></p>
+                <blockquote id="question-extract" class="hidden"></blockquote>
+                <div id="answer-options"></div>
+            </div>
+            <div id="feedback" class="feedback hidden"></div>
+            <div id="encouragement" class="encouragement"></div>
+            <button id="next-question-btn" class="hidden">Question Suivante</button>
+            <button id="back-to-selection-btn">Arrêter et retourner à l'accueil</button>
+        </div>
+
+        <!-- Écran de Fin de Session Stylisé -->
+        <div id="end-screen" class="hidden">
+             <!-- ... (reste identique) ... -->
+             <div class="end-screen-content">
+                <div id="final-score-display" class="score-display"></div>
+                <h2 id="end-title"></h2>
+                <p id="end-message-body"></p>
+                <div class="end-screen-actions">
+                    <button id="restart-btn">Recommencer</button>
+                    <button id="home-btn">Retour à l'accueil</button>
+                </div>
+            </div>
+        </div>
+
+    </div> <!-- Fin .container -->
+
+    <script src="script.js"></script>
+</body>
+</html>

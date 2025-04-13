@@ -1,0 +1,445 @@
+/* --- Réinitialisation et Styles de Base --- */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 100%; /* Base pour les unités rem (généralement 16px) */
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    line-height: 1.6;
+    background-color: #f8f9fa; /* Gris très clair */
+    color: #343a40; /* Gris foncé pour texte */
+    padding: 1rem; /* Espace sur les bords pour mobile */
+}
+
+.container {
+    max-width: 700px; /* Largeur max sur grands écrans */
+    margin: 1.5rem auto;
+    background: #ffffff; /* Fond blanc */
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* --- Typographie --- */
+h1, h2 {
+    text-align: center;
+    color: #2c3e50; /* Bleu-gris foncé */
+    margin-bottom: 1.5rem;
+}
+
+h1 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+h2 {
+    font-size: 1.4rem;
+    font-weight: 500;
+    border-bottom: 1px solid #e9ecef; /* Ligne de séparation légère */
+    padding-bottom: 0.5rem;
+}
+
+p, label, button, span {
+    font-size: 1rem;
+}
+
+blockquote {
+    position: relative; /* Nécessaire pour positionner les pseudo-éléments */
+    font-style: italic;
+    background-color: #e9ecef; /* Fond gris clair pour extrait */
+    border-left: 4px solid #4dabf7; /* Bordure bleue */
+    padding: 0.8rem 1.5rem; /* Augmenté padding horizontal pour guillemets */
+    margin: 1.2rem 0; /* Augmenté marge verticale */
+    border-radius: 4px;
+    color: #555;
+}
+
+/* Ajout des guillemets décoratifs */
+blockquote::before {
+    content: '« '; /* Guillemet ouvrant français */
+    font-size: 1.2em; /* Taille des guillemets */
+    color: #adb5bd; /* Couleur discrète */
+    font-weight: bold;
+}
+
+blockquote::after {
+    content: ' »'; /* Guillemet fermant français */
+    font-size: 1.2em;
+    color: #adb5bd;
+    font-weight: bold;
+}
+
+
+/* --- Écrans et Sections --- */
+#selection-screen, #revision-screen {
+    /* Styles communs si nécessaire */
+}
+
+#mode-selection {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background-color: #f1f3f5; /* Fond légèrement différent */
+    border-radius: 6px;
+    border: 1px solid #dee2e6;
+}
+
+#mode-selection h2 { /* Style spécifique pour le titre dans la sélection */
+     border-bottom: none;
+     margin-bottom: 1rem;
+     text-align: left;
+     font-size: 1.2rem;
+}
+
+#mode-selection label {
+    display: flex; /* Pour aligner radio et texte */
+    align-items: center;
+    margin-bottom: 0.8rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+}
+#mode-selection label:hover {
+    background-color: #e9ecef;
+}
+
+#mode-selection input[type="radio"] {
+    margin-right: 0.8rem;
+    flex-shrink: 0; /* Empêche le radio de rétrécir */
+}
+
+#text-list {
+    margin-top: 1rem; /* Espace après le titre "Choisissez un texte" */
+}
+
+#session-info {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+    color: #6c757d; /* Gris moyen */
+    padding: 0.7rem;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+    border: 1px solid #dee2e6;
+}
+#session-info span { /* Pour les valeurs */
+    font-weight: 500;
+    color: #495057;
+}
+
+
+#question-container {
+    margin-bottom: 1.5rem;
+    padding: 1.2rem;
+    background-color: #f8f9fa; /* Fond subtil */
+    border-radius: 6px;
+    border: 1px solid #e9ecef;
+}
+
+#question-text {
+    /* --- Police de la question augmentée --- */
+    font-size: 1.3rem; /* Taille augmentée */
+    margin-bottom: 1.5rem; /* Marge inférieure augmentée */
+    font-weight: 500;
+    color: #212529; /* Noir presque pur */
+    line-height: 1.5; /* Ajustement interligne si nécessaire */
+}
+
+#answer-options {
+    margin-top: 1rem; /* Espace au-dessus des options */
+}
+
+/* --- Boutons --- */
+button {
+    display: block;
+    width: 100%;
+    padding: 0.8rem 1rem;
+    /* Marge verticale réduite car gérée spécifiquement pour les options */
+    margin: 0.3rem 0;
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+    background-color: #4dabf7; /* Bleu principal */
+    color: white;
+    transition: background-color 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+button:hover:not(:disabled) {
+    background-color: #339af0; /* Bleu plus foncé */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08);
+}
+button:active:not(:disabled) {
+     background-color: #1c7ed6; /* Encore plus foncé */
+}
+
+/* Boutons spécifiques */
+#answer-options button {
+    background-color: #f1f3f5; /* Fond neutre pour les options */
+    color: #343a40;
+    border: 1px solid #dee2e6;
+    text-align: left; /* Aligner le texte à gauche pour options longues */
+    padding-left: 1.5rem; /* Espace pour la lettre A, B, C... */
+    /* --- Marge inférieure pour saut de ligne --- */
+    margin-bottom: 0.8rem; /* Espace entre chaque bouton de réponse */
+}
+#answer-options button:last-child {
+    margin-bottom: 0; /* Pas de marge après le dernier bouton */
+}
+
+#answer-options button:hover:not(:disabled) {
+    background-color: #e9ecef;
+     border-color: #adb5bd;
+}
+
+#answer-options button.vf-true {
+    background-color: #d3f9d8; /* Vert pâle */
+    color: #2b8a3e; /* Vert foncé */
+    border-color: #b2f2bb;
+}
+#answer-options button.vf-true:hover:not(:disabled) {
+    background-color: #b2f2bb;
+}
+
+#answer-options button.vf-false {
+    background-color: #ffe3e3; /* Rouge pâle */
+    color: #c92a2a; /* Rouge foncé */
+    border-color: #ffc9c9;
+}
+#answer-options button.vf-false:hover:not(:disabled) {
+    background-color: #ffc9c9;
+}
+
+#next-question-btn {
+    background-color: #51cf66; /* Vert pour "Suivant" */
+    margin-top: 1.5rem; /* Plus d'espace au-dessus */
+}
+#next-question-btn:hover:not(:disabled) {
+    background-color: #40c057;
+}
+
+#back-to-selection-btn {
+    background-color: #adb5bd; /* Gris pour "Retour" */
+    color: #fff;
+    margin-top: 0.5rem; /* Moins d'espace que le bouton suivant */
+}
+#back-to-selection-btn:hover:not(:disabled) {
+    background-color: #868e96;
+}
+
+/* État désactivé */
+button:disabled {
+    background-color: #ced4da;
+    color: #6c757d;
+    cursor: not-allowed;
+    opacity: 0.7;
+    box-shadow: none;
+}
+#answer-options button:disabled { /* Spécifique pour options désactivées */
+     background-color: #e9ecef; /* Fond plus clair désactivé */
+     color: #adb5bd;
+     border-color: #dee2e6;
+     opacity: 0.8;
+}
+#answer-options button:disabled:hover {
+     background-color: #e9ecef; /* Reste pareil au survol */
+     border-color: #dee2e6;
+}
+
+
+/* --- Feedback et Messages --- */
+.feedback {
+    padding: 1rem;
+    margin-top: 1.5rem;
+    border-radius: 6px;
+    font-weight: 500; /* Moins gras que bold */
+    border: 1px solid transparent; /* Base pour éviter saut */
+}
+
+.feedback.correct {
+    background-color: #e6fcf5; /* Vert très pâle */
+    color: #087f5b; /* Vert foncé */
+    border-color: #c3fae8;
+}
+
+.feedback.incorrect {
+    background-color: #fff5f5; /* Rouge très pâle */
+    color: #e03131; /* Rouge foncé */
+    border-color: #ffe3e3;
+}
+
+.feedback p { /* Style pour l'explication */
+    margin: 0.5rem 0 0 0;
+    font-weight: normal;
+    font-style: italic;
+    font-size: 0.9rem;
+    color: #495057; /* Gris un peu plus foncé pour explication */
+}
+
+.encouragement {
+    margin-top: 1rem;
+    font-style: italic;
+    color: #868e96; /* Gris moyen */
+    text-align: center;
+    min-height: 1.2em; /* Pour éviter les sauts de page */
+    font-size: 0.95rem;
+}
+
+/* --- Utilitaires --- */
+.hidden {
+    display: none !important; /* !important pour forcer masquage */
+}
+
+/* --- Responsivité --- */
+/* Styles pour écrans plus larges (tablettes et ordinateurs) */
+@media (min-width: 768px) {
+    body {
+        padding: 2rem;
+    }
+
+    .container {
+        padding: 2.5rem;
+        margin: 2rem auto;
+    }
+
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    p, label, button, span {
+        font-size: 1.05rem; /* Légèrement plus grand */
+    }
+
+    #question-text {
+        font-size: 1.4rem; /* Encore plus grand sur desktop */
+    }
+
+    #mode-selection label {
+         padding: 0.8rem;
+    }
+}
+
+/* --- Styles pour l'Écran de Fin --- */
+#end-screen {
+    /* Cache par défaut, mais sera affiché via JS */
+    padding: 2rem 1rem;
+    margin-top: 1.5rem;
+    text-align: center; /* Centre tout le texte à l'intérieur */
+    /* Styles similaires au container principal ou distincts si souhaité */
+    /* background: #fff; */
+    /* border-radius: 8px; */
+    /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); */
+}
+
+.end-screen-content {
+    max-width: 550px; /* Limite la largeur du contenu pour lisibilité */
+    margin: 0 auto; /* Centre le bloc de contenu */
+}
+
+/* Style pour la NOTE finale */
+#final-score-display {
+    font-size: 2.8rem; /* Grande taille */
+    font-weight: bold; /* Gras */
+    color: #1971c2; /* Couleur bleue marquée */
+    margin-bottom: 1.2rem;
+    padding: 0.5rem 1rem;
+    background-color: #e7f5ff; /* Fond bleu très pâle */
+    border-radius: 6px;
+    display: inline-block; /* Ajuste le fond au contenu */
+}
+
+/* Style pour le TITRE (Bravo, Oups...) */
+#end-title {
+    font-size: 1.9rem;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    border-bottom: none; /* Pas de ligne sous ce titre */
+}
+
+/* Style pour le MESSAGE détaillé */
+#end-message-body {
+    font-size: 1.1rem;
+    color: #495057;
+    line-height: 1.7;
+    /* --- SAUT DE LIGNE avant les boutons --- */
+    margin-bottom: 2.5rem; /* Espace augmenté avant les boutons */
+}
+
+/* Conteneur pour les boutons de fin */
+.end-screen-actions {
+    display: flex;
+    flex-direction: column; /* Boutons l'un sous l'autre par défaut */
+    gap: 0.8rem; /* Espace entre les boutons */
+    width: 100%;
+    max-width: 320px; /* Limite largeur boutons sur mobile */
+    margin: 0 auto; /* Centre la div des boutons */
+}
+
+.end-screen-actions button {
+    width: 100%; /* Pleine largeur dans leur conteneur */
+    padding: 0.9rem 1rem; /* Boutons un peu plus grands */
+}
+
+/* Couleurs spécifiques boutons de fin */
+#restart-btn {
+    background-color: #51cf66; /* Vert */
+    color: white;
+}
+#restart-btn:hover {
+    background-color: #40c057;
+}
+
+#home-btn {
+    background-color: #adb5bd; /* Gris */
+    color: white;
+}
+#home-btn:hover {
+    background-color: #868e96;
+}
+
+/* Ajustements responsifs pour l'écran de fin */
+@media (min-width: 768px) {
+    #end-screen {
+        padding: 3rem 1.5rem;
+    }
+
+    #final-score-display {
+        font-size: 3.2rem;
+    }
+
+     #end-title {
+        font-size: 2.1rem;
+    }
+
+    #end-message-body {
+        font-size: 1.2rem;
+        margin-bottom: 3rem; /* Encore plus d'espace */
+    }
+
+    /* Boutons côte à côte sur écran large */
+    .end-screen-actions {
+       flex-direction: row;
+       justify-content: center;
+       max-width: 480px;
+    }
+    .end-screen-actions button {
+        width: auto; /* Largeur auto pour s'adapter au texte */
+        padding: 0.9rem 1.8rem; /* Plus de padding horizontal */
+    }
+}
