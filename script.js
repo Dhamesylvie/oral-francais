@@ -240,8 +240,6 @@ const textsData = [
             answer: 0,
             explanation: "L’adjectif peut être une hypallage. En effet, l’adj ne désigne-t-il que la baignoire ou aussi la déesse qui est pourtant censée naître ? Cette interprétation va avec le « cercueil » qui montre une Vénus non pas naissante (ce qu’annonçait pourtant le titre avec l’adjectif « anadyomène »), mais proche de la mort. Le traitement de Vénus est bien parodique. "
         },
-
-
         {
             id: 'venus_q8',
             type: 'QCM',
@@ -267,7 +265,6 @@ const textsData = [
             answer: 0,
             explanation: "l’adverbe « fortement » montre que c’est trop, ridicule (donc contraire à la représentation faite par Botticelli où les cheveux vole au vent). « déficits mal ravaudés » => devient symbole de laideur, de lacunes."
         },
-
         {
             id: 'venus_q11',
             type: 'QCM',
@@ -276,7 +273,6 @@ const textsData = [
             answer: 1,
             explanation: "Vénus a plus l’apparence d’un animal que d’une déesse. Polysémie du nom « bête » qui est rapproché du nom « tête » par la rime (pauvreté intellectuelle?)"
         },
-
         {
             id: 'venus_q12',
             type: 'QCM',
@@ -285,8 +281,6 @@ const textsData = [
             answer: 1,
             explanation: "Polysémie du nom « bête » qui est rapproché du nom « tête » par la rime (Veut-il parler de la pauvreté intellectuelle de Venus?)"
         },
-
-
         {
             id: 'venus_q13',
             type: 'QCM_EXTRAIT',
@@ -326,7 +320,7 @@ const textsData = [
             options: ["Assonance pour répeter des voyelles", "Une anaphore pour montrer la laideur de haut en bas."],
             answer: 1,
             explanation: "Description progressive du corps à travers l’anaphore de l’adverbe « puis » → le poète va montrer toute sa laideur au fur et à mesure que Vénus émerge de la baignoire. Hypotypose sordide : le présent donne l’impression qu’on voit Vénus sortir de l’eau."
-        }
+        },
        {
             id: 'venus_q18',
             type: 'QCM_EXTRAIT',
@@ -335,8 +329,7 @@ const textsData = [
             options: ["Utilisation d'antithèses (termes opposés)", "Répétition de l'adverbe "puis"],
             answer: 0,
             explanation: "antithèses : « large » et « court », omoplates qui « saillent » (=maigreur mise en valeur par le rejet de la proposition subordonnée relative « qui saillent ») mais « graisse » => le corps paraît difforme. Description à l’opposé des codes esthétiques traditionnels."
-        }
-
+        },
         {
             id: 'venus_q19',
             type: 'QCM',
@@ -383,7 +376,6 @@ const textsData = [
             answer: 'Faux',
             explanation: "Les antithèses « large » et « court » accentuent la nature difforme et non-harmonieuse du corps de Vénus, renforçant le caractère grotesque."
         },
-
         {
             id: 'venus_q25',
             type: 'QCM',
@@ -459,7 +451,7 @@ const textsData = [
             question: "AFFIRMATION : L'ouverture possible pour couclure l'analyse linéaire de Venus Anadyomène pourrait se faire sur 'Une charogne de Bodelaire'.",
             answer: 'Vrai',
             explanation: "Car : 1- Similitude thématique : la beauté dégradée (dans « Une charogne », Baudelaire décrit de manière paradoxalement esthétique une charogne en décomposition)<br>2- Dimension provocatrice et anticonformiste (Rimbaud et Baudelaire provoquent le lecteur en déconstruisant des figures classiques de beauté pour remettre en cause les conventions artistiques et sociales)<br>3-Esthétique de la laideur et modernité poétique (Les deux auteurs utilisent la poésie pour explorer une esthétique moderne où le laid devient une source d'inspiration et de fascination poétique.)<br>4-Technique littéraire et figures de style (rocédés stylistiques (oxymores, antithèses, images fortes, et descriptions précises) dans les deux poèmes sont similaires)"
-        }
+        },
     {
             id: 'venus_q35',
             type: 'VF',
