@@ -242,7 +242,7 @@ const textsData = [
             id: 'venus_q8',
             type: 'QCM',
             question: " La blondeur de Vénus est aussi transformée : Venus est « brune ». pourquoi ?",
-            option: ["Lui donner plus de puissance + connotation luxueuse","Briser le mythe + connotation de la couleur : sombre, plus lugubre."],
+            options: ["Lui donner plus de puissance + connotation luxueuse","Briser le mythe + connotation de la couleur : sombre, plus lugubre."],
             answer: 1,
             explanation: "La blondeur de Vénus est aussi transformée : « brune » → brise le mythe + connotation de la couleur : sombre, plus lugubre."
         },
@@ -274,7 +274,7 @@ const textsData = [
         {
             id: 'venus_q12',
             type: 'QCM',
-            question: "Pourquoi rimbaut utilise le mot "bête" ?",
+            question: "Pourquoi Rimbaud utilise le mot "bête" ?",
             options: ["Pour se rappocher du Loup Garoup", "Pour jouer sur la Polysémie du terme (une bête / être bête)."],
             answer: 1,
             explanation: "Polysémie du nom « bête » qui est rapproché du nom « tête » par la rime (Veut-il parler de la pauvreté intellectuelle de Venus?)"
@@ -287,7 +287,7 @@ const textsData = [
             options: ["Une sensation d'harmonie", "Une sensation agréable et rassurante", "Une sensation d'inconfort et d'étrangeté morbide", "Une sensation d'admiration traditionnelle"],
             answer: 2,
             explanation: "L'association à un cercueil produit instantanément un effet de malaise, de morbide étrangeté et d'inconfort chez le lecteur."
-        }
+        },
        {
             id: 'venus_q14',
             type: 'VF',
@@ -323,7 +323,7 @@ const textsData = [
             id: 'venus_q18',
             type: 'QCM_EXTRAIT',
             question: "Pourquoi le corps parait diforme ?",
-            extract: "Les <b>larges</b> omoplates <br> Qui <b>saillent</b> ; le dos <b>court</b> qui rentre et qui ressort ; <br> Puis les <b>rondeurs<b/> des reins semblent prendre l’essor ;",
+            extract: "Les <b>larges</b> omoplates <br> Qui <b>saillent</b> ; le dos <b>court</b> qui rentre et qui ressort ; <br> Puis les <b>rondeurs</b> des reins semblent prendre l’essor ;",
             options: ["Utilisation d'antithèses (termes opposés)", "Répétition de l'adverbe "puis"],
             answer: 0,
             explanation: "antithèses : « large » et « court », omoplates qui « saillent » (=maigreur mise en valeur par le rejet de la proposition subordonnée relative « qui saillent ») mais « graisse » => le corps paraît difforme. Description à l’opposé des codes esthétiques traditionnels."
