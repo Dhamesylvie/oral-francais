@@ -291,7 +291,7 @@ const textsData = [
        {
             id: 'venus_q14',
             type: 'VF',
-            question: " Le premier Quatrain est malmené comme Venus ?",
+            question: "Le <b>premier quatrain</b> est malmené comme Venus ?",
             answer: 'Faux',
             explanation: " les rimes sont croisées et non embrassées + syntaxe disloquée qui renvoie à la dislocation du corps de la femme"
         },
@@ -322,7 +322,7 @@ const textsData = [
        {
             id: 'venus_q18',
             type: 'QCM_EXTRAIT',
-            question: "Pourquoi le corps parait diforme ?",
+            question: "Pourquoi le corps paraît-il difforme ?",
             extract: "Les <b>larges</b> omoplates <br> Qui <b>saillent</b> ; le dos <b>court</b> qui rentre et qui ressort ; <br> Puis les <b>rondeurs</b> des reins semblent prendre l’essor ;",
             options: ["Utilisation d'antithèses (termes opposés)", "Répétition de l'adverbe "puis"],
             answer: 0,
@@ -446,9 +446,9 @@ const textsData = [
   {
             id: 'venus_q34',
             type: 'VF',
-            question: "AFFIRMATION : L'ouverture possible pour couclure l'analyse linéaire de Venus Anadyomène pourrait se faire sur 'Une charogne de Bodelaire'.",
+            question: "AFFIRMATION : L'ouverture possible pour couclure l'analyse linéaire de Venus Anadyomène pourrait se faire sur 'Une Charogne de Bodelaire'.",
             answer: 'Vrai',
-            explanation: "Car : 1- Similitude thématique : la beauté dégradée (dans « Une charogne », Baudelaire décrit de manière paradoxalement esthétique une charogne en décomposition)<br>2- Dimension provocatrice et anticonformiste (Rimbaud et Baudelaire provoquent le lecteur en déconstruisant des figures classiques de beauté pour remettre en cause les conventions artistiques et sociales)<br>3-Esthétique de la laideur et modernité poétique (Les deux auteurs utilisent la poésie pour explorer une esthétique moderne où le laid devient une source d'inspiration et de fascination poétique.)<br>4-Technique littéraire et figures de style (rocédés stylistiques (oxymores, antithèses, images fortes, et descriptions précises) dans les deux poèmes sont similaires)"
+            explanation: "Car : 1- Similitude thématique : la beauté dégradée (dans « Une Charogne », Baudelaire décrit de manière paradoxalement esthétique une charogne en décomposition)<br>2- Dimension provocatrice et anticonformiste (Rimbaud et Baudelaire provoquent le lecteur en déconstruisant des figures classiques de beauté pour remettre en cause les conventions artistiques et sociales)<br>3-Esthétique de la laideur et modernité poétique (Les deux auteurs utilisent la poésie pour explorer une esthétique moderne où le laid devient une source d'inspiration et de fascination poétique.)<br>4-Technique littéraire et figures de style (rocédés stylistiques (oxymores, antithèses, images fortes, et descriptions précises) dans les deux poèmes sont similaires)"
         },
     {
             id: 'venus_q35',
