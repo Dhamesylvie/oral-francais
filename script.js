@@ -177,7 +177,299 @@ const textsData = [
             { id:'odg_postambule_q66', type:'QCM', question:'Quel est le but principal de la fin du Postambule ?', options: ["Décrire les lois existantes.", "Exprimer un découragement final.", "Exhorter les femmes à l'action et affirmer leur capacité à se libérer."], answer: 2, explanation:'La fin du Postambule est un appel vibrant à l\'action, insistant sur la volonté et le pouvoir des femmes de surmonter les obstacles pour atteindre l\'égalité.'}
             
         ]
-    }
+    },
+    {
+    id: 'rimbaud_venus_anadyomene',
+    title: 'Vénus Anadyomène',
+    author: 'Arthur Rimbaud',
+    questions: [
+        { 
+            id: 'venus_q1',
+            type: 'QCM',
+            question: 'À quoi renvoie le titre "Vénus Anadyomène" dans ce poème de Rimbaud ?',
+            options: ["Une plante rare", "Vénus sortant des eaux", "Une étoile brillante", "Une technique picturale"],
+            answer: 1,
+            explanation: '"Vénus Anadyomène" désigne littéralement Vénus sortant des eaux, en référence au mythe antique représentant Vénus née de l’écume marine.'
+        },
+        {  
+            id: 'venus_q2',
+            type: 'VF', 
+            question: 'Le titre "Vénus Anadyomène" est utilisé par Rimbaud pour célébrer la beauté féminine traditionnelle.',
+            answer: 'Faux',
+            explanation: 'Rimbaud utilise ce titre de manière ironique, détournant la beauté traditionnelle par une description grotesque et caricaturale.'
+        },
+        {
+            id: 'venus_q3',
+            type: 'QCM_EXTRAIT',
+            question: "Quelle figure de style domine dans l'expression : 'Comme d'un cercueil vert en fer blanc, une tête'",
+            extract: "Comme d'un cercueil vert en fer blanc, une tête",
+            options: ["Métaphore", "Comparaison", "Allégorie", "Hyperbole"],
+            answer: 1,
+            explanation: "La présence du terme comparatif 'Comme' indique explicitement une comparaison. La tête est comparée de manière grotesque à quelque chose émergeant d'un 'cercueil' vert en fer blanc, insistant sur l'aspect lugubre."
+        },
+        {
+            id: 'venus_q4',
+            type: 'VF',
+            question: "Dans l'extrait 'Comme d'un cercueil vert en fer blanc, une tête', la comparaison renvoie à une idée positive et attrayante.",
+            answer: 'Faux',
+            explanation: "Cette comparaison donne une impression macabre et grotesque ; elle renvoie à une idée négative et repoussante. Vénus = seulement « une tête » indéfinie."
+        },
+        {
+            id: 'venus_q5',
+            type: 'QCM',
+            question: "Quelle impression crée la description initiale par le choix lexical 'cercueil vert en fer blanc' ?",
+            options: ["Impression d'élégance", "Atmosphère chaleureuse", "Impression d'élégance et bon marché"],
+            answer: 2,
+            explanation: "<b>Elegance</b> (Les couleurs peuvent renvoyer au tableau de Botticelli). Bon marché (« fer » fait penser à une baignoire bon marché, rompt avec l’idéal)."
+        },
+        {
+            id: 'venus_q6',
+            type: 'QCM_EXTRAIT',
+            question: "A quel oeuvre fait référence le vers : 'Comme d'un cercueil vert en fer blanc, une tête' ?",
+            extract: "Comme d'un cercueil vert en fer blanc, une tête",
+            options: ["Tableau "La naissance de Venus" de Botticelli 1485.", "Sculture Victoire de Samotrace II avant JC."],
+            answer: 0,
+            explanation: "C'est un traitement parodique du tableau "La naissance de Venus" de Botticelli 1485. Le noble coquillage est devenu un accessoire prosaïque (commun, dépourvu d'élégance)."
+        },
+        {
+            id: 'venus_q7',
+            type: 'QCM_EXTRAIT',
+            question: "Quelle figure de style se cache derrière l'adjectif '<b>vielle</b> baignoire'",
+            extract: "Vielle baignoire",
+            options: ["Hypallage (mettre dans une autre phrase un terme qui se rapporte à la 1ere phrase).", "Allitération (répétition d'une consonne)"],
+            answer: 0,
+            explanation: "L’adjectif peut être une hypallage. En effet, l’adj ne désigne-t-il que la baignoire ou aussi la déesse qui est pourtant censée naître ? Cette interprétation va avec le « cercueil » qui montre une Vénus non pas naissante (ce qu’annonçait pourtant le titre avec l’adjectif « anadyomène »), mais proche de la mort. Le traitement de Vénus est bien parodique. "
+        },
+
+
+        {
+            id: 'venus_q8',
+            type: 'QCM',
+            question: " La blondeur de Vénus est aussi transformée : Venus est « brune ». pourquoi ?",
+            option: ["Lui donner plus de puissance + connotation luxueuse","Briser le mythe + connotation de la couleur : sombre, plus lugubre."],
+            answer: 1,
+            explanation: "La blondeur de Vénus est aussi transformée : « brune » → brise le mythe + connotation de la couleur : sombre, plus lugubre."
+        },
+        {
+            id: 'venus_q9',
+            type: 'QCM',
+            question: "Le premier quatrain du poème appartient clairement à quel registre littéraire ?",
+            options: ["Pathétique", "Satirique et caricatural", "Lyrique", "Épique"],
+            answer: 1,
+            explanation: "Dès le début, le quatrain instaure un registre satirique et caricatural, rejetant la traditionnelle admiration pour la beauté féminine avec ironie et humour noir."
+        },
+        {
+            id: 'venus_q10',
+            type: 'QCM_EXTRAIT',
+            question: "Qu'apportent les expressions 'fortement paumadée' et 'déficits mal ravaudés' ",
+            extract: "De femme à cheveux bruns <b<fortement pommadés</b><br> D’une vieille baignoire émerge, lente et bête,<br> Avec des <b>déficits assez mal ravaudés</b>",
+            options: ["La rendent belle et mystérieuse, "Déprécient son apparence"],
+            answer: 0,
+            explanation: "l’adverbe « fortement » montre que c’est trop, ridicule (donc contraire à la représentation faite par Botticelli où les cheveux vole au vent). « déficits mal ravaudés » => devient symbole de laideur, de lacunes."
+        },
+
+        {
+            id: 'venus_q11',
+            type: 'QCM',
+            question: "Avec les adjectifs <b>"Lente et bête"</b> quelle apparence est donné à Venus ?",
+            options: ["L'apparence d'une déèsse", "l'apparence d'un animal."],
+            answer: 1,
+            explanation: "Vénus a plus l’apparence d’un animal que d’une déesse. Polysémie du nom « bête » qui est rapproché du nom « tête » par la rime (pauvreté intellectuelle?)"
+        },
+
+        {
+            id: 'venus_q12',
+            type: 'QCM',
+            question: "Pourquoi rimbaut utilise le mot "bête" ?",
+            options: ["Pour se rappocher du Loup Garoup", "Pour jouer sur la Polysémie du terme (une bête / être bête)."],
+            answer: 1,
+            explanation: "Polysémie du nom « bête » qui est rapproché du nom « tête » par la rime (Veut-il parler de la pauvreté intellectuelle de Venus?)"
+        },
+
+
+        {
+            id: 'venus_q13',
+            type: 'QCM_EXTRAIT',
+            question: "Dans 'Comme d'un cercueil vert en fer blanc', l'association du 'cercueil' produit immédiatement quelle sensation chez le lecteur ?",
+            extract: "Comme d'un cercueil vert en fer blanc",
+            options: ["Une sensation d'harmonie", "Une sensation agréable et rassurante", "Une sensation d'inconfort et d'étrangeté morbide", "Une sensation d'admiration traditionnelle"],
+            answer: 2,
+            explanation: "L'association à un cercueil produit instantanément un effet de malaise, de morbide étrangeté et d'inconfort chez le lecteur."
+        }
+       {
+            id: 'venus_q14',
+            type: 'VF',
+            question: " Le premier Quatrain est malmené comme Venus ?",
+            answer: 'Faux',
+            explanation: " les rimes sont croisées et non embrassées + syntaxe disloquée qui renvoie à la dislocation du corps de la femme"
+        },
+        {
+            id: 'venus_q15',
+            type: 'QCM',
+            question: "Quel effet le présent de l'indicatif a-t-il dans la description du corps de Vénus ?",
+            options: ["Il atténue la vivacité de la scène", "Il renforce l'impression d'immédiateté et de présence", "Il donne une dimension intemporelle à la scène", "Il n'a pas d'effet particulier"],
+            answer: 1,
+            explanation: "Le présent de l'indicatif dans ce contexte renforce l'hypotypose sordide (décrire de manière précise pour rendre la scene plus réelle), donnant l'impression que le lecteur voit Vénus émerger de l'eau en temps réel."
+        },
+        {
+            id: 'venus_q16',
+            type: 'VF',
+            question: "AFFIRMATION : L'anaphore de l’adverbe « puis » suggère une progression harmonieuse et esthétique.",
+            answer: 'Faux',
+            explanation: "L’anaphore de « puis » montre une progression dans la description du corps qui, au contraire, révèle toute la laideur de Vénus au fur et à mesure de son émergence de la baignoire."
+        },
+       {
+            id: 'venus_q17',
+            type: 'QCM_EXTRAIT',
+            question: "Dans cet extrait, la répétition de l'adverbe 'puis' est une figure de style. Laquelle ?",
+            extract: "<b>Puis</b> le col gras et gris, les larges omoplates <br> Qui saillent ; le dos court qui rentre et qui ressort ; <br> <b>Puis</b> les rondeurs des reins semblent prendre l’essor ;",
+            options: ["Assonance pour répeter des voyelles", "Une anaphore pour montrer la laideur de haut en bas."],
+            answer: 1,
+            explanation: "Description progressive du corps à travers l’anaphore de l’adverbe « puis » → le poète va montrer toute sa laideur au fur et à mesure que Vénus émerge de la baignoire. Hypotypose sordide : le présent donne l’impression qu’on voit Vénus sortir de l’eau."
+        }
+       {
+            id: 'venus_q18',
+            type: 'QCM_EXTRAIT',
+            question: "Pourquoi le corps parait diforme ?",
+            extract: "Les <b>larges</b> omoplates <br> Qui <b>saillent</b> ; le dos <b>court</b> qui rentre et qui ressort ; <br> Puis les <b>rondeurs<b/> des reins semblent prendre l’essor ;",
+            options: ["Utilisation d'antithèses (termes opposés)", "Répétition de l'adverbe "puis"],
+            answer: 0,
+            explanation: "antithèses : « large » et « court », omoplates qui « saillent » (=maigreur mise en valeur par le rejet de la proposition subordonnée relative « qui saillent ») mais « graisse » => le corps paraît difforme. Description à l’opposé des codes esthétiques traditionnels."
+        }
+
+        {
+            id: 'venus_q19',
+            type: 'QCM',
+            question: "Quel effet produit l'allitération en [r] dans les mots « gras », « gris », « large », « court » ?",
+            options: ["Un son doux et mélodieux", "Un son dur et désagréable", "Un rythme apaisant", "Un effet dramatique"],
+            answer: 1,
+            explanation: "L'allitération en [r] produit un son dur et désagréable, accentuant la tonalité laide et grotesque de la description."
+        },
+        {
+            id: 'venus_q20',
+            type: 'QCM',
+            question: "La mention des « omoplates » dans ce quatrain relève de quel procédé poétique ?",
+            options: ["Une métaphore classique", "Un blason traditionnel", "Un contre-blason", "Une allégorie"],
+            answer: 2,
+            explanation: "La mention des « omoplates », partie inattendue et non érotique, relève du contre-blason, opposé à la tradition de valoriser les belles parties du corps féminin."
+        },
+        {
+            id: 'venus_q21',
+            type: 'VF',
+            question: "AFFIRMATION : Le rythme binaire des expressions « qui rentre et qui ressort » évoque une danse élégante et harmonieuse.",
+            answer: 'Faux',
+            explanation: "Le rythme binaire ici évoque une danse sordide, renforçant l’aspect grotesque du corps en mouvement."
+        },
+        {
+            id: 'venus_q22',
+            type: 'QCM',
+            question: "Quel motif poétique traditionnel Rimbaud subvertit-il par le choix de rimes embrassées dans ce quatrain ?",
+            options: ["Il renforce le schéma poétique classique", "Il respecte les canons de l'esthétique traditionnelle", "Il s'éloigne des codes poétiques traditionnels", "Il sublime la beauté classique"],
+            answer: 2,
+            explanation: "En choisissant des rimes embrassées et en changeant le schéma de rimes entre les quatrains, Rimbaud s’éloigne volontairement des codes poétiques traditionnels pour traiter un sujet anti-conventionnel."
+        },
+        {
+            id: 'venus_q23',
+            type: 'QCM',
+            question: "Comment le rejet de la subordonnée relative « qui saillent » contribue-t-il à l'impression du corps de Vénus ?",
+            options: ["Il met en valeur une harmonie parfaite", "Il insiste sur la maigreur et l'étrangeté", "Il adoucit la description", "Il évoque la douceur des courbes"],
+            answer: 1,
+            explanation: "Le rejet de « qui saillent » met en valeur la maigreur des omoplates, en accentuant leur caractère saillant et déshumanisé."
+        },
+        {
+            id: 'venus_q24',
+            type: 'VF',
+            question: "AFFIRMATION : L'utilisation d'antithèses comme 'large' et 'court' donne une image harmonieuse du corps.",
+            answer: 'Faux',
+            explanation: "Les antithèses « large » et « court » accentuent la nature difforme et non-harmonieuse du corps de Vénus, renforçant le caractère grotesque."
+        },
+
+        {
+            id: 'venus_q25',
+            type: 'QCM',
+            question: "Quelle est la nature du détail mis en avant par l'adverbe "surtout" et l'expression 'à la loupe' ?",
+            options: ["La grâce divine", "Une imperfection choquante et vulgaire", "Un détail érotique sublimé", "Un sentiment sublime"],
+            answer: 1,
+            explanation: "Le détail 'à la loupe' met en avant un aspect vulgaire et choquant, à savoir la relation avec 'Clara Vénus', une quasi-anagramme de 'ulcère à l’anus', soulignant une provocation scatologique."
+        },
+        {
+            id: 'venus_q26',
+            type: 'VF',
+            question: "AFFIRMATION : L'usage du pronom « on » au lieu de « je » lyrique traditionnel permet de renforcer le côté impersonnel et objectivement grotesque du poème.",
+            answer: 'Vrai',
+            explanation: "En utilisant le pronom 'on', Rimbaud rejette le lyrisme traditionnel et intensifie l'observation distante et impersonnelle de la vulgarité apparente de la scène."
+        },
+        {
+            id: 'venus_q27',
+            type: 'QCM',
+            question: "L'expression « Clara Vénus » se rapproche par sa forme de quelle idée inattendue ?",
+            options: ["L’élévation spirituelle", "La déchéance vulgaire", "La magnificence artistique", "La mélodie douce"],
+            answer: 1,
+            explanation: "« Clara Vénus » (signifiant "illustre Venus") est presque une anagramme subtile de 'ulcère à l’anus', indiquant une chute volontaire dans le bas et le vulgaire."
+        },
+        {
+            id: 'venus_q28',
+            type: 'QCM',
+            question: "Que signifie l'expression « Clara Vénus » et pourquoi introduit-t-elle l'idée de  la "déchéance vulgaire" ?",
+            options: ["Clara Vénus = Claire de Venus / Déchéance vulgaire car il y a le mot nu", "Clara Vénus = Illustre Venus / Déchéance car contient un anagrame"],
+            answer: 1,
+            explanation: "« Clara Vénus » signifie "illustre Venus". Déchéance car c'est presque une anagramme subtile de 'ulcère à l’anus', indiquant une chute volontaire dans le bas et le vulgaire."
+        },
+        {
+            id: 'venus_q29',
+            type: 'QCM',
+            question: "Quelle association synesthétique (association involontaire de 2 sens) crée une image de dégoût dans le poème ?",
+            options: ["L’éclat doré et enivrant", "La lumière douce et paisible", "La couleur rouge, l'odeur et le goût dit 'horrible'", "Le parfum délicat et apaisant"],
+            answer: 2,
+            explanation: "La couleur 'rouge' associée à l'odeur et au goût crée une synesthésie qui évoque la boucherie et génère un sentiment de dégoût."
+        },
+        {
+            id: 'venus_q30',
+            type: 'VF',
+            question: "AFFIRMATION : L’expression 'belle hideusement' est un exemple d'oxymore rappelant Baudelaire.",
+            answer: 'Vrai',
+            explanation: "L’expression 'belle hideusement' combine des termes contradictoires, exprimant une beauté paradoxale et rappelle le style de Baudelaire, notamment « Les Fleurs du Mal »."
+        },
+        {
+            id: 'venus_q31',
+            type: 'QCM',
+            question: "Quel est l’effet du tiret dans la phrase: « - Et tout ce corps remue et tend sa large croupe » ?",
+            options: ["Agrémente le rythme poétique harmonieux", "Ajoute une dimension philosophique au poème", "Met un focus abrupt sur le mouvement obscène du corps", "Met en valeur la douceur de la description"],
+            answer: 2,
+            explanation: "Le tiret met en exergue le mouvement obscène par une transition abrupte, accentuant ainsi la vision vulgaire et grotesque du corps en mouvement."
+        },
+        {
+            id: 'venus_q32',
+            type: 'VF',
+            question: "AFFIRMATION : La rime « Vénus » avec « anus » est un exemple de traitement noble et artistique.",
+            answer: 'Faux',
+            explanation: "La rime de « Vénus » avec « anus » représente une chute dans le vulgaire, faisant partie de la satire burlesque où un sujet noble est traité avec un ton bas."
+        },
+        {
+            id: 'venus_q33',
+            type: 'QCM',
+            question: "Comment la 'large croupe' participe-t-elle à l'effet satirique du poème ?",
+            options: ["En rendant la représentation de Vénus élégante", "En ajoutant une ambiguïté sensuelle", "En renforçant l'animalisation et la vulgarité", "En illustrant un idéal classique"],
+            answer: 2,
+            explanation: "La 'large croupe' animalise et vulgarise la figure de Vénus, détournant les attentes de sensualité et d'élévation pour renforcer l'effet satirique."
+        },
+  {
+            id: 'venus_q34',
+            type: 'VF',
+            question: "AFFIRMATION : L'ouverture possible pour couclure l'analyse linéaire de Venus Anadyomène pourrait se faire sur 'Une charogne de Bodelaire'.",
+            answer: 'Vrai',
+            explanation: "Car : 1- Similitude thématique : la beauté dégradée (dans « Une charogne », Baudelaire décrit de manière paradoxalement esthétique une charogne en décomposition)<br>2- Dimension provocatrice et anticonformiste (Rimbaud et Baudelaire provoquent le lecteur en déconstruisant des figures classiques de beauté pour remettre en cause les conventions artistiques et sociales)<br>3-Esthétique de la laideur et modernité poétique (Les deux auteurs utilisent la poésie pour explorer une esthétique moderne où le laid devient une source d'inspiration et de fascination poétique.)<br>4-Technique littéraire et figures de style (rocédés stylistiques (oxymores, antithèses, images fortes, et descriptions précises) dans les deux poèmes sont similaires)"
+        }
+    {
+            id: 'venus_q35',
+            type: 'VF',
+            question: "AFFIRMATION : Vénus est perçue selon un mouvement descendant (de la tête vers le bas). Le 1er Quatrain présente mise en scène provocatrice de la laideur du corps (il en fait un contre-blason).",
+            answer: 'Faux',
+            explanation: "Vénus est perçue selon un mouvement descendant (de la tête vers le bas). <br>Quatrain 1 : apparition sordide de la tête d’une étrange Vénus<br>Quatrain 2 : mise en scène provocatrice de la laideur du corps (il en fait un contre-blason)<br>Tercets : Le regard se resserre sur un détail du corps de Vénus, ce qui prépare peu à peu la chute burlesque (ou parodique) du sonnet et la rupture totale avec l’idéal féminin."
+        }
+
+    ]
+}
     // Ajoutez d'autres textes ici en suivant la même structure { id: ..., title: ..., author: ..., questions: [...] },
 ];
 
