@@ -664,6 +664,9 @@ function displayQuestion() {
     feedbackElement.innerHTML = '';
     encouragementElement.textContent = '';
     nextQuestionBtn.classList.add('hidden');
+    // Cacher le bouton de validation QCM s'il existe
+    const validateBtn = document.getElementById('validate-qcm-btn');
+    if (validateBtn) validateBtn.classList.add('hidden');
 
      // Gestion du cas où on arrive à la fin de la liste
      if (currentQuestionIndex >= questionsForCurrentText.length) {
@@ -752,14 +755,59 @@ function displayQuestion() {
                  nextQuestionBtn.classList.remove('hidden'); // Permettre de passer
                  return; // Ne pas essayer de créer des boutons
              }
+             
+// Déterminer si c'est une question à réponses multiples
+            const isMultipleChoice = Array.isArray(question.answer);
+
+            if (isMultipleChoice) {
+                 questionTextElement.textContent += " (Plusieurs réponses possibles)"; // Indiquer à l'utilisateur
+            }
+
             question.options.forEach((option, index) => {
-                const button = document.createElement('button');
-                // Utiliser innerHTML pour interpréter les tags HTML potentiels dans les options
-                button.innerHTML = `${String.fromCharCode(65 + index)}. ${option}`; // A. B. C...
-                button.onclick = () => checkAnswer(index); // Passer l'index comme réponse sélectionnée
-                answerOptionsContainer.appendChild(button);
+                const optionContainer = document.createElement('div');
+                optionContainer.classList.add('option-container'); // Pour le style
+
+                const inputElement = document.createElement('input');
+                inputElement.type = isMultipleChoice ? 'checkbox' : 'radio'; // Checkbox ou Radio
+                inputElement.name = `qcm_option_${question.id}`; // Nom commun pour les radios
+                inputElement.value = index; // La valeur est l'index
+                inputElement.id = `qcm_option_${question.id}_${index}`; // ID unique pour le label
+                inputElement.classList.add('qcm-input'); // Classe pour sélection future
+
+                const labelElement = document.createElement('label');
+                labelElement.htmlFor = inputElement.id; // Lier le label à l'input
+                 // Utiliser innerHTML pour les options contenant du HTML (comme <b>)
+                labelElement.innerHTML = `${String.fromCharCode(65 + index)}. ${option}`;
+
+                optionContainer.appendChild(inputElement);
+                optionContainer.appendChild(labelElement);
+                answerOptionsContainer.appendChild(optionContainer);
+
+                // Si c'est une question à réponse unique (radio), on valide au clic
+                if (!isMultipleChoice) {
+                    optionContainer.onclick = () => checkAnswer(index); // Valider directemet
+                     // On pourrait aussi mettre l'onclick sur l'input radio directement
+                     // inputElement.onclick = () => checkAnswer(index);
+                }
             });
+
+            // Ajouter un bouton "Valider" SEULEMENT pour les questions à choix multiples
+            if (isMultipleChoice) {
+                let validateButton = document.getElementById('validate-qcm-btn');
+                if (!validateButton) { // Créer le bouton s'il n'existe pas
+                    validateButton = document.createElement('button');
+                    validateButton.id = 'validate-qcm-btn';
+                    validateButton.textContent = 'Valider mes réponses';
+                    // Insérer le bouton après les options mais avant le bouton "Suivant" potentiel
+                    // Trouvons un élément de référence stable, comme le conteneur de feedback ou le bouton Suivant lui-même
+                    const referenceNode = feedbackElement || nextQuestionBtn; // Mettre avant le feedback ou le bouton Suivant
+                    revisionScreen.insertBefore(validateButton, referenceNode);
+                }
+                 validateButton.onclick = () => checkAnswer(null); // Appel sans index spécifique
+                 validateButton.classList.remove('hidden'); // Afficher le bouton
+            }
             break;
+
 
         default:
             console.warn("Type de question non reconnu:", question.type, "pour la question:", question.id);
