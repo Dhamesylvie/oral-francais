@@ -31,7 +31,7 @@ body {
 /* --- Typographie --- */
 h1, h2 {
     text-align: center;
-    color: #2c3e50; /* Bleu-gris foncé */
+    color: blue; /* Bleu-gris foncé */
     margin-bottom: 1.5rem;
 }
 
