@@ -455,13 +455,6 @@ const textsData = [
             question: "AFFIRMATION : Vénus est perçue selon un mouvement descendant (de la tête vers le bas). Le 1er Quatrain présente mise en scène provocatrice de la laideur du corps (il en fait un contre-blason).",
             answer: 'Faux',
             explanation: "Vénus est perçue selon un mouvement descendant (de la tête vers le bas). <br>Quatrain 1 : apparition sordide de la tête d’une étrange Vénus<br>Quatrain 2 : mise en scène provocatrice de la laideur du corps (il en fait un contre-blason)<br>Tercets : Le regard se resserre sur un détail du corps de Vénus, ce qui prépare peu à peu la chute burlesque (ou parodique) du sonnet et la rupture totale avec l’idéal féminin." // Usage de ’ typographique
-        },
-         {
-            id: 'venus_q36',
-            type: 'VF',
-            question: "AFFIRMATION : Vénus est perçue selon un mouvement descendant (de la tête vers le bas). Le 1er Quatrain présente mise en scène provocatrice de la laideur du corps (il en fait un contre-blason).",
-            answer: 'Faux',
-            explanation: "Vénus est perçue selon un mouvement descendant (de la tête vers le bas). <br>Quatrain 1 : apparition sordide de la tête d’une étrange Vénus<br>Quatrain 2 : mise en scène provocatrice de la laideur du corps (il en fait un contre-blason)<br>Tercets : Le regard se resserre sur un détail du corps de Vénus, ce qui prépare peu à peu la chute burlesque (ou parodique) du sonnet et la rupture totale avec l’idéal féminin." // Usage de ’ typographique
         }
     ]
 }
