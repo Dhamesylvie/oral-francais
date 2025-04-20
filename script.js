@@ -457,7 +457,24 @@ const textsData = [
             explanation: "Vénus est perçue selon un mouvement descendant (de la tête vers le bas). <br>Quatrain 1 : apparition sordide de la tête d’une étrange Vénus<br>Quatrain 2 : mise en scène provocatrice de la laideur du corps (il en fait un contre-blason)<br>Tercets : Le regard se resserre sur un détail du corps de Vénus, ce qui prépare peu à peu la chute burlesque (ou parodique) du sonnet et la rupture totale avec l’idéal féminin." // Usage de ’ typographique
         }
     ]
-}
+},
+// exemple de question à choix multiple
+/*{
+    id: 'test-multiple',
+    title: 'Modele',
+    author: 'tes',
+    questions: [
+ {
+                 id: 'pain_q_multi_example', // Nouvel ID exemple
+                 type: 'QCM', // Ou QCM_EXTRAIT
+                 question: 'Quelles caractéristiques Ponge attribue-t-il à la croûte du pain dans le poème ? (Plusieurs réponses possibles)',
+                 options: ["Merveilleuse", "Panoramique", "Mollesse ignoble", "Stellaire"],
+                 // Options A et B sont correctes
+                 answer: [0, 1], // <<<<---- CHANGEMENT ICI : Tableau d'indices
+                 explanation: 'Ponge décrit la surface (croûte) comme "merveilleuse" et lui donne une "impression quasi panoramique". La "mollesse ignoble" concerne la mie, et "stellaire" qualifie le four.'
+             }
+    ]
+}*/
     // Ajoutez d'autres textes ici en suivant la même structure { id: ..., title: ..., author: ..., questions: [...] },
 ];
 
@@ -818,6 +835,7 @@ function displayQuestion() {
 }
 
 
+// Le paramètre selectedAnswer n'est pertinent que pour VF et QCM/Radio
 function checkAnswer(selectedAnswer) {
     if (quizEnded) return;
 
@@ -827,41 +845,54 @@ function checkAnswer(selectedAnswer) {
     }
 
     const question = questionsForCurrentText[currentQuestionIndex];
-
     if (!question) {
          console.error("Question indéfinie dans checkAnswer à l'index:", currentQuestionIndex);
          return;
     }
 
     const correctAnswer = question.answer;
-    const points = question.points || 1;
+    const points = question.points || (Array.isArray(correctAnswer) ? correctAnswer.length : 1); // Points proportionnels ? Ou fixe ?
     let isCorrect = false;
+    let selectedIndices = []; // Pour QCM multiple
 
     questionsAnsweredThisSession++;
 
+    // --- Logique de vérification par type ---
     if (question.type === 'VF') {
         isCorrect = String(selectedAnswer).toLowerCase() === String(correctAnswer).toLowerCase();
     } else if (question.type === 'QCM' || question.type === 'QCM_EXTRAIT') {
-        // AMÉLIORATION: Validation du type de réponse sélectionnée pour QCM
-        if (typeof selectedAnswer === 'number') {
-            // Gérer le cas (improbable après corrections) où la réponse correcte serait un tableau
-             if (Array.isArray(correctAnswer)) {
-                 console.warn("Question QCM avec réponse multiple dans 'answer' (non géré comme multi-sélection):", question.id);
-                 // Considère correct si l'index sélectionné est dans le tableau (comportement par défaut simple)
-                 isCorrect = correctAnswer.includes(selectedAnswer);
-             } else {
-                 // Comparaison standard index vs index (converti de la donnée string/nombre)
-                 isCorrect = selectedAnswer === parseInt(correctAnswer);
-             }
+        const isMultipleChoice = Array.isArray(correctAnswer);
+
+        if (isMultipleChoice) {
+            // Cas réponses multiples (déclenché par bouton Valider)
+            const checkedBoxes = answerOptionsContainer.querySelectorAll('input[type="checkbox"]:checked');
+            checkedBoxes.forEach(box => {
+                selectedIndices.push(parseInt(box.value));
+            });
+
+            // Comparer les tableaux d'indices (après tri pour ignorer l'ordre)
+            const sortedSelected = [...selectedIndices].sort((a, b) => a - b);
+            const sortedCorrect = [...correctAnswer].sort((a, b) => a - b);
+
+            // Vérification exacte : même nombre d'éléments et mêmes éléments
+            isCorrect = sortedSelected.length === sortedCorrect.length &&
+                        sortedSelected.every((value, index) => value === sortedCorrect[index]);
+
         } else {
-            console.error("Réponse sélectionnée invalide pour QCM (devrait être un index numérique):", selectedAnswer);
-            isCorrect = false;
+            // Cas réponse unique (déclenché par clic radio)
+            // selectedAnswer contient l'index cliqué
+             if (typeof selectedAnswer === 'number') {
+                 isCorrect = selectedAnswer === parseInt(correctAnswer);
+             } else {
+                 console.error("Réponse sélectionnée invalide pour QCM unique:", selectedAnswer);
+                 isCorrect = false;
+             }
         }
     } else {
         console.warn("Vérification de réponse pour type inconnu:", question.type);
     }
 
-    // Mise à jour du score et des compteurs
+    // --- Mise à jour score et état (identique à avant) ---
     if (isCorrect) {
         score += points;
         consecutiveCorrectAnswers++;
@@ -870,26 +901,24 @@ function checkAnswer(selectedAnswer) {
         }
         if (!question.masteredInSession) {
             question.masteredInSession = true;
-            // Recalculer proprement au lieu d'incrémenter (plus sûr si états complexes)
             masteredQuestionsCount = questionsForCurrentText.filter(q => q.masteredInSession).length;
         }
     } else {
-        consecutiveCorrectAnswers = 0; // Réinitialiser la série
-        // En mode Maîtrise, la question reste non maîtrisée.
+        consecutiveCorrectAnswers = 0;
     }
 
     updateSessionInfoDisplay();
 
     // --- Affichage du Feedback ---
-    feedbackElement.innerHTML = '';
+    feedbackElement.innerHTML = ''; // Nettoyer
     feedbackElement.classList.remove('hidden', 'correct', 'incorrect');
     const feedbackText = document.createElement('span');
-    feedbackText.style.fontWeight = 'bold'; // Mettre en gras Correct/Incorrect
+    feedbackText.style.fontWeight = 'bold';
 
     if (isCorrect) {
         feedbackText.textContent = `Correct ! (+${points} point${points > 1 ? 's' : ''})`;
         feedbackElement.classList.add('correct');
-        if (Math.random() < 0.4) { // Augmenter un peu la chance d'encouragement
+        if (Math.random() < 0.4) {
             encouragementElement.textContent = getRandomMessage(encouragementMessages);
         } else {
             encouragementElement.textContent = '';
@@ -899,77 +928,74 @@ function checkAnswer(selectedAnswer) {
         feedbackElement.classList.add('incorrect');
         encouragementElement.textContent = '';
 
-        // Montrer la bonne réponse si incorrect
+        // Montrer la ou les bonnes réponses
          const correctAnswerPara = document.createElement('p');
-         correctAnswerPara.style.marginTop = '5px'; // Ajouter un peu d'espace
-         let readableAnswer = correctAnswer;
+         correctAnswerPara.style.marginTop = '5px';
+         let readableAnswer = "";
 
          if ((question.type === 'QCM' || question.type === 'QCM_EXTRAIT') && question.options) {
-             if (Array.isArray(correctAnswer)) {
-                 // Affichage pour réponse multiple (même si non géré à la sélection)
-                 readableAnswer = correctAnswer
-                    .map(idx => parseInt(idx))
-                    .filter(idx => idx >= 0 && idx < question.options.length) // Filtrer index valides
-                    .map(idx => `${String.fromCharCode(65 + idx)}. ${question.options[idx]}`)
-                    .join('<br>'); // Afficher sur plusieurs lignes si multiple
-             } else {
-                 // Affichage pour réponse unique QCM
-                 const correctIndex = parseInt(correctAnswer);
-                 if (correctIndex >= 0 && correctIndex < question.options.length) {
-                     readableAnswer = `${String.fromCharCode(65 + correctIndex)}. ${question.options[correctIndex]}`;
-                 } else {
-                    readableAnswer = `(Réponse invalide: index ${correctAnswer})`; // Message d'erreur si index hors limite
-                 }
-             }
+             const correctIndices = Array.isArray(correctAnswer) ? correctAnswer : [correctAnswer]; // Toujours un tableau pour la boucle
+             let answers = [];
+             correctIndices.forEach(index => {
+                  const correctIndex = parseInt(index);
+                  if (correctIndex >= 0 && correctIndex < question.options.length) {
+                       answers.push(`${String.fromCharCode(65 + correctIndex)}. ${question.options[correctIndex]}`);
+                  } else {
+                      answers.push(`(Réponse invalide: index ${index})`);
+                  }
+             });
+             readableAnswer = answers.join('<br>'); // Afficher sur plusieurs lignes si multiple
+
          } else if (question.type === 'VF') {
-             readableAnswer = correctAnswer; // Simplement 'Vrai' ou 'Faux'
+             readableAnswer = correctAnswer;
          }
-         // Utiliser innerHTML car readableAnswer peut contenir <br>
-         correctAnswerPara.innerHTML = `<i>La bonne réponse était :<br>${readableAnswer}</i>`;
+         correctAnswerPara.innerHTML = `<i>La (les) bonne(s) réponse(s) étai(en)t :<br>${readableAnswer}</i>`;
          feedbackElement.appendChild(correctAnswerPara);
     }
-    feedbackElement.insertBefore(feedbackText, feedbackElement.firstChild); // Mettre Correct/Incorrect en premier
+    feedbackElement.insertBefore(feedbackText, feedbackElement.firstChild);
 
-    // Afficher l'explication s'il y en a une
+    // Afficher l'explication (identique)
     if (question.explanation) {
         const explanationPara = document.createElement('p');
         explanationPara.style.marginTop = '5px';
-        explanationPara.innerHTML = `<i>Explication : ${question.explanation}</i>`; // Mettre aussi en italique ?
+        explanationPara.innerHTML = `<i>Explication : ${question.explanation}</i>`;
         feedbackElement.appendChild(explanationPara);
     }
     feedbackElement.classList.remove('hidden');
 
-    // Désactiver les boutons de réponse
-    const answerButtons = answerOptionsContainer.querySelectorAll('button');
-    answerButtons.forEach(button => button.disabled = true);
+    // --- Désactiver les options et gérer les boutons ---
+    const optionInputs = answerOptionsContainer.querySelectorAll('.qcm-input, button'); // Sélectionne inputs et boutons VF
+    optionInputs.forEach(input => input.disabled = true);
 
-    // --- Vérification des conditions de fin ---
+    // Cacher le bouton Valider s'il était visible (pour QCM multiple)
+    const validateBtn = document.getElementById('validate-qcm-btn');
+    if (validateBtn) validateBtn.classList.add('hidden');
+
+
+    // --- Vérification des conditions de fin (identique) ---
     let objectiveMet = false;
-    if (selectedMode === 'total20' && questionsAnsweredThisSession >= 20) {
-        objectiveMet = (score > 0); // Ou un seuil si nécessaire, ici on considère juste avoir fait les 20 questions
+     if (selectedMode === 'total20' && questionsAnsweredThisSession >= 20) {
+        objectiveMet = (score > 0);
         quizEnded = true;
     } else if (selectedMode === 'streak20') {
         if (consecutiveCorrectAnswers >= 20) {
              objectiveMet = true;
              quizEnded = true;
         }
-        // En cas d'erreur, on ne termine pas, la série est juste rompue
     } else if (selectedMode === 'mastery') {
-        // Le recalcul de masteredQuestionsCount est déjà fait plus haut
         if (masteredQuestionsCount >= questionsForCurrentText.length) {
             objectiveMet = true;
             quizEnded = true;
         }
     }
 
+
     // Afficher le bouton "Suivant" ou terminer le quiz
     if (!quizEnded) {
         nextQuestionBtn.classList.remove('hidden');
-        // Focus sur le bouton suivant pour faciliter la navigation clavier/mobile
         nextQuestionBtn.focus();
     } else {
         nextQuestionBtn.classList.add('hidden');
-        // Laisser un petit délai avant d'afficher l'écran de fin
         setTimeout(() => showEndOfQuiz(objectiveMet), 500);
     }
 }
