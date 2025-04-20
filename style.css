@@ -133,7 +133,7 @@ blockquote::after {
 }
 #session-info span { /* Pour les valeurs */
     font-weight: 500;
-    color: darkgray;
+    color: #495057;
 }
 
 
