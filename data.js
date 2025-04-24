@@ -47,8 +47,10 @@ const textsData = [
              { id: 'pain_q41', type: 'QCM_EXTRAIT', question: 'L\'expression "sœurs siamoises soudées par tous les coudes à la fois" est principalement un exemple de :', extract: "...feuilles ou fleurs y sont comme des sœurs siamoises soudées par tous les coudes à la fois.", options: ["Une hyperbole", "Une anaphore", "Une antithèse", "Une allitération"], answer: 0, explanation: 'C\'est une hyperbole (exagération) pour décrire de manière imagée et frappante la façon dont les alvéoles de la mie sont interconnectées.' },
              { id: 'pain_q42', type: 'QCM_EXTRAIT', question: 'La structure "Mais brisons-la : car..." est un exemple de :', extract: "Mais brisons-la : car le pain doit être dans notre bouche moins objet de respect que de consommation.", options: ["Une antithèse", "Une injonction (ordre/conseil) suivie d'une justification.", "Une métaphore filée", "Une litote"], answer: 1, explanation: 'La première partie ("Mais brisons-la") est une injonction impérative, la seconde (introduite par "car") en donne la raison.' },
              { id: 'pain_q43', type: 'QCM_EXTRAIT', question: 'Quel est l\'objectif principal de cette structure finale ("Mais brisons-la : car...") ?', extract: "Mais brisons-la : car le pain doit être dans notre bouche moins objet de respect que de consommation.", options: ["Accentuer le côté tragique.", "Donner une conclusion claire et pragmatique.", "Créer un effet de surprise.", "Mettre en avant la complexité."], answer: 1, explanation: 'Cette structure permet de conclure le poème de manière directe et affirmée, invitant à revenir à l\'usage concret du pain après l\'analyse poétique.' },
-             { id: 'pain_q44', type: 'QCM_EXTRAIT', question: 'En quoi ce passage peut-il être vu comme une allégorie de la création poétique ?', extract: "Ce lâche et froid sous-sol que l'on nomme la mie a son tissu pareil à celui des éponges : feuilles ou fleurs y sont comme des sœurs siamoises...", options: ["Les éponges lavent, les tissus habillent", "Le mot \"tissu\" (mie) partage son étymologie avec \"texte\" et \"feuilles\" peut renvoyer au papier."], answer: 1, explanation: 'Oui, "tissu" et "texte" ont la même racine latine ("textus"), et "feuilles" peut évoquer les feuilles de papier. Ponge jouerait sur les mots pour parler de l\'écriture en décrivant le pain. L\'allusion à son propre nom ("Ponge"/"éponge") est aussi une interprétation possible.' },
+             { id: 'pain_q44', type: 'QCM_EXTRAIT', question: 'En quoi ce passage peut-il être vu comme une allégorie de la création poétique ?', extract: "Ce lâche et froid sous-sol que l'on nomme la mie a son <b>tissu<b/> pareil à celui des éponges : <b>feuilles<b/> ou fleurs y sont comme des sœurs siamoises...", options: ["Les éponges lavent, les tissus habillent", "Le mot \"tissu\" (mie) partage son étymologie avec \"texte\" et \"feuilles\" peut renvoyer au papier."], answer: 1, explanation: 'Oui, "tissu" et "texte" ont la même racine latine ("textus"), et "feuilles" peut évoquer les feuilles de papier. Ponge jouerait sur les mots pour parler de l\'écriture en décrivant le pain. L\'allusion à son propre nom ("Ponge"/"éponge") est aussi une interprétation possible.' },
              { id: 'pain_q45', type: 'QCM_EXTRAIT', question: 'L\'utilisation du présent de vérité générale dans "le pain DOIT être..." permet principalement de :', extract: "car le pain doit être dans notre bouche moins objet de respect que de consommation.", options: ["Ancrer le texte dans le futur.", "Transformer la phrase en une sorte de morale ou de règle générale.", "Simplement décrire une action."], answer: 1, explanation: 'Le présent de vérité générale donne à l\'affirmation une portée universelle, comme une morale ou une conclusion définitive invitant le lecteur à agir (manger le pain) plutôt qu\'à seulement le contempler.' },
+             { id: 'pain_q46', type: 'QCM', question: 'Qu\'est ce qu\'une allégorie', options: ["Permet de parler d'une notion abstraite aux moyens d'éléments concrets", "Permet d'ééxagérer"], answer: 0, explanation: 'Le terme allégorie vient du mot grec allêgorein, qui signifie « parler par figures ». Une allégorie consiste à représenter une notion abstraite au moyen d\'éléments réels, concrets. Exemples : la colombe et le rameau représentent la paix.' },
+
         ]
     },
     {
@@ -457,7 +459,364 @@ const textsData = [
         }
     ]
 },
-// exemple de question à choix multiple
+{
+    id: 'lettre-persanes',
+    title: 'Lettres Persanes',
+    author: 'Montesquieu',
+    questions: [
+        {
+            id: 'persane_q1',
+            type: 'QCM',
+            question: "À quel siècle Montesquieu a-t-il écrit Les Lettres persanes ?",
+            options: ["XVIIe siècle", "XVIIIe siècle", "XIXe siècle", "XXe siècle"],
+            answer: 1,
+            explanation: "Les Lettres persanes ont été publiées en 1720, inscrivant Montesquieu parmi les philosophes des Lumières qui s\'intéressaient aux réformes politiques et sociales."
+        },
+        {
+            id: 'persane_q2',
+            type: 'QCM',
+            question: 'Quels thèmes Montesquieu aborde-t-il dans ses œuvres ?',
+            options: ["La lutte contre l'esclavage", "La conquête spatiale", "La théorie politique", "L'impressionnisme en peinture"],
+            answer: [0, 2],
+            explanation: "La lutte contre l\'esclavage & La théorie politique"
+        },
+               {
+            id: 'persane_q3',
+            type: 'QCM',
+            question: 'Quel est le genre littéraire des Lettres persanes ?',
+            options: ["Roman épistolaire", "Roman policier", "Roman historique", "Poésie"],
+            answer: 0,
+            explanation: "Les Lettres persanes relèvent du genre épistolaire, un roman construit à travers la correspondance entre les personnages, notamment Usbek et ses amis."
+        },
+       {
+            id: 'persane_q4',
+            type: 'VF',
+            question: "AFFIRMATION : Le voyage d'Usbek en Europe lui fait découvrir la culture occidentale tout en lui permettant de critiquer sa propre société.",
+            answer: "Vrai"
+            explanation: "A travers le regard d’un étranger, Montesquieu offre une satire de la société française et une réflexion sur les coutumes persanes, soulignant les contradictions sociétales."
+        },
+        {
+            id: 'persane_q5',
+            type: 'QCM_EXTRAIT',
+            question: "Quel personnage féminin parmi le harem d'Usbek se rebelle contre sa tyrannie ?",
+            extract: "Mais on suit également les femmes de son harem restées dans son sérail en Iran qui se rebellent contre sa tyrannie.",
+            options: ["Roxane", "Zetila", "Firmin", "Narcisse"],
+            answer: 0,
+            explanation: "Roxane, la favorite d’Usbek, est celle qui se rebelle de manière la plus marquante en affirmant son autonomie et en trahissant Usbek."
+        },
+        {
+            id: 'persane_q6',
+            type: 'VF',
+            question: "AFFIRMATION : Dans le mouvement 1, Roxane renverse les rapports de force en se donnant la mort mais reste toujours fidèle à Usbek.",
+            answer: "Faux"
+            explanation: "Dans le mouvement 1, Roxane renverse effectivement les rapports de force en se donnant la mort, mais elle avoue son infidélité à Usbek pour revendiquer son indépendance."
+        },
+        {
+            id: 'persane_q7',
+            type: 'QCM',
+            question: 'Quel acte fort Roxane réalise-t-elle dans le mouvement 1?',
+            options: ["Elle s'enfuit du sérail", "Elle se donne la mort", "Elle épouse un autre homme", "Elle fait un discours public"],
+            answer: 1,
+            explanation: 'Roxane se donne la mort dans un geste symbolique fort pour affirmer son indépendance et sa volonté de ne pas être contrôlée par Usbek.'
+        },
+        {
+            id: 'persane_q8',
+            type: 'VF',
+            question: "AFFIRMATION : Dans le mouvement 2, Roxane écrit à Usbek pour le remercier de son dévouement envers elle.",
+            answer: "Faux"
+            explanation: "Dans le mouvement 2, Roxane écrit un réquisitoire contre Usbek, lui montrant qu'elle a toujours été une femme libre et remise en cause son autorité."
+        },
+        {
+            id: 'persane_q9',
+            type: 'QCM',
+            question: "Quel est le but de la lettre de Roxane dans le mouvement 2?",
+            options: ["Demander pardon à Usbek", "Revendiquer son statut de femme libre", "Informer Usbek de sa mort", "Demander la protection d'Usbek"],
+            answer: 1,
+            explanation: "La lettre de Roxane dans le mouvement 2 vise à revendiquer son statut de femme libre, malgré les restrictions imposées par Usbek."
+        },
+        {
+            id: 'persane_q10',
+            type: 'VF',
+            question: "AFFIRMATION : L'utilisation de l'adverbe 'oui' au début de la phrase adoucit l'aveu de Roxane.",
+            answer: "Faux"
+            explanation: "L'adverbe d'affirmation oui' au début crée au contraire une impression forte et capte immédiatement l'attention du lecteur, soulignant le caractère franc et direct de l'aveu de Roxane."
+        },
+        {
+            id: 'persane_q11',
+            type: 'QCM',
+            question: "Quelle technique littéraire Roxane utilise-t-elle en enchaînant les phrases 'j\'ai trompé', 'j\'ai séduit tes eunuques', 'je me suis jouée de ta jalousie', 'j\'ai su de ton affreux sérail faire un lieu de délices' ?",
+            options: ["Elle confère un ton léger et humoristique.", "Elle accentue l'accablement d'Usbek par la révélation de la vérité.", "Elle aplanit le discours pour diminuer l'impact de l'aveu.", "Elle détourne l'attention de l'auditeur."],
+            answer: 1,
+            explanation: "L\'énumération, appuyée par le rythme ternaire et l\'allitération en [t], accentue l\'accablement d\'Usbek, puisque chaque phrase ajoute à la force de l\'aveu de Roxane, culminant dans son triomphe face à sa jalousie."
+        },
+        {
+            id: 'persane_q12',
+            type: 'QCM',
+            question: "Quel est l\'effet de l\'utilisation du champ lexical de la tromperie dans ce passage ('j\'ai trompé', 'je me suis jouée') ?",
+            options: ["Il suggère la soumission de Roxane à Usbek.", "Il conforte Usbek dans son rôle de maître.", "Il révèle l'inversion des rapports de force entre Roxane et Usbek.", "Il évoque le désir nostalgique de Roxane."],
+            answer: 1,
+            explanation: "Le champ lexical de la tromperie montre que Roxane a renversé les rapports de force en s\'appropriant sa liberté et en se jouant de l\'autorité d\'Usbek."
+        },
+        {
+            id: 'persane_q13',
+            type: 'QCM',
+            question: "Quel est l'effet de l'antithèse entre 'affreux sérail' et 'lieu de délices et de plaisir' ?",
+            options: ["Elle souligne la beauté constante de l\'environnement.", "Elle met en évidence l\'ingéniosité de Roxane face à la tyrannie d\'Usbek.", "Elle prouve la richesse du sérail d'Usbek.", "Elle atténue le conflit entre Usbek et Roxane."],
+            answer: 1,
+            explanation: "L\'antithèse entre 'affreux sérail' et 'lieu de délices et de plaisir' critique la tyrannie d\'Usbek. Roxane utilise cet opposé pour montrer comment elle a transformé un lieu oppressant en espace agréable, affichant sa résistance et ingéniosité."
+        },
+        {
+        id: 'persane_q14',
+        type: 'VF',
+        question: "AFFIRMATION : Dans le passage 'Je vais mourir ; le poison va couler dans mes veines', l'utilisation du présent dramatise la lettre par son effet d'inéluctabilité.",
+        answer: 'Vrai',
+        explanation: "Le présent à valeur de futur proche confère au début de ce passage une tonalité tragique. Le destin de Roxane semble inéluctable, ajoutant une dimension dramatique à la lettre."
+    },
+    {
+        id: 'persane_q15',
+        type: 'QCM',
+        question: "Quel est l\'effet de la question rhétorique 'que ferais-je ici, puisque le seul homme qui me retenait à la vie n\'est plus' ?",
+        options: ["Elle évoque une décision à venir pour Roxane.", "Elle souligne le désespoir et l\'absence de raison de vivre de Roxane.", "Elle indique une incertitude sur la mort de son amant.", "Elle décrit les projets futurs de Roxane."],
+        answer: 1,
+        explanation: "La question rhétorique souligne le désespoir de Roxane et l\'absence de raison de vivre suite à la mort de son amant. Elle se place ainsi dans le sillage des tragiques héros et héroïnes, renforçant l\'aspect tragique de la situation."
+    }
+    {
+        id: 'persane_q16',
+        type: 'VF',
+        question: "AFFIRMATION : Dans le passage 'Je vais mourir ; le poison va couler dans mes veines', l'utilisation du présent dramatise la lettre par son effet d'inéluctabilité.",
+        answer: 'Vrai',
+        explanation: "Le présent à valeur de futur proche confère au début de ce passage une tonalité tragique. Le destin de Roxane semble inéluctable, ajoutant une dimension dramatique à la lettre."
+    },
+    {
+        id: 'persane_q17',
+        type: 'QCM',
+        question: "A quelle histoire fait penser la question rhétorique 'que ferais-je ici, puisque le seul homme qui me retenait à la vie n\'est plus' ?",
+        options: ["Bonnie & Clyde", "La belle et la Bête", "Romeo & Juliette"],
+        answer: 2,
+        explanation: "Roméo & Juliette. La question rhétorique souligne le désespoir de Roxane et l\'absence de raison de vivre suite à la mort de son amant. Elle se place ainsi dans le sillage des tragiques héros et héroïnes, renforçant l\'aspect tragique de la situation."
+    }
+    {
+        id: 'persane_q18',
+        type: 'VF',
+        question: "AFFIRMATION : Dans le passage 'Je meurs; mais mon ombre s'envole bien accompagnée', le présent d'énonciation accentue le caractère tragique de la mort de Roxane.",
+        answer: 'Vrai',
+        explanation: "Le présent d'énonciation succède au présent à valeur de futur proche, rendant la mort de Roxane réelle et immédiate. La métaphore de l'ombre accentue le caractère paisible de cette mort, apportant un réconfort dans son acte final de vengeance."
+    },
+    {
+        id: 'persane_q19',
+        type: 'QCM',
+        question: "Quel est l'effet de la métaphore de l'ombre dans 'mon ombre s'envole bien accompagnée' ?",
+        options: ["Elle suggère la confusion de Roxane sur sa mort.", "Elle exprime la paix de Roxane face à la mort qui va retrouver son amont.", "Elle induit un paradoxe temporel.", "Elle démontre le chaos intérieur de Roxane."],
+        answer: 1,
+        explanation: "La métaphore de l'ombre évoque une mort paisible, suggérant que Roxane trouve du réconfort dans sa vengeance et la compagnie de son amant dans l'au-delà."
+    },
+    {
+         id: 'persane_q20',
+         type: 'QCM_EXTRAIT',
+         question: "Dans la citations ci-dessous qui désigne les periphrases 'gardiens sacrilèges' & 'le plus beau sang du monde'",
+         extract: "Je meurs; mais mon ombre s\'envole bien accompagnée: je viens d'envoyer devant moi ces <b>gardiens sacrilèges</b>,qui ont répandu le <b>plus beau sang du monde</b>.",
+         options: ["Les meurtriers & son amant", "le diable & les anges"],
+         answer: 0,
+         explanation: "Terme pejoratif 'gardiens sacrilèges' = les meurtriers & Terme mélioratif 'plus beau sang du monde' = son amant"
+    },
+    {
+        id: 'persane_q21',
+        type: 'QCM',
+        question: "Comment la description des gardiens 'sacrilèges' contribue-t-elle à l'accusation contre Usbek ?",
+        options: ["Elle justifie leurs actions.", "Elle atténue la culpabilité d'Usbek.", "Elle renforce leur responsabilité et la critique envers Usbek.", "Elle glorifie leurs actions."],
+        answer: 2,
+        explanation: "Le terme 'sacrilèges' est péjoratif, soulignant l'horreur de leurs actes commandités par Usbek, ce qui rend ses crimes d'autant plus condamnables."
+    },
+    {
+         id: 'persane_q22',
+         type: 'QCM',
+         question: "Dans le 1er mouvement pour renverser le pouvoir de force Roxane fait plusieurs aveux",
+         options: ["Elle a trompé Usbek", "Elle a eu un enfant", "Elle a tué les gardiens sacrilège", "Elle s'est donnée la mort"],
+         answer: [0, 2, 3]
+         explanation: "En avouant elle se venge d'Usbek et de sa tyranie"
+     },
+    {
+        id: 'persane_q23',
+        type: 'QCM_EXTRAIT',
+        question: "Que permettent les 2 questions rhétoriques dans ce passage?",
+        extract: "Comment as-tu pensé ....que je ne fusse dans le monde que pour adorer tes caprices ? <br>que, pendant que ...eusses le droit d'affliger tous mes désirs ?",
+        options: ["Elles soulignent l'accord harmonieux entre Roxane et Usbek", "Elles ont une valeur polémique pour permettre a Roxane de s'opposer à Usbek"],
+        answer: 1,
+        explanation: "<b>Les questions rhétoriques</b> ont une valeur polémique ; elles permettent à Roxane de s'opposer à Usbek, de l'accuser de manière virulente et d'exprimer son indignation."
+    },
+    {
+        id: 'persane_q24',
+        type: 'QCM_EXTRAIT',
+        question: "Comment les pronoms personnels 'je' et 'tu' sont-ils utilisés dans ce passage ?",
+        extract: "Comment as-tu pensé que <b>je</b> fusse assez crédule, pour m\'imaginer que <b>je</b> ne fusse dans le monde que pour adorer tes caprices ? que, pendant que <b>tu</b> te permets tout, <b>tu</b> eusses le droit d\'affliger tous mes désirs ?",
+        options: ["Pour exprimer une harmonie conjugale.", "Pour montrer l\'égalité des sexes.", "Pour révéler l\'hypocrisie et la tyrannie d'Usbek.", "Pour introduire un discours indirect."],
+        answer: 2,
+        explanation: "Les pronoms personnels <b>'je'</b> et <b>'tu'</b> s’opposent, montrant l'hypocrisie et la tyrannie d'Usbek. Roxane utilise ce jeu des pronoms pour dénoncer l’inégalité entre l’homme et la femme et renverser ce rapport de force."
+    },
+    {
+        id: 'persane_q25',
+        type: 'QCM_EXTRAIT',
+        question: "Que montre le 'Non' en réponses aux 2 questions réthoriques ?",
+        extract: "Comment as-tu pensé ....que je ne fusse dans le monde que pour adorer tes caprices ? <br>que, pendant que ...eusses le droit d\'affliger tous mes désirs ? <b>Non</b>",
+        options: ["La maladresse de Roxane", "Le bonheur de Roxanne", "La révolte de Roxane"],
+        answer: 2,
+        explanation: "Après le oui du début ce NON en réponse aux questions réthoriques symbolise la révolte de Roxane."
+    },
+    {
+        id: 'persane_q26',
+        type: 'QCM_EXTRAIT',
+        question: "L\'utilisation du champ lexical de l\''ESCLAVAGE', de la 'LIBERTE' et l\'utilisation de la conjonction 'MAIS' permette  :",
+        extract: "Non : j\'ai pu vivre dans la <b>servitude</b>; toujours été <u>mais</u> j\'ai libre: j\'ai réformé tes lois sur celles de la nature; et mon esprit s\'est toujours tenu dans l\'<b>indépendance<b>.",
+        options: ["D\'opposer sa servitude apparente à sa véritable liberté", "De montrer son indécision"],
+        answer: 0,
+        explanation: "Avec la conjonction « mais », elle lui oppose sa servitude apparente à sa véritable liberté. D'ailleurs elle dit ' j\'ai réformé tes lois sur celles de la nature' "
+    },
+    {
+        id: 'persane_q27',
+        type: 'QCM_EXTRAIT',
+        question: "Quand Roxane revendique que la liberté est une loi naturelle, à qui peut-on la comparer ?",
+        extract: "Non : j\'ai pu vivre dans la <b>servitude</b>; toujours été <u>mais</u> j\'ai libre: j\'ai réformé <b>tes lois sur celles de la nature</b>; et mon esprit s\'est toujours tenu dans l\'<b>indépendance<b>.",
+        options: ["Olyme de Gouge", "Ponge", "Baudelaire"],
+        answer: 0,
+        explanation: "Roxane (comme Olympe de Gouges) revendique que la liberté est une loi naturelle. Alors que les lois d\’Usbek sont contre-natures, ce qu\’elle a corrigé.  "
+    },
+    {
+        id: 'persane_q28',
+        type: 'QCM_EXTRAIT',
+        question: "Quels sont les effets de l\'anaphore (repetition) <b>'de ce que'</b> dans les propos de Roxane ?",
+        extract: "Tu devrais me rendre grâces... <b>de ce que</b> je me suis abaissée... paraître fidèle ; <b>de ce que</b> j\'ai lâchement gardé dans mon cœur ...<b>de ce que</b> j\'ai profané la vertu en souffrant ...",
+        options: ["ll renforce la continuité de son amour", "Elle accentue l\'énumération des sacrifices faits pour Usbek", "Elle trie des actions indépendantes", "Elle réduit l\'impact émotionnel"],
+        answer: 1,
+        explanation: "L'anaphore 'de ce que' crée une cadence insistante qui met en avant l\'énumération des sacrifices que Roxane a fait pour Usbek, soulignant leur poids."
+    },
+    {
+        id: 'persane_q29',
+        type: 'QCM_EXTRAIT',
+        question: "Quel sentiment principal l'utilisation de termes péjoratifs évoquent-ils dans le discours de Roxane ?",
+        extract: "Tu devrais me rendre grâces encore du <b>sacrifice</b> que je t\'ai fait ; de ce que je me suis <b>abaissée</b> jusqu\'à te paraître fidèle ; de ce que j\'ai lâchement gardé dans mon cœur ce que j`\'aurais dû faire paraître à toute la terre ; enfin de ce que j'ai <b>profané</b> la vertu en souffrant qu'on appelât de ce nom ma soumission à tes fantaisies",
+        options: ["Regret et accusation d'Usbek", "Admiration de son sacrifice", "Joie de la soumission", "Indifférence envers son passé"],
+        answer: 0,
+        explanation: "Les termes péjoratifs reflètent le regret et l'accusation envers Usbek, exprimant ses sentiments amers quant à ses sacrifices."
+    },
+    {
+        id: 'persane_q30',
+        type: 'QCM',
+        question: "Comment le champ lexical du sacré 'sacrifice .... j\'ai profané la vertu' est-il utilisé pour exprimer la souffrance de Roxane ?",
+        options: ["Il exalte la pureté de sa soumission", "Il banalise ses actions", "Il transforme ses sacrifices en actes de profanation", "Il sanctifie Usbek"],
+        answer: 2,
+        explanation: "Le champ lexical du sacré montre que ses sacrifices sont comme une profanation, exprimant ainsi la dégradation et la souffrance de Roxane."
+    }
+    {
+        id: 'persane_q31',
+        type: 'QCM_EXTRAIT',
+        question: "Dans cet extrait qu'est ce qui montre que Roxane a du regret par rapport à ce qu'elle a fait ?",
+        extract: "Je me suis <b>abaissée</b> jusqu\'à te paraître fidèle; de ce que j\'ai <b>lâchement</b> gardé dans mon coeur ce que j\'<b>aurais dû</b> faire paraître à toute la terre...",
+        options: ["Le conditionnel passé", "le présent", "Le champ lexical du sacré", "L'allitération en f"],
+        answer:[0, 2],
+        explanation: "Les propositions sont donc accusatrices, mais  sonnent aussi comme des regrets comme le prouvent les termes péjoratifs qui désignent son attitude et l’usage du conditionnel passé."
+    },
+    {
+        id: 'persane_q32',
+        type: 'QCM_EXTRAIT',
+        question: "Comment s'appelle la figure de style qui consiste à répéter un mot sous des forme grammaticales différentes ?",
+        extract: "Tu étais étonné de ne point <b>trouver</b> en moi les transports de l\'amour : si tu m\'avais bien connue, tu y <b>aurais trouvé</b> toute la violence de la haine. Mais tu as eu longtemps l\'avantage de <b>croire</b> qu\'un coeur comme le mien t\'était soumis. Nous étions tous deux heureux; tu (A) me (B) <b>croyais</b> trompée, et je (B) te (A) trompais.",
+        options: ["Polysémie", "Polyacétate", "Polygone", "Polyptote"],
+        answer: 3,
+        explanation: "Polyptote (poly = plusieurs) Par la répétition des verbes 'tromper' et 'croire' elle montre l'écart qu'il y avait entre ce qu'il croyait et la réalité."
+    },
+    {
+        id: 'persane_q33',
+        type: 'VF',
+        question: "AFFIRMATION : Roxane est sincère lorsqu\'elle dit 'Nous étions tous deux heureux'.",
+        answer: 'Faux',
+        explanation: "Faux c'est de l'ironie. Dans ce passage, avec ironie  elle oppose à l’amour qu’il pensait trouver en elle toute la colère qu’elle ressent à son égard. "
+    },
+    {
+        id: 'persane_q34',
+        type: 'QCM_EXTRAIT',
+        question: "Pourquoi a-t-on ici une antithèse et une hyperbole (exagération)?",
+        extract: "Tu étais étonné de ne point trouver en moi les <b>transports de l\'amour</b> : si tu m\'avais bien connue, tu y aurais trouvé <b>toute la violence de la haine</b>... Tu (A) me (B) <b>croyais</b> trompée, et je (B) te (A) trompais.",
+        options: ["Antithèse car elle oppose l\’amour qu\’il pensait trouver à la colère qu\’elle ressent à son égard ", "Hyperbole car elle exagere le sentiment de haine", "Hyperbole car elle exagere le sentiment de l'amour"],
+        answer: [0, 1],
+        explanation: "Avec l\'antithèse et l\'hyperbole, elle oppose avec ironie l\’amour qu\’il pensait trouver en elle toute la colère qu\’elle ressent à son égard."
+    },
+    {
+        id: 'persane_q35',
+        type: 'QCM_EXTRAIT',
+        question: "Comment s\'appelle la figure de style qui dispose au moins 2 éléments en miroir dans une phrase ?",
+        extract: "... <b>Tu</b> (A) <b>me</b> (B) croyais trompée, et <b>je</b> (B) <b>te</b> (A) trompais.",
+        options: ["Antithèse", "Hyperbole", "Chiasme"],
+        answer: 2,
+        explanation: "Le chiasme des pronoms montre encore l\’aveuglement d’Usbek et de nouveau, renverse les rapports de force : alors qu\’il croyait dominer la situation, c\’est elle qui l\’a dominée. "
+    },
+    {
+        id: 'persane_q36',
+        type: 'QCM_EXTRAIT',
+        question: "Quels sont les verbes en polyotote dan scette phrase ?",
+        extract: "Tu étais étonné de ne point <b>trouver</b> en moi les transports de l\'amour : si tu m\'avais bien connue, tu y <b>aurais trouvé</b> toute la violence de la haine. Mais tu as eu longtemps l\'avantage de <b>croire</b> qu\'un coeur comme le mien t\'était soumis. Nous étions tous deux heureux; tu (A) me (B) <b>croyais trompée</b>, et je (B) te (A) <b>trompais</b>.",
+        options: ["Etre", "Trouver", "Avoir", "Croire", "Tromper"],
+        answer: [1, 3, 4],
+        explanation: "Polyptote (poly = plusieurs) Par la répétition des verbes 'tromper', 'croire', 'trouver' elle montre l\'écart qu\'il y avait entre ce qu\'il croyait et la réalité."
+    },
+    {
+        id: 'persane_q37',
+        type: 'QCM_EXTRAIT',
+        question: "Que montre encore une fois la question réthorique de cet extrait ?",
+        extract: "Ce langage, sans doute, te paraît nouveau. <b>Serait-il possible qu\'après t'avoir accablé de douleurs, je te forçasse encore d\'admirer mon courage?</b>",
+        options: ["Renverse le rapport de force", "Remet les idées en place", "Apporte de la légèreté"],
+        answer: 0,
+        explanation: "Cette question rhétorique montre encore une fois qu’elle <b>renverse les rapports de force</b> : alors qu\’il la pensait soumise à son pouvoir, <b>c\’est elle qui le soumet</b> à admirer son courage. Elle est d\’ailleurs en position de <b>« sujet »</b< dans la phrase alors que lui, avec le  tu », est en fonction de <b>COD</b>. Syntaxiquement, il lui est là aussi soumis. Cette question annonce et prépare le coup de grâce final. Elle s\’attribue également la qualité de « courage » qui est une qualité traditionnellement masculine pour renverser les rapports de force. En se tuant comme une héroïne tragique : elle se libère définitivement de lui et lui vole la possibilité de se venger contre elle."
+    },
+    {
+        id: 'persane_q38',
+        type: 'QCM_EXTRAIT',
+        question: "Comment s\'appelle la figure de style consistant à répéter une consonne plusieurs fois et à quoi sert-elle ici ?",
+        extract: "<b>m</b>ais c\'en est fait, le poison force <b>m</b>'abandonne  <b>m</b>e consu<b>m</b>e, <b>m</b>a force <b>m</b>'abandonne; la plu<b>m</b>e <b>m</b>e tombe des <b>m</b>ains ; je sens affaiblir jusqu\'à <b>m</b>a haine ; je <b>m</b>e <b>m</b>eurs.",
+        options: ["Assonance qui sert à ajouter du rythme", "Allitération en 'm' douce pour imiter le silence qui gagne Roxane qui meurt"],
+        answer: 0,
+        explanation: "L\’allitération en [m] est douce et imite le silence qui gagne Roxane alors qu\’elle est en train de mourir. "
+    },
+     {
+        id: 'persane_q39',
+        type: 'QCM_EXTRAIT',
+        question: "Pourquoi le reste de cette phrase est composé de propositions juxtaposées courtes et simples ?",
+        extract: "mais c\'en est fait<b>,</b> le poison force m'abandonne me consume<b>,</b> ma force m'abandonne<b>;</b> la plume me tombe des mains <b>;</b> je sens affaiblir jusqu\'à ma haine <b>;</b> je me meurs<b>.</b>",
+        options: ["Pour montrer la rapidité de la scène", "Pour mimer la difficulté de Roxane pour écrire"],
+        answer: 1,
+        explanation: "Le reste de la phrase est composé de propositions juxtaposées courtes et simples comme pour mimer la difficulté qu\’a Roxane pour écrire. "
+    },
+    {
+        id: 'persane_q40',
+        type: 'QCM_EXTRAIT',
+        question: "Quelles sont les figures de style que l\'on retrouve dans cette phrase ?",
+        extract: "mais c\'en est fait<b>,</b> le poison force m'abandonne me consume<b>,</b> ma force m'abandonne<b>;</b> la plume me tombe des mains <b>;</b> je sens affaiblir jusqu\'à ma haine <b>;</b> je me meurs<b>.</b>",
+        options: ["Rythme ternaire", "Assonance", "Allitération", "Gradation", "Verbe pronominal"],
+        answer: [0, 2, 3, 4], 
+        explanation: "Le reste de la phrase est composé de propositions juxtaposées courtes et simples comme pour mimer la difficulté qu\’a Roxane pour écrire. "
+    },
+    {
+        id: 'persane_q41',
+        type: 'QCM_EXTRAIT',
+        question: "Qu'annonce la conjonction de coordination 'Mais' ?",
+        extract: "<u>mais</u> c\'en est fait<b>,</b> le poison force m'abandonne me consume<b>,</b> ma force m'abandonne<b>;</b> la plume me tombe des mains <b>;</b> je sens affaiblir jusqu\'à ma haine <b>;</b> je me meurs<b>.</b>",
+        options: ["Annonce la fin de la lettre", "Annonce qu'elle est obligée de conclure car la mort la gagne", "Annonce le recommencement", "Annonce la défaite"],
+        answer: [0, 1], 
+        explanation: "La conjonction de coordination « mais » annonce la fin de la lettre : elle est obligée de conclure à cause de la mort qui la gagne. Cette mort est à la fois progressive et rapide. Le reste de la phrase est composé de propositions juxtaposées courtes et simples comme pour mimer la difficulté qu\’a Roxane pour écrire. "
+    },
+    {
+        id: 'persane_q41',
+        type: 'QCM_EXTRAIT',
+        question: "A la fin du texte, l'utilisation du verbe pronominal est intéressante pourquoi?",
+        extract: "Je me meurs",
+        options: ["Le je : me est à la fois sujet et COD", "Elle subit son destin fatal  / mais elle en est aussi à l'origine", "Meuh font les vaches", "Par la mort elle se libère de son état de soumision"],
+        answer: [0, 1, 3],
+        explanation: "L’usage final du verbe « mourir » sous sa forme pronominale est intéressante car le « je » est à la fois sujet et COD ici. Elle subit son destin fatal, tragique, mais elle en est aussi à l\’origine. Par la mort, elle se libère donc définitivement de son état de soumission et fait acte de liberté. "
+    },
+   
+   
+    ]
+}
+
 /*{
     id: 'test-multiple',
     title: 'Modele',
