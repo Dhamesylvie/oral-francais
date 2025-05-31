@@ -1521,7 +1521,7 @@ const textsData = [
             extract: "PERDICAN. Adieu, Camille, retourne à ton couvent, ...réponds ce que je vais te dire : <span style="background-color: #c9daf8;">Tous</span> <u>les hommes sont</u> <span style="background-color: #f4cccc;">menteurs, inconstants, faux, bavards, hypocrites, orgueilleux ou lâches, méprisables et sensuels</span> ; <span style="background-color: #c9daf8;"><u>toutes</span> les femmes sont</> <span style="background-color: #f4cccc;">perfides, artificieuses, vaniteuses, curieuses et dépravées</span> ; le monde n\'est qu\'un égout sans fond où les phoques les plus informes <span style="background-color: #a2c4c9;">rampent</span> et <span style="background-color: #a2c4c9;">se tordent</span> sur des montagnes de fange",
             options: ["Utilisation du pronom indéfini tous", "Enumération d'adjectifs péjoratifs", "Parallélisme de construction", "Utlisation du présent de vérité générale"],
             answer: [1,2,3],
-            explanation: "Il dresse un portrait peu valorisant de la condition humaine. Il se lance dans un discours au présent de vérité générale et emploie le <span style="background-color: #c9daf8;">pronom indéfini "tous"</span> généralisant dans un parallélisme de construction entre les hommes et les femmes. Il crée une sorte d\’égalité entre les deux sexes. Camille a une image peu positive des hommes, Perdican ne la contredit pas, mais fait un portrait négatif des 2 sexes avec une <span style="background-color: #f4cccc;">énumération d\'adjectifs péjoratifs</span>. Les défauts sont propres à l\’être humain, peu importe le sexe.   "
+            explanation: "Il dresse un portrait peu valorisant de la condition humaine. Il se lance dans un discours au présent de vérité générale et emploie le <span style="background-color: #c9daf8;">pronom indéfini "tous"</span> généralisant dans un parallélisme de construction entre les hommes et les femmes. Il crée une sorte d\’égalité entre les deux sexes. Camille a une image peu positive des hommes, Perdican ne la contredit pas, mais fait un portrait négatif des 2 sexes avec une <span style="background-color: #f4cccc;">énumération d\'adjectifs péjoratifs</span>. Les défauts sont propres à l\’être humain, peu importe le sexe."
         },
         {
             id: 'badine_q24',
@@ -1530,7 +1530,7 @@ const textsData = [
             extract: "...le monde n\'est qu\'un <span style="background-color: #f4cccc;">égout sans fond</span> où les phoques <span style="background-color: #c9daf8;">les plus informes</span> <span style="background-color: #a2c4c9;">rampent</span> et <span style="background-color: #a2c4c9;">se tordent</span> sur <span style="background-color: #b6d7a8;">des montagnes de fange</span>",
             options: ["Hyperbole : exagerer pour mieux marquer les esprits", "Présentatifs", "Conjonction de coordination à valeur d'opposition, "Parallélisme de construction", "Exagération", "Antithèse"],
             answer: [1,2,5],
-            explanation: ". "
+            explanation: "Il compare le monde à un égout à travers la métaphore et l\’hyperbole « des montagnes de fange ».  On note aussi le superlatif péjoratif et les verbes d\’action peu flatteurs. Ce pessimisme n\’est pas sans rappeler le « Mal du siècle » romantique et au sentiment de désespérance qui disent le dégoût de vivre. "
         },
         {
             id: 'badine_q26',
@@ -1562,7 +1562,7 @@ const textsData = [
             type: 'QCM_EXTRAIT',
             question: "Que veut faire Perdican dans cet extrait ?",
             extract: "On est souvent trompé en amour, souvent blessé et souvent malheureux ; mais on aime, et quand on est sur le bord de sa tombe, on se retourne pour regarder en arrière, et on se dit : J'ai souffert souvent, je me suis trompé quelquefois, mais j'ai aimé.",
-            options: ["Tromper Camille", "Obliger Camille à le croire", "Convaincre Camille",]
+            options: ["Tromper Camille", "Obliger Camille à le croire", "Convaincre Camille"],
             answer: 2,
             explanation: "Il continue d\’expliquer sa vision de l`\’amour avec le présent de vérité générale pour en persuader Camille."
         },
@@ -1571,7 +1571,7 @@ const textsData = [
             type: 'QCM_EXTRAIT',
             question: "Comment est décrit l\'amour avant la conjonction de coordination 'mais'?",
             extract: "On est souvent trompé en amour, souvent blessé et souvent malheureux ; mais on aime, et quand on est sur le bord de sa tombe, on se retourne pour regarder en arrière, et on se dit : J\'ai souffert souvent, je me suis trompé quelquefois, mais j\'ai aimé.",
-            options: ["De façon négative avec un champ lexical de la soufrance", "De facon positive avec un champ lexical du bonheur",]
+            options: ["De façon négative avec un champ lexical de la soufrance", "De facon positive avec un champ lexical du bonheur"],
             answer: 0,
             explanation: "Le rythme ternaire, la répétition de «souvent» et le champ lexical de la souffrance peint l\’amour de façon négative, mais la conjonction de coordination « mais » vient renverser tout cela. L\’amour vaut toutes les souffrances du monde."
         },
@@ -1595,7 +1595,7 @@ const textsData = [
             extract: "C\'est <span style="background-color: #c9daf8;">moi</span> qui ai vécu, et non pas <span style="background-color: #c9daf8;">un être factice</span> créé par mon orgueil et mon ennui.",
             options: ["Metaphore", "Antithèse", "Parallélisme"],
             answer: 1,
-            explanation: "Antithèse entre le pronom "moi" et le GN "être factice" scinde les individus en deux catégories : ceux qui acceptent de vivre leur passion et ceux la renient, mais qui ne sont pas fidèles à eux mêmes. "
+            explanation: "Antithèse entre le pronom "moi" et le GN "être factice" scinde les individus en deux catégories : ceux qui acceptent de vivre leur passion et ceux la renient, mais qui ne sont pas fidèles à eux mêmes."
         },
         {
             id: 'badine_q33',
