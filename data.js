@@ -4,11 +4,11 @@ const textsData = [
         title: 'Le Pain',
         author: 'Francis Ponge',
         questions: [
-             { id: 'pain_q1', type: 'QCM', question: 'Quel est le recueil dans lequel figure le poème "Le Pain" ?', options: ["Fleurs et Ronces", "Les Armes miraculeuses", "Le Parti pris des choses", "La Rage de l'expression"], answer: 2, explanation: '"Le Pain" se trouve dans le recueil "Le Parti pris des choses", publié en 1942.' },
+             { id: 'pain_q1', type: 'QCM', question: 'Quel est le recueil dans lequel figure le poème "Le Pain" ?', options: ["Fleurs et Ronces", "Les Armes miraculeuses", "Le Parti pris des choses", "La Rage de l\'expression"], answer: 2, explanation: '"Le Pain" se trouve dans le recueil "Le Parti pris des choses", publié en 1942.' },
              { id: 'pain_q2', type: 'VF', question: 'Le poème "Le Pain" est écrit en vers rimés.', answer: 'Faux', explanation: 'Le poème est écrit en prose poétique.' },
              { id: 'pain_q3', type: 'QCM', question: 'La fin du poème, "Mais brisons-la !", est une invitation à :', options: ["Respecter le pain comme un objet sacré.", "Ne plus jamais gaspiller de pain.", "Manger le pain et cesser de l\'idéaliser.", "Créer des œuvres d\'art à partir du pain."], answer: 2, explanation: 'L\'impératif final invite à revenir à la fonction première du pain : être mangé, mettant fin à l\'analyse et l\'idéalisation.' },
              { id: 'pain_q4', type: 'VF', question: 'Ponge idéalise le pain et en fait un symbole de perfection.', answer: 'Faux', explanation: 'Ponge cherche à décrire le pain objectivement, dans sa matérialité, avec ses qualités et ses défauts perçus ("mollesse ignoble"), sans idéalisation excessive.' },
-             { id: 'pain_q5', type: 'QCM_EXTRAIT', question: 'Dans l\'extrait ci-dessous, quelle figure de style est principalement utilisée pour décrire la surface du pain ?', extract: "La surface du pain est merveilleuse d\'abord à cause de cette impression quasi panoramique qu'elle donne : comme si l\'on avait à sa disposition sous la main les Alpes, le Taurus ou la Cordillère des Andes.", options: ["Une métaphore", "Une comparaison", "Une personnification", "Une antithèse"], answer: 1, explanation: 'L\'outil "comme si" introduit une comparaison explicite entre la surface du pain et des chaînes de montagnes.' },
+             { id: 'pain_q5', type: 'QCM_EXTRAIT', question: 'Dans l\'extrait ci-dessous, quelle figure de style est principalement utilisée pour décrire la surface du pain ?', extract: "La surface du pain est merveilleuse d\'abord à cause de cette impression quasi panoramique qu\'elle donne : comme si l\'on avait à sa disposition sous la main les Alpes, le Taurus ou la Cordillère des Andes.", options: ["Une métaphore", "Une comparaison", "Une personnification", "Une antithèse"], answer: 1, explanation: 'L\'outil "comme si" introduit une comparaison explicite entre la surface du pain et des chaînes de montagnes.' },
              { id: 'pain_q6', type: 'VF', question: 'L\'expression "mollesse ignoble sous-jacente" décrit la mie du pain de manière péjorative.', answer: 'Vrai', explanation: 'L\'adjectif "ignoble" qualifie péjorativement la "mollesse" de la mie, contrastant avec l\'éloge préalable de la croûte.' },
              { id: 'pain_q7', type: 'QCM', question: 'En quelle année a été publié le recueil "Le Parti pris des choses" ?', options: ["1942", "1742"], answer: 0, explanation: 'Le recueil "Le Parti pris des choses" a été publié en 1942.' },
              { id: 'pain_q8', type: 'QCM', question: 'Le titre du poème "Le Pain" fait penser à :', options: ["Une recette de cuisine", "Un article de dictionnaire"], answer: 1, explanation: 'Le titre évoque un article de dictionnaire : l\'auteur en donne une définition et une description organisée, commençant par la surface (la croûte).' },
@@ -38,7 +38,7 @@ const textsData = [
              { id: 'pain_q32', type: 'VF', question: 'AFFIRMATION : L\'expression "Four stellaire" est une personnification.', answer: 'Faux', explanation: 'C\'est une métaphore. Le four est comparé à un espace stellaire (étoilé), associant la création du pain à la création de l\'univers. Il n\'y a pas d\'action humaine attribuée au four.' },
              { id: 'pain_q33', type: 'VF', question: 'AFFIRMATION : Dans le dernier paragraphe, la conjonction "mais" introduit une idée de contradiction.', answer: 'Faux', explanation: 'Le "mais" ici marque une rupture, un changement de propos, une conclusion. Il ne contredit pas directement ce qui précède mais y met fin pour passer à l\'action.' },
              { id: 'pain_q34', type: 'VF', question: 'AFFIRMATION : La phrase "car le pain doit être dans notre bouche moins objet de respect que de consommation" utilise le participe passé.', answer: 'Faux', explanation: 'Le verbe principal est "doit être" (verbe devoir au présent + infinitif être). Il n\'y a pas de participe passé employé comme temps verbal principal ici. Le présent a une valeur de vérité générale ou de morale.' },
-             { id: 'pain_q35', type: 'QCM_EXTRAIT', question: 'Quel est l\'effet principal de la comparaison dans cet extrait ?', extract: "La surface du pain est merveilleuse d\'abord à cause de cette impression quasi panoramique qu'elle donne : comme si l\'on avait à sa disposition sous la main les Alpes, le Taurus ou la Cordillère des Andes.", options: ["Diminuer l\'importance du pain.", "Rendre le pain plus concret et réaliste.", "Exagérer les dimensions et l\'aspect du pain, le rendant grandiose.", "Créer une atmosphère mystérieuse."], answer: 2, explanation: 'En comparant la surface du pain à des montagnes célèbres, Ponge amplifie son importance et transforme un objet banal en un paysage impressionnant.' },
+             { id: 'pain_q35', type: 'QCM_EXTRAIT', question: 'Quel est l\'effet principal de la comparaison dans cet extrait ?', extract: "La surface du pain est merveilleuse d\'abord à cause de cette impression quasi panoramique qu\'elle donne : comme si l\'on avait à sa disposition sous la main les Alpes, le Taurus ou la Cordillère des Andes.", options: ["Diminuer l\'importance du pain.", "Rendre le pain plus concret et réaliste.", "Exagérer les dimensions et l\'aspect du pain, le rendant grandiose.", "Créer une atmosphère mystérieuse."], answer: 2, explanation: 'En comparant la surface du pain à des montagnes célèbres, Ponge amplifie son importance et transforme un objet banal en un paysage impressionnant.' },
              { id: 'pain_q36', type: 'QCM_EXTRAIT', question: 'L\'utilisation du verbe "éructer" pour décrire la pâte en train de cuire est un exemple de :', extract: "Ainsi donc une masse amorphe en train d\'éructer fut glissée pour nous dans le four stellaire...", options: ["Une litote", "Une métaphore", "Une personnification", "Une allégorie"], answer: 2, explanation: 'La personnification attribue une action humaine (éructer) à la pâte non humaine, la rendant vivante.' },
              { id: 'pain_q37', type: 'QCM_EXTRAIT', question: 'Quel est l\'objectif principal de cette personnification ("éructer") ?', extract: "Ainsi donc une masse amorphe en train d\'éructer fut glissée pour nous dans le four stellaire...", options: ["Rendre le pain plus effrayant.", "Souligner le caractère vivant et dynamique de la cuisson.", "Simplifier la description.", "Ironiser sur la banalité du pain."], answer: 1, explanation: 'Le verbe "éructer" anime la pâte, soulignant la transformation dynamique et presque organique de la cuisson.' },
              { id: 'pain_q38', type: 'QCM_EXTRAIT', question: 'Que désignent "la masse amorphe en train d’éructer" et quelles figures de style trouve-t-on principalement ?', extract: "Ainsi donc une masse amorphe en train d\'éructer fut glissée pour nous dans le four stellaire...", options: ["Métaphore / Personnification / Litote", "Métaphore / Allitération en \"r\" / Personnification"], answer: 1, explanation: 'C\'est une métaphore (désigne la pâte), l\'allitération en [r] peut mimer le son de la cuisson, et "éructer" est une personnification.' },
@@ -89,14 +89,14 @@ const textsData = [
             { id: 'odg_preambule_q25', type: 'VF', question: 'En affirmant que la déclaration des droits des femmes "tournera toujours au maintien de la Constitution", ODG cherche à rassurer les députés hommes.', answer: 'Vrai', explanation: 'Elle présente la reconnaissance des droits des femmes non comme une menace, mais comme une condition nécessaire à la stabilité politique, au bonheur de tous et au respect de la Constitution.' },
 
             // --- Questions basées sur des Extraits (QCM_EXTRAIT) ---
-            { id: 'odg_preambule_q26', type: 'QCM_EXTRAIT', question: 'Dans l\'extrait : "...les actes de pouvoir des femmes et ceux des hommes...", que symbolise la conjonction "et" ?', extract: "...les actes de pouvoir des femmes et ceux des hommes...", options: ["l'égalité homme/femme", "L'addition des genres ", "La beauté du moment"], answer: 0, explanation: 'Il y a peu de mentions des hommes. Ici, ils sont mentionnés pour montrer l\’égalité qui existe entre les deux sexes. "Et" symbolise cette égalité car la conjonction les met sur le même plan syntaxique.' },
+            { id: 'odg_preambule_q26', type: 'QCM_EXTRAIT', question: 'Dans l\'extrait : "...les actes de pouvoir des femmes et ceux des hommes...", que symbolise la conjonction "et" ?', extract: "...les actes de pouvoir des femmes et ceux des hommes...", options: ["l\'égalité homme/femme", "L\'addition des genres ", "La beauté du moment"], answer: 0, explanation: 'Il y a peu de mentions des hommes. Ici, ils sont mentionnés pour montrer l\’égalité qui existe entre les deux sexes. "Et" symbolise cette égalité car la conjonction les met sur le même plan syntaxique.' },
             { id: 'odg_preambule_q27', type: 'QCM_EXTRAIT', question: 'Pourquoi ODG a utilisé la périphrase : "...le sexe supérieur en beauté comme en courage dans les souffrances maternelles..." pour désigner la femme?', extract: "... le sexe supérieur en beauté comme en courage dans les souffrances maternelles ...", options: ["Pour renverser les expressions \"le beau sexe\" et \"le sexe faible\" utilisées dans la DDHC", "Pour montrer que la femme est supérieure à l\'homme"], answer: 0, explanation: 'Périphrase qui fait référence à deux expressions : "le beau sexe" et "le sexe faible". ODG reprend la première et renverse la deuxième en montrant la force des femmes.' },
             { id: 'odg_preambule_q28', type: 'QCM_EXTRAIT', question: 'Dans l\'extrait : "... Article premier. - La femme naît libre et demeure égale à l\'homme en droits. Les distinctions sociales ne peuvent être fondées que sur l\'utilité commune....", quel ton adopte ODG ?', extract: "...Article premier. - La femme naît libre et demeure égale à l\'homme en droits. Les distinctions sociales ne peuvent être fondées que sur l\'utilité commune....", options: ["Ironique", "Suspicieux", "Révérencieux", "Neutre"], answer: 0, explanation: 'Article 1 sonne comme une réécriture ironique de la DHC qui stipulait que "les Hommes nai[ssaient] libres et égaux en droits", ce qui est faux, puisque les femmes n’ont pas les mêmes droits… ' },
             { id: 'odg_preambule_q29', type: 'QCM_EXTRAIT', question: 'Dans l\'article 2 : "...Article 2.- Le but de toute association politique est la conservation des droits naturels ...", que veut faire ODG ?', extract: "...Article 2.- Le but de toute association politique est la conservation des droits naturels et imprescriptibles de la femme et de l\'homme : ces droits sont la liberté, la propriété, la sûreté, et surtout la résistance à l\'oppression...", options: ["Insiste sur la dimension naturelle (et donc indiscutable) de ces droits par l’adjectif \"naturels\" et le verbe \"naît\".", "Insiste sur la dimension environnementale (et donc indiscutable) de ces droits par l’adjectif \"naturels\" et le verbe \"naît\"."], answer: 0, explanation: 'Ces droits sont naturels et donc indiscutables.' },
             { id: 'odg_preambule_q30', type: 'QCM_EXTRAIT', question: 'Dans l\'extrait : "...la liberté, la propriété, la sûreté, et surtout la résistance à l\’oppression...", dans cette énumération ODG pour insister sur ces droits utilise 2 figures de style ?', extract: "...la liberté, la propriété, la sûreté, et surtout la résistance à l’oppression...", options: ["Allitération en [é] pour le dernier groupe de mots Assonance en [r]", "Assonance en [é] dans les trois premiers termes + allitération en [s] pour le dernier groupe de mots"], answer: 1, explanation: 'La répétition d\'une voyelle est une assonance / La répétition d\'une consonne est une allitération' },
             { id: 'odg_preambule_q31', type: 'QCM_EXTRAIT', question: 'Dans l\'énumération : "...la liberté, la propriété, la sûreté, et surtout la résistance à l\’oppression...", avec quoi résonne le dernier groupe "résistance à l\'oppression" ?', extract: "...la liberté, la propriété, la sûreté, et surtout la résistance à l’oppression...", options: ["L\'article 4 qui accuse les hommes de despotisme", "L\'article 4 qui accuse les hommes de négligence"], answer: 0, explanation: 'Despotisme = Régime politique dans lequel un seul homme gouverne de façon arbitraire et autoritaire. <br>Article 4. La liberté et la justice consistent à rendre tout ce qui appartient à autrui ; ainsi l\'exercice des droits naturels de la femme n\'a de bornes que la tyrannie perpétuelle que l\'homme lui oppose ; ces bornes doivent être réformées par les lois de la nature et de la raison.' },
             { id: 'odg_preambule_q32', type: 'QCM_EXTRAIT', question: 'Dans l\'extrait : "...considérant que l\'ignorance, l\'oubli ou le mépris des droits de la femme, sont les seules causes des malheurs publics et de la corruption des gouvernements...", quelle figure de style est marquée par la succession "l\'ignorance, l\'oubli ou le mépris" ?', extract: "...considérant que l\'ignorance, l\'oubli ou le mépris des droits de la femme, sont les seules causes des malheurs publics...", options: ["Une métaphore", "Une gradation ou une accumulation", "Une personnification", "Une antithèse"], answer: 1, explanation: 'Cette énumération de termes négatifs (ignorance, oubli, mépris) constitue une accumulation (ou une légère gradation) qui insiste sur les causes multiples et graves de l\'oppression des femmes et de ses conséquences politiques.' },
-            { id: 'odg_preambule_q33', type: 'QCM_EXTRAIT', question: 'Que signifie l\'affirmation que cette déclaration doit être "constamment présente à tous les membres du corps social" ?', extract: "...afin que cette déclaration, constamment présente à tous les membres du corps social, leur rappelle sans cesse leurs droits et leurs devoirs...", options: ["Qu'elle doit être affichée dans tous les lieux publics.", "Qu'elle doit être apprise par cœur par tous.", "Que les principes qu'elle énonce doivent être connus de tous et servir de référence permanente.", "Qu'elle doit être lue une fois par an."], answer: 2, explanation: 'ODG souhaite que les droits et devoirs (des femmes et des hommes) soient une référence constante pour tous les citoyens et pour le gouvernement, afin d\'assurer le respect des lois et la justice.' },
+            { id: 'odg_preambule_q33', type: 'QCM_EXTRAIT', question: 'Que signifie l\'affirmation que cette déclaration doit être "constamment présente à tous les membres du corps social" ?', extract: "...afin que cette déclaration, constamment présente à tous les membres du corps social, leur rappelle sans cesse leurs droits et leurs devoirs...", options: ["Qu\'elle doit être affichée dans tous les lieux publics.", "Qu\'elle doit être apprise par cœur par tous.", "Que les principes qu\'elle énonce doivent être connus de tous et servir de référence permanente.", "Qu\'elle doit être lue une fois par an."], answer: 2, explanation: 'ODG souhaite que les droits et devoirs (des femmes et des hommes) soient une référence constante pour tous les citoyens et pour le gouvernement, afin d\'assurer le respect des lois et la justice.' },
             { id: 'odg_preambule_q34', type: 'QCM_EXTRAIT', question: 'Quel est le but principal de la comparaison implicite entre les "actes du pouvoir des femmes" et "ceux du pouvoir des hommes" ?', extract: "...afin que les actes du pouvoir des femmes, et ceux du pouvoir des hommes pouvant être à chaque instant comparés avec le but de toute institution politique, en soient plus respectés...", options: ["Montrer la supériorité du pouvoir des femmes.", "Établir une compétition entre les sexes.", "Affirmer que les actions politiques des femmes doivent être évaluées selon les mêmes critères de justice et d\'utilité commune que celles des hommes.", "Suggérer que les femmes doivent avoir un pouvoir séparé."], answer: 2, explanation: 'ODG revendique que les actions politiques (réclamations, actes législatifs) émanant des femmes ou les concernant soient jugées à l\'aune des principes universels de justice et du bien commun, au même titre que celles initiées par les hommes.' },
             { id: 'odg_preambule_q35', type: 'QCM_EXTRAIT', question: 'Quelle est la fonction de la dernière partie de la phrase : "...que les réclamations des citoyennes, fondées désormais sur des principes simples et incontestables, tournent toujours au maintien de la Constitution, des bonnes mœurs, et au bonheur de tous." ?', extract: "...afin [...] que les réclamations des citoyennes [...] tournent toujours au maintien de la Constitution, des bonnes mœurs, et au bonheur de tous.", options: ["Exprimer un doute sur l\'efficacité des réclamations.", "Annoncer les articles de la déclaration qui vont suivre.", "Présenter les conséquences positives attendues de la reconnaissance des droits des femmes.", "Critiquer la Constitution existante."], answer: 2, explanation: 'Cette partie finale du Préambule expose les bénéfices collectifs attendus : la stabilité politique ("maintien de la Constitution"), l\'harmonie sociale ("bonnes mœurs") et le bien-être général ("bonheur de tous"), présentant ainsi la cause des femmes comme une cause universelle.' },
             { id: 'odg_preambule_q36', type: 'QCM', question: 'Par l\'expression "l\'Être suprême", ODG fait référence à :', options: ["Au Roi", "À Dieu (dans une perspective déiste)", "Au Peuple souverain", "À la Nature"], answer: 1, explanation: 'L\'invocation de l\'Être suprême est une référence déiste fréquente pendant la Révolution. Elle place la déclaration sous une autorité morale universelle, sans se référer à une religion spécifique.' }
@@ -125,7 +125,7 @@ const textsData = [
             { id: 'odg_postambule_q15', type: 'QCM', question: 'Qu\'est-ce que le Tocsin et à quoi fait-il référence dans ce texte ?', options: ["Le Tocsin est une cloche utilisée en temps de guerre. Utilisé ici pour parler de la raison qui se répand partout.", "Il s\'agit d\'une trompette pour appeler les femmes comme en temps de guerre.", "Il s\'agit d\'une clochette à accrocher au cou des moutons pour rappeler les troupeaux."], answer: 0, explanation: 'Le tocsin est une cloche utilisée en temps de guerre. Il s’agit ici de la cloche de la raison : ODG se place dans l’héritage des Lumières. La raison se répand partout et la femme doit en profiter pour faire valoir ses droits.' },
             { id: 'odg_postambule_q16', type: 'QCM', question: 'Pourquoi ODG utilise la <b>Métaphore</b> du Tocsin (cloche utilisée en temps de guerre) pour désigner la raison?', options: ["Avec cette idée de cloche de la raison ODG se place dans l’héritage des Lumières.", "Avec cette idée de cloche de la raison ODG se place dans l\'église."], answer: 0, explanation: 'Il s’agit ici de la cloche de la raison : ODG se place dans l’héritage des Lumières. La raison se répand partout et la femme doit en profiter pour faire valoir ses droits.' },
             { id: 'odg_postambule_q17', type: 'QCM', question: '"Le flambeau de la vérité", de quelle figure de style s\'agit-il ?', options: ["Métaphore", "Périphrase"], answer: 0, explanation: 'Métaphore qui renvoie à la lumière et donc au siècle des lumières qui ont dissipé les nuages de la sottise. <b>Métaphore</b> = Comparaison sans outil de comparaison (ex: "la route, long ruban") On compare à quelque chose de différent. / <b>Périphrase</b>: Expression en plusieurs mots pour décrire quelque chose de simple (ex: "Ile de Beauté" pour la Corse, "l\'astre du jour" pour le soleil).' },
-            { id: 'odg_postambule_q18', type: 'QCM', question: 'Quel est l\'objectif de la question rhétorique <b>"Que vous reste-t-il?</b>', options: ["Rappeler qu'il faut toujours chercher", "Montrer l\'impuissance des femmes après la révolution."], answer: 1, explanation: 'Elle montre l’impuissance des femmes après la Révolution. Puis donne 2 réponses - 1re réponse : insiste sur l\'ingratitude des hommes - 2ème réponse : les femmes doivent réclamer encore se battre.' },
+            { id: 'odg_postambule_q18', type: 'QCM', question: 'Quel est l\'objectif de la question rhétorique <b>"Que vous reste-t-il?</b>', options: ["Rappeler qu\'il faut toujours chercher", "Montrer l\'impuissance des femmes après la révolution."], answer: 1, explanation: 'Elle montre l’impuissance des femmes après la Révolution. Puis donne 2 réponses - 1re réponse : insiste sur l\'ingratitude des hommes - 2ème réponse : les femmes doivent réclamer encore se battre.' },
             { id: 'odg_postambule_q19', type: 'QCM', question: 'Quelle figure de style ODG utilise-t-elle avec l’expression "le flambeau de la vérité" ?', options: ["Une personnification", "Une allitération", "Une métaphore", "Une hyperbole"], answer: 2, explanation: "Le 'flambeau de la vérité' constitue une métaphore lumineuse en lien avec l\'idée des Lumières, symbolisant l\'éclairage rationnel contre l\'ignorance." },
             { id: 'odg_postambule_q20', type: 'QCM', question: 'Que désigne cette périphrase "Le puissant empire de la nature"', options: ["Dieu", "Le roi", "L\'humanité"], answer: 2, explanation: 'La périphrase désigne l’humanité qui valorise la nature par rapport à la civilisation (c’est la société qui a perverti les règles de la nature, dans laquelle l\’égalité des sexes est inscrite).' },
             { id: 'odg_postambule_q21', type: 'VF', question: 'Une Question Rhétorique est une figure de style qui consiste à poser une question dont la réponse est connue ou suggérée par la personne qui formule l\'interrogation.', answer: 'Vrai', explanation: "On pose une fausse question pour tenir en haleine son auditoire." },
@@ -140,7 +140,7 @@ const textsData = [
             { id: 'odg_postambule_q30', type: 'QCM_EXTRAIT', question: 'A quoi fait référence l\'énumération dans cet extrait?', extract: "Le puissant empire de la nature n\'est plus environné de préjugés, de fanatisme, de superstition et de mensonges.", options: ["Despotisme : Type de domination politique tyrannique où une seule personne exerce un pouvoir sans partage.", "Obscurantisme: attitude d\'opposition à la diffusion du savoir et de la connaissance"], answer: 1, explanation: 'Grâce au tocsin de la raison, l’humanité s’est libérée de l\’obscurantisme que désignent les noms communs. La vérité règne. Toutes les conditions favorables sont donc réunies pour réclamer ses droits. ' },
             { id: 'odg_postambule_q31', type: 'QCM_EXTRAIT', question: 'Que Montrent les 2 Métaphores de cet extrait ?', extract: "Le <b>flambeau de la vérité</b> a dissipé tous <b>les nuages de la sottise et de l\'usurpation</b>", options: ["Que les femmes veulent le pouvoir", "Que les conditions sont réunies pour permettre aux femmes de réclamer leurs droits"], answer: 1, explanation: 'La métaphore du "flambeau de la vérité" (Lumières, raison) dissipant "les nuages de la sottise et de l\'usurpation" (ignorance, pouvoir illégitime) signifie que la Révolution a créé les conditions intellectuelles pour que les femmes puissent comprendre leur situation et réclamer leurs droits légitimes.' },
             { id: 'odg_postambule_q32', type: 'QCM_EXTRAIT', question: 'Que trouve-t-on dans cette citation ?', extract: "L\'homme <b>esclave</b> a multiplié ses forces, a eu besoin de recourir aux tiennes pour <b>briser ses fers</b>. Devenu libre, il est devenu injuste envers sa compagne", options: ["Champ lexical de l\'esclavage & de la liberté / Métaphore", "Champ lexical de l\'esclavage & de la liberté / Parallélisme de construction"], answer: 1, explanation: 'Avant la révolution, les hommes étaient comme esclaves des nobles, des puissants. Pour se libérer (d’où l’image des fers brisés), ils ont eu recours aux forces des femmes ("des tiennes"). <br>Le parallélisme de construction souligne ainsi qu’il est anormal que l’homme soit ingrat envers la femme alors même qu’elle l’a aidé. La femme est restée esclave alors qu’il s’est libéré grâce à son aide… Elle met en lumière ce paradoxe. ' },
-            { id: 'odg_postambule_q33', type: 'QCM_EXTRAIT', question: 'A quoi sert le parallélisme de construction dans cet extrait ?', extract: "L\'homme <b>esclave</b> a multiplié ses forces, a eu besoin de recourir aux <b>tiennes</b> pour <b>briser ses fers</b>. Devenu libre, il est devenu injuste envers sa compagne", options: ["Souligne que les hommes ne doivent rien aux femmes", "Qu'il est anormal que l\'homme soit ingrat envers la femme"], answer: 1, explanation: 'Avant la révolution, les hommes étaient comme esclaves des nobles, des puissants. Pour se libérer (d’où l’image des fers brisées), ils ont eu recours aux forces des femmes ("des tiennes"). <br>Le parallélisme de construction souligne ainsi qu’il est anormal que l’homme soit ingrat envers la femme alors même qu’elle l’a aidé. La femme est restée esclave alors qu’il s’est libéré grâce à son aide… Elle met en lumière ce paradoxe. ' },
+            { id: 'odg_postambule_q33', type: 'QCM_EXTRAIT', question: 'A quoi sert le parallélisme de construction dans cet extrait ?', extract: "L\'homme <b>esclave</b> a multiplié ses forces, a eu besoin de recourir aux <b>tiennes</b> pour <b>briser ses fers</b>. Devenu libre, il est devenu injuste envers sa compagne", options: ["Souligne que les hommes ne doivent rien aux femmes", "Qu\'il est anormal que l\'homme soit ingrat envers la femme"], answer: 1, explanation: 'Avant la révolution, les hommes étaient comme esclaves des nobles, des puissants. Pour se libérer (d’où l’image des fers brisées), ils ont eu recours aux forces des femmes ("des tiennes"). <br>Le parallélisme de construction souligne ainsi qu’il est anormal que l’homme soit ingrat envers la femme alors même qu’elle l’a aidé. La femme est restée esclave alors qu’il s’est libéré grâce à son aide… Elle met en lumière ce paradoxe. ' },
             { id: 'odg_postambule_q34', type: 'QCM_EXTRAIT', question: 'Dans cet extrait, a qui fait référence l\'adjectif possessif "Tiennes" ?', extract: "L\'homme <b>esclave</b> a multiplié ses forces, a eu besoin de recourir aux <b>tiennes</b> pour <b>briser ses fers</b>. Devenu libre, il est devenu injuste envers sa compagne", options: ["Aux femmes", "Aux déesses"], answer: 0, explanation: 'Avant la révolution, les hommes étaient comme esclaves des nobles, des puissants. Pour se libérer (d’où l’image des fers brisées), ils ont eu recours aux forces des femmes ("des tiennes"). <br>Le parallélisme de construction souligne ainsi qu’il est anormal que l’homme soit ingrat envers la femme alors même qu’elle l’a aidé. La femme est restée esclave alors qu’il s’est libéré grâce à son aide… Elle met en lumière ce paradoxe. ' },
             { id: 'odg_postambule_q35', type: 'QCM_EXTRAIT', question: 'Dans cet extrait, quelles sont les 3 figures de style qui relancent l\'attention des femmes?', extract: "Ô femmes ! femmes, quand cesserez-vous d\'être aveugles ? ", options: ["Apostrophe + exclamation / Question rhétorique / Métaphore de l\'aveuglement", "Apostrophe + exclamation / Question rhétorique / Comparaison de l\'aveuglement"], answer: 0, explanation: 'Ces figures de style relancent l’attention des femmes. L’<b>exclamation</b> a un ton de déploration (lamentation). <br>La <b>question est purement rhétorique</b> : elle n’attend pas de réponse et vise simplement à faire réagir la femme. <br>La <b>métaphore</b> de l’aveuglement appelle à une prise de conscience. Les femmes ne doivent plus se soumettre.' },
             { id: 'odg_postambule_q36', type: 'QCM_EXTRAIT', question: 'Dans cet extrait, à quoi est comparé la métaphore de l\'aveuglement ?', extract: "Ô femmes ! femmes, <b>quand cesserez-vous d\'être aveugles</b> ? ", options: ["A l\'absence de prise de conscience des femmes", "A la loyauté des femmes"], answer: 0, explanation: 'La <b>métaphore</b> de l’aveuglement appelle à une <b>prise de conscience</b>. Les femmes ne doivent plus se soumettre.' },
@@ -156,11 +156,11 @@ const textsData = [
             { id: 'odg_postambule_q46', type: 'QCM', question: 'Quelle est la fonction du discours direct rapporté par ODG "Femmes, qu\’y a-t-il de commun entre vous et nous ? Tout." ?', options: ["Montrer explicitement une différence naturelle entre les sexes", "Donner vie au dialogue et suggérer l\’affirmation de l\’égalité", "Dénoncer uniquement le ton ironique des législateurs français"], answer: 1, explanation: 'Le discours direct rend vivant l\’échange, permet de donner plus de force à l\’argument d\’égalité des femmes face aux hommes.' },
             { id: 'odg_postambule_q47', type: 'VF', question: 'La question "Femmes, qu\’y-a-t-il de commun entre vous et nous ?"" représente une attitude d\’ouverture et d’accueil des hommes envers les femmes.', answer: 'Faux', explanation: 'Cette question rhétorique représente une attitude de mépris et de rejet, suggérant faussement l\’absence de points communs entre hommes et femmes.' },
             { id: 'odg_postambule_q48', type: 'QCM', question: 'Que montre ODG avec la métaphore juridique "les sages décrets de la nature"?', options: ["Que les droits de la femme sont inscrits dans la nature", "Que la nature n\'a aucun pouvoir"], answer: 0, explanation: 'Avec cette métaphore, elle montre que la nature édicte des lois contre lesquelles on ne peut pas s\'opposer.' },
-            { id: 'odg_postambule_q49', type: 'QCM', question: 'Quelle incohérence des hommes dénonce ODG dans cet extrait \"S\'ils s\'obstinaient, dans leur faiblesse, à mettre cette inconséquence en contradiction avec leurs principes ?\"', options: [ "Le fait qu'ils agissent conformément à leurs principes révolutionnaires", "Le fait qu'ils prétendent combattre la tyrannie tout en gardant les femmes soumises", "Le fait qu'ils règnent par la force physique uniquement" ], answer: 1, explanation: 'ODG dénonce l\'incohérence des hommes qui disent lutter contre la tyrannie mais limitent pourtant les droits des femmes en maintenant leur soumission.' },
+            { id: 'odg_postambule_q49', type: 'QCM', question: 'Quelle incohérence des hommes dénonce ODG dans cet extrait \"S\'ils s\'obstinaient, dans leur faiblesse, à mettre cette inconséquence en contradiction avec leurs principes ?\"', options: [ "Le fait qu\'ils agissent conformément à leurs principes révolutionnaires", "Le fait qu\'ils prétendent combattre la tyrannie tout en gardant les femmes soumises", "Le fait qu\'ils règnent par la force physique uniquement" ], answer: 1, explanation: 'ODG dénonce l\'incohérence des hommes qui disent lutter contre la tyrannie mais limitent pourtant les droits des femmes en maintenant leur soumission.' },
             { id: 'odg_postambule_q50', type: 'QCM', question: 'De quel type de subordonnée s\'agit-il et à quoi sert-elle ? \"S\'ils s\'obstinaient, dans leur faiblesse, à mettre cette inconséquence en contradiction avec leurs principes ?\"', options: [ "Type : proposition subordonnée circonstancielle de temps <br> Objectif : Montrer que les hommes ont des principes révolutionnaires", "Type : proposition subordonnée circonstancielle de condition <br> Objectif : Montrer l\'incohérence des hommes qui prétendent combattre la tyrannie tout en gardant les femmes soumises", ], answer: 1, explanation: "La proposition subordonnée circonstancielle de condition dénonce l’incohérence des hommes et particulièrement des députés, qui disent lutter contre la tyrannie mais qui maintiennent les femmes dans la soumission." },
             { id: 'odg_postambule_q51', type: 'QCM', question: 'Quel objectif poursuit ODG en employant la 2e personne du pluriel (\"vous\") dans ce passage ?', options: [ "Parler directement aux députés", "Créer un sentiment d\'unité et de solidarité entre les femmes", "S’adresser uniquement aux philosophes des Lumières" ], answer: 1, explanation: "Par l\'emploi du \"vous\", ODG s’adresse directement aux femmes afin de susciter leur unité et leur solidarité dans le combat pour leurs droits." },
             { id: 'odg_postambule_q52', type: 'VF', question: 'ODG associe les hommes à des termes péjoratifs (\'faiblesse\', \'inconséquence\', \'vaines prétentions\', \'orgueilleux\'...) afin de renforcer la confiance des femmes.', answer: "Vrai", explanation: "En assimilant les hommes à des termes péjoratifs, ODG dévalorise symboliquement leur prétendue supériorité afin de renforcer la confiance des femmes." },
-            { id: 'odg_postambule_q53', type: 'VF', question: 'L\'auteure souhaite établir une supériorité féminine sur les hommes.', answer: "Faux", explanation: "ODG n\'appelle pas à la supériorité féminine, mais vise plutôt l\’égalité entre les femmes et les hommes : une alliance plutôt qu'une soumission." },
+            { id: 'odg_postambule_q53', type: 'VF', question: 'L\'auteure souhaite établir une supériorité féminine sur les hommes.', answer: "Faux", explanation: "ODG n\'appelle pas à la supériorité féminine, mais vise plutôt l\’égalité entre les femmes et les hommes : une alliance plutôt qu\'une soumission." },
             { id:'odg_postambule_q54', type:'QCM_EXTRAIT', question:'Quel est l\’effet recherché par l’utilisation répétée de termes en gras dans cet extrait ?', extract:'<b>opposez</b> courageusement la force de la raison […], <b>réunissez-vous</b> sous les étendards de la philosophie, <b>déployez</b> toute l\’énergie de votre caractère', options:[ "Donner des ordres aux députés.", "Inviter à l\’action collective des femmes.", "Critiquer la passivité des philosophes." ], answer: 1, explanation:'Les impératifs "opposez", "réunissez-vous", et "déployez", visent directement à galvaniser les femmes, à les inviter à une action collective pour revendiquer leurs droits.' },
             { id:'odg_postambule_q55', type:'QCM_EXTRAIT', question:'Dans cet extrait, quelle attitude ODG propose-t-elle d\’opposer face aux hommes ?', extract:'opposez courageusement la <b>force de la raison</b> aux vaines prétentions de supériorité', options:[ "La force physique et guerrière", "La violence verbale", "Une supériorité intellectuelle et morale fondée sur la raison" ], answer: 2, explanation:'ODG propose aux femmes d’opposer une supériorité intellectuelle et morale basée sur la raison ("force de la raison") aux prétentions injustifiées des hommes.' },
             { id:'odg_postambule_q56', type:'QCM_EXTRAIT', question:'Quelle est l\’idée suggérée par l\’expression en gras dans cette citation ?', extract:'vous verrez bientôt ces orgueilleux, <b>non serviles adorateurs rampants à vos pieds, mais fiers de partager avec vous les trésors de l\'Être suprême</b>', options:[ "Une future domination des femmes sur les hommes.", "Une égalité fondée sur l\'alliance plutôt que sur la soumission.", "Une séparation définitive entre les femmes et les hommes." ], answer: 1, explanation:'En utilisant une métaphore qui montre les hommes non comme "adorateurs rampants", mais au contraire comme "fiers de partager", ODG insiste sur une égalité envisagée comme une réelle alliance, sans soumission.' },
@@ -257,7 +257,7 @@ const textsData = [
         {
             id: 'venus_q10',
             type: 'QCM_EXTRAIT',
-            question: "Qu'apportent les expressions 'fortement pommadés' et 'déficits mal ravaudés' ?",
+            question: "Qu\'apportent les expressions 'fortement pommadés' et 'déficits mal ravaudés' ?",
             extract: "De femme à cheveux bruns <b>fortement pommadés</b><br> D’une vieille baignoire émerge, lente et bête,<br> Avec des <b>déficits assez mal ravaudés</b>",
             options: ["La rendent belle et mystérieuse", "Déprécient son apparence"],
             answer: 1,
@@ -693,7 +693,7 @@ const textsData = [
         id: 'persane_q29',
         type: 'QCM_EXTRAIT',
         question: "Quel sentiment principal l\'utilisation de termes péjoratifs évoquent-ils dans le discours de Roxane ?",
-        extract: "Tu devrais me rendre grâces encore du <b>sacrifice</b> que je t\'ai fait ; de ce que je me suis <b>abaissée</b> jusqu\'à te paraître fidèle ; de ce que j\'ai lâchement gardé dans mon cœur ce que j`\'aurais dû faire paraître à toute la terre ; enfin de ce que j'ai <b>profané</b> la vertu en souffrant qu'on appelât de ce nom ma soumission à tes fantaisies",
+        extract: "Tu devrais me rendre grâces encore du <b>sacrifice</b> que je t\'ai fait ; de ce que je me suis <b>abaissée</b> jusqu\'à te paraître fidèle ; de ce que j\'ai lâchement gardé dans mon cœur ce que j`\'aurais dû faire paraître à toute la terre ; enfin de ce que j'ai <b>profané</b> la vertu en souffrant qu\'on appelât de ce nom ma soumission à tes fantaisies",
         options: ["Regret et accusation d\'Usbek", "Admiration de son sacrifice", "Joie de la soumission", "Indifférence envers son passé"],
         answer: 0,
         explanation: "Les termes péjoratifs reflètent le regret et l\'accusation envers Usbek, exprimant ses sentiments amers quant à ses sacrifices."
@@ -709,7 +709,7 @@ const textsData = [
         {
         id: 'persane_q31',
         type: 'QCM_EXTRAIT',
-        question: "Dans cet extrait qu'est ce qui montre que Roxane a du regret par rapport à ce qu\'elle a fait ?",
+        question: "Dans cet extrait qu\'est ce qui montre que Roxane a du regret par rapport à ce qu\'elle a fait ?",
         extract: "Je me suis <b>abaissée</b> jusqu\'à te paraître fidèle; de ce que j\'ai <b>lâchement</b> gardé dans mon coeur ce que j\'<b>aurais dû</b> faire paraître à toute la terre...",
         options: ["Le conditionnel passé", "le présent", "Le champ lexical du sacré", "L\'allitération en f"],
         answer:[0, 2],
@@ -780,7 +780,7 @@ const textsData = [
         id: 'persane_q39',
         type: 'QCM_EXTRAIT',
         question: "Pourquoi le reste de cette phrase est composé de propositions juxtaposées courtes et simples ?",
-        extract: "mais c\'en est fait<b>,</b> le poison force m\'abandonne me consume<b>,</b> ma force m'abandonne<b>;</b> la plume me tombe des mains <b>;</b> je sens affaiblir jusqu\'à ma haine <b>;</b> je me meurs<b>.</b>",
+        extract: "mais c\'en est fait<b>,</b> le poison force m\'abandonne me consume<b>,</b> ma force m\'abandonne<b>;</b> la plume me tombe des mains <b>;</b> je sens affaiblir jusqu\'à ma haine <b>;</b> je me meurs<b>.</b>",
         options: ["Pour montrer la rapidité de la scène", "Pour mimer la difficulté de Roxane pour écrire"],
         answer: 1,
         explanation: "Le reste de la phrase est composé de propositions juxtaposées courtes et simples comme pour mimer la difficulté qu\’a Roxane pour écrire. "
@@ -904,14 +904,14 @@ const textsData = [
         explanation: 'Le narrateur exprime son regret par l\'interjection "Hélas !".'
     },
         {
-        id: 'manon_q7',
+        id: 'manon_q8',
         type: 'QCM',
         question: 'Affirmation : ce roman est retrospectif.',
         answer: 'Vrai',
         explanation: 'Le narrateurraconte un souvenir".'
     },
         {
-        id: 'manon_q8',
+        id: 'manon_q9',
         type: 'QCM_EXTRAIT',
         question: 'Comment voit-on qu\'il s\'agit d\'un roman <b>RETROSPECTIF</b>? (plusieurs réponses possibles)',
         extract: "La rencontre avec Manon Lescaut J’avais marqué le temps de mon départ d\’Amiens. Hélas ! que ne le marquai-je un jour plus tôt ! j\’aurais porté chez mon père toute mon innocence. La veille même de celui que je devais quitter cette <b>ville</b>, étant à me promener avec mon ami, qui s\’appelait Tiberge, nous vîmes arriver le <b>coche</b> d\’<b>Arras</b>, et nous le suivîmes jusqu\’à l\’hôtellerie où ces voitures descendent. Nous n\’avions pas d\’autre motif que la curiosité",
@@ -925,7 +925,7 @@ const textsData = [
         explanation: " Je + plus-que-parfait : le narrateur est interne à l\’histoire. Il raconte un souvenir a posteriori. Le récit est rétrospectif. "
     },
     {
-        id: 'manon_q9',
+        id: 'manon_q10',
         type: 'QCM_EXTRAIT',
         question: 'Quel champ lexical est principalement utilisé dans ce passage ?',
         extract: "J’avais marqué le temps de mon départ d\’<b>Amiens</b>. Hélas ! que ne le marquai-je un jour plus tôt ! j\’aurais porté chez mon père toute mon innocence. La veille même de celui que je devais quitter cette <b>ville</b>, étant à me promener avec mon ami, qui s\’appelait Tiberge, nous vîmes arriver le <b>coche</b> d\’<b>Arras</b>, et nous le suivîmes jusqu\’à l\’<b>hôtellerie</b> où ces voitures descendent. Nous n\’avions pas d\’autre motif que la curiosité",
@@ -939,14 +939,14 @@ const textsData = [
         explanation: "Le texte utilise un champ lexical de la ville avec des mots comme 'ville', 'coche', 'Arras'."
     },
     {
-        id: "manon_q10",
+        id: "manon_q11",
         type: "Explication",
         question: "Pourquoi le cadre urbain et réaliste est-il important dans le passage ?",
-        answer: "Le cadre urbain et réaliste donne du crédit à l'histoire de Des Grieux et prépare la rencontre exceptionnelle.",
+        answer: "Le cadre urbain et réaliste donne du crédit à l\'histoire de Des Grieux et prépare la rencontre exceptionnelle.",
         explanation: "Il permet d\'ancrer l\'histoire dans un cadre réaliste, accroissant l\'authenticité du récit."
     },
     {
-        id: 'manon_q11',
+        id: 'manon_q12',
         type: 'QCM_EXTRAIT',
         question: 'Dans ce passage, il insiste sur le cadre temporel avec les indications de lieu et le CC de temps (en gras ci-dessous) et précise qu\'il était sur le point de partir, Pourquoi ?',
         extract: "J\’avais marqué le temps de <b>mon départ d\’Amiens</b>. Hélas ! que ne le marquai-je un jour plus tôt ! j\’aurais porté chez mon père toute mon innocence. <b>La veille même de celui que je devais quitter cette ville</b>, étant à me promener avec mon ami, qui s\’appelait Tiberge, nous vîmes arriver le coche d\’Arras, et nous le suivîmes jusqu\’à l\’hôtellerie où ces voitures descendent. Nous n\’avions pas d\’autre motif que la curiosité",
@@ -958,7 +958,7 @@ const textsData = [
         explanation: "« mon départ à Amiens » + CC de temps « la veille même de celui que je devais quitter cette ville » : Il insiste sur le cadre temporel → il est sur le point de partir. La rencontre relève donc du hasard et du destin, aurait pu être manquée à un jour près. Il insiste sur le hasard temporel. Cette rencontre sera donc nécessairement exceptionnelle."
     },
     {
-        id: "manon_q12",
+        id: "manon_q13",
         type: "QCM",
         question: "Quelle est l\'interjection utilisée par le narrateur pour exprimer son regret ?",
         options: [
@@ -971,7 +971,7 @@ const textsData = [
         explanation: " Interjection « Hélas ! », l\’exclamation et le conditionnel « j\’aurais porté chez mon père tout mon innocence » : ton de la plainte, du regret. On comprend que cela n\’a pas été le cas. Cela prépare la rencontre, suscite la curiosité du lecteur et crée un effet d\’annonce tragique. Que s\’est-il passé ? "
     },
     {
-        id: 'manon_q11',
+        id: 'manon_q14',
         type: 'QCM_EXTRAIT',
         question: 'Quel procédés utilise l\'auteur dans ce passage pour susciter la curiosité du lecteur? (plusieurs réponses possibles)',
         extract: "Hélas ! que ne le marquai-je un jour plus tôt ! j\’aurais porté chez mon père toute mon innocence.",
@@ -986,28 +986,335 @@ const textsData = [
     },
 
     {
-        id: "manon_q12",
+        id: "manon_q15",
         type: "Vrai/Faux",
         question: "La scène de la promenade est décrite comme une scène exceptionnelle dès le début.",
         answer: "Faux",
         explanation: "La scène est décrite d'abord comme anodine (cadre urbain réaliste & banal) avant de devenir exceptionnelle."
     },
     {
-        id: "manon_q13",
+        id: "manon_q16",
         type: "QCM",
         question: "Pourquoi décrit-il un cadre urbain banal (« ville », « coche », « Arras », « hôtellerie », « voitures ») ?",
         options: [
-            "Ces précisions donnent du crédit à l'histoire",
+            "Ces <b>précisions</b> donnent du crédit à l\'histoire",
             "Pour faire pitié",
         ],
         answer: 0,
         explanation: "Champ lexical de la ville « ville », « coche », « Arras », « hôtellerie », « voitures » + scène de promenade anodine : cadre urbain, réaliste et banal. Ce cadre commun permet d\’abord de donner des précisions et donc du crédit à l\’histoire de Des Grieux (on rappelle que Manon Lescaut est un roman-mémoires, une fausse autobiographie). Cela prépare également de nouveau la rencontre. Cette scène banale va se transformer en scène exceptionnelle."
     },
+    {
+        id: "manon_q17",
+        type: "QCM",
+        question: "Quels types de verbes annoncent la rencontre ?",
+        options: [
+            "Verbes de sensation",
+            "Verbes de vue",
+        ],
+        answer: 1,
+        explanation: "Champ lexical de la ville « ville », « coche », « Arras », « hôtellerie », « voitures » + scène de promenade anodine : cadre urbain, réaliste et banal. Ce cadre commun permet d\’abord de donner des précisions et donc du crédit à l\’histoire de Des Grieux (on rappelle que Manon Lescaut est un roman-mémoires, une fausse autobiographie). Cela prépare également de nouveau la rencontre. Cette scène banale va se transformer en scène exceptionnelle."
+    },
+     {
+        id: 'manon_q18',
+        type: 'QCM_EXTRAIT',
+        question: 'Comment sait-on que l\'apparition du coche est importante  (que c\'est un élément perturbateur)?',
+        extract: "...nous vîmes arriver le coche d\’Arras, et nous le suivîmes jusqu\’à l\’hôtellerie où ces voitures descendent.",
+        options: [
+            'Utilisation de l\'article défini "le" et pas "un"',
+            'Temps utilisé',
+        ],
+        answer: 0,
+        explanation: "L\’article est défini (« le » et pas « un »), ce qui laisse présager qu\’il est important, que son apparition est un élément perturbateur. Les actions instaurent du suspense et créent le mystère : qui est dans ce coche ? Le lecteur veut le découvrir."
+    },
+         {
+        id: 'manon_q19',
+        type: 'QCM_EXTRAIT',
+        question: 'Comment se déresponsabilise -t-il avec cette phrase?',
+        extract: "Nous n\’avions pas d\’autre motif que la curiosité.",
+        options: [
+            'Il se justifie en disant que le suivre n\'est que curiosité',
+            'Négation restrictive (il ne pouvait faire que ça)',
+            'utilisation du present'
+        ],
+        answer: [0,1]
+        explanation: "Il se deresponsabilise d\'emblé avec cette négation restrictive. Son intention est donc tout à fait innocente. Cependant, le mot « curiosité » rappelle le péché originel : Adam, tenté par Eve, a été trop curieux et a mangé le fruit interdit, ce qui a conduit à sa perte. L\’abbé Prévost semble ici réécrire cet épisode biblique.  "
+    },
+    {
+        id: 'manon_q20',
+        type: 'QCM_EXTRAIT',
+        question: 'A quoi fait allusion le mot "curiosité" dans cette phrase?',
+        extract: "Nous n\’avions pas d\’autre motif que la curiosité.",
+        options: [
+            'Le péché originel d\'Adan et Eve',
+            'Au film les 5 curiosotés',
+            'A la chambre des curiosités',
+        ],
+        answer: 0,
+        explanation: "La « curiosité » rappelle le péché originel : Adam, tenté par Eve, a été trop curieux et a mangé le fruit interdit, ce qui a conduit à sa perte. L\’abbé Prévost semble ici réécrire cet épisode biblique.  "
+    },
+    {
+        id: 'manon_q21',
+        type: 'QCM_EXTRAIT',
+        question: 'De quoi parle le mouvement 2 de ce texte?',
+        extract: "Il en sortit quelques femmes […] maîtresse de mon coeur.",
+        options: [
+            'L\'arrivée du coche',
+            'La banalité des lieux',
+            'La rencontre et avec Manon Lescaut',
+            'La violente passion amoureuse pour Manon Lescaut',
+        ],
+        answer: [2,3]
+        explanation: "Mouvement 2 = Le narrateur rencontre Manon Lescaut et est pris d\’une violente passion amoureuse."
+    },
+    {
+        id: 'manon_q22',
+        type: 'QCM_EXTRAIT',
+        question: 'Quelles figures de styles permettent de monterer que l\'observation des femmes est <b>anodine</b> mais l\'apparition de Manon est <b>extraordinaire</b>?',
+        extract: "Il en sortit <b>quelques</b> <u>femmes</u> qui se retirèrent aussitôt; <i>mais</i> il en resta <b>une</b>, <u>fort jeune</u>, qui s\’arrêta seule dans la cour, pendant qu\’un homme d\’un âge avancé, qui paraissait lui servir de conducteur, s\’empressait de faire tirer son équipage des paniers3.",
+        options: [
+            'Des antithèses',
+            'Des periphrases',
+            'Une conjonction de coordination à valeur d\'opposition',
+            'l\'adverbe "quelques" opposé au déterminant "une"',
+            'l\'exclamation',
+        ],
+        answer: [0,2,3]
+        explanation: "Déterminant indéfini : 'quelques femmes' qui s\’oppose à la singularité de Manon 'une, fort jeune...'<br> Plusieurs antithèses « quelques » / « une », « se retirèrent »/ « resta », « femmes »/ « fort jeune » <br>Conjonction de coordination à valeur d\’opposition « mais » : L\’observation des femmes était anodine, mais l\’apparition de Manon est extraordinaire. Elle est mise en valeur. La cour est comme une scène de théâtre."
+    },
+    {
+        id: "manon_q23",
+        type: "QCM",
+        question: "Sur quoi insiste l\'auteur avec l\'adverbe intensif 'fort' et l\adjectif 'jeune' ?",
+        options: [
+            "La musculture de Manon",
+            "La jeunesse et l\'innocence de Manon",
+        ],
+        answer: 1,
+        explanation: "Se sont les seules caractéristiques connues a ce niveau du texte : insistent sur sa jeunesse et donc sur son innocence, mais on verra qu’elle n\’est pas si innocente…"
+    },
+    {
+        id: 'manon_q24',
+        type: 'QCM_EXTRAIT',
+        question: 'L\'antithèse "jeune" / "homme d\'un age avancé, peut être un indice pour la suite, lequel ?',
+        extract: "...mais il en resta une, <b>fort jeune</b>, qui s\’arrêta seule dans la cour, pendant qu\’un homme d\’un <b>âge avancé</b>.",
+        options: [
+            'Ce viel homme peut représenter le type du vieux barbon',
+            'Il va y avoir un choc des génération',
+        ],
+        answer: 0,
+        explanation: " Antithèse « jeune » / « homme d\’un âge avancé » qui peut être un indice de la suite de l\’histoire. Ce vieil homme peut représenter : <br>le type du vieux barbon (=type de comédie, vieil homme qui se croit aimé de femmes plus jeunes), <br>les futurs courtisans de Manon.."
+    },
+    {
+        id: 'manon_q25',
+        type: 'QCM_EXTRAIT',
+        question: 'De quelle figure de style s\'agit-il?',
+        extract: "je me trouvai enflammé tout d’un coup jusqu\’au transport (=extase)",
+        options: [
+            'Periphrase où le feu exprime la chaleur',
+            'Metaphore hyperbolique où le feu exprime la force de manon',
+            'Metaphore hyperbolique où le feu exprime la force de cette passion',
+        ],
+        answer: 2,
+        explanation: "Métaphore hyperbolique. Le feu exprime la force de cette passion + CC « tout d\’un coup » exprime  son caractère soudain. « Transport » fait également partie du vocabulaire de la tragédie. De nouveau, cette rencontre paraît être sous le signe du destin et de la fatalité."
+    },
+    {
+        id: 'manon_q26',
+        type: 'QCM_EXTRAIT',
+        question: 'Comment s\'appelle la figure de style qui consiste à répéter un mot et à quoi sert-elle?',
+        extract: "Elle me parut si charmante, que <b>moi</b>, qui n’avais jamais pensé à la différence des sexes, ni ...<b>moi</b>, dis-je, dont tout le monde...fût encore moins âgée que <b>moi,</b> elle reçut mes politesses sans paraître ...entée que <b>moi</b>",
+        options: [
+            'Métonimie pour souligner que la passion ressentie est contraire au caractère de l\'auteur',
+            'Anaphore pour souligner que la passion ressentie est contraire au caractère de l\'auteur',
+            'Synecdote pour souligner que la passion ressentie est contraire au caractère de l\'auteur',
+        ],
+        answer: 2,
+        explanation: "Métaphore hyperbolique. Le feu exprime la force de cette passion + CC « tout d\’un coup » exprime  son caractère soudain. « Transport » fait également partie du vocabulaire de la tragédie. De nouveau, cette rencontre paraît être sous le signe du destin et de la fatalité."
+    },
+    {
+    id: 'manon_q25',
+        type: 'QCM_EXTRAIT',
+        question: 'L\'auteur fait son autoportrait avec des mots mélioratif (à son avantage), lequels?',
+        extract: "moi, dis-je, dont tout le monde admirait la sagesse et la retenue, je me trouvai enflammé tout d\’un coup jusqu\’au transport.",
+        options: [
+            'monde',
+            'sagesse',
+            'retenue',
+            'enflamé',
+        ],
+        answer: [1,2]
+        explanation: "Métaphore hyperbolique. Le feu exprime la force de cette passion + CC « tout d\’un coup » exprime  son caractère soudain. « Transport » fait également partie du vocabulaire de la tragédie. De nouveau, cette rencontre paraît être sous le signe du destin et de la fatalité."
+    },
+    {
+    id: 'manon_q28',
+        type: 'QCM_EXTRAIT',
+        question: 'Dans cette expression, il reprends les propos des autres de façon hyperbolique, Pourquoi?',
+        extract: "tout le monde admirait",
+        options: [
+            'Pour faire de lui un exemple de vertu',
+            'Pour faire un parallele avec sa grande taille',
+            'Pour montrer qu\'au vue de sa vertue, il est exceptionnel qu\il tombe amoureux',
+        ],
+        answer: [0,2]
+        explanation: "Il reprend les propos des autres de façon hyperbolique (« tout le monde admirait ») pour faire de lui un exemple de vertu. Il est donc exceptionnel qu\’il soit tombé amoureux."
+    },
+    {
+    id: 'manon_q29',
+        type: 'QCM_EXTRAIT',
+        question: 'A travers la série de négation sur quoi insiste-t-il?',
+        extract: "moi, qui <b>n</b>\’avais <b>jamais</b> pensé à la différence des sexes, <b>ni</b> regardé une fille avec un peu d\’attention",
+        options: [
+            'Qu\'il n\'avait jamais été intéréssé par les femmes',
+            'Que les femme sont l\'égale de l\'homme',
+        ],
+        answer: 0,
+        explanation: "Avec ces négations, il insiste sur le fait qu\’il n\’avait jamais été intéressé par les femmes. "
+    },
+    {
+    id: 'manon_q30',
+        type: 'QCM_EXTRAIT',
+        question: 'Il se décrit plûtot comme une personne:',
+        extract: "moi, qui <b>n</b>\’avais <b>jamais</b> pensé à la différence des sexes, <b>ni</b> regardé une fille avec un peu d\’attention...j\’avais le défaut d\’être excessivement timide et facile à déconcerter ",
+        options: [
+            'Virile',
+            'Confiante',
+            'Ingénue',
+        ],
+        answer: 2,
+        explanation: "Avec les <b>négations</b>, il insiste sur le fait qu\’il n\’avait jamais été intéressé par les femmes.<br>Avec l\'hyperbole 'j\’avais le défaut d\’être excessivement timide et facile à déconcerter' il se peint aussi comme inocent "
+    },
+    {
+        id: "manon_q31",
+        type: "QCM",
+        question: "Manon L. est décrite comme 'si charmante', pourquoi utiliser l\'adjectif intensif si?",
+        options: [
+            "Pour insister l\'adjectif mélioratif 'charmante'",
+            "Pour semer le doute",
+        ],
+        answer: 0,
+        explanation: "L\’adverbe intensif « si » insiste sur l’adjectif mélioratif. Elle a donc un physique avantageux. C\’est tout ce que l\’on sait d\’elle, avec le fait qu\’elle soit jeune, ce qui la rend mystérieuse. Mais elle n\’est pas simplement belle, elle est « charmante ». L\’adjectif vient du latin carmen qui signifie le chant, l\’envoûtement. Le narrateur est donc comme ensorcelé. La périphrase « la maîtresse de mon coeur » montre qu\’il lui appartient. Il est comme prisonnier de cet amour."
+    },
+    {
+        id: "manon_q32",
+        type: "QCM",
+        question: "Pourquoi l\'auteur choisit d\'utiliser le terme 'charmante' pour la décrire?",
+        options: [
+            "Charmante : adjectif qui vient du latin et qui signifie femme des champs",
+            "Charmante : adjectif qui vient du latin et qui signifie la jeneusse éternelle",
+            "Charmante : adjectif qui vient du latin et qui signifie le chant et l\'envoutement",
+        ],
+        answer: 0,
+        explanation: "L\’adjectif vient du latin carmen qui signifie le chant, l\’envoûtement. Le narrateur est donc comme ensorcelé. La périphrase « la maîtresse de mon coeur » montre qu\’il lui appartient. Il est comme prisonnier de cet amour."
+    },
+    {
+        id: "manon_q33",
+        type: "QCM_EXTRAIT",
+        question: "En se présentant comme un innocent ensorcelé par une séductrice, il veut excuser ses futures actions. Mais l\'est-il vraiment",
+        extract: "<b>mais</b>, loin d\’être arrêté alors par cette faiblesse, je m\’avançai vers la maîtresse de mon cœur."
+        options: [
+            "Non, il n\'est pas vraiment innocent comme le montre la conjonction de coordination mais (malgré sa timidité, il s\'avance)",
+            "Oui, Manon Lescault est la seule responsable",
+        ],
+        answer: 0,
+        explanation: "Il n\’est pas si naïf comme le montre la conjonction de coordination « mais » : malgré sa timidité, il s\’avance vers elle. Ses actions ne concordent pas avec son portrait. Cela laisse entrevoir que la narration serait biaisée"
+    },
+    {
+        id: "manon_q34",
+        type: "QCM",
+        question: "Le mouvement 3 concerne : ",
+        options: [
+            "La scene de rencontre",
+            "L\'echange avec Manon L. pour dresser son portrait ambigu",
+            "Le coup de foudre",
+        ],
+        answer: 1,
+        explanation: "Mouvement 3 = L\’échange avec Manon permet de brosser un portrait ambigu du personnage qui apparaît comme la cause d\’un destin tragique"
+    },
+    {
+        id: "manon_q35",
+        type: "QCM_EXTRAIT",
+        question: "Pourquoi le verbe envoyer est répété 2 fois.",
+        extract: "elle y était <b>envoyée</b> par ses parents pour être religieuse..., que je regardai ce dessein ... <u>c\’était malgré elle</u> qu\’on l\’<b>envoyait</> au couvent,"
+        options: [
+            "Pour faire un parallele avec l\'envoi d'un courrier",
+            "Pour insister sur sa situation",
+        ],
+        answer: 0,
+        explanation: "Avec la répétition de envoyer et l\'expression 'c\'était malgre elle': l\'auteur montre que Manon est victime d\’une décision de ses parents. Elle est menacée d\’enfermement. On enfermait des filles de force au couvant, ce qui a été critiqué par Diderot dans son roman La Religieuse au XVIIIe siècle. Elle le type de la demoiselle en détresse. Le narrateur va se sentir obligé de la sauver."
+    },
+    {
+        id: "manon_q36",
+        type: "QCM_EXTRAIT",
+        question: "La description de Manon L. concorde-t-elle avec l\'expression 'répondit ingénument'",
+        options: [
+            "Oui",
+            "Non",
+        ],
+        answer: 1,
+        explanation: "Avec l\'expression 'répondit ingénument' elle parait naive. Mais cette adverbe  avec le reste de son portrait. Son portrait est donc très ambigu, ce qui la rend d\’autant plus mystérieuse. En effet, elle n\’est en réalité pas si ingénue.  "
+    },
+    {
+        id: "manon_q37",
+        type: "QCM_EXTRAIT",
+        question: "Que montre la proposition circonstancielle de concession 'quoiqu\'elle",
+        extract: "Quoiqu\’elle fût encore moins âgée que moi, elle reçut mes politesses sans paraître embarrassée."
+        options: [
+            "Un parallèle",
+            "Une similitude",
+            "Un paradoxe",
+        ],
+        answer: 2,
+        explanation: "'quoiqu’elle' → paradoxe. Malgré sa jeunesse, son innocence apparente, elle reçoit ses compliments comme si elle y était habituée. Puis à travers une comparaison, on apprend qu\’« est bien plus expérimentée », ce qui est de nouveau paradoxal, puisqu\’elle a été envoyée de force au couvent pour arrêter « son penchant au plaisir », « qui s\’était déjà déclaré » → l\’adverbe « déjà » montre que c\’est surprenant. Manon = séductrice voire une libertine. DG = sa victime"
+    },
+    {
+        id: "manon_q38",
+        type: "QCM_EXTRAIT",
+        question: "Que montre l\'adverbe déjà?",
+        extract: " son penchant au plaisir ... qui s’était déjà déclaré"
+        options: [
+            "que c'est surprenant",
+            "que c'est exceptionel",
+        ],
+        answer: 0,
+        explanation: "L\’adverbe « déjà » montre que c\’est surprenant. Manon = séductrice voire une libertine. DG = sa victime"
+    },
+     {
+        id: "manon_q39",
+        type: "QCM_EXTRAIT",
+        question: "Pourquoi ajouter l\'adjectif possessif 'miens' à la fin?",
+        extract: "qui a causé par la suite tous ses malheurs et les miens"
+        options: [
+            "Pour mettre en valeur que le narrateur n\'a été que victime",
+            "Pour montrer sn implication",
+        ],
+        answer: 0,
+        explanation: "Pronom possessif « miens » à la fin comme pour mettre en valeur que le narrateur n\’a été que sa victime. "
+    },
+     {
+        id: "manon_q40",
+        type: "QCM_EXTRAIT",
+        question: "Dans cette phrase qui est le sujet et qu\'est ce que cela montre ?",
+        extract: "L\’amour me rendait déjà si éclairé depuis un moment qu\’il était dans mon cœur, que je regardai ce dessein comme un coup mortel pour mes désirsqui a causé par la suite tous ses malheurs et les miens"
+        options: [
+            "L\'amour est le sujet et le narrateur (me) est le COI",
+            "L\'amour est epithète et le narrateur (me) est le sujet",
+        ],
+        answer: 0,
+        explanation: "L\'amour est le sujet et 'me' le COI : ce qui montre qu\'il agit uniquement par amour, emporté malgré lui, sans véritable maîtrise de ses actes"
+    },
+        {
+        id: "manon_q41",
+        type: "QCM",
+        question: "Pourquoi cette narration est subjective et biaisé?",
+        options: [
+            "Car c'est écrit au passé",
+            "Car on ne sait rien de ce que pense Manon L.",
+        ],
+        answer: 1,
+        explanation: "cette narration est subjective et paraît biaisée : peut-on vraiment faire confiance ce qu\’il raconte ? On ne sait rien du point de vue de Manon. On ne sait même pas ce qu\’elle lui dit exactement puisque le discours indirect est beaucoup moins précis que le discours direct."
+    },
 
-    ]
-}
 
-
+/* Prochaine = curiosité= peche originel..
 /*{
     id: 'test-multiple',
     title: 'Modele',
