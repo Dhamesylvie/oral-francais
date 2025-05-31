@@ -1,3 +1,363 @@
+const data = {
+    texts: [
+        {
+            id: 'pain',
+            title: 'Le Pain',
+            author: 'Francis Ponge',
+            questions: [
+                {
+                    id: 'pain_q1',
+                    type: 'QCM',
+                    question: 'Quel est le recueil dans lequel figure le poème "Le Pain" ?',
+                    options: ["Fleurs et Ronces", "Les Armes miraculeuses", "Le Parti pris des choses", "La Rage de l\'expression"],
+                    answer: 2,
+                    explanation: '"Le Pain" se trouve dans le recueil "Le Parti pris des choses", publié en 1942.'
+                },
+                {
+                    id: 'pain_q2',
+                    type: 'VF',
+                    question: 'Le poème "Le Pain" est écrit en vers rimés.',
+                    answer: 'Faux',
+                    explanation: 'Le poème est écrit en prose poétique.'
+                },
+                {
+                    id: 'pain_q3',
+                    type: 'QCM',
+                    question: 'La fin du poème, "Mais brisons-la !", est une invitation à :',
+                    options: ["Respecter le pain comme un objet sacré.", "Ne plus jamais gaspiller de pain.", "Manger le pain et cesser de l\'idéaliser.", "Créer des œuvres d\'art à partir du pain."],
+                    answer: 2,
+                    explanation: 'L\'impératif final invite à revenir à la fonction première du pain : être mangé, mettant fin à l\'analyse et l\'idéalisation.'
+                },
+                {
+                    id: 'pain_q4',
+                    type: 'VF',
+                    question: 'Ponge idéalise le pain et en fait un symbole de perfection.',
+                    answer: 'Faux',
+                    explanation: 'Ponge cherche à décrire le pain objectivement, dans sa matérialité, avec ses qualités et ses défauts perçus ("mollesse ignoble"), sans idéalisation excessive.'
+                },
+                {
+                    id: 'pain_q5',
+                    type: 'QCM_EXTRAIT',
+                    question: 'Dans l\'extrait ci-dessous, quelle figure de style est principalement utilisée pour décrire la surface du pain ?',
+                    extract: "La surface du pain est merveilleuse d\'abord à cause de cette impression quasi panoramique qu\'elle donne : comme si l\'on avait à sa disposition sous la main les Alpes, le Taurus ou la Cordillère des Andes.",
+                    options: ["Une métaphore", "Une comparaison", "Une personnification", "Une antithèse"],
+                    answer: 1,
+                    explanation: 'L\'outil "comme si" introduit une comparaison explicite entre la surface du pain et des chaînes de montagnes.'
+                },
+                {
+                    id: 'pain_q6',
+                    type: 'VF',
+                    question: 'L\'expression "mollesse ignoble sous-jacente" décrit la mie du pain de manière péjorative.',
+                    answer: 'Vrai',
+                    explanation: 'L\'adjectif "ignoble" qualifie péjorativement la "mollesse" de la mie, contrastant avec l\'éloge préalable de la croûte.'
+                },
+                {
+                    id: 'pain_q7',
+                    type: 'QCM',
+                    question: 'En quelle année a été publié le recueil "Le Parti pris des choses" ?',
+                    options: ["1942", "1742"],
+                    answer: 0,
+                    explanation: 'Le recueil "Le Parti pris des choses" a été publié en 1942.'
+                },
+                {
+                    id: 'pain_q8',
+                    type: 'QCM',
+                    question: 'Le titre du poème "Le Pain" fait penser à :',
+                    options: ["Une recette de cuisine", "Un article de dictionnaire"],
+                    answer: 1,
+                    explanation: 'Le titre évoque un article de dictionnaire : l\'auteur en donne une définition et une description organisée, commençant par la surface (la croûte).'
+                },
+                {
+                    id: 'pain_q9',
+                    type: 'QCM',
+                    question: 'L\'adjectif mélioratif "merveilleuse" est-il étonnant pour qualifier la croûte du pain ?',
+                    options: ["Oui, car la \"merveille\" désigne quelque chose d\'extraordinaire, or le pain est banal.", "Non, l\'adjectif est parfaitement adapté à cet objet quotidien."],
+                    answer: 0,
+                    explanation: 'L\'adjectif est surprenant car il élève un objet banal au rang d\'extraordinaire, montrant la volonté du poète de transformer notre regard.'
+                },
+                {
+                    id: 'pain_q10',
+                    type: 'QCM',
+                    question: 'Que montrent les connecteurs logiques ("ainsi", "donc", "d'abord", "et", "dès lors") utilisés dans le poème ?',
+                    options: ["Rien de particulier", "L'envie du poète d'être précis et d'organiser sa description.", "Une surenchère d'arguments."],
+                    answer: 1,
+                    explanation: 'Ces connecteurs structurent la description et montrent l\'attention aux détails et la volonté de précision du poète, comme dans une démonstration.'
+                },
+                {
+                    id: 'pain_q11',
+                    type: 'QCM',
+                    question: 'Qu\'est-ce qu\'une cosmogonie ?',
+                    options: ["L\'étude scientifique de l\'origine de l\'univers.", "Un récit mythologique expliquant la formation du Monde."],
+                    answer: 1,
+                    explanation: 'Une cosmogonie est un récit mythologique sur la création du Monde (du grec cosmo- "monde" et gon- "engendrer").'
+                },
+                {
+                    id: 'pain_q12',
+                    type: 'QCM',
+                    question: 'Qu\'est-ce qui ressort de l\'expression "la masse ... fut glissée pour nous dans le four stellaire" ?',
+                    options: ["Le complément d'agent n'est pas nommé.", "Le four est réduit à sa fonction stellaire."],
+                    answer: 0,
+                    explanation: 'L\'absence de complément d'agent (on ne sait pas QUI l\'a glissée) donne une dimension mystérieuse, voire divine, à l\'acte créateur ("pour nous").'
+                },
+                {
+                    id: 'pain_q13',
+                    type: 'QCM',
+                    question: 'L\'expression "la masse ... fut glissée pour nous dans le four stellaire" évoque une :',
+                    options: ["Gnose", "Genèse"],
+                    answer: 1,
+                    explanation: 'Cela évoque une Genèse (création), ici celle du pain comparée à celle du monde. L\'absence d\'agent suggère une origine mystérieuse ou divine.'
+                },
+                {
+                    id: 'pain_q14',
+                    type: 'QCM',
+                    question: 'À quoi la lumière qui "couche ses feux" sur la croûte fait-elle penser ?',
+                    options: ["La lumière d\'un feu de bois", "La lumière étudiée des tableaux ou d\'un coucher de soleil", "Simplement à la cuisson"],
+                    answer: 1,
+                    explanation: 'L\'expression "couche ses feux avec application" évoque une lumière travaillée, artistique, comme celle d\'un peintre ou la beauté poétique d\'un coucher de soleil, donnant une dimension esthétique à la croûte.'
+                },
+                {
+                    id: 'pain_q15',
+                    type: 'QCM',
+                    question: 'Pourquoi utiliser un tiret dans l\'extrait : "...couche ses feux, - sans un regard pour la mollesse ignoble sous-jacente" ?',
+                    options: ["Pour faire une liaison", "C'est une erreur", "Pour marquer une rupture et introduire un contraste."],
+                    answer: 2,
+                    explanation: 'Le tiret marque une rupture. Après l\'éloge de la croûte, il introduit brutalement la critique de la mie ("mollesse ignoble"), créant un effet de chute dans le paragraphe.'
+                },
+                {
+                    id: 'pain_q16',
+                    type: 'QCM',
+                    question: 'Pourquoi utiliser des métaphores et comparaisons de la nature pour décrire la mie ("éponges", "feuilles ou fleurs") ?',
+                    options: ["Pour parler pour ne rien dire", "Pour décrire de façon poétique la texture de la mie et son vieillissement.", "Par manque d\'idées."],
+                    answer: 1,
+                    explanation: 'Ces images servent à décrire poétiquement la structure alvéolée de la mie, puis son processus de vieillissement (rassissement), comparé au flétrissement végétal.'
+                },
+                {
+                    id: 'pain_q17',
+                    type: 'QCM',
+                    question: 'À quoi font allusion les verbes "rassit", "se détachent" et l'adjectif "friable" en parlant du pain ?',
+                    options: ["À la friture", "À la frigidité", "Au processus de vieillissement, voire à une forme de mort."],
+                    answer: 2,
+                    explanation: 'Ces termes décrivent le processus de rassissement du pain, qui peut être vu comme une image du vieillissement et de la dégradation, faisant écho à la finitude après la création.'
+                },
+                {
+                    id: 'pain_q18',
+                    type: 'QCM',
+                    question: 'Que sont les points de suspension (...) et à quoi peuvent-ils servir dans un texte poétique ?',
+                    options: ["Des apostrophes pour faciliter la lecture", "Une figure de style (aposiopèse) suggérant l\'inexprimé ou une interruption.", "Une simple pause."],
+                    answer: 1,
+                    explanation: 'Les points de suspension forment une figure de style appelée aposiopèse. Ils marquent une interruption, laissant une idée sous-entendue (ici, potentiellement la mort, la destruction, ou simplement la suite logique non dite).'
+                },
+                {
+                    id: 'pain_q19',
+                    type: 'QCM',
+                    question: 'Que peut signifier principalement l\'impératif "Brisons-la" à la fin ?',
+                    options: ["Qu'il faut terminer le poème et manger le pain.", "Que c'est une référence à la Cène biblique.", "Qu\'il faut tout casser."],
+                    answer: 0,
+                    explanation: 'Principalement, il signifie qu\'il faut cesser l\'analyse et revenir à l\'usage concret : manger le pain ("briser la croûte"). L\'allusion à la Cène (réponse b) est une interprétation possible mais secondaire dans le contexte direct du poème de Ponge.'
+                },
+                {
+                    id: 'pain_q20',
+                    type: 'QCM',
+                    question: 'Quelle figure de style principale est l\'expression "Mollesse ignoble sous-jacente" pour désigner la mie ?',
+                    options: ["Anamnèse", "Métaphore", "Oxymore"],
+                    answer: 1,
+                    explanation: 'C\'est une métaphore : la mie est comparée à une "mollesse ignoble sous-jacente". L\'association des termes "mollesse" et "ignoble" crée un effet péjoratif fort.'
+                },
+                {
+                    id: 'pain_q21',
+                    type: 'VF',
+                    question: 'AFFIRMATION : Cette métaphore ("mollesse ignoble") est une référence à la mie qui est qualifiée par un adjectif péjoratif.',
+                    answer: 'Vrai',
+                    explanation: 'Oui, "ignoble" est un adjectif péjoratif qui qualifie la "mollesse" (la mie), créant une image négative.'
+                },
+                {
+                    id: 'pain_q22',
+                    type: 'VF',
+                    question: 'AFFIRMATION : Dans l\'utilisation du verbe "déguster", on peut voir une invitation à apprécier le poème sensitivement plutôt qu\'à l\'analyser froidement.',
+                    answer: 'Vrai',
+                    explanation: 'Le choix de "déguster" peut suggérer une approche plus sensorielle et appréciative du langage poétique, similaire à la dégustation d\'un aliment.'
+                },
+                {
+                    id: 'pain_q23',
+                    type: 'VF',
+                    question: 'AFFIRMATION : La mie est désignée par une métaphore valorisante "mollesse ignoble sous-jacente".',
+                    answer: 'Faux',
+                    explanation: 'La métaphore utilise l\'adjectif péjoratif "ignoble", elle est donc dévalorisante pour la mie.'
+                },
+                {
+                    id: 'pain_q24',
+                    type: 'VF',
+                    question: 'AFFIRMATION : la métaphore "mollesse ignoble sous-jacente" est une référence à la mie',
+                    answer: 'Vrai',
+                    explanation: 'Cette métaphore est une référence à la mie qui est qualifié par un adjectif péjoratif. Cet ajout agit comme une chute au paragraphe.'
+                },
+                {
+                    id: 'pain_q25',
+                    type: 'VF',
+                    question: 'AFFIRMATION : La cuisson du pain est rapprochée d\'une cosmogonie, puis le poète s'intéresse à l'intérieur : la mie.',
+                    answer: 'Vrai',
+                    explanation: 'C\'est exact, le poème passe de la création (cosmogonie) de la croûte à l\'exploration de l\'intérieur (la mie).'
+                },
+                {
+                    id: 'pain_q26',
+                    type: 'VF',
+                    question: 'AFFIRMATION : La mie de pain est décrite de manière entièrement positive.',
+                    answer: 'Faux',
+                    explanation: 'La mie est d\'abord décrite négativement ("lâche et froid sous-sol", "mollesse ignoble"), puis associée à la nature ("éponges", "feuilles ou fleurs"), créant une vision ambivalente.'
+                },
+                {
+                    id: 'pain_q27',
+                    type: 'VF',
+                    question: 'AFFIRMATION : Dans "Le Pain", Ponge utilise un style d\'écriture simple et accessible à tous.',
+                    answer: 'Faux',
+                    explanation: 'Bien que le sujet (le pain) soit banal, le style de Ponge est recherché, utilisant des métaphores complexes, un vocabulaire précis et une syntaxe élaborée.'
+                },
+                {
+                    id: 'pain_q28',
+                    type: 'VF',
+                    question: 'AFFIRMATION : Le poète transforme le pain en objet poétique en décrivant le durcissement de la croûte ("dalles") et la lumière ("feux").',
+                    answer: 'Vrai',
+                    explanation: 'L\'utilisation de métaphores ("dalles") et la description poétique de la lumière ("couche ses feux") contribuent à élever le pain au rang d\'objet poétique.'
+                },
+                {
+                    id: 'pain_q29',
+                    type: 'VF',
+                    question: 'AFFIRMATION : L\'adjectif "panoramique" transforme le pain en un paysage à contempler.',
+                    answer: 'Vrai',
+                    explanation: 'Oui, "panoramique" évoque une vue large, un paysage, transformant ainsi la perception de la surface du pain.'
+                },
+                {
+                    id: 'pain_q30',
+                    type: 'VF',
+                    question: 'AFFIRMATION : Dans le texte, "panoramique" a potentiellement trois sens.',
+                    answer: 'Vrai',
+                    explanation: '1) Paysage (vue large). 2) Allusion à la peinture (style panoramique). 3) Jeu de mots possible avec la racine latine du mot "pain" ("panem").'
+                },
+                {
+                    id: 'pain_q31',
+                    type: 'VF',
+                    question: 'AFFIRMATION : L\'expression "Masse amorphe" est un pléonasme.',
+                    answer: 'Vrai',
+                    explanation: 'Un pléonasme (répétition d\'une idée) car "masse" implique souvent l\'absence de forme définie ("amorphe"). Cela insiste sur l\'état initial, indéfini, avant la création.'
+                },
+                {
+                    id: 'pain_q32',
+                    type: 'VF',
+                    question: 'AFFIRMATION : L\'expression "Four stellaire" est une personnification.',
+                    answer: 'Faux',
+                    explanation: 'C\'est une métaphore. Le four est comparé à un espace stellaire (étoilé), associant la création du pain à la création de l\'univers. Il n\'y a pas d\'action humaine attribuée au four.'
+                },
+                {
+                    id: 'pain_q33',
+                    type: 'VF',
+                    question: 'AFFIRMATION : Dans le dernier paragraphe, la conjonction "mais" introduit une idée de contradiction.',
+                    answer: 'Faux',
+                    explanation: 'Le "mais" ici marque une rupture, un changement de propos, une conclusion. Il ne contredit pas directement ce qui précède mais y met fin pour passer à l\'action.'
+                },
+                {
+                    id: 'pain_q34',
+                    type: 'VF',
+                    question: 'AFFIRMATION : La phrase "car le pain doit être dans notre bouche moins objet de respect que de consommation" utilise le participe passé.',
+                    answer: 'Faux',
+                    explanation: 'Le verbe principal est "doit être" (verbe devoir au présent + infinitif être). Il n\'y a pas de participe passé employé comme temps verbal principal ici. Le présent a une valeur de vérité générale ou de morale.'
+                },
+                {
+                    id: 'pain_q35',
+                    type: 'QCM_EXTRAIT',
+                    question: 'Quel est l\'effet principal de la comparaison dans cet extrait ?',
+                    extract: "La surface du pain est merveilleuse d\'abord à cause de cette impression quasi panoramique qu\'elle donne : comme si l\'on avait à sa disposition sous la main les Alpes, le Taurus ou la Cordillère des Andes.",
+                    options: ["Diminuer l\'importance du pain.", "Rendre le pain plus concret et réaliste.", "Exagérer les dimensions et l\'aspect du pain, le rendant grandiose.", "Créer une atmosphère mystérieuse."],
+                    answer: 2,
+                    explanation: 'En comparant la surface du pain à des montagnes célèbres, Ponge amplifie son importance et transforme un objet banal en un paysage impressionnant.'
+                },
+                {
+                    id: 'pain_q36',
+                    type: 'QCM_EXTRAIT',
+                    question: 'L\'utilisation du verbe "éructer" pour décrire la pâte en train de cuire est un exemple de :',
+                    extract: "Ainsi donc une masse amorphe en train d\'éructer fut glissée pour nous dans le four stellaire...",
+                    options: ["Une litote", "Une métaphore", "Une personnification", "Une allégorie"],
+                    answer: 2,
+                    explanation: 'La personnification attribue une action humaine (éructer) à la pâte non humaine, la rendant vivante.'
+                },
+                {
+                    id: 'pain_q37',
+                    type: 'QCM_EXTRAIT',
+                    question: 'Quel est l\'objectif principal de cette personnification ("éructer") ?',
+                    extract: "Ainsi donc une masse amorphe en train d\'éructer fut glissée pour nous dans le four stellaire...",
+                    options: ["Rendre le pain plus effrayant.", "Souligner le caractère vivant et dynamique de la cuisson.", "Simplifier la description.", "Ironiser sur la banalité du pain."],
+                    answer: 1,
+                    explanation: 'Le verbe "éructer" anime la pâte, soulignant la transformation dynamique et presque organique de la cuisson.'
+                },
+                {
+                    id: 'pain_q38',
+                    type: 'QCM_EXTRAIT',
+                    question: 'Que désignent "la masse amorphe en train d'éructer" et quelles figures de style trouve-t-on principalement ?',
+                    extract: "Ainsi donc une masse amorphe en train d\'éructer fut glissée pour nous dans le four stellaire...",
+                    options: ["Métaphore / Personnification / Litote", "Métaphore / Allitération en \"r\" / Personnification"],
+                    answer: 1,
+                    explanation: 'C\'est une métaphore (désigne la pâte), l\'allitération en [r] peut mimer le son de la cuisson, et "éructer" est une personnification.'
+                },
+                {
+                    id: 'pain_q39',
+                    type: 'QCM_EXTRAIT',
+                    question: 'Pourquoi le poète utilise-t-il le participe présent "durcissant" ?',
+                    extract: "...où durcissant elle s\'est façonnée en vallées, crêtes, ondulations, crevasses...",
+                    options: ["Pour paraître intelligent", "Pour mettre l\'accent sur la durée et le processus en cours de la transformation."],
+                    answer: 1,
+                    explanation: 'Le participe présent "durcissant" insiste sur l\'action en train de se faire, sa continuité et sa durée pendant la métamorphose du pain.'
+                },
+                {
+                    id: 'pain_q40',
+                    type: 'QCM_EXTRAIT',
+                    question: 'Quel est l\'effet principal des comparaisons dans cet extrait ("sous-sol", "éponges", "sœurs siamoises") ?',
+                    extract: "Ce lâche et froid sous-sol que l\'on nomme la mie a son tissu pareil à celui des éponges : feuilles ou fleurs y sont comme des sœurs siamoises soudées par tous les coudes à la fois.",
+                    options: ["Clarifier la description de la mie.", "Rendre la mie plus appétissante.", "Créer un effet de surprise et d\'étrangeté par des associations inattendues.", "Simuler un discours scientifique."],
+                    answer: 2,
+                    explanation: 'Les rapprochements inattendus (mie/sous-sol, mie/éponges, alvéoles/sœurs siamoises) créent des images surprenantes qui renouvellent la perception de la mie.'
+                },
+                {
+                    id: 'pain_q41',
+                    type: 'QCM_EXTRAIT',
+                    question: 'L\'expression "sœurs siamoises soudées par tous les coudes à la fois" est principalement un exemple de :',
+                    extract: "...feuilles ou fleurs y sont comme des sœurs siamoises soudées par tous les coudes à la fois.",
+                    options: ["Une hyperbole", "Une anaphore", "Une antithèse", "Une allitération"],
+                    answer: 0,
+                    explanation: 'C\'est une hyperbole (exagération) pour décrire de manière imagée et frappante la façon dont les alvéoles de la mie sont interconnectées.'
+                },
+                {
+                    id: 'pain_q42',
+                    type: 'QCM_EXTRAIT',
+                    question: 'La structure "Mais brisons-la : car..." est un exemple de :',
+                    extract: "Mais brisons-la : car le pain doit être dans notre bouche moins objet de respect que de consommation.",
+                    options: ["Une antithèse", "Une injonction (ordre/conseil) suivie d\'une justification.", "Une métaphore filée", "Une litote"],
+                    answer: 1,
+                    explanation: 'La première partie ("Mais brisons-la") est une injonction impérative, la seconde (introduite par "car") en donne la raison.'
+                },
+                {
+                    id: 'pain_q43',
+                    type: 'QCM_EXTRAIT',
+                    question: 'Quel est l\'objectif principal de cette structure finale ("Mais brisons-la : car...") ?',
+                    extract: "Mais brisons-la : car le pain doit être dans notre bouche moins objet de respect que de consommation.",
+                    options: ["Accentuer le côté tragique.", "Donner une conclusion claire et pragmatique.", "Créer un effet de surprise.", "Mettre en avant la complexité."],
+                    answer: 1,
+                    explanation: 'Cette structure permet de conclure le poème de manière directe et affirmée, invitant à revenir à l\'usage concret du pain après l\'analyse poétique.'
+                },
+                {
+                    id: 'pain_q44',
+                    type: 'QCM_EXTRAIT',
+                    question: 'En quoi ce passage peut-il être vu comme une allégorie de la création poétique ?',
+                    extract: "Ce lâche et froid sous-sol que l\'on nomme la mie a son <b>tissu</b> pareil à celui des éponges : <b>feuilles</b> ou fleurs y sont comme des sœurs siamoises...",
+                    options: ["Les éponges lavent, les tissus habillent", "Le mot \"tissu\" (mie) partage son étymologie avec \"texte\" et \"feuilles\" peut renvoyer au papier."],
+                    answer: 1,
+                    explanation: 'Oui, "tissu" et "texte" ont la même racine latine ("textus"), et "feuilles" peut évoquer les feuilles de papier. Ponge jouerait sur les mots pour parler de l\'écriture en décrivant le pain. L\'allusion à son propre nom ("Ponge"/"éponge") est aussi une interprétation possible.'
+                },
+                {
+                    id: 'pain_q45',
+                    type: 'QCM_EXTRAIT',
+                    question: 'L\'utilisation du présent de vérité générale dans "le pain DOIT être..." permet principalement de :',
+                    extract: "car le pain doit être dans notre bouche moins objet de respect que de consommation.",
+                    options: ["Ancrer le texte dans le futur.", "Transformer la phrase en une sorte de morale ou de règle générale.", "Simplement décrire une action."],
+                    answer: 1,
 const textsData = [
     {
         id: 'ponge_le_pain',
@@ -13,22 +373,22 @@ const textsData = [
              { id: 'pain_q7', type: 'QCM', question: 'En quelle année a été publié le recueil "Le Parti pris des choses" ?', options: ["1942", "1742"], answer: 0, explanation: 'Le recueil "Le Parti pris des choses" a été publié en 1942.' },
              { id: 'pain_q8', type: 'QCM', question: 'Le titre du poème "Le Pain" fait penser à :', options: ["Une recette de cuisine", "Un article de dictionnaire"], answer: 1, explanation: 'Le titre évoque un article de dictionnaire : l\'auteur en donne une définition et une description organisée, commençant par la surface (la croûte).' },
              { id: 'pain_q9', type: 'QCM', question: 'L\'adjectif mélioratif "merveilleuse" est-il étonnant pour qualifier la croûte du pain ?', options: ["Oui, car la \"merveille\" désigne quelque chose d\'extraordinaire, or le pain est banal.", "Non, l\'adjectif est parfaitement adapté à cet objet quotidien."], answer: 0, explanation: 'L\'adjectif est surprenant car il élève un objet banal au rang d\'extraordinaire, montrant la volonté du poète de transformer notre regard.' },
-             { id: 'pain_q10', type: 'QCM', question: 'Que montrent les connecteurs logiques ("ainsi", "donc", "d’abord", "et", "dès lors") utilisés dans le poème ?', options: ["Rien de particulier", "L’envie du poète d’être précis et d\'organiser sa description.", "Une surenchère d\'arguments."], answer: 1, explanation: 'Ces connecteurs structurent la description et montrent l\'attention aux détails et la volonté de précision du poète, comme dans une démonstration.' },
+             { id: 'pain_q10', type: 'QCM', question: 'Que montrent les connecteurs logiques ("ainsi", "donc", "d'abord", "et", "dès lors") utilisés dans le poème ?', options: ["Rien de particulier", "L'envie du poète d'être précis et d'organiser sa description.", "Une surenchère d'arguments."], answer: 1, explanation: 'Ces connecteurs structurent la description et montrent l\'attention aux détails et la volonté de précision du poète, comme dans une démonstration.' },
              { id: 'pain_q11', type: 'QCM', question: 'Qu\'est-ce qu\'une cosmogonie ?', options: ["L\'étude scientifique de l\'origine de l\'univers.", "Un récit mythologique expliquant la formation du Monde."], answer: 1, explanation: 'Une cosmogonie est un récit mythologique sur la création du Monde (du grec cosmo- "monde" et gon- "engendrer").' },
-             { id: 'pain_q12', type: 'QCM', question: 'Qu\'est-ce qui ressort de l\'expression "la masse ... fut glissée pour nous dans le four stellaire" ?', options: ["Le complément d’agent n’est pas nommé.", "Le four est réduit à sa fonction stellaire."], answer: 0, explanation: 'L\'absence de complément d’agent (on ne sait pas QUI l\'a glissée) donne une dimension mystérieuse, voire divine, à l\'acte créateur ("pour nous").' },
+             { id: 'pain_q12', type: 'QCM', question: 'Qu\'est-ce qui ressort de l\'expression "la masse ... fut glissée pour nous dans le four stellaire" ?', options: ["Le complément d'agent n'est pas nommé.", "Le four est réduit à sa fonction stellaire."], answer: 0, explanation: 'L\'absence de complément d'agent (on ne sait pas QUI l\'a glissée) donne une dimension mystérieuse, voire divine, à l\'acte créateur ("pour nous").' },
              { id: 'pain_q13', type: 'QCM', question: 'L\'expression "la masse ... fut glissée pour nous dans le four stellaire" évoque une :', options: ["Gnose", "Genèse"], answer: 1, explanation: 'Cela évoque une Genèse (création), ici celle du pain comparée à celle du monde. L\'absence d\'agent suggère une origine mystérieuse ou divine.' },
              { id: 'pain_q14', type: 'QCM', question: 'À quoi la lumière qui "couche ses feux" sur la croûte fait-elle penser ?', options: ["La lumière d\'un feu de bois", "La lumière étudiée des tableaux ou d\'un coucher de soleil", "Simplement à la cuisson"], answer: 1, explanation: 'L\'expression "couche ses feux avec application" évoque une lumière travaillée, artistique, comme celle d\'un peintre ou la beauté poétique d\'un coucher de soleil, donnant une dimension esthétique à la croûte.' },
-             { id: 'pain_q15', type: 'QCM', question: 'Pourquoi utiliser un tiret dans l\'extrait : "...couche ses feux, - sans un regard pour la mollesse ignoble sous-jacente" ?', options: ["Pour faire une liaison", "C\'est une erreur", "Pour marquer une rupture et introduire un contraste."], answer: 2, explanation: 'Le tiret marque une rupture. Après l\'éloge de la croûte, il introduit brutalement la critique de la mie ("mollesse ignoble"), créant un effet de chute dans le paragraphe.' },
+             { id: 'pain_q15', type: 'QCM', question: 'Pourquoi utiliser un tiret dans l\'extrait : "...couche ses feux, - sans un regard pour la mollesse ignoble sous-jacente" ?', options: ["Pour faire une liaison", "C'est une erreur", "Pour marquer une rupture et introduire un contraste."], answer: 2, explanation: 'Le tiret marque une rupture. Après l\'éloge de la croûte, il introduit brutalement la critique de la mie ("mollesse ignoble"), créant un effet de chute dans le paragraphe.' },
              { id: 'pain_q16', type: 'QCM', question: 'Pourquoi utiliser des métaphores et comparaisons de la nature pour décrire la mie ("éponges", "feuilles ou fleurs") ?', options: ["Pour parler pour ne rien dire", "Pour décrire de façon poétique la texture de la mie et son vieillissement.", "Par manque d\'idées."], answer: 1, explanation: 'Ces images servent à décrire poétiquement la structure alvéolée de la mie, puis son processus de vieillissement (rassissement), comparé au flétrissement végétal.' },
-             { id: 'pain_q17', type: 'QCM', question: 'À quoi font allusion les verbes "rassit", "se détachent" et l’adjectif "friable" en parlant du pain ?', options: ["À la friture", "À la frigidité", "Au processus de vieillissement, voire à une forme de mort."], answer: 2, explanation: 'Ces termes décrivent le processus de rassissement du pain, qui peut être vu comme une image du vieillissement et de la dégradation, faisant écho à la finitude après la création.' },
+             { id: 'pain_q17', type: 'QCM', question: 'À quoi font allusion les verbes "rassit", "se détachent" et l'adjectif "friable" en parlant du pain ?', options: ["À la friture", "À la frigidité", "Au processus de vieillissement, voire à une forme de mort."], answer: 2, explanation: 'Ces termes décrivent le processus de rassissement du pain, qui peut être vu comme une image du vieillissement et de la dégradation, faisant écho à la finitude après la création.' },
              { id: 'pain_q18', type: 'QCM', question: 'Que sont les points de suspension (...) et à quoi peuvent-ils servir dans un texte poétique ?', options: ["Des apostrophes pour faciliter la lecture", "Une figure de style (aposiopèse) suggérant l\'inexprimé ou une interruption.", "Une simple pause."], answer: 1, explanation: 'Les points de suspension forment une figure de style appelée aposiopèse. Ils marquent une interruption, laissant une idée sous-entendue (ici, potentiellement la mort, la destruction, ou simplement la suite logique non dite).' },
-             { id: 'pain_q19', type: 'QCM', question: 'Que peut signifier principalement l\'impératif "Brisons-la" à la fin ?', options: ["Qu’il faut terminer le poème et manger le pain.", "Que c\'est une référence à la Cène biblique.", "Qu\'il faut tout casser."], answer: 0, explanation: 'Principalement, il signifie qu\'il faut cesser l\'analyse et revenir à l\'usage concret : manger le pain ("briser la croûte"). L\'allusion à la Cène (réponse b) est une interprétation possible mais secondaire dans le contexte direct du poème de Ponge.' },
+             { id: 'pain_q19', type: 'QCM', question: 'Que peut signifier principalement l\'impératif "Brisons-la" à la fin ?', options: ["Qu'il faut terminer le poème et manger le pain.", "Que c'est une référence à la Cène biblique.", "Qu\'il faut tout casser."], answer: 0, explanation: 'Principalement, il signifie qu\'il faut cesser l\'analyse et revenir à l\'usage concret : manger le pain ("briser la croûte"). L\'allusion à la Cène (réponse b) est une interprétation possible mais secondaire dans le contexte direct du poème de Ponge.' },
              { id: 'pain_q20', type: 'QCM', question: 'Quelle figure de style principale est l\'expression "Mollesse ignoble sous-jacente" pour désigner la mie ?', options: ["Anamnèse", "Métaphore", "Oxymore"], answer: 1, explanation: 'C\'est une métaphore : la mie est comparée à une "mollesse ignoble sous-jacente". L\'association des termes "mollesse" et "ignoble" crée un effet péjoratif fort.' },
              { id: 'pain_q21', type: 'VF', question: 'AFFIRMATION : Cette métaphore ("mollesse ignoble") est une référence à la mie qui est qualifiée par un adjectif péjoratif.', answer: 'Vrai', explanation: 'Oui, "ignoble" est un adjectif péjoratif qui qualifie la "mollesse" (la mie), créant une image négative.' },
              { id: 'pain_q22', type: 'VF', question: 'AFFIRMATION : Dans l\'utilisation du verbe "déguster", on peut voir une invitation à apprécier le poème sensitivement plutôt qu\'à l\'analyser froidement.', answer: 'Vrai', explanation: 'Le choix de "déguster" peut suggérer une approche plus sensorielle et appréciative du langage poétique, similaire à la dégustation d\'un aliment.' },
              { id: 'pain_q23', type: 'VF', question: 'AFFIRMATION : La mie est désignée par une métaphore valorisante "mollesse ignoble sous-jacente".', answer: 'Faux', explanation: 'La métaphore utilise l\'adjectif péjoratif "ignoble", elle est donc dévalorisante pour la mie.' },
              { id: 'pain_q24', type: 'VF', question: 'AFFIRMATION : la métaphore "mollesse ignoble sous-jacente" est une référence à la mie', answer: 'Vrai', explanation: 'Cette métaphore est une référence à la mie qui est qualifié par un adjectif péjoratif. Cet ajout agit comme une chute au paragraphe.' },
-             { id: 'pain_q25', type: 'VF', question: 'AFFIRMATION : La cuisson du pain est rapprochée d\'une cosmogonie, puis le poète s’intéresse à l’intérieur : la mie.', answer: 'Vrai', explanation: 'C\'est exact, le poème passe de la création (cosmogonie) de la croûte à l\'exploration de l\'intérieur (la mie).' },
+             { id: 'pain_q25', type: 'VF', question: 'AFFIRMATION : La cuisson du pain est rapprochée d\'une cosmogonie, puis le poète s'intéresse à l'intérieur : la mie.', answer: 'Vrai', explanation: 'C\'est exact, le poème passe de la création (cosmogonie) de la croûte à l\'exploration de l\'intérieur (la mie).' },
              { id: 'pain_q26', type: 'VF', question: 'AFFIRMATION : La mie de pain est décrite de manière entièrement positive.', answer: 'Faux', explanation: 'La mie est d\'abord décrite négativement ("lâche et froid sous-sol", "mollesse ignoble"), puis associée à la nature ("éponges", "feuilles ou fleurs"), créant une vision ambivalente.' },
              { id: 'pain_q27', type: 'VF', question: 'AFFIRMATION : Dans "Le Pain", Ponge utilise un style d\'écriture simple et accessible à tous.', answer: 'Faux', explanation: 'Bien que le sujet (le pain) soit banal, le style de Ponge est recherché, utilisant des métaphores complexes, un vocabulaire précis et une syntaxe élaborée.' },
              { id: 'pain_q28', type: 'VF', question: 'AFFIRMATION : Le poète transforme le pain en objet poétique en décrivant le durcissement de la croûte ("dalles") et la lumière ("feux").', answer: 'Vrai', explanation: 'L\'utilisation de métaphores ("dalles") et la description poétique de la lumière ("couche ses feux") contribuent à élever le pain au rang d\'objet poétique.' },
@@ -41,7 +401,7 @@ const textsData = [
              { id: 'pain_q35', type: 'QCM_EXTRAIT', question: 'Quel est l\'effet principal de la comparaison dans cet extrait ?', extract: "La surface du pain est merveilleuse d\'abord à cause de cette impression quasi panoramique qu\'elle donne : comme si l\'on avait à sa disposition sous la main les Alpes, le Taurus ou la Cordillère des Andes.", options: ["Diminuer l\'importance du pain.", "Rendre le pain plus concret et réaliste.", "Exagérer les dimensions et l\'aspect du pain, le rendant grandiose.", "Créer une atmosphère mystérieuse."], answer: 2, explanation: 'En comparant la surface du pain à des montagnes célèbres, Ponge amplifie son importance et transforme un objet banal en un paysage impressionnant.' },
              { id: 'pain_q36', type: 'QCM_EXTRAIT', question: 'L\'utilisation du verbe "éructer" pour décrire la pâte en train de cuire est un exemple de :', extract: "Ainsi donc une masse amorphe en train d\'éructer fut glissée pour nous dans le four stellaire...", options: ["Une litote", "Une métaphore", "Une personnification", "Une allégorie"], answer: 2, explanation: 'La personnification attribue une action humaine (éructer) à la pâte non humaine, la rendant vivante.' },
              { id: 'pain_q37', type: 'QCM_EXTRAIT', question: 'Quel est l\'objectif principal de cette personnification ("éructer") ?', extract: "Ainsi donc une masse amorphe en train d\'éructer fut glissée pour nous dans le four stellaire...", options: ["Rendre le pain plus effrayant.", "Souligner le caractère vivant et dynamique de la cuisson.", "Simplifier la description.", "Ironiser sur la banalité du pain."], answer: 1, explanation: 'Le verbe "éructer" anime la pâte, soulignant la transformation dynamique et presque organique de la cuisson.' },
-             { id: 'pain_q38', type: 'QCM_EXTRAIT', question: 'Que désignent "la masse amorphe en train d’éructer" et quelles figures de style trouve-t-on principalement ?', extract: "Ainsi donc une masse amorphe en train d\'éructer fut glissée pour nous dans le four stellaire...", options: ["Métaphore / Personnification / Litote", "Métaphore / Allitération en \"r\" / Personnification"], answer: 1, explanation: 'C\'est une métaphore (désigne la pâte), l\'allitération en [r] peut mimer le son de la cuisson, et "éructer" est une personnification.' },
+             { id: 'pain_q38', type: 'QCM_EXTRAIT', question: 'Que désignent "la masse amorphe en train d'éructer" et quelles figures de style trouve-t-on principalement ?', extract: "Ainsi donc une masse amorphe en train d\'éructer fut glissée pour nous dans le four stellaire...", options: ["Métaphore / Personnification / Litote", "Métaphore / Allitération en \"r\" / Personnification"], answer: 1, explanation: 'C\'est une métaphore (désigne la pâte), l\'allitération en [r] peut mimer le son de la cuisson, et "éructer" est une personnification.' },
              { id: 'pain_q39', type: 'QCM_EXTRAIT', question: 'Pourquoi le poète utilise-t-il le participe présent "durcissant" ?', extract: "...où durcissant elle s\'est façonnée en vallées, crêtes, ondulations, crevasses...", options: ["Pour paraître intelligent", "Pour mettre l\'accent sur la durée et le processus en cours de la transformation."], answer: 1, explanation: 'Le participe présent "durcissant" insiste sur l\'action en train de se faire, sa continuité et sa durée pendant la métamorphose du pain.' },
              { id: 'pain_q40', type: 'QCM_EXTRAIT', question: 'Quel est l\'effet principal des comparaisons dans cet extrait ("sous-sol", "éponges", "sœurs siamoises") ?', extract: "Ce lâche et froid sous-sol que l\'on nomme la mie a son tissu pareil à celui des éponges : feuilles ou fleurs y sont comme des sœurs siamoises soudées par tous les coudes à la fois.", options: ["Clarifier la description de la mie.", "Rendre la mie plus appétissante.", "Créer un effet de surprise et d\'étrangeté par des associations inattendues.", "Simuler un discours scientifique."], answer: 2, explanation: 'Les rapprochements inattendus (mie/sous-sol, mie/éponges, alvéoles/sœurs siamoises) créent des images surprenantes qui renouvellent la perception de la mie.' },
              { id: 'pain_q41', type: 'QCM_EXTRAIT', question: 'L\'expression "sœurs siamoises soudées par tous les coudes à la fois" est principalement un exemple de :', extract: "...feuilles ou fleurs y sont comme des sœurs siamoises soudées par tous les coudes à la fois.", options: ["Une hyperbole", "Une anaphore", "Une antithèse", "Une allitération"], answer: 0, explanation: 'C\'est une hyperbole (exagération) pour décrire de manière imagée et frappante la façon dont les alvéoles de la mie sont interconnectées.' },
@@ -72,29 +432,29 @@ const textsData = [
 
             // --- Questions sur la Structure et la Rhétorique ---
             { id: 'odg_preambule_q9', type: 'QCM', question: 'L\'accumulation "les mères, les filles, les sœurs" permet à ODG de :', options: ["Modifier clairement la DDHC", "Faire rentrer sa famille à l\'assemblée", "Montrer une certaine sororité (groupe, dimension familiale, communauté des femmes).", "Marquer l\'absence du mot épouse comme pour critiquer la soumission du mariage"], answer: 2, explanation: 'Rpse 0, 2 et 3. Accumulation "les mères, les filles, les sœurs" : modification de la DHC. Insiste sur la dimension familiale, montre une certaine sororité en mettant en avant une communauté de femmes. Absence du mot "épouse" qui aurait été attendue = critique implicite du mariage ?' },
-            { id: 'odg_preambule_q10', type: 'QCM', question: 'De quelle figure de style s\'agit-il : "représentantes de la nation" ?', options: ["Métaphore", "Allégorie", "Personnification", "Périphrase"], answer: 3, explanation: 'Une périphrase consiste à exprimer en plusieurs mots ce qu’on aurait pu dire en un seul terme. Insiste sur le rôle politique des femmes, rôle oublié dans la DHC de 1789. Plus loin, groupe nominal "des citoyennes" qui insiste aussi sur leur rôle politique.' },
+            { id: 'odg_preambule_q10', type: 'QCM', question: 'De quelle figure de style s\'agit-il : "représentantes de la nation" ?', options: ["Métaphore", "Allégorie", "Personnification", "Périphrase"], answer: 3, explanation: 'Une périphrase consiste à exprimer en plusieurs mots ce qu\'on aurait pu dire en un seul terme. Insiste sur le rôle politique des femmes, rôle oublié dans la DHC de 1789. Plus loin, groupe nominal "des citoyennes" qui insiste aussi sur leur rôle politique.' },
             { id: 'odg_preambule_q11', type: 'VF', question: 'La périphrase "représentantes de la nation" et le groupe nominal "des citoyennes" insistent sur le rôle politique des femmes.', answer: 'Vrai', explanation: 'Ces éléments insistent sur le rôle politique des femmes, rôle oublié dans la DHC de 1789.' },
-            { id: 'odg_preambule_q12', type: 'QCM', question: 'De quelles figures de style s\'agit-il : "l’ignorance, l’oubli ou le mépris ". ', options: ["Périphrase et Métaphore", "Gradation & Métaphore", "Accumulation & Gradation?", "Accumulation & Métaphore"], answer: 2, explanation: 'Cette gradation et accumulation et la réécriture des droits de la FEMME et non de l\'HOMME insiste sur la misogynie qui est désignée comme cause des malheurs de l\'Etat' },
-            { id: 'odg_preambule_q13', type: 'QCM', question: 'Avec la gradation "l’ignorance, l’oubli ou le mépris " + l\'écriture DDFC et non DDHC: qu\'est qui est désigné comme la cause des malheurs de l\'Etat', options: ["La croissance démographique", "La misogynie", "La femme", "La planète"], answer: 1, explanation: ' C’est la misogynie qui est désignée comme la cause des malheurs de l’État. Il est donc urgent de la corriger pour le bien public.' },
+            { id: 'odg_preambule_q12', type: 'QCM', question: 'De quelles figures de style s\'agit-il : "l'ignorance, l'oubli ou le mépris ". ', options: ["Périphrase et Métaphore", "Gradation & Métaphore", "Accumulation & Gradation?", "Accumulation & Métaphore"], answer: 2, explanation: 'Cette gradation et accumulation et la réécriture des droits de la FEMME et non de l\'HOMME insiste sur la misogynie qui est désignée comme cause des malheurs de l\'Etat' },
+            { id: 'odg_preambule_q13', type: 'QCM', question: 'Avec la gradation "l'ignorance, l'oubli ou le mépris " + l\'écriture DDFC et non DDHC: qu\'est qui est désigné comme la cause des malheurs de l\'Etat', options: ["La croissance démographique", "La misogynie", "La femme", "La planète"], answer: 1, explanation: ' C'est la misogynie qui est désignée comme la cause des malheurs de l'État. Il est donc urgent de la corriger pour le bien public.' },
             { id: 'odg_preambule_q14', type: 'QCM', question: 'Pourquoi ODG utilise-t-elle l\'article défini "<b>LA</b> femme" ?', options: ["Pour lui donner une portée généralisante et désigner le sexe invisibilisé par le groupe nominal 'des Hommes'.", "Pour montrer que la femme est singulière et toujours mise en avant"], answer: 0, explanation: 'La : portée généralisante, désigne le sexe invisibilisé par le groupe nominal "des Hommes".' },
             { id: 'odg_preambule_q15', type: 'QCM', question: 'De quelles figures de style s\'agit-il et à quoi sert-elle ? "les droits naturels, inaliénables et sacrés"', options: ["Une énumération ternaire pour insister sur le caractère incontestable des droits de la femme", "Une énumération accumulative pour insister la faiblesse", "Une accumulation ternaire pour insister sur le caractère incontestable des droits de la femme"], answer: 0, explanation: 'Enumération ternaire qui insiste sur le caractère incontestable de ces droits. Comme les adjectifs "principes simples et incontestables" insistent aussi dessus' },
-            { id: 'odg_preambule_q16', type: 'QCM', question: 'Dans le Préambule "Afin que" est répété 3 fois dans le texte. Quelle est cette figure de style et à quoi sert-elle ?', options: ["Une gradation pour faire monter la colère", "Une anaphore qui souligne les conséquences de cette déclaration pour les femmes.", "Une gradation qui souligne les conséquences de cette déclaration pour les femmes.", "Une anaphore qui souligne la colère des femmes."], answer: 1, explanation: 'Anaphore qui souligne les 3 conséquences de cette déclaration pour les femmes et la société. Donne aussi un caractère solennel, répétitif qui marque les esprits, pour qu’on n’oublie pas. Elle a donc une dimension argumentative.' },
+            { id: 'odg_preambule_q16', type: 'QCM', question: 'Dans le Préambule "Afin que" est répété 3 fois dans le texte. Quelle est cette figure de style et à quoi sert-elle ?', options: ["Une gradation pour faire monter la colère", "Une anaphore qui souligne les conséquences de cette déclaration pour les femmes.", "Une gradation qui souligne les conséquences de cette déclaration pour les femmes.", "Une anaphore qui souligne la colère des femmes."], answer: 1, explanation: 'Anaphore qui souligne les 3 conséquences de cette déclaration pour les femmes et la société. Donne aussi un caractère solennel, répétitif qui marque les esprits, pour qu'on n'oublie pas. Elle a donc une dimension argumentative.' },
             { id: 'odg_preambule_q17', type: 'QCM', question: '"constamment", "sans cesse", "à chaque instant" sont des ?', options: ["Groupes nominaux", "Compléments circonstanciels de temps", "Compléments circonstanciels de lieu", "Verbes pronominaux"], answer: 1, explanation: 'Comme l\'anaphore "afin que" ils ont une dimension argumentative et ils marquent les esprits pour qu\'on oublie pas les conséquences de cette déclaration pour les femmes et la société' },
-            { id: 'odg_preambule_q19', type: 'QCM', question: 'Avec les expressions "bonnes moeurs" + "le bonheur de tous", que veut montrer ODG ?', options: ["Les bienfaits de la DDHC", "Que l\'égalité Homme/femme sera bénéfique pour tous", "Que cette avancée sera uniquement bénéfique aux femmes."], answer: 1, explanation: ' l\’égalité hommes/femmes sera bénéfique à toute la société, pas seulement aux femmes, d’où l’importance d’oeuvrer en sa faveur' },
-            { id: 'odg_preambule_q20', type: 'VF', question: 'Pour donner une dimension solennelle et de la sacralité (=ref à dieu) ODG utilise le présent et l\'expression "sous les auspices de l’Être suprême (=Dieu)"', answer: 'Vrai', explanation: ' Présent d’énonciation "reconnaît et déclare" + "sous les auspices de l’Être suprême (=Dieu)"" : donne une solennité, sacralité à la déclaration.' },
-            { id: 'odg_preambule_q21', type: 'QCM', question: '"reconnaît et déclare" de quel temps s\'agit\'il?', options: ["Du présent d\'énonciation", "Du présent de reconnexion", "Du présent de vérité générale"], answer: 0, explanation: 'Présent d’énonciation "reconnaît et déclare" + "sous les auspices de l’Être suprême (=Dieu)" : donne une solennité, sacralité à la déclaration.' },
+            { id: 'odg_preambule_q19', type: 'QCM', question: 'Avec les expressions "bonnes moeurs" + "le bonheur de tous", que veut montrer ODG ?', options: ["Les bienfaits de la DDHC", "Que l\'égalité Homme/femme sera bénéfique pour tous", "Que cette avancée sera uniquement bénéfique aux femmes."], answer: 1, explanation: ' l\égalité hommes/femmes sera bénéfique à toute la société, pas seulement aux femmes, d'où l'importance d'oeuvrer en sa faveur' },
+            { id: 'odg_preambule_q20', type: 'VF', question: 'Pour donner une dimension solennelle et de la sacralité (=ref à dieu) ODG utilise le présent et l\'expression "sous les auspices de l'Être suprême (=Dieu)"', answer: 'Vrai', explanation: ' Présent d'énonciation "reconnaît et déclare" + "sous les auspices de l'Être suprême (=Dieu)"" : donne une solennité, sacralité à la déclaration.' },
+            { id: 'odg_preambule_q21', type: 'QCM', question: '"reconnaît et déclare" de quel temps s\'agit\'il?', options: ["Du présent d\'énonciation", "Du présent de reconnexion", "Du présent de vérité générale"], answer: 0, explanation: 'Présent d'énonciation "reconnaît et déclare" + "sous les auspices de l'Être suprême (=Dieu)" : donne une solennité, sacralité à la déclaration.' },
             { id: 'odg_preambule_q22', type: 'QCM', question: 'Qui sont "les mères, les filles, les sœurs" mentionnées au début du Préambule ?', options: ["La famille d\'ODG uniquement", "Des figures allégoriques sans réalité", "Les représentantes de la nation (femmes) qui demandent à être constituées en Assemblée nationale.", "Des femmes nobles uniquement"], answer: 2, explanation: 'Par cette énumération, ODG désigne l\'ensemble des femmes françaises comme constituant une partie de la nation, légitimes à réclamer leurs droits et à participer à la vie politique.' },
             { id: 'odg_preambule_q23', type: 'VF', question: 'L\'utilisation de l\'expression "sexe supérieur en beauté comme en courage dans les souffrances maternelles" est une flatterie sans but argumentatif.', answer: 'Faux', explanation: 'C\'est un argument rhétorique. ODG valorise les femmes en soulignant leur beauté (stéréotype de l\'époque) mais surtout leur courage face aux douleurs de l\'enfantement, pour mieux revendiquer leur égalité en droits et leur participation politique. Cette périphrase dénonce les termes utilisés dans la DDHC. Périphrase qui fait référence à deux expressions : "le beau sexe" et "le sexe faible".' },
             { id: 'odg_preambule_q24', type: 'QCM', question: 'Quel est le registre principal (ton) employé par ODG dans ce Préambule ?', options: ["Comique et léger", "Lyrique et sentimental", "Solennel et revendicatif", "Didactique et neutre"], answer: 2, explanation: 'Le ton est grave, solennel (par l\'importance du sujet et le vocabulaire choisi) et clairement revendicatif (elle exige des droits).' },
             { id: 'odg_preambule_q25', type: 'VF', question: 'En affirmant que la déclaration des droits des femmes "tournera toujours au maintien de la Constitution", ODG cherche à rassurer les députés hommes.', answer: 'Vrai', explanation: 'Elle présente la reconnaissance des droits des femmes non comme une menace, mais comme une condition nécessaire à la stabilité politique, au bonheur de tous et au respect de la Constitution.' },
 
             // --- Questions basées sur des Extraits (QCM_EXTRAIT) ---
-            { id: 'odg_preambule_q26', type: 'QCM_EXTRAIT', question: 'Dans l\'extrait : "...les actes de pouvoir des femmes et ceux des hommes...", que symbolise la conjonction "et" ?', extract: "...les actes de pouvoir des femmes et ceux des hommes...", options: ["l\'égalité homme/femme", "L\'addition des genres ", "La beauté du moment"], answer: 0, explanation: 'Il y a peu de mentions des hommes. Ici, ils sont mentionnés pour montrer l\’égalité qui existe entre les deux sexes. "Et" symbolise cette égalité car la conjonction les met sur le même plan syntaxique.' },
+            { id: 'odg_preambule_q26', type: 'QCM_EXTRAIT', question: 'Dans l\'extrait : "...les actes de pouvoir des femmes et ceux des hommes...", que symbolise la conjonction "et" ?', extract: "...les actes de pouvoir des femmes et ceux des hommes...", options: ["l\'égalité homme/femme", "L\'addition des genres ", "La beauté du moment"], answer: 0, explanation: 'Il y a peu de mentions des hommes. Ici, ils sont mentionnés pour montrer l\égalité qui existe entre les deux sexes. "Et" symbolise cette égalité car la conjonction les met sur le même plan syntaxique.' },
             { id: 'odg_preambule_q27', type: 'QCM_EXTRAIT', question: 'Pourquoi ODG a utilisé la périphrase : "...le sexe supérieur en beauté comme en courage dans les souffrances maternelles..." pour désigner la femme?', extract: "... le sexe supérieur en beauté comme en courage dans les souffrances maternelles ...", options: ["Pour renverser les expressions \"le beau sexe\" et \"le sexe faible\" utilisées dans la DDHC", "Pour montrer que la femme est supérieure à l\'homme"], answer: 0, explanation: 'Périphrase qui fait référence à deux expressions : "le beau sexe" et "le sexe faible". ODG reprend la première et renverse la deuxième en montrant la force des femmes.' },
-            { id: 'odg_preambule_q28', type: 'QCM_EXTRAIT', question: 'Dans l\'extrait : "... Article premier. - La femme naît libre et demeure égale à l\'homme en droits. Les distinctions sociales ne peuvent être fondées que sur l\'utilité commune....", quel ton adopte ODG ?', extract: "...Article premier. - La femme naît libre et demeure égale à l\'homme en droits. Les distinctions sociales ne peuvent être fondées que sur l\'utilité commune....", options: ["Ironique", "Suspicieux", "Révérencieux", "Neutre"], answer: 0, explanation: 'Article 1 sonne comme une réécriture ironique de la DHC qui stipulait que "les Hommes nai[ssaient] libres et égaux en droits", ce qui est faux, puisque les femmes n’ont pas les mêmes droits… ' },
-            { id: 'odg_preambule_q29', type: 'QCM_EXTRAIT', question: 'Dans l\'article 2 : "...Article 2.- Le but de toute association politique est la conservation des droits naturels ...", que veut faire ODG ?', extract: "...Article 2.- Le but de toute association politique est la conservation des droits naturels et imprescriptibles de la femme et de l\'homme : ces droits sont la liberté, la propriété, la sûreté, et surtout la résistance à l\'oppression...", options: ["Insiste sur la dimension naturelle (et donc indiscutable) de ces droits par l’adjectif \"naturels\" et le verbe \"naît\".", "Insiste sur la dimension environnementale (et donc indiscutable) de ces droits par l’adjectif \"naturels\" et le verbe \"naît\"."], answer: 0, explanation: 'Ces droits sont naturels et donc indiscutables.' },
-            { id: 'odg_preambule_q30', type: 'QCM_EXTRAIT', question: 'Dans l\'extrait : "...la liberté, la propriété, la sûreté, et surtout la résistance à l\’oppression...", dans cette énumération ODG pour insister sur ces droits utilise 2 figures de style ?', extract: "...la liberté, la propriété, la sûreté, et surtout la résistance à l’oppression...", options: ["Allitération en [é] pour le dernier groupe de mots Assonance en [r]", "Assonance en [é] dans les trois premiers termes + allitération en [s] pour le dernier groupe de mots"], answer: 1, explanation: 'La répétition d\'une voyelle est une assonance / La répétition d\'une consonne est une allitération' },
-            { id: 'odg_preambule_q31', type: 'QCM_EXTRAIT', question: 'Dans l\'énumération : "...la liberté, la propriété, la sûreté, et surtout la résistance à l\’oppression...", avec quoi résonne le dernier groupe "résistance à l\'oppression" ?', extract: "...la liberté, la propriété, la sûreté, et surtout la résistance à l’oppression...", options: ["L\'article 4 qui accuse les hommes de despotisme", "L\'article 4 qui accuse les hommes de négligence"], answer: 0, explanation: 'Despotisme = Régime politique dans lequel un seul homme gouverne de façon arbitraire et autoritaire. <br>Article 4. La liberté et la justice consistent à rendre tout ce qui appartient à autrui ; ainsi l\'exercice des droits naturels de la femme n\'a de bornes que la tyrannie perpétuelle que l\'homme lui oppose ; ces bornes doivent être réformées par les lois de la nature et de la raison.' },
+            { id: 'odg_preambule_q28', type: 'QCM_EXTRAIT', question: 'Dans l\'extrait : "... Article premier. - La femme naît libre et demeure égale à l\'homme en droits. Les distinctions sociales ne peuvent être fondées que sur l\'utilité commune....", quel ton adopte ODG ?', extract: "...Article premier. - La femme naît libre et demeure égale à l\'homme en droits. Les distinctions sociales ne peuvent être fondées que sur l\'utilité commune....", options: ["Ironique", "Suspicieux", "Révérencieux", "Neutre"], answer: 0, explanation: 'Article 1 sonne comme une réécriture ironique de la DHC qui stipulait que "les Hommes nai[ssaient] libres et égaux en droits", ce qui est faux, puisque les femmes n'ont pas les mêmes droits… ' },
+            { id: 'odg_preambule_q29', type: 'QCM_EXTRAIT', question: 'Dans l\'article 2 : "...Article 2.- Le but de toute association politique est la conservation des droits naturels ...", que veut faire ODG ?', extract: "...Article 2.- Le but de toute association politique est la conservation des droits naturels et imprescriptibles de la femme et de l\'homme : ces droits sont la liberté, la propriété, la sûreté, et surtout la résistance à l\'oppression...", options: ["Insiste sur la dimension naturelle (et donc indiscutable) de ces droits par l'adjectif \"naturels\" et le verbe \"naît\".", "Insiste sur la dimension environnementale (et donc indiscutable) de ces droits par l'adjectif \"naturels\" et le verbe \"naît\"."], answer: 0, explanation: 'Ces droits sont naturels et donc indiscutables.' },
+            { id: 'odg_preambule_q30', type: 'QCM_EXTRAIT', question: 'Dans l\'extrait : "...la liberté, la propriété, la sûreté, et surtout la résistance à l\\'oppression...", dans cette énumération ODG pour insister sur ces droits utilise 2 figures de style ?', extract: "...la liberté, la propriété, la sûreté, et surtout la résistance à l'oppression...", options: ["Allitération en [é] pour le dernier groupe de mots Assonance en [r]", "Assonance en [é] dans les trois premiers termes + allitération en [s] pour le dernier groupe de mots"], answer: 1, explanation: 'La répétition d\'une voyelle est une assonance / La répétition d\'une consonne est une allitération' },
+            { id: 'odg_preambule_q31', type: 'QCM_EXTRAIT', question: 'Dans l\'énumération : "...la liberté, la propriété, la sûreté, et surtout la résistance à l\\'oppression...", avec quoi résonne le dernier groupe "résistance à l\'oppression" ?', extract: "...la liberté, la propriété, la sûreté, et surtout la résistance à l'oppression...", options: ["L\'article 4 qui accuse les hommes de despotisme", "L\'article 4 qui accuse les hommes de négligence"], answer: 0, explanation: 'Despotisme = Régime politique dans lequel un seul homme gouverne de façon arbitraire et autoritaire. <br>Article 4. La liberté et la justice consistent à rendre tout ce qui appartient à autrui ; ainsi l\'exercice des droits naturels de la femme n\'a de bornes que la tyrannie perpétuelle que l\'homme lui oppose ; ces bornes doivent être réformées par les lois de la nature et de la raison.' },
             { id: 'odg_preambule_q32', type: 'QCM_EXTRAIT', question: 'Dans l\'extrait : "...considérant que l\'ignorance, l\'oubli ou le mépris des droits de la femme, sont les seules causes des malheurs publics et de la corruption des gouvernements...", quelle figure de style est marquée par la succession "l\'ignorance, l\'oubli ou le mépris" ?', extract: "...considérant que l\'ignorance, l\'oubli ou le mépris des droits de la femme, sont les seules causes des malheurs publics...", options: ["Une métaphore", "Une gradation ou une accumulation", "Une personnification", "Une antithèse"], answer: 1, explanation: 'Cette énumération de termes négatifs (ignorance, oubli, mépris) constitue une accumulation (ou une légère gradation) qui insiste sur les causes multiples et graves de l\'oppression des femmes et de ses conséquences politiques.' },
             { id: 'odg_preambule_q33', type: 'QCM_EXTRAIT', question: 'Que signifie l\'affirmation que cette déclaration doit être "constamment présente à tous les membres du corps social" ?', extract: "...afin que cette déclaration, constamment présente à tous les membres du corps social, leur rappelle sans cesse leurs droits et leurs devoirs...", options: ["Qu\'elle doit être affichée dans tous les lieux publics.", "Qu\'elle doit être apprise par cœur par tous.", "Que les principes qu\'elle énonce doivent être connus de tous et servir de référence permanente.", "Qu\'elle doit être lue une fois par an."], answer: 2, explanation: 'ODG souhaite que les droits et devoirs (des femmes et des hommes) soient une référence constante pour tous les citoyens et pour le gouvernement, afin d\'assurer le respect des lois et la justice.' },
             { id: 'odg_preambule_q34', type: 'QCM_EXTRAIT', question: 'Quel est le but principal de la comparaison implicite entre les "actes du pouvoir des femmes" et "ceux du pouvoir des hommes" ?', extract: "...afin que les actes du pouvoir des femmes, et ceux du pouvoir des hommes pouvant être à chaque instant comparés avec le but de toute institution politique, en soient plus respectés...", options: ["Montrer la supériorité du pouvoir des femmes.", "Établir une compétition entre les sexes.", "Affirmer que les actions politiques des femmes doivent être évaluées selon les mêmes critères de justice et d\'utilité commune que celles des hommes.", "Suggérer que les femmes doivent avoir un pouvoir séparé."], answer: 2, explanation: 'ODG revendique que les actions politiques (réclamations, actes législatifs) émanant des femmes ou les concernant soient jugées à l\'aune des principes universels de justice et du bien commun, au même titre que celles initiées par les hommes.' },
@@ -108,20 +468,21 @@ const textsData = [
         author: 'Olympe de Gouges (ODG)',
         questions: [
             // --- Questions renumérotées et corrigées ---
-            { id: 'odg_postambule_q1', type: 'QCM', question: 'Quel est l\’objectif des questions rhétoriques posées par Olympe de Gouges dans ce paragraphe ?', options: ["Encourager les femmes en explorant leurs peurs pour les rassurer", "Accuser directement les hommes de tous les maux", "Montrer l’indifférence des femmes face à leur situation"], answer: 0, explanation: 'Olympe de Gouges utilise ces questions rhétoriques pour encourager les femmes à dépasser leurs craintes et à se mobiliser dans leur combat pour l\’égalité. Elle cite toutes les peurs pour que les femmes dépassent ces peurs.' },
-            { id: 'odg_postambule_q2', type: 'VF', question: 'La métaphore de la "branche" évoque le lien dépassé entre morale religieuse et politique après la Révolution.', answer: 'Vrai', explanation: 'La métaphore "cette morale longtemps accrochée aux <b>branches de la politique</b>" insiste sur une morale religieuse auparavant liée à la politique, mais jugée dépassée ("qui n’est plus de saison") après la Révolution. La Révolution a mis fin aux liens entre le gouvernement et la religion chrétienne' },
-            { id: 'odg_postambule_q3', type: 'VF', question: 'La réponse "tout" à la question "Femmes, qu\'y a-t-il de commun entre vous et nous ?" signifie que les <b>hommes et les femmes n’ont rien en commun.</b>', answer: 'Faux', explanation: 'Le mot "tout" insiste sur l’idée que femmes et hommes sont parfaitement identiques, et par conséquent, qu’ils doivent avoir les mêmes droits.' },
-            { id: 'odg_postambule_q4', type: 'QCM', question: 'Quel est l\’objectif principal du Postambule d\’Olympe de Gouges ?', options: ["Inciter les femmes à prendre conscience et revendiquer leurs droits naturels.", "Demander l’abolition définitive de la monarchie.", "Rappeler l’autorité religieuse traditionnelle.", "Préserver l\'Ancien Régime."], answer: 0, explanation: 'Dans ce texte, Olympe de Gouges exhorte les femmes à se réveiller et à réclamer leurs droits naturels et légitimes.' },
+            { id: 'odg_postambule_q1', type: 'QCM', question: 'Quel est l\objectif des questions rhétoriques posées par Olympe de Gouges dans ce paragraphe ?', options: ["Encourager les femmes en explorant leurs peurs pour les rassurer", "Accuser directement les hommes de tous les maux", "Montrer l'indifférence des femmes face à leur situation"], answer: 0, explanation: 'Olympe de Gouges utilise ces questions rhétoriques pour encourager les femmes à dépasser leurs craintes et à se mobiliser dans leur combat pour l\égalité. Elle cite toutes les peurs pour que les femmes dépassent ces peurs.' },
+            { id: 'odg_postambule_q2', type: 'VF', question: 'La métaphore de la "branche" évoque le lien dépassé entre morale religieuse et politique après la Révolution.', answer: 'Vrai', explanation: 'La métaphore "cette morale longtemps accrochée aux <b>branches de la politique</b>" insiste sur une morale religieuse auparavant liée à la politique, mais jugée dépassée ("qui n'est plus de saison") après la Révolution. La Révolution a mis fin aux liens entre le gouvernement et la religion chrétienne' },
+            { id: 'odg_postambule_q3', type: 'VF', question: 'La réponse "tout" à la question "Femmes, qu\'y a-t-il de commun entre vous et nous ?" signifie que les <b>hommes et les femmes n'ont rien en commun.</b>', answer: 'Faux', explanation: 'Le mot "tout" insiste sur l'idée que femmes et hommes sont parfaitement identiques, et par conséquent, qu'ils doivent avoir les mêmes droits.' },
+            { id: 'odg_postambule_q4', type: 'QCM', question: 'Quel est l\objectif principal du Postambule d\Olympe de Gouges ?', options: ["Inciter les femmes à prendre conscience et revendiquer leurs droits naturels.", "Demander l'abolition définitive de la monarchie.", "Rappeler l'autorité religieuse traditionnelle.", "Préserver l\'Ancien Régime."], answer: 0, explanation: 'Dans ce texte, Olympe de Gouges exhorte les femmes à se réveiller et à réclamer leurs droits naturels et légitimes.' },
             { id: 'odg_postambule_q5', type: 'VF', question: 'Olympe de Gouges affirme que la Révolution a amélioré la place des femmes dans la société.', answer: 'Faux', explanation: 'Olympe de Gouges constate amèrement que la Révolution a entraîné un mépris encore plus marqué vis-à-vis des femmes.' },
             { id: 'odg_postambule_q6', type: 'QCM', question: 'Par la métaphore du "tocsin de la raison", ODG se place dans la lignée de quel mouvement philosophique ?', options: ["Le Romantisme", "Les Lumières", "Le Surréalisme", "La Renaissance"], answer: 1, explanation: 'Le "tocsin de la raison" renvoie explicitement aux philosophes des Lumières diffusant la raison contre les préjugés.' },
-            { id: 'odg_postambule_q7', type: 'VF', question: 'ODG considère la nature comme porteuse des lois égalitaires homme-femme.', answer: 'Vrai', explanation: 'La nature est, selon elle, un modèle d\’égalité naturelle que la société a corrompu.' }, // Note: Usage de ’ typographique
-            { id: 'odg_postambule_q8', type: 'QCM', question: 'ODG utilise l\’expression "homme esclave" pour illustrer quel paradoxe ?', options: ["L’homme est dominé par les femmes.", "L’homme libre opprime celles qui l’ont aidé à devenir libre.", "L’homme refuse d’être aidé par la femme.", "L’homme lutte contre la nature."], answer: 1, explanation: 'ODG montre ainsi que l’homme libéré grâce au soutien des femmes devient injuste envers celles-ci dès qu’il a récupéré sa liberté.' },
-            { id: 'odg_postambule_q9', type: 'QCM', question: 'Pourquoi ODG évoque-t-elle l\’épisode biblique des noces de Cana ?', options: ["Pour critiquer explicitement la religion chrétienne.", "Pour anticiper une potentielle objection religieuse et la réfuter.", "Pour soutenir l’autorité religieuse.", "Pour inviter à la célébration religieuse."], answer: 1, explanation: 'Elle anticipe et réplique à une potentielle objection religieuse en montrant l\'anachronisme de telles idées.' },
-            { id: 'odg_postambule_q10', type: 'QCM', question: 'Quelle réponse ODG préconise-t-elle face à la question : "Femmes, qu\'y a-t-il de commun entre vous et nous ?"', options: ["Rien", "Que la différence physique", "Tout", "Peu de choses"], answer: 2, explanation: 'Elle préconise brièvement la réponse "Tout", qui affirme catégoriquement l’identité fondamentale entre les deux sexes et légitime l\’égalité absolue.' },
+            { id: 'odg_postambule_q7', type: 'VF', question: 'ODG considère la nature comme porteuse des lois égalitaires homme-femme.', answer: 'Vrai', explanation: 'La nature est, selon elle, un modèle d\dégalité naturelle que la société a corrompu.' }, // Note: Usage de  ' typographique
+            { id: 'odg_postambule_q8', type: 'QCM', question: 'ODG utilise l\expression "homme esclave" pour illustrer quel paradoxe ?', options: ["L'homme est dominé par les femmes.", "L'homme libre opprime celles qui l'ont aidé à devenir libre.", "L'homme refuse d'être aidé par la femme.", "L'homme lutte contre la nature."], answer: 1, explanation: 'ODG montre ainsi que l'homme libéré grâce au soutien des femmes devient injuste envers celles-ci dès qu'il a récupéré sa liberté.' },
+            { id: 'odg_postambule_q9', type: 'QCM', question: 'Pourquoi ODG évoque-t-elle l\épisode biblique des noces de Cana ?', options: ["Pour critiquer explicitement la religion chrétienne.", "Pour anticiper une potentielle objection religieuse et la réfuter.", "Pour soutenir l'autorité religieuse.", "Pour inviter à la célébration religieuse."], answer: 1, explanation: 'Elle anticipe et réplique à une potentielle objection religieuse en montrant l\'anachronisme de telles idées.' },
+            { id: 'odg_postambule_q10', type: 'QCM', question: 'Quelle réponse ODG préconise-t-elle face à la question : "Femmes, qu\'y a-t-il de commun entre vous et nous ?"', options: ["Rien", "Que la différence physique", "Tout", "Peu de choses"], answer: 2, explanation: 'Elle préconise brièvement la réponse "Tout", qui affirme catégoriquement l'identité fondamentale entre les deux sexes et légitime l\égalité absolue.' },
             { id: 'odg_postambule_q11', type: 'VF', question: 'ODG appelle les femmes à dominer les hommes comme ces derniers les ont dominées auparavant.', answer: 'Faux', explanation: 'Elle appelle au contraire à une égalité réelle et non à une revanche ou supériorité féminine.' },
-            { id: 'odg_postambule_q12', type: 'QCM', question: 'Selon ODG, quels sont les principaux moyens d\’action pour les femmes ?', options: ["La violence physique contre les hommes.", "La soumission aux autorités masculines.", "La force de la raison, de la philosophie et l’union collective.", "La supériorité naturelle et l’isolement individuel."], answer: 2, explanation: 'ODG indique que les femmes doivent opposer la raison et la philosophie aux prétentions injustifiées de supériorité des hommes, en restant unies.' }, 
+            { id: 'odg_postambule_q12', type: 'QCM', question: 'Selon ODG, quels sont les principaux moyens d\action pour les femmes ?', options: ["La violence physique contre les hommes.", "La soumission aux autorités masculines.", "La force de la raison, de la philosophie et l'union collective.", "La supériorité naturelle et l'isolement individuel."], answer: 2, explanation: 'ODG indique que les femmes doivent opposer la raison et la philosophie aux prétentions injustifiées de supériorité des hommes, en restant unies.' }, 
             { id: 'odg_postambule_q13', type: 'QCM', question: 'À quoi renvoie la polysémie (avoir plusieurs sens) du mot "affranchir" dans la conclusion du Postambule ?', options: ["Se soumettre volontairement aux hommes.", "Franchir les obstacles et se libérer des contraintes injustes.", "Ignorer les barrières sociales imposées aux femmes.", "Respecter toutes les barrières posées devant elles."], answer: 1, explanation: 'Le verbe "affranchir" a un double sens: franchir (dépasser les barrières physiques) et se libérer des contraintes sociales imposées injustement aux femmes.' },
             { id: 'odg_postambule_q14', type: 'QCM', question: 'En commençant par "Femme, réveille toi" que tente de faire ODG?', options: ["Elle apostrophe les femmes", "Elle dénigre les femmes.", "Elle plaint les femmes."], answer: 0, explanation: 'ODG interpelle les femmes pour les faire réagir, attirer leur attention.' },
+            { id: 'odg_postambule_q15', type: 'QCM', question: 'Qu\'est-ce que le Tocsin et à quoi fait-il référence dans ce texte ?', options: ["Le Tocsin est une cloche utilisée en temps de guerre. Utilisé ici pour parler de la raison qui se répand partout.", "Il s\'agit d\'une trompette pour appeler les femmes comme en temps de guerre.", "Il s\'agit d\'une clochette à accrocher au cou des moutons pour rappeler les troupeaux."], answer: 0, explanation: 'Le tocsin est une cloche utilisée en temps de guerre. Il s'agit ici de la cloche de la raison : ODG se place dans l'héritage des Lumières. La raison se répand partout et la femme doit en profiter pour faire valoir ses droits.' },
             { id: 'odg_postambule_q15', type: 'QCM', question: 'Qu\'est-ce que le Tocsin et à quoi fait-il référence dans ce texte ?', options: ["Le Tocsin est une cloche utilisée en temps de guerre. Utilisé ici pour parler de la raison qui se répand partout.", "Il s\'agit d\'une trompette pour appeler les femmes comme en temps de guerre.", "Il s\'agit d\'une clochette à accrocher au cou des moutons pour rappeler les troupeaux."], answer: 0, explanation: 'Le tocsin est une cloche utilisée en temps de guerre. Il s’agit ici de la cloche de la raison : ODG se place dans l’héritage des Lumières. La raison se répand partout et la femme doit en profiter pour faire valoir ses droits.' },
             { id: 'odg_postambule_q16', type: 'QCM', question: 'Pourquoi ODG utilise la <b>Métaphore</b> du Tocsin (cloche utilisée en temps de guerre) pour désigner la raison?', options: ["Avec cette idée de cloche de la raison ODG se place dans l’héritage des Lumières.", "Avec cette idée de cloche de la raison ODG se place dans l\'église."], answer: 0, explanation: 'Il s’agit ici de la cloche de la raison : ODG se place dans l’héritage des Lumières. La raison se répand partout et la femme doit en profiter pour faire valoir ses droits.' },
             { id: 'odg_postambule_q17', type: 'QCM', question: '"Le flambeau de la vérité", de quelle figure de style s\'agit-il ?', options: ["Métaphore", "Périphrase"], answer: 0, explanation: 'Métaphore qui renvoie à la lumière et donc au siècle des lumières qui ont dissipé les nuages de la sottise. <b>Métaphore</b> = Comparaison sans outil de comparaison (ex: "la route, long ruban") On compare à quelque chose de différent. / <b>Périphrase</b>: Expression en plusieurs mots pour décrire quelque chose de simple (ex: "Ile de Beauté" pour la Corse, "l\'astre du jour" pour le soleil).' },
@@ -1365,7 +1726,7 @@ const textsData = [
             explanation: "La scène se termine par le départ de Perdican, qui ne laisse pas de place à la réconciliation."
         },
         {
-            id: 'badine_q6',
+            id: 'badine_q7',
             type: 'QCM_EXTRAIT',
             question: "Par quoi débute la leçon que donne Perdican à Camille dans le premier mouvement ?",
             extract: " Sais-tu ce que c\'est que des nonnes, malheureuse fille <b>?</b> Elles qui te représentent l\'amour des hommes comme un mensonge <b>?</b> Savent-elles que c\'est un crime qu\'elles font de venir chuchoter un mensonge, savent-elles qu\'il y a pis encore, le à une vierge des paroles de femme <b>?</b>",
@@ -1374,7 +1735,7 @@ const textsData = [
             explanation: "Cette « leçon » débute par une succession de questions rhétoriques qui s\’allongent progressivement. Perdican dénonce la fausseté de l\’amour divin et veut éclairer Camille digne de pitié, comme le souligne l\’adjectif pathétique « malheureuse », pour avoir été la victime des religieuses. "
         },
         {
-            id: 'badine_q7',
+            id: 'badine_q8',
             type: 'QCM_EXTRAIT',
             question: "Pourquoi Perdican utilise l\'adjectif pathétique 'Malheureuse' pour parler à Camille ?",
             extract: " Sais-tu ce que c\'est que des nonnes, mensonge de <b>malheureuse</b> fille ?",
@@ -1383,16 +1744,16 @@ const textsData = [
             explanation: "l\’adjectif pathétique « malheureuse », est utilisé pour montrer qu\'elle a été la victime des religieuses. Perdican dénonce la fausseté de l\’amour divin et veut éclairer Camille digne de pitié. "
         },
         {
-            id: 'badine_q8',
+            id: 'badine_q9',
             type: 'QCM_EXTRAIT',
             question: "Comment voit-on que Perdican est particulièrement accusateur à l\'égard de la religion ?",
-            extract: "Sais-tu ce que c\'est que <b>des nonnes</>, mensonge de malheureuse fille ? Elles qui te représentent l\'amour des hommes comme un mensonge ? Savent-elles que c\'est un <u>crime</u> qu\'elles font de venir chuchoter un <u>mensonge</u>, savent-elles qu\'il y a pis encore, le à une vierge des paroles de femme ?",
+            extract: "Sais-tu ce que c\'est que <b>des nonnes</b>, mensonge de malheureuse fille ? Elles qui te représentent l\'amour des hommes comme un mensonge ? Savent-elles que c\'est un <u>crime</u> qu\'elles font de venir chuchoter un <u>mensonge</u>, savent-elles qu\'il y a pis encore, le à une vierge des paroles de femme ?",
             options: ["Il se fait passer pour une victime", "Il nomme les religieuse par un nom péjoratif 'nonnes'","Il utilise un champ lexical flateur","Il utilise un champ lexical péjoratif","il enchaine des questions rhétoriques"],
             answer: [1,3,4],
             explanation: "Le propos de Perdican est particulièrement accusateur à l\’égard de la religion : il nomme les religieuses à travers un nom péjoratif et utilise un champ lexical péjoratif pour décrire leurs actions. Le chiasme souligne la fausseté de leur enseignement tout comme l\’antithèse."
         },
         {
-            id: 'badine_q9',
+            id: 'badine_q10',
             type: 'QCM_EXTRAIT',
             question: "Comment s\'appelle cette figure de style qui consiste à disposer en mirroir des éléments d\'une phrase ?",
             extract: "Elles qui te représentent <b>l\'amour des hommes</b> comme un <u>mensonge</u> ? Savent-elles qu\'il y a pis encore, le <u>mensonge</u> de l\'<b>amour divin</b> ?",
@@ -1401,7 +1762,7 @@ const textsData = [
             explanation: "Le chiasme souligne la fausseté de l\'enseignement tout comme l\’antithèse. 'Chuchoter à une vierge des paroles de femme'"
         },
         {
-            id: 'badine_q10',
+            id: 'badine_q11',
             type: 'QCM_EXTRAIT',
             question: "Que déplore Perdican avec l\’interjection 'Ah !', l\’exclamation et l\'adverbe d\'intensité 'comme' repris en début de phrase (=anaphore) ?",
             extract: "<b>Ah!</b> Comme elles t\'ont fait la leçon ! Comme j\'avais prévu tout cela quand tu t\'es arrêtée devant le portrait de notre vieille tante.",
@@ -1410,7 +1771,7 @@ const textsData = [
             explanation: "l\'interjection 'Ah !', l\’exclamation et l\’'anaphore de l\’adverbe d\’intensité 'comme' montrent que Perdican déplore que Camille ait quitté le monde de l\'enfance et de l\'innocence pour plonger dans celui de l\'aveuglement et l\'obstination.  Le tableau de la vieille tante est une référence à la scène 2 de l\’acte I (scène de leurs retrouvailles)"
         },
         {
-            id: 'badine_q11',
+            id: 'badine_q12',
             type: 'QCM_EXTRAIT',
             question: "Dans cet extrait à quoi sert l\’utilisation de l\’imparfait, l\’anaphore du 'tu' et les <i>propositions juxtaposées</i>?",
             extract: "<u>Tu</u> <b>voulais</b> partir sans me serrer la main; <u>tu</u> ne <b>voulais</b> revoir ni ce bois, ni <i>cette pauvre petite</i> fontaine qui nous regarde tout en larmes; <u>tu</u> reniais les jours de ton enfance et le <i>masque de plâtre</i> que les nonnes t'ont placé sur les joues me refusait un baiser de frère; mais ton coeur a battu; il a oublié la leçon, lui qui ne sait pas lire, et <u>tu</u> es revenue t'asseoir sur l\'herbe où nous voilà. ",
@@ -1419,23 +1780,23 @@ const textsData = [
             explanation: "Perdican revient sur l\’attitude de Camille à son égard et dresse une succession d\’exemples grâce aux <b>imparfaits</b> et à l\’<u>anaphore</u> en « tu ». Ces exemples illustrent son argumentation. Les <i>propositions sont juxtaposées</i>, donne l\’impression qu\’il déverse un flot d’exemples qui accablent Camille. Il l\’accuse notamment d\’avoir oublié leur enfance représentée par le champ lexical d’une nature bucolique. La personnification donne aussi une tonalité pathétique et exprime le regret de Perdican ; elle est lyrique et très romantique (nature + sentiment). A nouveau, il accuse les religieuses comme le montre la métaphore : le plâtre évoque la froideur, le masque la fausseté"
         },
         {
-            id: 'badine_q12',
+            id: 'badine_q13',
             type: 'VF',
             question: "AFFIRMATION : La métaphore du masuque ('le masque de plâtre que les nonnes t'on placé') évoque la froideur et la fausseté",
             answer: "Vrai",
             explanation: "A nouveau, il accuse les religieuses avec la métaphore du maque de plâtre qui évoque la froideur et la fausseté."
         },
         {
-            id: 'badine_q13',
+            id: 'badine_q14',
             type: 'QCM_EXTRAIT',
             question: "Quelle figure de style retrouve-t-on ici?",
             extract: "<u>... revoir ni ce bois, ni <mark>cette pauvre petite fontaine qui nous regarde tout en larmes</mark>. ",
             options: ["Anaphore", "Chiasme", "Metaphore", "Personnification"],
-            answer: 0,
+            answer: 3,
             explanation: "Personnification de la fontaine pour donner une tonalité pathétique e exprimer le regret de Perdican"
         },
         {
-            id: 'badine_q14',
+            id: 'badine_q15',
             type: 'QCM_EXTRAIT',
             question: "La conjonction de coordination 'mais' annonce un changement, Camille est finalement venu. Quelle figure de style explique ce changement?</i>?",
             extract: "Tu voulais partir sans me serrer la main; ... <mark>mais</mark> <u>ton coeur</u> a battu; il a oublié <b>sa leçon</b>, lui qui ne sait pas <b>lire</b>",
@@ -1444,14 +1805,14 @@ const textsData = [
             explanation: "Le coeur est la <u>métaphore des sentiments</u>, il est personnifié et il prend le dessus sur la <b>métaphore de l\’éducation</b> qui traduit la doxa de la religion"
         },
         {
-            id: 'badine_q15',
+            id: 'badine_q16',
             type: 'VF',
             question: "AFFIRMATION : 'tu es revenue t\’asseoir sur l\’herbe où nous voilà' le pronom nous évoque l\'union des 2 jeunes gens.",
             answer: "Vrai",
             explanation: "Nous évoque l\’union de Camille et Perdican."
         },
         {
-            id: 'badine_q16',
+            id: 'badine_q17',
             type: 'QCM',
             question: "De quoi parle le mouvement 2 ?",
             options: ["Un éloge de l\’amour humain", "Un réquisitoire contre le couvent et l\'amour divin"],
@@ -1459,14 +1820,14 @@ const textsData = [
             explanation: "Après avoir dénocé et fait un réquisitoire contre le couvent dans le mouvement, il fait l\'éloge de l\'amour humain dans le mouvement 2 "
         },
         {
-            id: 'badine_q17',
+            id: 'badine_q18',
             type: 'VF',
             question: "AFFIRMATION : Perdican est ironique qand il dit 'Eh bien ! Camille, <mark><u>ces</u> femmes ont bien parlé</mark> ; <mark>elles t\'ont mise dans le vrai chemin</mark> ' ",
             answer: "Vrai",
             explanation: "On note un changement de ton avec l\'interjection 'Eh bien' il accuse les religieuses et leur discours avec l\'ironie. Le <u>determinant démonstratif</u> montre qu\'il met une distance critique entre lui et ces religieuses"
         },
        {
-            id: 'badine_q18',
+            id: 'badine_q19',
             type: 'QCM_EXTRAIT',
             question: "Quelle est la figure de style ici?",
             extract: "Il pourra m\'en couter le <mark>bonheur de ma vie</mark>; mais <u>dis</u>-leur cela de ma part: le ciel n\'<b>est</b> pas pour elles",
@@ -1475,7 +1836,7 @@ const textsData = [
             explanation: "C\'est une hyperbole (exagération) qui marque l\'impossible union des deux jeunes. il accuse les religieuses et leur discours en utilisant l\’ironie. Le déterminant démonstratif montre aussi qu’il met une distance critique entre lui et ces femmes, qu\’il les méprise et dédaigne. L\’impératif sonne comme une provocation et une vengeance à leur égard. Il utilise le présent de vérité générale pour les achever : le ciel, image du paradis, de Dieu qu\’elles adorent, ne serait pas pour elles ; elles seraient donc dans le mensonge depuis toujours"
         },
         {
-            id: 'badine_q19',
+            id: 'badine_q20',
             type: 'QCM',
             question: "Quelle est la fonction des nombreuses questions rhétoriques utilisées par Perdican ?",
             options: [
@@ -1486,9 +1847,9 @@ const textsData = [
             ],
             answer: 1,
             explanation: "Les questions rhétoriques servent à créer une tension et à ébranler les certitudes de Camille."
-        }
+        },
         {
-            id: 'badine_q20',
+            id: 'badine_q21',
             type: 'QCM_EXTRAIT',
             question: "Que veut dire Camille avec le pronom moi?",
             extract: "...mais dis-leur cela de ma part : le ciel n\'est pas pour elles.<br>Camille : Ni pour <b>moi</b>, n\'est ce pas?",
@@ -1497,7 +1858,7 @@ const textsData = [
             explanation: "Camille s\’inclut dans ce groupe de femmes avec le pronom, tenant ainsi tête à Perdican, le provoquant. La question rhétorique peut laisser penser que Camille voudrait l\’entendre revenir sur ses propos."
         },
         {
-            id: 'badine_q21',
+            id: 'badine_q22',
             type: 'QCM_EXTRAIT',
             question: "Comment Perdican montre sa détermination dans cet extrait?",
             extract: "CAMILLE : Ni pour moi, n\'est ce pas?<br>PERDICAN. Adieu, Camille, <b>retourne</b> à ton couvent, et lorsqu'on te fera de ces récits hideux qui t\'ont empoisonnée, <b>réponds</b> ce que je vais te dire : Tous les hommes sont menteurs, inconstants, faux, bavards, hypocrites, orgueilleux ou lâches, méprisables et sensuels ; toutes les femmes sont perfides, artificieuses, vaniteuses, curieuses et dépravées ; le monde n\'est qu\'un égout sans fond où les phoques les plus informes rampent et se tordent sur des montagnes de fange",
@@ -1506,7 +1867,7 @@ const textsData = [
             explanation: " L\’emploi de l\’impératif montre la détermination du personnage qui ne relève pas la question rhétorique de Camille. Perdican gagne en virulence. En disant « Adieu » à Camille, le jeune homme marque le souhait de mettre fin à leur échange et de la laisser à sa condition. Cela est confirmé par l\’emploi de l\’impératif : « retourne à ton couvent », particulièrement violent en sachant qu\’il décrit le couvent comme l\’image de la mort et de l\’emprisonnement de l\’être."
         },
         {
-            id: 'badine_q22',
+            id: 'badine_q23',
             type: 'QCM_EXTRAIT',
             question: "A travers quels mots et figure de style voit-on sa haine pour les discours religieux?",
             extract: "PERDICAN. Adieu, Camille, retourne à ton couvent, et lorsqu'on te fera de ces récits <span style="background-color: #f4cccc;">hideux</span> qui t\'ont <span style="background-color: #b6d7a8;">empoisonnée</span>, réponds ce que je vais te dire : Tous les hommes sont menteurs, inconstants, faux, bavards, hypocrites, orgueilleux ou lâches, méprisables et sensuels ; toutes les femmes sont perfides, artificieuses, vaniteuses, curieuses et dépravées ; le monde n\'est qu\'un égout sans fond où les phoques les plus informes rampent et se tordent sur des montagnes de fange",
@@ -1515,22 +1876,22 @@ const textsData = [
             explanation: "L\’<span style="background-color: #f4cccc;">adjectif péjoratif</span> employé, ainsi que la <span style="background-color: #b6d7a8;">métaphore de l\’empoisonnement</span>, marquent alors sa haine à l\’égard des discours religieux hypocrites. Il se lance dans un discours au présent de vérité générale et emploie le pronom indéfini « tous » généralisant dans un parallélisme de construction."
         },
         {
-            id: 'badine_q23',
+            id: 'badine_q24',
             type: 'QCM_EXTRAIT',
             question: "Comment voit-on qu'a partir de cet extrait il ne parle plus de camille mais qu'il parle en géneral du monde",
             extract: "PERDICAN. Adieu, Camille, retourne à ton couvent, ...réponds ce que je vais te dire : <span style="background-color: #c9daf8;">Tous</span> <u>les hommes sont</u> <span style="background-color: #f4cccc;">menteurs, inconstants, faux, bavards, hypocrites, orgueilleux ou lâches, méprisables et sensuels</span> ; <span style="background-color: #c9daf8;"><u>toutes</span> les femmes sont</> <span style="background-color: #f4cccc;">perfides, artificieuses, vaniteuses, curieuses et dépravées</span> ; le monde n\'est qu\'un égout sans fond où les phoques les plus informes <span style="background-color: #a2c4c9;">rampent</span> et <span style="background-color: #a2c4c9;">se tordent</span> sur des montagnes de fange",
             options: ["Utilisation du pronom indéfini tous", "Enumération d'adjectifs péjoratifs", "Parallélisme de construction", "Utlisation du présent de vérité générale"],
-            answer: [1,2,3],
+            answer: [0,2,3],
             explanation: "Il dresse un portrait peu valorisant de la condition humaine. Il se lance dans un discours au présent de vérité générale et emploie le <span style="background-color: #c9daf8;">pronom indéfini "tous"</span> généralisant dans un parallélisme de construction entre les hommes et les femmes. Il crée une sorte d\’égalité entre les deux sexes. Camille a une image peu positive des hommes, Perdican ne la contredit pas, mais fait un portrait négatif des 2 sexes avec une <span style="background-color: #f4cccc;">énumération d\'adjectifs péjoratifs</span>. Les défauts sont propres à l\’être humain, peu importe le sexe."
         },
         {
-            id: 'badine_q24',
+            id: 'badine_q25',
             type: 'QCM_EXTRAIT',
             question: "Dans cet extrait, quelles figures de style utilise Perdican pour critiquer le monde ?",
             extract: "...le monde n\'est qu\'un <span style="background-color: #f4cccc;">égout sans fond</span> où les phoques <span style="background-color: #c9daf8;">les plus informes</span> <span style="background-color: #a2c4c9;">rampent</span> et <span style="background-color: #a2c4c9;">se tordent</span> sur <span style="background-color: #b6d7a8;">des montagnes de fange</span>",
-            options: ["Hyperbole : exagerer pour mieux marquer les esprits", "Présentatifs", "Conjonction de coordination à valeur d'opposition", "Parallélisme de construction", "Exagération", "Antithèse"],
-            answer: [1,2,5],
-            explanation: "Il compare le monde à un égout à travers la métaphore et l\’hyperbole « des montagnes de fange ».  On note aussi le superlatif péjoratif et les verbes d\’action peu flatteurs. Ce pessimisme n\’est pas sans rappeler le « Mal du siècle » romantique et au sentiment de désespérance qui disent le dégoût de vivre. "
+            options: ["Hyperbole : exagerer pour mieux marquer les esprits", "Métaphore : substituer un mot pour un autre", "Conjonction de coordination à valeur d'opposition", "Verbes d'action peu flateurs", "Exagération", "Antithèse"],
+            answer: [0,1,3,4],
+            explanation: "Une metaphore : il compare le monde à un égout sans fond <br>Une hyperbole « des montagnes de fange = boue/ vase ».  On note aussi le superlatif péjoratif et les verbes d\’action peu flatteurs. Ce pessimisme n\’est pas sans rappeler le « Mal du siècle » romantique et au sentiment de désespérance qui disent le dégoût de vivre. "
         },
         {
             id: 'badine_q26',
@@ -1587,7 +1948,7 @@ const textsData = [
             ],
             answer: 2,
             explanation: "Pour imager son propos, il évoque le moment où, à l\’aube de notre mort, nous faisons le bilan de notre vie, et pour lui, l\’existence ne saurait avoir de sens sans la passion, ce que prouve le rythme ternaire final et le passé composé, temps de l\’accompli, du bilan. <br> Ces propos sont directement inspirés d\’une lettre que George Sand a écrite à l’auteur."
-        }
+        },
         {
             id: 'badine_q32',
             type: 'QCM_EXTRAIT',
