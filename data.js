@@ -1528,7 +1528,7 @@ const textsData = [
             type: 'QCM_EXTRAIT',
             question: "Dans cet extrait, quelles figures de style utilise Perdican pour critiquer le monde ?",
             extract: "...le monde n\'est qu\'un <span style="background-color: #f4cccc;">égout sans fond</span> où les phoques <span style="background-color: #c9daf8;">les plus informes</span> <span style="background-color: #a2c4c9;">rampent</span> et <span style="background-color: #a2c4c9;">se tordent</span> sur <span style="background-color: #b6d7a8;">des montagnes de fange</span>",
-            options: ["Hyperbole : exagerer pour mieux marquer les esprits", "Présentatifs", "Conjonction de coordination à valeur d'opposition, "Parallélisme de construction", "Exagération", "Antithèse"],
+            options: ["Hyperbole : exagerer pour mieux marquer les esprits", "Présentatifs", "Conjonction de coordination à valeur d'opposition", "Parallélisme de construction", "Exagération", "Antithèse"],
             answer: [1,2,5],
             explanation: "Il compare le monde à un égout à travers la métaphore et l\’hyperbole « des montagnes de fange ».  On note aussi le superlatif péjoratif et les verbes d\’action peu flatteurs. Ce pessimisme n\’est pas sans rappeler le « Mal du siècle » romantique et au sentiment de désespérance qui disent le dégoût de vivre. "
         },
@@ -1548,7 +1548,7 @@ const textsData = [
             extract: "...mais il y a au monde une chose <span style="background-color: #b6d7a8;">sainte et sublime</span>, c'est l\'union de deux de <span style="background-color: #b6d7a8;">ces êtres si imparfaits et si affreux.</span>",
             options: ["Que l'amour c'est comme l'amitié", "La vision de Perdican sur l'amour", "Elle rappelle les romantiques qui allient sublime et grotesque : beau et laid", "Sa foi en la bonté divine"],
             answer: [1,2],
-            explanation: "il reprend une encore la <u>conjonction de coordination</u> à valeur d’opposition « mais ». <span style="background-color: #f4cccc;">Les présentatifs « il y a » et « c\’est »</span> crée un effet d\’annonce. Cette <span style="background-color: #b6d7a8;">antithèse</span> : d\’un côté le sublime, le Beau, de l\’autre le Laid est accentué par les adverbes intensifs "si". <br>- Elle rappelle les romantiques qui allient le sublime et le grotesque, le beau et le laid. <br>- Elle permet de montrer la vision de Perdican sur l\’amour : il faut accepter l\’imperfection des êtres et l\’amour terrestre qui, bien qu\’imparfait, est plus sacré (il reprend en effet un vocabulaire religieux avec l\’adjectif « sainte ») que l\’amour céleste décrit par les religieuses. "
+            explanation: "il reprend une encore la <u>conjonction de coordination</u> à valeur d\’opposition « mais ». <span style="background-color: #f4cccc;">Les présentatifs « il y a » et « c\’est »</span> crée un effet d\’annonce. Cette <span style="background-color: #b6d7a8;">antithèse</span> : d\’un côté le sublime, le Beau, de l\’autre le Laid est accentué par les adverbes intensifs "si". <br>- Elle rappelle les romantiques qui allient le sublime et le grotesque, le beau et le laid. <br>- Elle permet de montrer la vision de Perdican sur l\’amour : il faut accepter l\’imperfection des êtres et l\’amour terrestre qui, bien qu\’imparfait, est plus sacré (il reprend en effet un vocabulaire religieux avec l\’adjectif « sainte ») que l\’amour céleste décrit par les religieuses. "
         },
         {
             id: 'badine_q28',
@@ -1595,7 +1595,7 @@ const textsData = [
             extract: "C\'est <span style="background-color: #c9daf8;">moi</span> qui ai vécu, et non pas <span style="background-color: #c9daf8;">un être factice</span> créé par mon orgueil et mon ennui.",
             options: ["Metaphore", "Antithèse", "Parallélisme"],
             answer: 1,
-            explanation: "Antithèse entre le pronom "moi" et le GN "être factice" scinde les individus en deux catégories : ceux qui acceptent de vivre leur passion et ceux la renient, mais qui ne sont pas fidèles à eux mêmes."
+            explanation: "Antithèse entre le pronom 'moi' et le GN 'être factice' scinde les individus en deux catégories : ceux qui acceptent de vivre leur passion et ceux la renient, mais qui ne sont pas fidèles à eux mêmes."
         },
         {
             id: 'badine_q33',
@@ -1604,7 +1604,7 @@ const textsData = [
             extract: "C\'est <span style="background-color: #c9daf8;">moi</span> qui ai vécu, et non pas <span style="background-color: #c9daf8;">un être factice</span> créé par mon orgueil et mon ennui.",
             options: ["Les êtres sont avares et hypocrytes", "L\'amour divin peut nous combler", "L\'amour seul exprime la vérité de l'être"],
             answer: 2,
-            explanation: "Il réaffirme la thèse suivante : l\’amour seul exprime la vérité de l\’être. L\'Antithèse entre le pronom "moi" et le GN "être factice" scinde les individus en deux catégories : ceux qui acceptent de vivre leur passion et ceux la renient, mais qui ne sont pas fidèles à eux mêmes. "
+            explanation: "Il réaffirme la thèse suivante : l\’amour seul exprime la vérité de l\’être. L\'Antithèse entre le pronom 'moi' et le GN 'être factice' scinde les individus en deux catégories : ceux qui acceptent de vivre leur passion et ceux la renient, mais qui ne sont pas fidèles à eux mêmes. "
         },
     ]
 }
