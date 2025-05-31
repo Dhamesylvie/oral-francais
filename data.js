@@ -1491,7 +1491,7 @@ const textsData = [
             id: 'badine_q20',
             type: 'QCM_EXTRAIT',
             question: "Que veut dire Camille avec le pronom moi?",
-            extract: "...mais dis-leur cela de ma part : le ciel n\'est pas pour elles.<br>camille : Ni pour <b>moi</b>, n\'est ce pas?",
+            extract: "...mais dis-leur cela de ma part : le ciel n\'est pas pour elles.<br>Camille : Ni pour <b>moi</b>, n\'est ce pas?",
             options: ["Elle s\'inclu dans le groupe de réligieuse que Perdican critique", "Elle veut le provoquer", "Elle voudrait qu\'il revienne sur ses propos", "Elle n\'a rien compris et interroge Perdican"],
             answer: 3,
             explanation: "Camille s\’inclut dans ce groupe de femmes avec le pronom, tenant ainsi tête à Perdican, le provoquant. La question rhétorique peut laisser penser que Camille voudrait l\’entendre revenir sur ses propos."
@@ -1499,23 +1499,112 @@ const textsData = [
         {
             id: 'badine_q21',
             type: 'QCM_EXTRAIT',
-            question: "?",
-            extract: "<p><strong>PERDICAN.</strong><br>
-Adieu, Camille, retourne à ton couvent, et lorsqu\'on te fera de ces récits 
-<span style="background-color: #f4cccc;">hideux</span> qui t\'ont empoisonnée, 
-<span style="background-color: #b6d7a8;">réponds</span> ce que je vais te dire : 
-<span style="background-color: #c9daf8;">Tous</span> les hommes 
-<span style="background-color: #f4cccc;">sont menteurs, inconstants, faux, bavards, hypocrites, orgueilleux ou lâches, méprisables et sensuels</span> ; 
-<span style="background-color: #c9daf8;">toutes</span> les femmes 
-<span style="background-color: #f4cccc;">sont perfides, artificieuses, vaniteuses, curieuses et dépravées</span> ; 
-le monde n'est 
-<span style="background-color: #a2c4c9;">qu\'un égout sans fond</span> où les phoques 
-<strong>les plus informes</strong> rampent et se tordent sur 
-<span style="background-color: #9fc5e8;">des montagnes de fange</span> ;
-</p> ?",
-            options: ["?", "Elle veut le provoquer", "Elle voudrait qu'il revienne sur ses propos", "Elle n'a rien compris et interroge Perdican"],
-            answer: 3,
-            explanation: "Camille s\’inclut dans ce groupe de femmes avec le pronom, tenant ainsi tête à Perdican, le provoquant. La question rhétorique peut laisser penser que Camille voudrait l\’entendre revenir sur ses propos."
+            question: "Comment Perdican montre sa détermination dans cet extrait?",
+            extract: "CAMILLE : Ni pour moi, n\'est ce pas?<br>PERDICAN. Adieu, Camille, <b>retourne</b> à ton couvent, et lorsqu'on te fera de ces récits hideux qui t\'ont empoisonnée, <b>réponds</b> ce que je vais te dire : Tous les hommes sont menteurs, inconstants, faux, bavards, hypocrites, orgueilleux ou lâches, méprisables et sensuels ; toutes les femmes sont perfides, artificieuses, vaniteuses, curieuses et dépravées ; le monde n\'est qu\'un égout sans fond où les phoques les plus informes rampent et se tordent sur des montagnes de fange",
+            options: ["En ne répondant pas à camille", "En la saluant", "Avec l\'utilisation de l\'impératif"],
+            answer: [0,2],
+            explanation: " L\’emploi de l\’impératif montre la détermination du personnage qui ne relève pas la question rhétorique de Camille. Perdican gagne en virulence. En disant « Adieu » à Camille, le jeune homme marque le souhait de mettre fin à leur échange et de la laisser à sa condition. Cela est confirmé par l\’emploi de l\’impératif : « retourne à ton couvent », particulièrement violent en sachant qu\’il décrit le couvent comme l\’image de la mort et de l\’emprisonnement de l\’être."
+        },
+        {
+            id: 'badine_q22',
+            type: 'QCM_EXTRAIT',
+            question: "A travers quels mots et figure de style voit-on sa haine pour les discours religieux?",
+            extract: "PERDICAN. Adieu, Camille, retourne à ton couvent, et lorsqu'on te fera de ces récits <span style="background-color: #f4cccc;">hideux</span> qui t\'ont <span style="background-color: #b6d7a8;">empoisonnée</span>, réponds ce que je vais te dire : Tous les hommes sont menteurs, inconstants, faux, bavards, hypocrites, orgueilleux ou lâches, méprisables et sensuels ; toutes les femmes sont perfides, artificieuses, vaniteuses, curieuses et dépravées ; le monde n\'est qu\'un égout sans fond où les phoques les plus informes rampent et se tordent sur des montagnes de fange",
+            options: ["Une périphrase", "Un chiasme", "Un adjectif péjoratif", "Une metaphore"],
+            answer: [2,3],
+            explanation: "L\’<span style="background-color: #f4cccc;">adjectif péjoratif</span> employé, ainsi que la <span style="background-color: #b6d7a8;">métaphore de l\’empoisonnement</span>, marquent alors sa haine à l\’égard des discours religieux hypocrites. Il se lance dans un discours au présent de vérité générale et emploie le pronom indéfini « tous » généralisant dans un parallélisme de construction."
+        },
+        {
+            id: 'badine_q23',
+            type: 'QCM_EXTRAIT',
+            question: "Comment voit-on qu'a partir de cet extrait il ne parle plus de camille mais qu'il parle en géneral du monde",
+            extract: "PERDICAN. Adieu, Camille, retourne à ton couvent, ...réponds ce que je vais te dire : <span style="background-color: #c9daf8;">Tous</span> <u>les hommes sont</u> <span style="background-color: #f4cccc;">menteurs, inconstants, faux, bavards, hypocrites, orgueilleux ou lâches, méprisables et sensuels</span> ; <span style="background-color: #c9daf8;"><u>toutes</span> les femmes sont</> <span style="background-color: #f4cccc;">perfides, artificieuses, vaniteuses, curieuses et dépravées</span> ; le monde n\'est qu\'un égout sans fond où les phoques les plus informes <span style="background-color: #a2c4c9;">rampent</span> et <span style="background-color: #a2c4c9;">se tordent</span> sur des montagnes de fange",
+            options: ["Utilisation du pronom indéfini tous", "Enumération d'adjectifs péjoratifs", "Parallélisme de construction", "Utlisation du présent de vérité générale"],
+            answer: [1,2,3],
+            explanation: "Il dresse un portrait peu valorisant de la condition humaine. Il se lance dans un discours au présent de vérité générale et emploie le <span style="background-color: #c9daf8;">pronom indéfini "tous"</span> généralisant dans un parallélisme de construction entre les hommes et les femmes. Il crée une sorte d\’égalité entre les deux sexes. Camille a une image peu positive des hommes, Perdican ne la contredit pas, mais fait un portrait négatif des 2 sexes avec une <span style="background-color: #f4cccc;">énumération d\'adjectifs péjoratifs</span>. Les défauts sont propres à l\’être humain, peu importe le sexe.   "
+        },
+        {
+            id: 'badine_q24',
+            type: 'QCM_EXTRAIT',
+            question: "Dans cet extrait, quelles figures de style utilise Perdican pour critiquer le monde ?",
+            extract: "...le monde n\'est qu\'un <span style="background-color: #f4cccc;">égout sans fond</span> où les phoques <span style="background-color: #c9daf8;">les plus informes</span> <span style="background-color: #a2c4c9;">rampent</span> et <span style="background-color: #a2c4c9;">se tordent</span> sur <span style="background-color: #b6d7a8;">des montagnes de fange</span>",
+            options: ["Hyperbole : exagerer pour mieux marquer les esprits", "Présentatifs", "Conjonction de coordination à valeur d'opposition, "Parallélisme de construction", "Exagération", "Antithèse"],
+            answer: [1,2,5],
+            explanation: ". "
+        },
+        {
+            id: 'badine_q26',
+            type: 'QCM_EXTRAIT',
+            question: "Dans cet extrait, quelles figures de style utilise Perdican pour critiquer le monde ?",
+            extract: "...<u>mais</u> <span style="background-color: #f4cccc;">il y a</span> au monde une chose <span style="background-color: #b6d7a8;">sainte et sublime</span>, <span style="background-color: #f4cccc;">c'est</span> l\'union de deux de <span style="background-color: #b6d7a8;">ces êtres <b>si</b> imparfaits et <b>si</b> affreux.</span>",
+            options: ["Hyperbole : exagerer pour mieux marquer les esprit", "Métaphore : substituer un mot pour un autre", "Parallélisme de construction", "Exagération", "superlatif péjoratif : comparaison avec le plus ou les plus"],
+            answer: [0,1,3],
+            explanation: "il reprend une encore la <u>conjonction de coordination</u> à valeur d\’opposition « mais ». <span style="background-color: #f4cccc;">Les présentatifs « il y a » et « c\’est »</span> crée un effet d\’annonce. Ce propos est une <span style="background-color: #b6d7a8;">antithèse<span> : d\’un côté le sublime, le Beau, de l\’autre le Laid accentué par les adverbes intensifs "si". Cette opposition n\’est pas sans rappeler les romantiques qui allient le sublime et le grotesque, le beau et le laid. Permet surtout de montrer la vision de Perdican sur l\’amour : il faut accepter l\’imperfection des êtres et l\’amour terrestre qui, bien qu\’imparfait, est plus sacré (il reprend en effet un vocabulaire religieux avec l\’adjectif « sainte ») que l\’amour céleste décrit par les religieuses. "
+        },
+        {
+            id: 'badine_q27',
+            type: 'QCM_EXTRAIT',
+            question: "Que montre l'antithèse de cet extrait ?",
+            extract: "...mais il y a au monde une chose <span style="background-color: #b6d7a8;">sainte et sublime</span>, c'est l\'union de deux de <span style="background-color: #b6d7a8;">ces êtres si imparfaits et si affreux.</span>",
+            options: ["Que l'amour c'est comme l'amitié", "La vision de Perdican sur l'amour", "Elle rappelle les romantiques qui allient sublime et grotesque : beau et laid", "Sa foi en la bonté divine"],
+            answer: [1,2],
+            explanation: "il reprend une encore la <u>conjonction de coordination</u> à valeur d’opposition « mais ». <span style="background-color: #f4cccc;">Les présentatifs « il y a » et « c\’est »</span> crée un effet d\’annonce. Cette <span style="background-color: #b6d7a8;">antithèse</span> : d\’un côté le sublime, le Beau, de l\’autre le Laid est accentué par les adverbes intensifs "si". <br>- Elle rappelle les romantiques qui allient le sublime et le grotesque, le beau et le laid. <br>- Elle permet de montrer la vision de Perdican sur l\’amour : il faut accepter l\’imperfection des êtres et l\’amour terrestre qui, bien qu\’imparfait, est plus sacré (il reprend en effet un vocabulaire religieux avec l\’adjectif « sainte ») que l\’amour céleste décrit par les religieuses. "
+        },
+        {
+            id: 'badine_q28',
+            type: 'VF',
+            question: "AFFIRMATION : Perdican a une sision de l'amour selon laquelle, il faut accepter l'imperfection des êtres",
+            answer: "Vrai",
+            explanation: "Vision de Perdican sur l\’amour : il faut accepter l\’imperfection des êtres et l\’amour terrestre qui, bien qu\’imparfait, est plus sacré (il reprend en effet un vocabulaire religieux avec l\’adjectif « sainte ») que l\’amour céleste décrit par les religieuses."
+        },
+        {
+            id: 'badine_q29',
+            type: 'QCM_EXTRAIT',
+            question: "Que veut faire Perdican dans cet extrait ?",
+            extract: "On est souvent trompé en amour, souvent blessé et souvent malheureux ; mais on aime, et quand on est sur le bord de sa tombe, on se retourne pour regarder en arrière, et on se dit : J'ai souffert souvent, je me suis trompé quelquefois, mais j'ai aimé.",
+            options: ["Tromper Camille", "Obliger Camille à le croire", "Convaincre Camille",]
+            answer: 2,
+            explanation: "Il continue d\’expliquer sa vision de l`\’amour avec le présent de vérité générale pour en persuader Camille."
+        },
+        {
+            id: 'badine_q30',
+            type: 'QCM_EXTRAIT',
+            question: "Comment est décrit l\'amour avant la conjonction de coordination 'mais'?",
+            extract: "On est souvent trompé en amour, souvent blessé et souvent malheureux ; mais on aime, et quand on est sur le bord de sa tombe, on se retourne pour regarder en arrière, et on se dit : J\'ai souffert souvent, je me suis trompé quelquefois, mais j\'ai aimé.",
+            options: ["De façon négative avec un champ lexical de la soufrance", "De facon positive avec un champ lexical du bonheur",]
+            answer: 0,
+            explanation: "Le rythme ternaire, la répétition de «souvent» et le champ lexical de la souffrance peint l\’amour de façon négative, mais la conjonction de coordination « mais » vient renverser tout cela. L\’amour vaut toutes les souffrances du monde."
+        },
+        {
+            id: 'badine_q31',
+            type: 'QCM',
+            question: "Perdican pense que l\'amour vaut toutes les souffrances du monde. De quoi parle-t-il pour imager cela?",
+            options: [
+                "De la joie d'avoir des enfants",
+                "De l'amour divin",
+                "De la mort",
+                "De la paix sur terre"
+            ],
+            answer: 2,
+            explanation: "Pour imager son propos, il évoque le moment où, à l\’aube de notre mort, nous faisons le bilan de notre vie, et pour lui, l\’existence ne saurait avoir de sens sans la passion, ce que prouve le rythme ternaire final et le passé composé, temps de l\’accompli, du bilan. <br> Ces propos sont directement inspirés d\’une lettre que George Sand a écrite à l’auteur."
+        }
+        {
+            id: 'badine_q32',
+            type: 'QCM_EXTRAIT',
+            question: "Quelle est la figure de style dans cet extrait?",
+            extract: "C\'est <span style="background-color: #c9daf8;">moi</span> qui ai vécu, et non pas <span style="background-color: #c9daf8;">un être factice</span> créé par mon orgueil et mon ennui.",
+            options: ["Metaphore", "Antithèse", "Parallélisme"],
+            answer: 1,
+            explanation: "Antithèse entre le pronom "moi" et le GN "être factice" scinde les individus en deux catégories : ceux qui acceptent de vivre leur passion et ceux la renient, mais qui ne sont pas fidèles à eux mêmes. "
+        },
+        {
+            id: 'badine_q33',
+            type: 'QCM_EXTRAIT',
+            question: "Après son pladoyer, dans cette dernière phrase, quelle thèse réafirme Perdican?",
+            extract: "C\'est <span style="background-color: #c9daf8;">moi</span> qui ai vécu, et non pas <span style="background-color: #c9daf8;">un être factice</span> créé par mon orgueil et mon ennui.",
+            options: ["Les êtres sont avares et hypocrytes", "L\'amour divin peut nous combler", "L\'amour seul exprime la vérité de l'être"],
+            answer: 2,
+            explanation: "Il réaffirme la thèse suivante : l\’amour seul exprime la vérité de l\’être. L\'Antithèse entre le pronom "moi" et le GN "être factice" scinde les individus en deux catégories : ceux qui acceptent de vivre leur passion et ceux la renient, mais qui ne sont pas fidèles à eux mêmes. "
         },
     ]
 }
