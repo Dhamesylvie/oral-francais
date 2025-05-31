@@ -990,7 +990,7 @@ const textsData = [
         type: "Vrai/Faux",
         question: "La scène de la promenade est décrite comme une scène exceptionnelle dès le début.",
         answer: "Faux",
-        explanation: "La scène est décrite d'abord comme anodine (cadre urbain réaliste & banal) avant de devenir exceptionnelle."
+        explanation: "La scène est décrite d\'abord comme anodine (cadre urbain réaliste & banal) avant de devenir exceptionnelle."
     },
     {
         id: "manon_q16",
@@ -1036,7 +1036,7 @@ const textsData = [
             'Négation restrictive (il ne pouvait faire que ça)',
             'utilisation du present'
         ],
-        answer: [0,1]
+        answer: [0,1],
         explanation: "Il se deresponsabilise d\'emblé avec cette négation restrictive. Son intention est donc tout à fait innocente. Cependant, le mot « curiosité » rappelle le péché originel : Adam, tenté par Eve, a été trop curieux et a mangé le fruit interdit, ce qui a conduit à sa perte. L\’abbé Prévost semble ici réécrire cet épisode biblique.  "
     },
     {
@@ -1063,7 +1063,7 @@ const textsData = [
             'La rencontre et avec Manon Lescaut',
             'La violente passion amoureuse pour Manon Lescaut',
         ],
-        answer: [2,3]
+        answer: [2,3],
         explanation: "Mouvement 2 = Le narrateur rencontre Manon Lescaut et est pris d\’une violente passion amoureuse."
     },
     {
@@ -1078,7 +1078,7 @@ const textsData = [
             'l\'adverbe "quelques" opposé au déterminant "une"',
             'l\'exclamation',
         ],
-        answer: [0,2,3]
+        answer: [0,2,3],
         explanation: "Déterminant indéfini : 'quelques femmes' qui s\’oppose à la singularité de Manon 'une, fort jeune...'<br> Plusieurs antithèses « quelques » / « une », « se retirèrent »/ « resta », « femmes »/ « fort jeune » <br>Conjonction de coordination à valeur d\’opposition « mais » : L\’observation des femmes était anodine, mais l\’apparition de Manon est extraordinaire. Elle est mise en valeur. La cour est comme une scène de théâtre."
     },
     {
@@ -1141,7 +1141,7 @@ const textsData = [
             'retenue',
             'enflamé',
         ],
-        answer: [1,2]
+        answer: [1,2],
         explanation: "Métaphore hyperbolique. Le feu exprime la force de cette passion + CC « tout d\’un coup » exprime  son caractère soudain. « Transport » fait également partie du vocabulaire de la tragédie. De nouveau, cette rencontre paraît être sous le signe du destin et de la fatalité."
     },
     {
@@ -1154,7 +1154,7 @@ const textsData = [
             'Pour faire un parallele avec sa grande taille',
             'Pour montrer qu\'au vue de sa vertue, il est exceptionnel qu\il tombe amoureux',
         ],
-        answer: [0,2]
+        answer: [0,2],
         explanation: "Il reprend les propos des autres de façon hyperbolique (« tout le monde admirait ») pour faire de lui un exemple de vertu. Il est donc exceptionnel qu\’il soit tombé amoureux."
     },
     {
@@ -1209,7 +1209,7 @@ const textsData = [
         id: "manon_q33",
         type: "QCM_EXTRAIT",
         question: "En se présentant comme un innocent ensorcelé par une séductrice, il veut excuser ses futures actions. Mais l\'est-il vraiment",
-        extract: "<b>mais</b>, loin d\’être arrêté alors par cette faiblesse, je m\’avançai vers la maîtresse de mon cœur."
+        extract: "<b>mais</b>, loin d\’être arrêté alors par cette faiblesse, je m\’avançai vers la maîtresse de mon cœur.",
         options: [
             "Non, il n\'est pas vraiment innocent comme le montre la conjonction de coordination mais (malgré sa timidité, il s\'avance)",
             "Oui, Manon Lescault est la seule responsable",
@@ -1233,9 +1233,9 @@ const textsData = [
         id: "manon_q35",
         type: "QCM_EXTRAIT",
         question: "Pourquoi le verbe envoyer est répété 2 fois.",
-        extract: "elle y était <b>envoyée</b> par ses parents pour être religieuse..., que je regardai ce dessein ... <u>c\’était malgré elle</u> qu\’on l\’<b>envoyait</> au couvent,"
+        extract: "elle y était <b>envoyée</b> par ses parents pour être religieuse..., que je regardai ce dessein ... <u>c\’était malgré elle</u> qu\’on l\’<b>envoyait</> au couvent,",
         options: [
-            "Pour faire un parallele avec l\'envoi d'un courrier",
+            "Pour faire un parallele avec l\'envoi d\'un courrier",
             "Pour insister sur sa situation",
         ],
         answer: 0,
@@ -1256,7 +1256,7 @@ const textsData = [
         id: "manon_q37",
         type: "QCM_EXTRAIT",
         question: "Que montre la proposition circonstancielle de concession 'quoiqu\'elle",
-        extract: "Quoiqu\’elle fût encore moins âgée que moi, elle reçut mes politesses sans paraître embarrassée."
+        extract: "Quoiqu\’elle fût encore moins âgée que moi, elle reçut mes politesses sans paraître embarrassée.",
         options: [
             "Un parallèle",
             "Une similitude",
@@ -1269,10 +1269,10 @@ const textsData = [
         id: "manon_q38",
         type: "QCM_EXTRAIT",
         question: "Que montre l\'adverbe déjà?",
-        extract: " son penchant au plaisir ... qui s’était déjà déclaré"
+        extract: " son penchant au plaisir ... qui s’était déjà déclaré",
         options: [
-            "que c'est surprenant",
-            "que c'est exceptionel",
+            "que c\'est surprenant",
+            "que c\'est exceptionel",
         ],
         answer: 0,
         explanation: "L\’adverbe « déjà » montre que c\’est surprenant. Manon = séductrice voire une libertine. DG = sa victime"
@@ -1281,7 +1281,7 @@ const textsData = [
         id: "manon_q39",
         type: "QCM_EXTRAIT",
         question: "Pourquoi ajouter l\'adjectif possessif 'miens' à la fin?",
-        extract: "qui a causé par la suite tous ses malheurs et les miens"
+        extract: "qui a causé par la suite tous ses malheurs et les miens",
         options: [
             "Pour mettre en valeur que le narrateur n\'a été que victime",
             "Pour montrer sn implication",
@@ -1293,7 +1293,7 @@ const textsData = [
         id: "manon_q40",
         type: "QCM_EXTRAIT",
         question: "Dans cette phrase qui est le sujet et qu\'est ce que cela montre ?",
-        extract: "L\’amour me rendait déjà si éclairé depuis un moment qu\’il était dans mon cœur, que je regardai ce dessein comme un coup mortel pour mes désirsqui a causé par la suite tous ses malheurs et les miens"
+        extract: "L\’amour me rendait déjà si éclairé depuis un moment qu\’il était dans mon cœur, que je regardai ce dessein comme un coup mortel pour mes désirsqui a causé par la suite tous ses malheurs et les miens",
         options: [
             "L\'amour est le sujet et le narrateur (me) est le COI",
             "L\'amour est epithète et le narrateur (me) est le sujet",
@@ -1306,12 +1306,190 @@ const textsData = [
         type: "QCM",
         question: "Pourquoi cette narration est subjective et biaisé?",
         options: [
-            "Car c'est écrit au passé",
+            "Car c\'est écrit au passé",
             "Car on ne sait rien de ce que pense Manon L.",
         ],
         answer: 1,
         explanation: "cette narration est subjective et paraît biaisée : peut-on vraiment faire confiance ce qu\’il raconte ? On ne sait rien du point de vue de Manon. On ne sait même pas ce qu\’elle lui dit exactement puisque le discours indirect est beaucoup moins précis que le discours direct."
     },
+    {
+    id: 'on-ne-badine-pas',
+    title: 'On ne badine pas avec l\'amour - Acte II, scène 5',
+    author: 'Alfred de Musset',
+    questions: [
+        {
+            id: 'badine_q1',
+            type: 'QCM',
+            question: "À quelle époque Alfred de Musset a-t-il écrit *On ne badine pas avec l\'amour* ?",
+            options: ["Fin XVIIIe siècle", "Années 1830", "Années 1850", "Fin XIXe siècle"],
+            answer: 1,
+            explanation: "La pièce a été écrite après le retour d\'Italie de Musset et sa rupture avec George Sand, dans les années 1830."
+        },
+        {
+            id: 'badine_q2',
+            type: 'QCM',
+            question: "Après l/’échec cuisant de sa pièce La Nuit Vénitienne qui n’attire pas le public populaire. Il décide alors de s\’émanciper des contraintes scéniques et cré un théatre destiné à être lu et non joué. Lequel ?",
+            options: ["Un spectabcle dans un fauteuil", "Divan et fauteuils", "La fauteuil attitude"],
+            answer: 0,
+            explanation: "Un spectacle dans un fauteuil qui contient On ne badine pas avec l’amour, pièce composée après le retour d\’Italie de Musset et sa rupture avec la romancière George Sand."
+        },
+        {
+            id: 'badine_q3',
+            type: 'QCM',
+            question: "De quoi parle le mouvement 1 ?",
+            options: ["Mouvement 1 : Un plaidoyer pour le mariage", "Mouvement 1: Un réquisitoire contre le couvent et l\'amour divin", "Mouvement 2 : Un plaidoyer pour le mariage", "Mouvement 2: Un réquisitoire contre le couvent et l\'amour divin"],
+            answer: [1,2],
+            explanation: "D\'abord il dénonce avec un réquisitoire contre le couvent dans le mouvement 1 puis il fait l\'éloge de l\'amour humain dans le mouvement 2 "
+        },
+        {
+            id: 'badine_q4',
+            type: 'VF',
+            question: "AFFIRMATION : Perdican vouvoie Camille et Camille tutoie Perdican",
+            answer: "Faux",
+            explanation: " le « vous » de Camille montre la distance qu\’elle met entre elle et Perdican depuis le début de la pièce. Le « tu » de Perdican peut ici montrer sa posture de supériorité : il entend lui faire la « leçon » pour contrer celle des religieuses (le terme est plus bas). Il se sert de la parole dans un but critique et didactique."
+        },
+        {
+            id: 'badine_q5',
+            type: 'QCM_EXTRAIT',
+            question: "Cette réplique est une didascalie interne qui évoque des sentiments négatifs pour indiquer implicitement quoi?",
+            extract: "Vous me faites <u>peur</u> ; la La réplique est <u>colère</u> vous prend aussi.",
+            options: ["L\'arrivée prochaine d\'une tempête", "L\'implication de perdican","l\’emportement de Perdican"],
+            answer: 2,
+            explanation: "La réplique est colère vous prend aussi. une didascalie interne qui indique implicitement le ton et l\’emportement de Perdican à travers l\’évocation de sentiments négatifs"
+        },
+        {
+            id: 'badine_q6',
+            type: 'VF',
+            question: "AFFIRMATION : Camille et Perdican se réconcilient à la fin de la scène.",
+            answer: "Faux",
+            explanation: "La scène se termine par le départ de Perdican, qui ne laisse pas de place à la réconciliation."
+        },
+        {
+            id: 'badine_q6',
+            type: 'QCM_EXTRAIT',
+            question: "Par quoi débute la leçon que donne Perdican à Camille dans le premier mouvement ?",
+            extract: " Sais-tu ce que c\'est que des nonnes, malheureuse fille <b>?</b> Elles qui te représentent l\'amour des hommes comme un mensonge <b>?</b> Savent-elles que c\'est un crime qu\'elles font de venir chuchoter un mensonge, savent-elles qu\'il y a pis encore, le à une vierge des paroles de femme <b>?</b>",
+            options: ["Une explication paternelle", "Une succession de questions rhétoriques","l\’évocation du paradis"],
+            answer: 1,
+            explanation: "Cette « leçon » débute par une succession de questions rhétoriques qui s\’allongent progressivement. Perdican dénonce la fausseté de l\’amour divin et veut éclairer Camille digne de pitié, comme le souligne l\’adjectif pathétique « malheureuse », pour avoir été la victime des religieuses. "
+        },
+        {
+            id: 'badine_q7',
+            type: 'QCM_EXTRAIT',
+            question: "Pourquoi Perdican utilise l\'adjectif pathétique 'Malheureuse' pour parler à Camille ?",
+            extract: " Sais-tu ce que c\'est que des nonnes, mensonge de <b>malheureuse</b> fille ?",
+            options: ["Pour la placer comme une victime et ainsi dénoncer l\'amour divin", "Pour humilier camille qui n\'est pas digne de pitié"],
+            answer: 0,
+            explanation: "l\’adjectif pathétique « malheureuse », est utilisé pour montrer qu\'elle a été la victime des religieuses. Perdican dénonce la fausseté de l\’amour divin et veut éclairer Camille digne de pitié. "
+        },
+        {
+            id: 'badine_q8',
+            type: 'QCM_EXTRAIT',
+            question: "Comment voit-on que Perdican est particulièrement accusateur à l\'égard de la religion ?",
+            extract: "Sais-tu ce que c\'est que <b>des nonnes</>, mensonge de malheureuse fille ? Elles qui te représentent l\'amour des hommes comme un mensonge ? Savent-elles que c\'est un <u>crime</u> qu\'elles font de venir chuchoter un <u>mensonge</u>, savent-elles qu\'il y a pis encore, le à une vierge des paroles de femme ?",
+            options: ["Il se fait passer pour une victime", "Il nomme les religieuse par un nom péjoratif 'nonnes'","Il utilise un champ lexical flateur","Il utilise un champ lexical péjoratif","il enchaine des questions rhétoriques"],
+            answer: [1,3,4],
+            explanation: "Le propos de Perdican est particulièrement accusateur à l\’égard de la religion : il nomme les religieuses à travers un nom péjoratif et utilise un champ lexical péjoratif pour décrire leurs actions. Le chiasme souligne la fausseté de leur enseignement tout comme l\’antithèse."
+        },
+        {
+            id: 'badine_q9',
+            type: 'QCM_EXTRAIT',
+            question: "Comment s\'appelle cette figure de style qui consiste à disposer en mirroir des éléments d\'une phrase ?",
+            extract: "Elles qui te représentent <b>l\'amour des hommes</b> comme un <u>mensonge</u> ? Savent-elles qu\'il y a pis encore, le <u>mensonge</u> de l\'<b>amour divin</b> ?",
+            options: ["Une rododindronade qui montre que l\'enseignement des nonnes est faux", "Un croisillon qui montre l\'inexactitude de l\'enseignement","Un chiasme qui souligne la fausseté de l\'enseignement des nonnes"],
+            answer: 2,
+            explanation: "Le chiasme souligne la fausseté de l\'enseignement tout comme l\’antithèse. 'Chuchoter à une vierge des paroles de femme'"
+        },
+        {
+            id: 'badine_q10',
+            type: 'QCM_EXTRAIT',
+            question: "Que déplore Perdican avec l\'interjection 'Ah !', l\'exclamation et l\'adverbe d\'intensité 'comme' repris en début de phrase (=anaphore) ?",
+            extract: "<b>Ah!</b> Comme elles t\'ont fait la leçon ! Comme j\'avais prévu tout cela quand tu t\'es arrêtée devant le portrait de notre vieille tante.",
+            options: ["De ne pas pouvoir accueillir Camille", "Que les nonnes aient imposé leur conception de l\'amour à camille","Que camille ait quittée le monde de l\'enfance et de l\'innocence et croit les nonnes"],
+            answer: [1,2],
+            explanation: "l\'interjection 'Ah !', l\'exclamation et l\'anaphore de l\'adverbe d\'intensité 'comme' montrent que Perdican déplore que Camille ait quitté le monde de l\'enfance et de l\'innocence pour plonger dans celui de l\'aveuglement et l\'obstination.  Le tableau de la vieille tante est une référence à la scène 2 de l\’acte I (scène de leurs retrouvailles)"
+        },
+        {
+            id: 'badine_q11',
+            type: 'QCM_EXTRAIT',
+            question: "Dans cet extrait à quoi sert l\'utilisation de l\'imparfait, l\'anaphore du 'tu' et les <i>propositions juxtaposées</i>?",
+            extract: "<u>Tu</u> <b>voulais</b> partir sans me serrer la main; <u>tu</u> ne <b>voulais</b> revoir ni ce bois, ni <i>cette pauvre petite</i> fontaine qui nous regarde tout en larmes; <u>tu</u> reniais les jours de ton enfance et le <i>masque de plâtre</i> que les nonnes t'ont placé sur les joues me refusait un baiser de frère; mais ton coeur a battu; il a oublié la leçon, lui qui ne sait pas lire, et <u>tu</u> es revenue t'asseoir sur l\'herbe où nous voilà. ",
+            options: ["A donner des exemples qui justifient son argumentation", "A se donner du temps pour savoir ce qu\'il va dire ensuite"],
+            answer: 0,
+            explanation: "Perdican revient sur l\’attitude de Camille à son égard et dresse une succession d\’exemples grâce aux <b>imparfaits</b> et à l\’<u>anaphore</u> en « tu ». Ces exemples illustrent son argumentation. Les <i>propositions sont juxtaposées</i>, donne l\’impression qu\’il déverse un flot d’exemples qui accablent Camille. Il l\’accuse notamment d\’avoir oublié leur enfance représentée par le champ lexical d’une nature bucolique. La personnification donne aussi une tonalité pathétique et exprime le regret de Perdican ; elle est lyrique et très romantique (nature + sentiment). A nouveau, il accuse les religieuses comme le montre la métaphore : le plâtre évoque la froideur, le masque la fausseté"
+        },
+        {
+            id: 'badine_q12',
+            type: 'VF',
+            question: "AFFIRMATION : La métaphore du masuque ('le masque de plâtre que les nonnes t'on placé') évoque la froideur et la fausseté",
+            answer: "Vrai",
+            explanation: "A nouveau, il accuse les religieuses avec la métaphore du maque de plâtre qui évoque la froideur et la fausseté."
+        },
+        {
+            id: 'badine_q13',
+            type: 'QCM_EXTRAIT',
+            question: "Quelle figure de style retrouve-t-on ici?",
+            extract: "<u>... revoir ni ce bois, ni <mark>cette pauvre petite fontaine qui nous regarde tout en larmes</mark>. ",
+            options: ["Anaphore", "Chiasme", "Metaphore", "Personnification"],
+            answer: 0,
+            explanation: "Personnification de la fontaine pour donner une tonalité pathétique e exprimer le regret de Perdican"
+        },
+        {
+            id: 'badine_q14',
+            type: 'QCM_EXTRAIT',
+            question: "La conjonction de coordination 'mais' annonce un changement, Camille est finalement venu. Quelle figure de style explique ce changement?</i>?",
+            extract: "Tu voulais partir sans me serrer la main; ... <mark>mais</mark> <u>ton coeur</u> a battu; il a oublié <b>sa leçon</b>, lui qui ne sait pas <b>lire</b>",
+            options: ["Des métaphores", "Des anaphores", "des periphrases"],
+            answer: 0,
+            explanation: "Le coeur est la <u>métaphore des sentiments</u>, il est personnifié et il prend le dessus sur la <b>métaphore de l\’éducation</b> qui traduit la doxa de la religion"
+        },
+        {
+            id: 'badine_q15',
+            type: 'VF',
+            question: "AFFIRMATION : 'tu es revenue t\'asseoir sur l\'herbe où nous voilà' le pronom nous évoque l\'union des 2 jeunes gens.",
+            answer: "Vrai",
+            explanation: "Nous évoque l\'union de Camille et Perdican."
+        },
+        {
+            id: 'badine_q16',
+            type: 'QCM',
+            question: "De quoi parle le mouvement 2 ?",
+            options: ["Un éloge de l\'amour humain", "Un réquisitoire contre le couvent et l\'amour divin"],
+            answer: 0,
+            explanation: "Après avoir dénocé et fait un réquisitoire contre le couvent dans le mouvement, il fait l\'éloge de l\'amour humain dans le mouvement 2 "
+        },
+        {
+            id: 'badine_q17',
+            type: 'VF',
+            question: "AFFIRMATION : Perdican est ironique qand il dit 'Eh bien ! Camille, <mark><u>ces</u> femmes ont bien parlé</mark> ; <mark>elles t\'ont mise dans le vrai chemin</mark> ' ",
+            answer: "Vrai",
+            explanation: "On note un changement de ton avec l\'interjection 'Eh bien' il accuse les religieuses et leur discours avec l\'ironie. Le <u>determinant démonstratif</u> montre qu\'il met une distance critique entre lui et ces religieuses"
+        },
+       {
+            id: 'badine_q18',
+            type: 'QCM_EXTRAIT',
+            question: "Quelle est la figure de style ici?",
+            extract: "Il pourra m\'en couter le <mark>bonheur de ma vie</mark>; mais <u>dis</u>-leur cela de ma part: le ciel n\'<b>est</b> pas pour elles",
+            options: ["Métaphores", "Anaphores", "Periphrases", "Hyperbole"],
+            answer: 3,
+            explanation: "C\'est une hyperbole (exagération) qui marque l\'impossible union des deux jeunes. il accuse les religieuses et leur discours en utilisant l\’ironie. Le déterminant démonstratif montre aussi qu’il met une distance critique entre lui et ces femmes, qu\’il les méprise et dédaigne. L\’impératif sonne comme une provocation et une vengeance à leur égard. Il utilise le présent de vérité générale pour les achever : le ciel, image du paradis, de Dieu qu\’elles adorent, ne serait pas pour elles ; elles seraient donc dans le mensonge depuis toujours"
+        },
+        {
+            id: 'badine_q19',
+            type: 'QCM',
+            question: "Quelle est la fonction des nombreuses questions rhétoriques utilisées par Perdican ?",
+            options: [
+                "Exprimer un doute sincère",
+                "Créer une tension dramatique et persuader Camille",
+                "Introduire une réflexion philosophique détachée",
+                "Démontrer sa connaissance du dogme religieux"
+            ],
+            answer: 1,
+            explanation: "Les questions rhétoriques servent à créer une tension et à ébranler les certitudes de Camille."
+        }
+    ]
+}
+
 
 
 /* Prochaine = curiosité= peche originel..
@@ -1332,4 +1510,6 @@ const textsData = [
     ]
 }*/
     // Ajoutez d'autres textes ici en suivant la même structure { id: ..., title: ..., author: ..., questions: [...] },
-];
+]
+}
+]
