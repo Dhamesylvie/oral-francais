@@ -108,25 +108,25 @@ const textsData = [
         author: 'Olympe de Gouges (ODG)',
         questions: [
             // --- Questions renumérotées et corrigées ---
-            { id: 'odg_postambule_q1', type: 'QCM', question: 'Quel est l’objectif des questions rhétoriques posées par Olympe de Gouges dans ce paragraphe ?', options: ["Encourager les femmes en explorant leurs peurs pour les rassurer", "Accuser directement les hommes de tous les maux", "Montrer l’indifférence des femmes face à leur situation"], answer: 0, explanation: 'Olympe de Gouges utilise ces questions rhétoriques pour encourager les femmes à dépasser leurs craintes et à se mobiliser dans leur combat pour l\’égalité. Elle cite toutes les peurs pour que les femmes dépassent ces peurs.' },
+            { id: 'odg_postambule_q1', type: 'QCM', question: 'Quel est l\’objectif des questions rhétoriques posées par Olympe de Gouges dans ce paragraphe ?', options: ["Encourager les femmes en explorant leurs peurs pour les rassurer", "Accuser directement les hommes de tous les maux", "Montrer l’indifférence des femmes face à leur situation"], answer: 0, explanation: 'Olympe de Gouges utilise ces questions rhétoriques pour encourager les femmes à dépasser leurs craintes et à se mobiliser dans leur combat pour l\’égalité. Elle cite toutes les peurs pour que les femmes dépassent ces peurs.' },
             { id: 'odg_postambule_q2', type: 'VF', question: 'La métaphore de la "branche" évoque le lien dépassé entre morale religieuse et politique après la Révolution.', answer: 'Vrai', explanation: 'La métaphore "cette morale longtemps accrochée aux <b>branches de la politique</b>" insiste sur une morale religieuse auparavant liée à la politique, mais jugée dépassée ("qui n’est plus de saison") après la Révolution. La Révolution a mis fin aux liens entre le gouvernement et la religion chrétienne' },
             { id: 'odg_postambule_q3', type: 'VF', question: 'La réponse "tout" à la question "Femmes, qu\'y a-t-il de commun entre vous et nous ?" signifie que les <b>hommes et les femmes n’ont rien en commun.</b>', answer: 'Faux', explanation: 'Le mot "tout" insiste sur l’idée que femmes et hommes sont parfaitement identiques, et par conséquent, qu’ils doivent avoir les mêmes droits.' },
-            { id: 'odg_postambule_q4', type: 'QCM', question: 'Quel est l’objectif principal du Postambule d’Olympe de Gouges ?', options: ["Inciter les femmes à prendre conscience et revendiquer leurs droits naturels.", "Demander l’abolition définitive de la monarchie.", "Rappeler l’autorité religieuse traditionnelle.", "Préserver l\'Ancien Régime."], answer: 0, explanation: 'Dans ce texte, Olympe de Gouges exhorte les femmes à se réveiller et à réclamer leurs droits naturels et légitimes.' },
+            { id: 'odg_postambule_q4', type: 'QCM', question: 'Quel est l\’objectif principal du Postambule d\’Olympe de Gouges ?', options: ["Inciter les femmes à prendre conscience et revendiquer leurs droits naturels.", "Demander l’abolition définitive de la monarchie.", "Rappeler l’autorité religieuse traditionnelle.", "Préserver l\'Ancien Régime."], answer: 0, explanation: 'Dans ce texte, Olympe de Gouges exhorte les femmes à se réveiller et à réclamer leurs droits naturels et légitimes.' },
             { id: 'odg_postambule_q5', type: 'VF', question: 'Olympe de Gouges affirme que la Révolution a amélioré la place des femmes dans la société.', answer: 'Faux', explanation: 'Olympe de Gouges constate amèrement que la Révolution a entraîné un mépris encore plus marqué vis-à-vis des femmes.' },
             { id: 'odg_postambule_q6', type: 'QCM', question: 'Par la métaphore du "tocsin de la raison", ODG se place dans la lignée de quel mouvement philosophique ?', options: ["Le Romantisme", "Les Lumières", "Le Surréalisme", "La Renaissance"], answer: 1, explanation: 'Le "tocsin de la raison" renvoie explicitement aux philosophes des Lumières diffusant la raison contre les préjugés.' },
             { id: 'odg_postambule_q7', type: 'VF', question: 'ODG considère la nature comme porteuse des lois égalitaires homme-femme.', answer: 'Vrai', explanation: 'La nature est, selon elle, un modèle d\’égalité naturelle que la société a corrompu.' }, // Note: Usage de ’ typographique
-            { id: 'odg_postambule_q8', type: 'QCM', question: 'ODG utilise l’expression "homme esclave" pour illustrer quel paradoxe ?', options: ["L’homme est dominé par les femmes.", "L’homme libre opprime celles qui l’ont aidé à devenir libre.", "L’homme refuse d’être aidé par la femme.", "L’homme lutte contre la nature."], answer: 1, explanation: 'ODG montre ainsi que l’homme libéré grâce au soutien des femmes devient injuste envers celles-ci dès qu’il a récupéré sa liberté.' },
-            { id: 'odg_postambule_q9', type: 'QCM', question: 'Pourquoi ODG évoque-t-elle l’épisode biblique des noces de Cana ?', options: ["Pour critiquer explicitement la religion chrétienne.", "Pour anticiper une potentielle objection religieuse et la réfuter.", "Pour soutenir l’autorité religieuse.", "Pour inviter à la célébration religieuse."], answer: 1, explanation: 'Elle anticipe et réplique à une potentielle objection religieuse en montrant l\'anachronisme de telles idées.' },
+            { id: 'odg_postambule_q8', type: 'QCM', question: 'ODG utilise l\’expression "homme esclave" pour illustrer quel paradoxe ?', options: ["L’homme est dominé par les femmes.", "L’homme libre opprime celles qui l’ont aidé à devenir libre.", "L’homme refuse d’être aidé par la femme.", "L’homme lutte contre la nature."], answer: 1, explanation: 'ODG montre ainsi que l’homme libéré grâce au soutien des femmes devient injuste envers celles-ci dès qu’il a récupéré sa liberté.' },
+            { id: 'odg_postambule_q9', type: 'QCM', question: 'Pourquoi ODG évoque-t-elle l\’épisode biblique des noces de Cana ?', options: ["Pour critiquer explicitement la religion chrétienne.", "Pour anticiper une potentielle objection religieuse et la réfuter.", "Pour soutenir l’autorité religieuse.", "Pour inviter à la célébration religieuse."], answer: 1, explanation: 'Elle anticipe et réplique à une potentielle objection religieuse en montrant l\'anachronisme de telles idées.' },
             { id: 'odg_postambule_q10', type: 'QCM', question: 'Quelle réponse ODG préconise-t-elle face à la question : "Femmes, qu\'y a-t-il de commun entre vous et nous ?"', options: ["Rien", "Que la différence physique", "Tout", "Peu de choses"], answer: 2, explanation: 'Elle préconise brièvement la réponse "Tout", qui affirme catégoriquement l’identité fondamentale entre les deux sexes et légitime l\’égalité absolue.' },
             { id: 'odg_postambule_q11', type: 'VF', question: 'ODG appelle les femmes à dominer les hommes comme ces derniers les ont dominées auparavant.', answer: 'Faux', explanation: 'Elle appelle au contraire à une égalité réelle et non à une revanche ou supériorité féminine.' },
-            { id: 'odg_postambule_q12', type: 'QCM', question: 'Selon ODG, quels sont les principaux moyens d’action pour les femmes ?', options: ["La violence physique contre les hommes.", "La soumission aux autorités masculines.", "La force de la raison, de la philosophie et l’union collective.", "La supériorité naturelle et l’isolement individuel."], answer: 2, explanation: 'ODG indique que les femmes doivent opposer la raison et la philosophie aux prétentions injustifiées de supériorité des hommes, en restant unies.' }, 
+            { id: 'odg_postambule_q12', type: 'QCM', question: 'Selon ODG, quels sont les principaux moyens d\’action pour les femmes ?', options: ["La violence physique contre les hommes.", "La soumission aux autorités masculines.", "La force de la raison, de la philosophie et l’union collective.", "La supériorité naturelle et l’isolement individuel."], answer: 2, explanation: 'ODG indique que les femmes doivent opposer la raison et la philosophie aux prétentions injustifiées de supériorité des hommes, en restant unies.' }, 
             { id: 'odg_postambule_q13', type: 'QCM', question: 'À quoi renvoie la polysémie (avoir plusieurs sens) du mot "affranchir" dans la conclusion du Postambule ?', options: ["Se soumettre volontairement aux hommes.", "Franchir les obstacles et se libérer des contraintes injustes.", "Ignorer les barrières sociales imposées aux femmes.", "Respecter toutes les barrières posées devant elles."], answer: 1, explanation: 'Le verbe "affranchir" a un double sens: franchir (dépasser les barrières physiques) et se libérer des contraintes sociales imposées injustement aux femmes.' },
             { id: 'odg_postambule_q14', type: 'QCM', question: 'En commençant par "Femme, réveille toi" que tente de faire ODG?', options: ["Elle apostrophe les femmes", "Elle dénigre les femmes.", "Elle plaint les femmes."], answer: 0, explanation: 'ODG interpelle les femmes pour les faire réagir, attirer leur attention.' },
             { id: 'odg_postambule_q15', type: 'QCM', question: 'Qu\'est-ce que le Tocsin et à quoi fait-il référence dans ce texte ?', options: ["Le Tocsin est une cloche utilisée en temps de guerre. Utilisé ici pour parler de la raison qui se répand partout.", "Il s\'agit d\'une trompette pour appeler les femmes comme en temps de guerre.", "Il s\'agit d\'une clochette à accrocher au cou des moutons pour rappeler les troupeaux."], answer: 0, explanation: 'Le tocsin est une cloche utilisée en temps de guerre. Il s’agit ici de la cloche de la raison : ODG se place dans l’héritage des Lumières. La raison se répand partout et la femme doit en profiter pour faire valoir ses droits.' },
             { id: 'odg_postambule_q16', type: 'QCM', question: 'Pourquoi ODG utilise la <b>Métaphore</b> du Tocsin (cloche utilisée en temps de guerre) pour désigner la raison?', options: ["Avec cette idée de cloche de la raison ODG se place dans l’héritage des Lumières.", "Avec cette idée de cloche de la raison ODG se place dans l\'église."], answer: 0, explanation: 'Il s’agit ici de la cloche de la raison : ODG se place dans l’héritage des Lumières. La raison se répand partout et la femme doit en profiter pour faire valoir ses droits.' },
             { id: 'odg_postambule_q17', type: 'QCM', question: '"Le flambeau de la vérité", de quelle figure de style s\'agit-il ?', options: ["Métaphore", "Périphrase"], answer: 0, explanation: 'Métaphore qui renvoie à la lumière et donc au siècle des lumières qui ont dissipé les nuages de la sottise. <b>Métaphore</b> = Comparaison sans outil de comparaison (ex: "la route, long ruban") On compare à quelque chose de différent. / <b>Périphrase</b>: Expression en plusieurs mots pour décrire quelque chose de simple (ex: "Ile de Beauté" pour la Corse, "l\'astre du jour" pour le soleil).' },
             { id: 'odg_postambule_q18', type: 'QCM', question: 'Quel est l\'objectif de la question rhétorique <b>"Que vous reste-t-il?</b>', options: ["Rappeler qu\'il faut toujours chercher", "Montrer l\'impuissance des femmes après la révolution."], answer: 1, explanation: 'Elle montre l’impuissance des femmes après la Révolution. Puis donne 2 réponses - 1re réponse : insiste sur l\'ingratitude des hommes - 2ème réponse : les femmes doivent réclamer encore se battre.' },
-            { id: 'odg_postambule_q19', type: 'QCM', question: 'Quelle figure de style ODG utilise-t-elle avec l’expression "le flambeau de la vérité" ?', options: ["Une personnification", "Une allitération", "Une métaphore", "Une hyperbole"], answer: 2, explanation: "Le 'flambeau de la vérité' constitue une métaphore lumineuse en lien avec l\'idée des Lumières, symbolisant l\'éclairage rationnel contre l\'ignorance." },
+            { id: 'odg_postambule_q19', type: 'QCM', question: 'Quelle figure de style ODG utilise-t-elle avec l\’expression "le flambeau de la vérité" ?', options: ["Une personnification", "Une allitération", "Une métaphore", "Une hyperbole"], answer: 2, explanation: "Le 'flambeau de la vérité' constitue une métaphore lumineuse en lien avec l\'idée des Lumières, symbolisant l\'éclairage rationnel contre l\'ignorance." },
             { id: 'odg_postambule_q20', type: 'QCM', question: 'Que désigne cette périphrase "Le puissant empire de la nature"', options: ["Dieu", "Le roi", "L\'humanité"], answer: 2, explanation: 'La périphrase désigne l’humanité qui valorise la nature par rapport à la civilisation (c’est la société qui a perverti les règles de la nature, dans laquelle l\’égalité des sexes est inscrite).' },
             { id: 'odg_postambule_q21', type: 'VF', question: 'Une Question Rhétorique est une figure de style qui consiste à poser une question dont la réponse est connue ou suggérée par la personne qui formule l\'interrogation.', answer: 'Vrai', explanation: "On pose une fausse question pour tenir en haleine son auditoire." },
             { id: 'odg_postambule_q22', type: 'QCM', question: 'Quel est l\'objectif de la question rhétorique : "Quels sont les avantages que vous avez recueillis dans la Révolution ?" suivie de "Un mépris plus marqué..." ?', options: ["Rappeler que la Révolution aurait pu améliorer le sort des femmes, mais non...", "Que les avantages de la révolution ont été nombreux.", "Que les avantages ne servent à rien."], answer: 0, explanation: 'Cette 2e question rhétorique rappelle que la Révolution aurait pu améliorer le sort des femmes, mais cela n’a pas été le cas comme le montre sa propre réponse.' },
@@ -134,7 +134,7 @@ const textsData = [
             { id: 'odg_postambule_q24', type: 'QCM', question: 'Avec ce parallélisme de construction : <b>"Un mépris plus marqué, un dédain plus signalé."</b>, quel paradoxe veut mettre en avant ODG ?', options: ["Au lieu de respecter davantage les femmes, les hommes les méprisent encore plus.", "Montrer que le mépris et le dédain vont faire avancer les choses."], answer: 0, explanation: 'Avec le parallélisme de construction, ODG met en valeur un nouveau paradoxe : au lieu de les respecter davantage, les hommes les méprisent encore plus. La phrase est courte et donc d’autant plus frappante.' },
             { id: 'odg_postambule_q25', type: 'QCM', question: 'A quoi fait référence la périphrase <b>"Dans les siècles de corruption"</b>?"', options: ["L\'Ancien Régime", "Le siècle des lumières."], answer: 0, explanation: 'La périphrase "les siècles de corruptio" désigne l’Ancien Régime qui était un monde corrompu, injustice et ignorance, ne respecte pas les règles de la nature qui sont bonnes.' },
             { id: 'odg_postambule_q26', type: 'VF', question: '"les sages décrets de la nature" est une périphrase.', answer: 'Faux', explanation: "C\'est une métaphore juridique qui rappelle que les droits de la femme sont inscrits dans la nature." },
-            { id: 'odg_postambule_q27', type: 'VF', question: 'La métaphore de l’aveuglement dans "quand cesserez-vous d\'être aveugles ?" appelle les femmes à la prise de conscience.', answer: 'Vrai', explanation: "Cette métaphore appelle les femmes à ouvrir les yeux sur leur oppression et leurs droits bafoués." },
+            { id: 'odg_postambule_q27', type: 'VF', question: 'La métaphore de l\’aveuglement dans "quand cesserez-vous d\'être aveugles ?" appelle les femmes à la prise de conscience.', answer: 'Vrai', explanation: "Cette métaphore appelle les femmes à ouvrir les yeux sur leur oppression et leurs droits bafoués." },
             { id: 'odg_postambule_q28', type: 'QCM', question: 'Quel est l\'objectif de la question rhétorique <b>"Quels sont les avantages que vous avez recueillis dans la Révolution ?"</b> Un mépris plus marqué,', options: ["Rappeler que la Révolution aurait pu améliorer le sort des femmes, mais non...", "Que les avantages de la révolution ont été nombreux.", "Que les avantages ne servent à rien."], answer: 0, explanation: 'Cette 2e question rhétorique rappelle que la Révolution aurait pu améliorer le sort des femmes, mais cela n’a pas été le cas comme le montre sa propre réponse.' },
             { id: 'odg_postambule_q29', type: 'QCM_EXTRAIT', question: 'Quelles figures de styles trouvent-on dans cet extrait?', extract: "Le puissant empire de la nature n\'est plus environné de préjugés, de fanatisme, de superstition et de mensonges.", options: ["Métaphore, Périphrase, Énumération", "Allitération, Périphrase, Négation", "Périphrase, Négation, Énumération."], answer: 2, explanation: 'Périphrase "Le puissant empire de la nature" = l\'humanité, Négation + Énumération : Par rapport au tocsin de la raison grâce à qui l’humanité s’est libérée de l\’obscurantisme que désignent les noms communs. La vérité règne. Toutes les conditions favorables sont donc réunies pour réclamer ses droits.' },
             { id: 'odg_postambule_q30', type: 'QCM_EXTRAIT', question: 'A quoi fait référence l\'énumération dans cet extrait?', extract: "Le puissant empire de la nature n\'est plus environné de préjugés, de fanatisme, de superstition et de mensonges.", options: ["Despotisme : Type de domination politique tyrannique où une seule personne exerce un pouvoir sans partage.", "Obscurantisme: attitude d\'opposition à la diffusion du savoir et de la connaissance"], answer: 1, explanation: 'Grâce au tocsin de la raison, l’humanité s’est libérée de l\’obscurantisme que désignent les noms communs. La vérité règne. Toutes les conditions favorables sont donc réunies pour réclamer ses droits. ' },
@@ -149,7 +149,7 @@ const textsData = [
             { id: 'odg_postambule_q39', type: 'QCM_EXTRAIT', question: 'Dans cet extrait, il y a:', extract: "Que vous reste-t-il donc ? La conviction des injustices de l\'homme. La réclamation de votre patrimoine, fondée sur les sages décrets de la nature", options: ["Question Rhétorique / Phrase verbale", "Question Rhétorique / Phrase nominale"], answer: 1, explanation: '<b>Question rhétorique</b> qui montre l\'impuissance des femmes après la révolution.<br>Rpse 1 : Avec <b>une phrase nominale</b> frappante ODG insiste de nouveau sur l\'ingratitude des hommes.<br>Rpse 2: le mot "Réclamation" montre que ce qu\'il reste aux femmes c\'est leur combat pour des droits et biens (patrimoine).' },
             { id: 'odg_postambule_q40', type: 'QCM_EXTRAIT', question: 'Dans cet extrait, a quoi font référence les mots en gras ', extract: " La <b>réclamation</b> de votre <b>patrimoine</b>, fondée sur les sages décrets de la nature.", options: ["Le combat des femmes pour leur droits / le porte-monnaie des femmes?", "Le combat des femmes pour leurs droits / Les biens matériels et l\'héritage naturel des femmes"], answer: 1, explanation: 'Le terme “patrimoine” englobe les biens matériels des femmes et leur héritage naturel. La métaphore juridique "les sages décrets de la nature" rappelle que les droits de la femme sont inscrits dans la nature.' },
             { id: 'odg_postambule_q41', type: 'QCM_EXTRAIT', question: 'Dans cet extrait, combien de réponses sont apportées à la question rhétorique', extract: "Que vous reste-t-il donc ? <br>La conviction des injustices de l\'homme.<br>La réclamation de votre patrimoine, fondée sur les sages décrets de la nature", options: ["1", "2"], answer: 1, explanation: '<b>2 réponses :</b> <br>Rpse 1 : Avec une phrase nominale frappante ODG insiste de nouveau sur l\'ingratitude des hommes.<br>Rpse 2: le mot "Réclamation" montre que ce qu\'il reste aux femmes c\'est leur combat pour des droits et biens (patrimoine).' },
-            { id: 'odg_postambule_q42', type: 'QCM_EXTRAIT', question: 'Que valorise ODG avec l’expression en gras dans cet extrait (et l\'adverbe intensif "si") ?', extract: 'Qu\'auriez-vous à redouter pour une <b>si belle entreprise</b> ?', options: ["La facilité de la lutte des femmes", "La noblesse et l’importance du combat des femmes", "La soumission des femmes à leur destin"], answer: 1, explanation: 'L’adverbe intensif "si" valorise clairement le combat que mènent les femmes, insistant sur son importance et sa grandeur.' },
+            { id: 'odg_postambule_q42', type: 'QCM_EXTRAIT', question: 'Que valorise ODG avec l\’expression en gras dans cet extrait (et l\'adverbe intensif "si") ?', extract: 'Qu\'auriez-vous à redouter pour une <b>si belle entreprise</b> ?', options: ["La facilité de la lutte des femmes", "La noblesse et l’importance du combat des femmes", "La soumission des femmes à leur destin"], answer: 1, explanation: 'L’adverbe intensif "si" valorise clairement le combat que mènent les femmes, insistant sur son importance et sa grandeur.' },
             { id: 'odg_postambule_q43', type: 'QCM_EXTRAIT', question: 'À quoi fait référence la <b>1ère crainte</b> des femmes qu\'évoque ODG dans la citation en gras ?', extract: '<b>Le bon mot du législateur des noces de Cana ?</b>', options: ["Une critique d’un discours à l’Assemblée Nationale", "Le regard ou jugement divin (épisode biblique des noces de Cana)", "Une crainte devant l’échec politique"], answer: 1, explanation: 'ODG explore la crainte des femmes <b>du regard de DIEU</b>. Avec la référence au législateur biblique des noces de Cana (Jésus), elle évoque symboliquement la crainte des femmes face au regard ou jugement divin.' },
             { id: 'odg_postambule_q44', type: 'QCM_EXTRAIT', question: 'À quoi fait référence la <b>2ème crainte</b> des femmes qu\'évoque ODG dans la citation en gras ?', extract: ' Craignez-vous que nos <b>législateurs français, correcteurs de cette morale</b> longtemps accrochée aux branches de la politique,', options: ["La réaction méprisante des Hommes", "Le regard ou jugement divin (épisode biblique des noces de Cana)", "Une crainte devant l’échec politique"], answer: 0, explanation: 'Les femmes auraient peur des hommes (“Législateurs français”) qui auraient pris le relais de Jésus (“Législateur des noces de Cana”) dans la correction de la morale. La morale religieuse et la politique ont longtemps été liées.' },
             { id: 'odg_postambule_q45', type: 'QCM_EXTRAIT', question: 'Dans cet extrait, comment ODG suggère-t-elle aux femmes de réagir face au rejet des hommes ?', extract: '" Femmes, qu’y a-t-il de commun entre vous et nous ? auriez-vous à répondre." " Tout ", auriez-vous à répondre.', options: ["Par la révolte violente", "Par l’indifférence", "Par une affirmation ferme d’une égalité totale"], answer: 2, explanation: 'Grâce au discours direct et à une réponse brève "Tout", ODG suggère une prise de position ferme et catégorique : les femmes doivent affirmer leur pleine égalité avec les hommes.' },
@@ -161,17 +161,17 @@ const textsData = [
             { id: 'odg_postambule_q51', type: 'QCM', question: 'Quel objectif poursuit ODG en employant la 2e personne du pluriel (\"vous\") dans ce passage ?', options: [ "Parler directement aux députés", "Créer un sentiment d\'unité et de solidarité entre les femmes", "S’adresser uniquement aux philosophes des Lumières" ], answer: 1, explanation: "Par l\'emploi du \"vous\", ODG s’adresse directement aux femmes afin de susciter leur unité et leur solidarité dans le combat pour leurs droits." },
             { id: 'odg_postambule_q52', type: 'VF', question: 'ODG associe les hommes à des termes péjoratifs (\'faiblesse\', \'inconséquence\', \'vaines prétentions\', \'orgueilleux\'...) afin de renforcer la confiance des femmes.', answer: "Vrai", explanation: "En assimilant les hommes à des termes péjoratifs, ODG dévalorise symboliquement leur prétendue supériorité afin de renforcer la confiance des femmes." },
             { id: 'odg_postambule_q53', type: 'VF', question: 'L\'auteure souhaite établir une supériorité féminine sur les hommes.', answer: "Faux", explanation: "ODG n\'appelle pas à la supériorité féminine, mais vise plutôt l\’égalité entre les femmes et les hommes : une alliance plutôt qu\'une soumission." },
-            { id:'odg_postambule_q54', type:'QCM_EXTRAIT', question:'Quel est l\’effet recherché par l’utilisation répétée de termes en gras dans cet extrait ?', extract:'<b>opposez</b> courageusement la force de la raison […], <b>réunissez-vous</b> sous les étendards de la philosophie, <b>déployez</b> toute l\’énergie de votre caractère', options:[ "Donner des ordres aux députés.", "Inviter à l\’action collective des femmes.", "Critiquer la passivité des philosophes." ], answer: 1, explanation:'Les impératifs "opposez", "réunissez-vous", et "déployez", visent directement à galvaniser les femmes, à les inviter à une action collective pour revendiquer leurs droits.' },
+            { id:'odg_postambule_q54', type:'QCM_EXTRAIT', question:'Quel est l\’effet recherché par l\’utilisation répétée de termes en gras dans cet extrait ?', extract:'<b>opposez</b> courageusement la force de la raison […], <b>réunissez-vous</b> sous les étendards de la philosophie, <b>déployez</b> toute l\’énergie de votre caractère', options:[ "Donner des ordres aux députés.", "Inviter à l\’action collective des femmes.", "Critiquer la passivité des philosophes." ], answer: 1, explanation:'Les impératifs "opposez", "réunissez-vous", et "déployez", visent directement à galvaniser les femmes, à les inviter à une action collective pour revendiquer leurs droits.' },
             { id:'odg_postambule_q55', type:'QCM_EXTRAIT', question:'Dans cet extrait, quelle attitude ODG propose-t-elle d\’opposer face aux hommes ?', extract:'opposez courageusement la <b>force de la raison</b> aux vaines prétentions de supériorité', options:[ "La force physique et guerrière", "La violence verbale", "Une supériorité intellectuelle et morale fondée sur la raison" ], answer: 2, explanation:'ODG propose aux femmes d’opposer une supériorité intellectuelle et morale basée sur la raison ("force de la raison") aux prétentions injustifiées des hommes.' },
             { id:'odg_postambule_q56', type:'QCM_EXTRAIT', question:'Quelle est l\’idée suggérée par l\’expression en gras dans cette citation ?', extract:'vous verrez bientôt ces orgueilleux, <b>non serviles adorateurs rampants à vos pieds, mais fiers de partager avec vous les trésors de l\'Être suprême</b>', options:[ "Une future domination des femmes sur les hommes.", "Une égalité fondée sur l\'alliance plutôt que sur la soumission.", "Une séparation définitive entre les femmes et les hommes." ], answer: 1, explanation:'En utilisant une métaphore qui montre les hommes non comme "adorateurs rampants", mais au contraire comme "fiers de partager", ODG insiste sur une égalité envisagée comme une réelle alliance, sans soumission.' },
-            { id:'odg_postambule_q57', type:'VF', question:'L’expression "les trésors de l\’Être suprême" fait référence aux valeurs universelles prônées par la philosophie des Lumières.', answer:'Vrai', explanation:'Cette expression symbolique fait bien référence aux valeurs universelles comme la raison, l\’égalité et le respect mutuel, issues notamment de la philosophie des Lumières.' },
+            { id:'odg_postambule_q57', type:'VF', question:'L\’expression "les trésors de l\’Être suprême" fait référence aux valeurs universelles prônées par la philosophie des Lumières.', answer:'Vrai', explanation:'Cette expression symbolique fait bien référence aux valeurs universelles comme la raison, l\’égalité et le respect mutuel, issues notamment de la philosophie des Lumières.' },
             { id:'odg_postambule_q58', type:'QCM', question:'Quel temps verbal ODG utilise-t-elle dans "vous verrez bientôt", et pourquoi ?', options:[ "Présent – pour rendre la situation actuelle plus vivante.", "Futur de certitude – pour souligner une issue positive si les femmes agissent.", "Conditionnel – pour exprimer une hypothèse irréelle." ], answer: 1, explanation:'ODG emploie ici un futur de certitude ("vous verrez bientôt") afin d\’affirmer que les femmes obtiendront certainement une situation positive si elles luttent activement pour leurs droits.' },
             { id: 'odg_postambule_q59', type: 'QCM', question: 'Quel message principal ODG transmet-elle dans ce passage "il est en votre pouvoir de les affranchir ; vous n\'avez qu\'à le vouloir" ?', options: [ "Les femmes doivent accepter passivement les obstacles.", "Les femmes peuvent surmonter les obstacles à condition de vouloir se libérer.", "Les femmes doivent attendre une autorisation des hommes pour agir." ], answer: 1, explanation: 'ODG insiste sur la capacité d\'action des femmes : leur libération dépend principalement et avant tout de leur volonté.' },
             { id: 'odg_postambule_q60', type: 'QCM', question: 'À quoi sert la proposition subordonnée circonstancielle de concession "Quelles que soient les barrières que l\'on vous oppose" ?', options: [ "À rappeler le soutien inconditionnel des hommes.", "À présenter les obstacles éventuels tout en affirmant leur dépassement possible.", "À exprimer l\’exclusion définitive des femmes." ], answer: 1, explanation: 'La subordonnée circonstancielle de concession ("quelles que soient les barrières") indique l’existence d’obstacles éventuels, tout en soulignant immédiatement que les femmes peuvent les dépasser.' },
             { id: 'odg_postambule_q61', type: 'VF', question: 'La négation restrictive "ne... que…" dans le passage ("vous n\'avez qu\'à le vouloir") insiste sur la difficulté à vaincre les obstacles.', answer: 'Faux', explanation: 'La négation restrictive "ne... que…" insiste sur le fait que la possibilité de liberté dépend uniquement de la volonté des femmes, et non pas sur la difficulté elle-même.' },
             { id:'odg_postambule_q62', type:'QCM_EXTRAIT', question:'Que signifie principalement le terme en gras dans cet extrait ?', extract:'il est en votre pouvoir de les <b>affranchir</b>', options:[ "Créer davantage d\’obstacles.", "Dépasser physiquement les barrières et se libérer d\’une sujétion.", "Demander une aide extérieure pour franchir ces barrières." ], answer: 1, explanation:'Le terme "affranchir" est polysémique. Ici, il désigne à la fois l\’idée concrète de passer au-dessus des barrières, et surtout symboliquement de se libérer d\’une soumission sociale.' },
             { id:'odg_postambule_q63', type:'VF', question:'Le mot "affranchir" est polysémique (il possède un double sens) : franchir physiquement et libérer symboliquement.', answer:'Vrai', explanation:'Le verbe "affranchir" est polysémique : il désigne à la fois le franchissement matériel d’obstacles et la libération symbolique d’une oppression.' },
-            { id:'odg_postambule_q64', type:'QCM', question:'Sur quoi insiste la négation restrictive "vous n\’avez qu’à le vouloir"?', options:[ "Sur la difficulté extrême de la lutte des femmes.", "Sur le découragement face à l’inaction des législateurs.", "Sur le fait essentiel que seule la volonté des femmes est nécessaire à leur libération." ], answer: 2, explanation:'La négation restrictive ("ne...que...") met en avant l\’idée essentielle selon laquelle leur volonté seule suffit à leur libération.' },
+            { id:'odg_postambule_q64', type:'QCM', question:'Sur quoi insiste la négation restrictive "vous n\’avez qu\’à le vouloir"?', options:[ "Sur la difficulté extrême de la lutte des femmes.", "Sur le découragement face à l’inaction des législateurs.", "Sur le fait essentiel que seule la volonté des femmes est nécessaire à leur libération." ], answer: 2, explanation:'La négation restrictive ("ne...que...") met en avant l\’idée essentielle selon laquelle leur volonté seule suffit à leur libération.' },
             { id:'odg_postambule_q65', type:'QCM_EXTRAIT', question:'Quel effet produit l\’expression en gras dans : "<b>il est en votre pouvoir</b>"?', extract:'Quelles que soient les barrières que l\'on vous oppose, <b>il est en votre pouvoir</b> de les affranchir ; vous n\'avez qu\'à le vouloir', options:[ "Cela valorise la force et la capacité d’action des femmes.", "Cela souligne la supériorité naturelle des hommes.", "Cela met en évidence l\’impuissance des femmes." ], answer: 0, explanation:'L\’expression "il est en votre pouvoir" insiste sur la capacité des femmes à agir et souligne leur force intrinsèque.' },
             { id:'odg_postambule_q66', type:'QCM', question:'Quel est le but principal de la fin du Postambule ?', options: ["Décrire les lois existantes.", "Exprimer un découragement final.", "Exhorter les femmes à l\'action et affirmer leur capacité à se libérer."], answer: 2, explanation:'La fin du Postambule est un appel vibrant à l\'action, insistant sur la volonté et le pouvoir des femmes de surmonter les obstacles pour atteindre l\'égalité.' }
         ]
@@ -236,7 +236,7 @@ const textsData = [
             extract: "Vieille baignoire",
             options: ["Hypallage (mettre dans une autre phrase un terme qui se rapporte à la 1ere phrase).", "Allitération (répétition d\'une consonne)"],
             answer: 0,
-            explanation: "L’adjectif peut être une hypallage. En effet, l’adj ne désigne-t-il que la baignoire ou aussi la déesse qui est pourtant censée naître ? Cette interprétation va avec le 'cercueil' qui montre une Vénus non pas naissante (ce qu’annonçait pourtant le titre avec l’adjectif 'anadyomène'), mais proche de la mort. Le traitement de Vénus est bien parodique. "
+            explanation: "L\’adjectif peut être une hypallage. En effet, l\’adj ne désigne-t-il que la baignoire ou aussi la déesse qui est pourtant censée naître ? Cette interprétation va avec le 'cercueil' qui montre une Vénus non pas naissante (ce qu’annonçait pourtant le titre avec l’adjectif 'anadyomène'), mais proche de la mort. Le traitement de Vénus est bien parodique. "
         },
         {
             id: 'venus_q8',
@@ -258,10 +258,10 @@ const textsData = [
             id: 'venus_q10',
             type: 'QCM_EXTRAIT',
             question: "Qu\'apportent les expressions 'fortement pommadés' et 'déficits mal ravaudés' ?",
-            extract: "De femme à cheveux bruns <b>fortement pommadés</b><br> D’une vieille baignoire émerge, lente et bête,<br> Avec des <b>déficits assez mal ravaudés</b>",
+            extract: "De femme à cheveux bruns <b>fortement pommadés</b><br> D\’une vieille baignoire émerge, lente et bête,<br> Avec des <b>déficits assez mal ravaudés</b>",
             options: ["La rendent belle et mystérieuse", "Déprécient son apparence"],
             answer: 1,
-            explanation: "L’adverbe 'fortement' montre que c’est trop, ridicule (contraire à la représentation faite par Botticelli où les cheveux volent au vent). 'Déficits mal ravaudés' devient symbole de laideur et de lacunes."
+            explanation: "L\’adverbe 'fortement' montre que c\’est trop, ridicule (contraire à la représentation faite par Botticelli où les cheveux volent au vent). 'Déficits mal ravaudés' devient symbole de laideur et de lacunes."
         },
         {
             id: 'venus_q11',
@@ -269,7 +269,7 @@ const textsData = [
             question: "Avec les adjectifs <b>'Lente et bête'</b> quelle apparence est donné à Venus ?",
             options: ["L\'apparence d\'une déesse", "l\'apparence d\'un animal."],
             answer: 1,
-            explanation: "Vénus a plus l’apparence d’un animal que d’une déesse. Polysémie du nom 'bête' qui est rapproché du nom 'tête' par la rime (pauvreté intellectuelle?)"
+            explanation: "Vénus a plus l\’apparence d\’un animal que d\’une déesse. Polysémie du nom 'bête' qui est rapproché du nom 'tête' par la rime (pauvreté intellectuelle?)"
         },
         {
             id: 'venus_q12',
@@ -306,9 +306,9 @@ const textsData = [
         {
             id: 'venus_q16',
             type: 'VF',
-            question: "AFFIRMATION : L\'anaphore de l’adverbe 'puis' suggère une progression harmonieuse et esthétique.",
+            question: "AFFIRMATION : L\'anaphore de l\’adverbe 'puis' suggère une progression harmonieuse et esthétique.",
             answer: 'Faux',
-            explanation: "L’anaphore de 'puis' montre une progression dans la description du corps qui, au contraire, révèle toute la laideur de Vénus au fur et à mesure de son émergence de la baignoire."
+            explanation: "L\’anaphore de 'puis' montre une progression dans la description du corps qui, au contraire, révèle toute la laideur de Vénus au fur et à mesure de son émergence de la baignoire."
         },
        {
             id: 'venus_q17',
@@ -317,7 +317,7 @@ const textsData = [
             extract: "<b>Puis</b> le col gras et gris, les larges omoplates <br> Qui saillent ; le dos court qui rentre et qui ressort ; <br> <b>Puis</b> les rondeurs des reins semblent prendre l’essor.",
             options: ["Assonance pour répeter des voyelles", "Une anaphore pour montrer la laideur de haut en bas."],
             answer: 1,
-            explanation: "Description progressive du corps à travers l’anaphore de l’adverbe 'puis' → le poète va montrer toute sa laideur au fur et à mesure que Vénus émerge de la baignoire. Hypotypose sordide : le présent donne l’impression qu’on voit Vénus sortir de l’eau."
+            explanation: "Description progressive du corps à travers l\’anaphore de l’adverbe 'puis' → le poète va montrer toute sa laideur au fur et à mesure que Vénus émerge de la baignoire. Hypotypose sordide : le présent donne l’impression qu’on voit Vénus sortir de l’eau."
         },
        {
             id: 'venus_q18',
@@ -349,7 +349,7 @@ const textsData = [
             type: 'VF',
             question: "AFFIRMATION : Le rythme binaire des expressions 'qui rentre et qui ressort'» évoque une danse élégante et harmonieuse.",
             answer: 'Faux',
-            explanation: "Le rythme binaire ici évoque une danse sordide, renforçant l’aspect grotesque du corps en mouvement."
+            explanation: "Le rythme binaire ici évoque une danse sordide, renforçant l\’aspect grotesque du corps en mouvement."
         },
         {
             id: 'venus_q22',
@@ -403,27 +403,27 @@ const textsData = [
             question: "Que signifie l\'expression 'Clara Vénus' et pourquoi introduit-t-elle l\'idée de  la \"déchéance vulgaire\" ?",
             options: ["Clara Vénus = Claire de Venus / Déchéance vulgaire car il y a le mot nu", "Clara Vénus = Illustre Venus / Déchéance car contient un anagramme"],
             answer: 1, // `réponse` -> `answer`
-            explanation: "'Clara Vénus' signifie \"illustre Venus\". Déchéance car c\'est presque une anagramme subtile de 'ulcère à l’anus', indiquant une chute volontaire dans le bas et le vulgaire."
+            explanation: "'Clara Vénus' signifie \"illustre Venus\". Déchéance car c\'est presque une anagramme subtile de 'ulcère à l\’anus', indiquant une chute volontaire dans le bas et le vulgaire."
         },
         {
             id: 'venus_q29',
             type: 'QCM',
             question: "Quelle association synesthétique (association involontaire de 2 sens) crée une image de dégoût dans le poème ?",
-            options: ["L’éclat doré et enivrant", "La lumière douce et paisible", "La couleur rouge, l\'odeur et le goût dit 'horrible'", "Le parfum délicat et apaisant"],
+            options: ["L\’éclat doré et enivrant", "La lumière douce et paisible", "La couleur rouge, l\'odeur et le goût dit 'horrible'", "Le parfum délicat et apaisant"],
             answer: 2,
             explanation: "La couleur 'rouge' associée à l\'odeur et au goût crée une synesthésie qui évoque la boucherie et génère un sentiment de dégoût."
         },
         {
             id: 'venus_q30',
             type: 'VF',
-            question: "AFFIRMATION : L’expression 'belle hideusement' est un exemple d\'oxymore rappelant Baudelaire.",
+            question: "AFFIRMATION : L\’expression 'belle hideusement' est un exemple d\'oxymore rappelant Baudelaire.",
             answer: 'Vrai',
             explanation: "L’expression 'belle hideusement' combine des termes contradictoires, exprimant une beauté paradoxale et rappelle le style de Baudelaire, notamment 'Les Fleurs du Mal'."
         },
         {
             id: 'venus_q31',
             type: 'QCM',
-            question: "Quel est l’effet du tiret dans la phrase: '- Et tout ce corps remue et tend sa large croupe' ?",
+            question: "Quel est l\’effet du tiret dans la phrase: '- Et tout ce corps remue et tend sa large croupe' ?",
             options: ["Agrémente le rythme poétique harmonieux", "Ajoute une dimension philosophique au poème", "Met un focus abrupt sur le mouvement obscène du corps", "Met en valeur la douceur de la description"],
             answer: 2,
             explanation: "Le tiret met en exergue le mouvement obscène par une transition abrupte, accentuant ainsi la vision vulgaire et grotesque du corps en mouvement."
@@ -502,7 +502,7 @@ const textsData = [
             extract: "Mais on suit également les femmes de son harem restées dans son sérail en Iran qui se rebellent contre sa tyrannie.",
             options: ["Roxane", "Zetila", "Firmin", "Narcisse"],
             answer: 0,
-            explanation: "Roxane, la favorite d’Usbek, est celle qui se rebelle de manière la plus marquante en affirmant son autonomie et en trahissant Usbek."
+            explanation: "Roxane, la favorite d\’Usbek, est celle qui se rebelle de manière la plus marquante en affirmant son autonomie et en trahissant Usbek."
         },
         {
             id: 'persane_q6',
@@ -747,7 +747,7 @@ const textsData = [
         extract: "... <b>Tu</b> (A) <b>me</b> (B) croyais trompée, et <b>je</b> (B) <b>te</b> (A) trompais.",
         options: ["Antithèse", "Hyperbole", "Chiasme"],
         answer: 2,
-        explanation: "Le chiasme des pronoms montre encore l\’aveuglement d’Usbek et de nouveau, renverse les rapports de force : alors qu\’il croyait dominer la situation, c\’est elle qui l\’a dominée. "
+        explanation: "Le chiasme des pronoms montre encore l\’aveuglement d’\Usbek et de nouveau, renverse les rapports de force : alors qu\’il croyait dominer la situation, c\’est elle qui l\’a dominée. "
         },
         {
         id: 'persane_q36',
@@ -886,7 +886,7 @@ const textsData = [
         id: 'manon_q6',
         type: 'QCM_EXTRAIT',
         question: 'Quel temps utilise le narrateur pour décrire le moment de son départ d\'Amiens et montrer qu\'il s\agit de souvenirs ?',
-        extract: "La rencontre avec Manon Lescaut J’<b>avais marqué</b> le temps de mon départ d\’Amiens.",
+        extract: "La rencontre avec Manon Lescaut J\’<b>avais marqué</b> le temps de mon départ d\’Amiens.",
         options: [
             'Présent',
             'Passé composé',
@@ -914,7 +914,7 @@ const textsData = [
         id: 'manon_q9',
         type: 'QCM_EXTRAIT',
         question: 'Comment voit-on qu\'il s\'agit d\'un roman <b>RETROSPECTIF</b>? (plusieurs réponses possibles)',
-        extract: "La rencontre avec Manon Lescaut J’avais marqué le temps de mon départ d\’Amiens. Hélas ! que ne le marquai-je un jour plus tôt ! j\’aurais porté chez mon père toute mon innocence. La veille même de celui que je devais quitter cette <b>ville</b>, étant à me promener avec mon ami, qui s\’appelait Tiberge, nous vîmes arriver le <b>coche</b> d\’<b>Arras</b>, et nous le suivîmes jusqu\’à l\’hôtellerie où ces voitures descendent. Nous n\’avions pas d\’autre motif que la curiosité",
+        extract: "La rencontre avec Manon Lescaut J\’avais marqué le temps de mon départ d\’Amiens. Hélas ! que ne le marquai-je un jour plus tôt ! j\’aurais porté chez mon père toute mon innocence. La veille même de celui que je devais quitter cette <b>ville</b>, étant à me promener avec mon ami, qui s\’appelait Tiberge, nous vîmes arriver le <b>coche</b> d\’<b>Arras</b>, et nous le suivîmes jusqu\’à l\’hôtellerie où ces voitures descendent. Nous n\’avions pas d\’autre motif que la curiosité",
         options: [
             'Utilisation Pronom Personel je',
             'Début au plus-que-parfait',
@@ -928,7 +928,7 @@ const textsData = [
         id: 'manon_q10',
         type: 'QCM_EXTRAIT',
         question: 'Quel champ lexical est principalement utilisé dans ce passage ?',
-        extract: "J’avais marqué le temps de mon départ d\’<b>Amiens</b>. Hélas ! que ne le marquai-je un jour plus tôt ! j\’aurais porté chez mon père toute mon innocence. La veille même de celui que je devais quitter cette <b>ville</b>, étant à me promener avec mon ami, qui s\’appelait Tiberge, nous vîmes arriver le <b>coche</b> d\’<b>Arras</b>, et nous le suivîmes jusqu\’à l\’<b>hôtellerie</b> où ces voitures descendent. Nous n\’avions pas d\’autre motif que la curiosité",
+        extract: "J\’avais marqué le temps de mon départ d\’<b>Amiens</b>. Hélas ! que ne le marquai-je un jour plus tôt ! j\’aurais porté chez mon père toute mon innocence. La veille même de celui que je devais quitter cette <b>ville</b>, étant à me promener avec mon ami, qui s\’appelait Tiberge, nous vîmes arriver le <b>coche</b> d\’<b>Arras</b>, et nous le suivîmes jusqu\’à l\’<b>hôtellerie</b> où ces voitures descendent. Nous n\’avions pas d\’autre motif que la curiosité",
         options: [
             'Champ lexical de l\'amour',
             'Champ lexical de la ville',
@@ -982,7 +982,7 @@ const textsData = [
             'Une le conditionnel'
         ],
         answer: [1, 2, 3],
-        explanation: "Interjection « Hélas ! », l`\’exclamation et le conditionnel « j’aurais porté chez mon père tout mon innocence » : ton de la plainte, du regret. On comprend que cela n\’a pas été le cas. Cela prépare la rencontre, suscite la curiosité du lecteur et crée un effet d’annonce tragique. Que s\’est-il passé ?"
+        explanation: "Interjection « Hélas ! », l`\’exclamation et le conditionnel « j\’aurais porté chez mon père tout mon innocence » : ton de la plainte, du regret. On comprend que cela n\’a pas été le cas. Cela prépare la rencontre, suscite la curiosité du lecteur et crée un effet d’annonce tragique. Que s\’est-il passé ?"
     },
 
     {
@@ -1108,7 +1108,7 @@ const textsData = [
         id: 'manon_q25',
         type: 'QCM_EXTRAIT',
         question: 'De quelle figure de style s\'agit-il?',
-        extract: "je me trouvai enflammé tout d’un coup jusqu\’au transport (=extase)",
+        extract: "je me trouvai enflammé tout d\’un coup jusqu\’au transport (=extase)",
         options: [
             'Periphrase où le feu exprime la chaleur',
             'Metaphore hyperbolique où le feu exprime la force de manon',
@@ -1191,7 +1191,7 @@ const textsData = [
             "Pour semer le doute",
         ],
         answer: 0,
-        explanation: "L\’adverbe intensif « si » insiste sur l’adjectif mélioratif. Elle a donc un physique avantageux. C\’est tout ce que l\’on sait d\’elle, avec le fait qu\’elle soit jeune, ce qui la rend mystérieuse. Mais elle n\’est pas simplement belle, elle est « charmante ». L\’adjectif vient du latin carmen qui signifie le chant, l\’envoûtement. Le narrateur est donc comme ensorcelé. La périphrase « la maîtresse de mon coeur » montre qu\’il lui appartient. Il est comme prisonnier de cet amour."
+        explanation: "L\’adverbe intensif « si » insiste sur l\’adjectif mélioratif. Elle a donc un physique avantageux. C\’est tout ce que l\’on sait d\’elle, avec le fait qu\’elle soit jeune, ce qui la rend mystérieuse. Mais elle n\’est pas simplement belle, elle est « charmante ». L\’adjectif vient du latin carmen qui signifie le chant, l\’envoûtement. Le narrateur est donc comme ensorcelé. La périphrase « la maîtresse de mon coeur » montre qu\’il lui appartient. Il est comme prisonnier de cet amour."
     },
     {
         id: "manon_q32",
@@ -1328,10 +1328,10 @@ const textsData = [
         {
             id: 'badine_q2',
             type: 'QCM',
-            question: "Après l/’échec cuisant de sa pièce La Nuit Vénitienne qui n’attire pas le public populaire. Il décide alors de s\’émanciper des contraintes scéniques et cré un théatre destiné à être lu et non joué. Lequel ?",
+            question: "Après l\’échec cuisant de sa pièce La Nuit Vénitienne qui n’attire pas le public populaire. Il décide alors de s\’émanciper des contraintes scéniques et cré un théatre destiné à être lu et non joué. Lequel ?",
             options: ["Un spectabcle dans un fauteuil", "Divan et fauteuils", "La fauteuil attitude"],
             answer: 0,
-            explanation: "Un spectacle dans un fauteuil qui contient On ne badine pas avec l’amour, pièce composée après le retour d\’Italie de Musset et sa rupture avec la romancière George Sand."
+            explanation: "Un spectacle dans un fauteuil qui contient On ne badine pas avec l\’amour, pièce composée après le retour d\’Italie de Musset et sa rupture avec la romancière George Sand."
         },
         {
             id: 'badine_q3',
@@ -1403,16 +1403,16 @@ const textsData = [
         {
             id: 'badine_q10',
             type: 'QCM_EXTRAIT',
-            question: "Que déplore Perdican avec l\'interjection 'Ah !', l\'exclamation et l\'adverbe d\'intensité 'comme' repris en début de phrase (=anaphore) ?",
+            question: "Que déplore Perdican avec l\’interjection 'Ah !', l\’exclamation et l\'adverbe d\'intensité 'comme' repris en début de phrase (=anaphore) ?",
             extract: "<b>Ah!</b> Comme elles t\'ont fait la leçon ! Comme j\'avais prévu tout cela quand tu t\'es arrêtée devant le portrait de notre vieille tante.",
             options: ["De ne pas pouvoir accueillir Camille", "Que les nonnes aient imposé leur conception de l\'amour à camille","Que camille ait quittée le monde de l\'enfance et de l\'innocence et croit les nonnes"],
             answer: [1,2],
-            explanation: "l\'interjection 'Ah !', l\'exclamation et l\'anaphore de l\'adverbe d\'intensité 'comme' montrent que Perdican déplore que Camille ait quitté le monde de l\'enfance et de l\'innocence pour plonger dans celui de l\'aveuglement et l\'obstination.  Le tableau de la vieille tante est une référence à la scène 2 de l\’acte I (scène de leurs retrouvailles)"
+            explanation: "l\'interjection 'Ah !', l\’exclamation et l\’'anaphore de l\’adverbe d\’intensité 'comme' montrent que Perdican déplore que Camille ait quitté le monde de l\'enfance et de l\'innocence pour plonger dans celui de l\'aveuglement et l\'obstination.  Le tableau de la vieille tante est une référence à la scène 2 de l\’acte I (scène de leurs retrouvailles)"
         },
         {
             id: 'badine_q11',
             type: 'QCM_EXTRAIT',
-            question: "Dans cet extrait à quoi sert l\'utilisation de l\'imparfait, l\'anaphore du 'tu' et les <i>propositions juxtaposées</i>?",
+            question: "Dans cet extrait à quoi sert l\’utilisation de l\’imparfait, l\’anaphore du 'tu' et les <i>propositions juxtaposées</i>?",
             extract: "<u>Tu</u> <b>voulais</b> partir sans me serrer la main; <u>tu</u> ne <b>voulais</b> revoir ni ce bois, ni <i>cette pauvre petite</i> fontaine qui nous regarde tout en larmes; <u>tu</u> reniais les jours de ton enfance et le <i>masque de plâtre</i> que les nonnes t'ont placé sur les joues me refusait un baiser de frère; mais ton coeur a battu; il a oublié la leçon, lui qui ne sait pas lire, et <u>tu</u> es revenue t'asseoir sur l\'herbe où nous voilà. ",
             options: ["A donner des exemples qui justifient son argumentation", "A se donner du temps pour savoir ce qu\'il va dire ensuite"],
             answer: 0,
@@ -1446,15 +1446,15 @@ const textsData = [
         {
             id: 'badine_q15',
             type: 'VF',
-            question: "AFFIRMATION : 'tu es revenue t\'asseoir sur l\'herbe où nous voilà' le pronom nous évoque l\'union des 2 jeunes gens.",
+            question: "AFFIRMATION : 'tu es revenue t\’asseoir sur l\’herbe où nous voilà' le pronom nous évoque l\'union des 2 jeunes gens.",
             answer: "Vrai",
-            explanation: "Nous évoque l\'union de Camille et Perdican."
+            explanation: "Nous évoque l\’union de Camille et Perdican."
         },
         {
             id: 'badine_q16',
             type: 'QCM',
             question: "De quoi parle le mouvement 2 ?",
-            options: ["Un éloge de l\'amour humain", "Un réquisitoire contre le couvent et l\'amour divin"],
+            options: ["Un éloge de l\’amour humain", "Un réquisitoire contre le couvent et l\'amour divin"],
             answer: 0,
             explanation: "Après avoir dénocé et fait un réquisitoire contre le couvent dans le mouvement, il fait l\'éloge de l\'amour humain dans le mouvement 2 "
         },
@@ -1487,6 +1487,36 @@ const textsData = [
             answer: 1,
             explanation: "Les questions rhétoriques servent à créer une tension et à ébranler les certitudes de Camille."
         }
+        {
+            id: 'badine_q20',
+            type: 'QCM_EXTRAIT',
+            question: "Que veut dire Camille avec le pronom moi?",
+            extract: "...mais dis-leur cela de ma part : le ciel n\'est pas pour elles.<br>camille : Ni pour <b>moi</b>, n\'est ce pas?",
+            options: ["Elle s\'inclu dans le groupe de réligieuse que Perdican critique", "Elle veut le provoquer", "Elle voudrait qu\'il revienne sur ses propos", "Elle n\'a rien compris et interroge Perdican"],
+            answer: 3,
+            explanation: "Camille s\’inclut dans ce groupe de femmes avec le pronom, tenant ainsi tête à Perdican, le provoquant. La question rhétorique peut laisser penser que Camille voudrait l\’entendre revenir sur ses propos."
+        },
+        {
+            id: 'badine_q21',
+            type: 'QCM_EXTRAIT',
+            question: "?",
+            extract: "<p><strong>PERDICAN.</strong><br>
+Adieu, Camille, retourne à ton couvent, et lorsqu\'on te fera de ces récits 
+<span style="background-color: #f4cccc;">hideux</span> qui t\'ont empoisonnée, 
+<span style="background-color: #b6d7a8;">réponds</span> ce que je vais te dire : 
+<span style="background-color: #c9daf8;">Tous</span> les hommes 
+<span style="background-color: #f4cccc;">sont menteurs, inconstants, faux, bavards, hypocrites, orgueilleux ou lâches, méprisables et sensuels</span> ; 
+<span style="background-color: #c9daf8;">toutes</span> les femmes 
+<span style="background-color: #f4cccc;">sont perfides, artificieuses, vaniteuses, curieuses et dépravées</span> ; 
+le monde n'est 
+<span style="background-color: #a2c4c9;">qu\'un égout sans fond</span> où les phoques 
+<strong>les plus informes</strong> rampent et se tordent sur 
+<span style="background-color: #9fc5e8;">des montagnes de fange</span> ;
+</p> ?",
+            options: ["?", "Elle veut le provoquer", "Elle voudrait qu'il revienne sur ses propos", "Elle n'a rien compris et interroge Perdican"],
+            answer: 3,
+            explanation: "Camille s\’inclut dans ce groupe de femmes avec le pronom, tenant ainsi tête à Perdican, le provoquant. La question rhétorique peut laisser penser que Camille voudrait l\’entendre revenir sur ses propos."
+        },
     ]
 }
 
