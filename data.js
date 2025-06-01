@@ -1610,6 +1610,99 @@ const data = {
             "explanation": "Il réaffirme la thèse suivante : l'amour seul exprime la vérité de l'être. L'Antithèse entre le pronom 'moi' et le GN 'être factice' scinde les individus en deux catégories : ceux qui acceptent de vivre leur passion et ceux la renient, mais qui ne sont pas fidèles à eux mêmes. "
         }
     ]
+},
+{
+    "id": "Cyrano",
+    "title": "Acte3_scene7",
+    "author": "Edmond Rostand",
+    "questions": [
+        {
+            "id": "cyrano_q1",
+            "type": "QCM",
+            "question": "Quel est le thème du mouvement 1?",
+            "options": [
+                "Cyrano devient le souffleur de Christian.",
+                "Cyrano est le metteur en scène d'une scène de séduction amoureuse qui tourne mal",
+                "Cyrano prend la place de Christian et devient acteur de la scène de séduction."
+            ],
+            "answer": [1],
+            "explanation": "Cyrano est le metteur en scène d'une scène de séduction amoureuse qui tourne mal"
+        },
+        {
+            "id": "cyrano_q2",
+            "type": "VF",
+            "question": "Dans la scene 6 mouvement 1 Roxane se trouve à la fenêtre. Elle domine donc la scène et peut y mettre fin lorsqu'elle le souhaite.",
+            "answer": "Vrai",
+            "explanation": "Roxane est à « sa fenêtre » comme l'indique la première didascalie. Elle est donc en position de supériorité par rapport à son amant. C'est elle qui mène le dialogue et qui, à tout moment, peut y mettre fin en fermant la fenêtre qui n'est qu' « entrouverte »."
+        },
+        {
+            "id": "cyrano_q3",
+            "type": "QCM",
+            "question": "Dans le mouvement 1, comment voit-on que Christian manque d'éloquence et que ses répliques sont sèches?",
+            "options": [
+                "Le premier vers est divisé en plusieurs répliques rapide.",
+                "le texte est long",
+                "il utilise un langage soutenu",
+                "Il limite ses réponses à des monosylabes 'moi' ou son prénom"
+            ],
+            "answer": [0,3],
+            "explanation": "Le premier vers est décomposé en plusieurs répliques : l'échange est vif, rapide, ce qui met en avant la sécheresse des répliques de Christian qui manque cruellement d'éloquence. Ses réponses se réduisent à un monosyllabe « moi » ou à son prénom. "
+        },
+        {
+            "id": "cyrano_q4",
+            "type": "QCM",
+            "question": "Dans le mouvement 1, que mettent en évidence la didascalie 'avec dédain' et les interrogatives 'Qui, moi?', 'c'est vous'?",
+            "options": [
+                "La joie de Roxane",
+                "la déception de Roxane"
+            ],
+            "answer": [1],
+            "explanation": "La déception de Roxane, femme lettrée, est visible grâce à la didascalie « avec dédain » et ses interrogatives 'Qui, moi ?', 'C'est vous' qui cherchent à encourager Christian à être plus éloquent, en vain.."
+        },
+        {
+            "id": "cyrano_q5",
+            "type": "QCM",
+            "question": "Que cherche à faire Roxane dans le mouvement 1 avec les interrogatives 'qui, moi?', 'c'est vous'?",
+            "options": [
+                "A savoir qui est là.",
+                "A tenter d'encourager Christian pour qu'il soit plus éloquent."
+            ],
+            "answer": [1],
+            "explanation": "Avec les interrogatives 'Qui, moi ?', 'C'est vous' Roxane cherche à encourager Christian à être plus éloquent, en vain. "
+        },
+        {
+            "id": "cyrano_q6",
+            "type": "QCM",
+            "question": "Comment voit-on que le dialogue amoureux dans le mouvement 1 est un échec?",
+            "options": [
+                "Exclamations",
+                "Contradictions",
+                "Répétition de l'adverbe de négation 'non'",
+                "utilisation de phrases courtes et simples"
+            ],
+            "answer": [0,2,3],
+            "explanation": "Les exclamations de Roxane et la répétition de l'adverbe de négation « non », ainsi que l'utilisation de phrases courtes et simples (« Vous parlez trop mal. », « Vous ne m'aimez plus ! ») montrent bien l'échec du dialogue amoureux. "
+        },
+        {
+            "id": "cyrano_q7",
+            "type": "VF",
+            "question": "Roxane pense que Christian ne sait plus dire l'amour.",
+            "answer": "Vrai",
+            "explanation": " Roxane pense qu'il ne sait plus dire l'amour, mais ce qu'elle ignore, contrairement au spectateur grâce au procédé de la double énonciation, c'est qu'elle avait été charmée en premier lieu par les mots de Cyrano et non par ceux de Christian. Ses répliques peuvent donc créer un effet comique pour le spectateur témoin du stratagème des deux amis."
+        },
+        {
+            "id": "cyrano_q8",
+            "type": "QCM",
+            "question": "Quel mot utilise Christian pour suplier Roxane (mot qui va la diviniser)?",
+            "options": [
+                "Mon Dieu",
+                "Doux Jésus",
+                "De grâce"
+            ],
+            "answer": [2],
+            "explanation": "Christian est réduit à supplier Roxane avec l'expression « de grâce ! » qui appartient au lexique religieux. Roxane est ainsi divinisée. Elle représente la belle dame sans merci, issue de l'amour courtois, alors que Christian est l'amoureux transi qui ne parvient pas à passer les épreuves de sa belle afin de gagner son amour."
+        }
+    ]
 }
 ]
 };
