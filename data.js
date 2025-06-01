@@ -1613,7 +1613,7 @@ const data = {
 },
 {
     "id": "Cyrano",
-    "title": "Cyrano de Bergerac - Acte 3 - Scène 7",
+    "title": "Acte3_scene7",
     "author": "Edmond Rostand",
     "questions": [
         {
@@ -1672,9 +1672,8 @@ const data = {
         },
         {
             "id": "cyrano_q6",
-            "type": "QCM_EXTRAIT",
-            "question": "Comment voit-on que le dialogue amoureux, dans le mouvement 1, est un échec?",
-            "extract": "Roxane.- Non ! Vous parlez trop mal. Allez-vous-en !<br> Christian.- De grâce !…<br> Roxane.- Non ! Vous ne m'aimez plus !<br> Roxane.- Non ! Vous ne m'aimez plus !",
+            "type": "QCM",
+            "question": "Comment voit-on que le dialogue amoureux dans le mouvement 1 est un échec?",
             "options": [
                 "Exclamations",
                 "Contradictions",
@@ -1703,31 +1702,6 @@ const data = {
             "answer": [2],
             "explanation": "Christian est réduit à supplier Roxane avec l'expression « de grâce ! » qui appartient au lexique religieux. Roxane est ainsi divinisée. Elle représente la belle dame sans merci, issue de l'amour courtois, alors que Christian est l'amoureux transi qui ne parvient pas à passer les épreuves de sa belle afin de gagner son amour."
         }
-        {
-            "id": "cyrano_q9",
-            "type": "QCM",
-            "question": "Pour aider christian dans son discours amoureux Cyrano intervient de 2 façons. Lesquelles ?",
-            "options": [
-                "Il utilise des ficelles pour faire bouger Christian comme un pantin",
-                "Il agit comme un metteur en scene",
-                "Il est soufleur"
-            ],
-            "answer": [1,2],
-            "explanation": "Il met en scene le premier dicours amoureux mais c'est un échec et Cyrano se trouve contraint d'intervenir. Après avoir été metteur en scène, il devient souffleur, ce qui va permettre à Christian de renouer le dialogue."
-        }
-        {
-            "id": "cyrano_q10",
-            "type": "QCM_EXTRAIT",
-            "question": "Qu'est ce qui nous montre que Cyrano devient souffleur de théatre ?",
-            "extract": "Christian, <span style=\"background-color: #c9daf8;\">à qui Cyrano souffle ses mots</span>.- M'accuser, — justes dieux ! — De n'aimer plus… quand… j'aime plus !<br> Roxane, qui allait refermer sa fenêtre, s'arrêtant.- Tiens ! mais cest mieux !<br> Christian, <span style=\"background-color: #c9daf8;\">même jeu</span>.- L'amour grandit bercé dans mon âme inquiète…<br>Christian, même jeu.- L'amour grandit bercé dans mon âme inquiète…",
-            "options": [
-                "Les didascalies",
-                "L'expresion mmême jeu",
-                "La négation"
-            ],
-            "answer": [0,1],
-            "explanation": " <span style=\"background-color: #c9daf8;\">les didascalies</span> 'à qui Christian souffle ses mots' puis <span style=\"background-color: #c9daf8;\">'même jeu'</span> montrent qu'il devient un souffleur de théâtre.  "
-        },
     ]
 }
 ]
