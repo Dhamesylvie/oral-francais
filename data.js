@@ -1715,176 +1715,178 @@ const data = {
             "answer": [1,2],
             "explanation": "Il met en scene le premier dicours amoureux mais c'est un échec et Cyrano se trouve contraint d'intervenir. Après avoir été metteur en scène, il devient souffleur, ce qui va permettre à Christian de renouer le dialogue."
         },
-        {
-            "id": "cyrano_q10",
-            "type": "QCM_EXTRAIT",
-            "question": "Qu'est ce qui nous montre que Cyrano devient souffleur de théatre ?",
-            "extract": "Christian, <span style=\"background-color: #c9daf8;\">à qui Cyrano souffle ses mots</span>.- M'accuser, — justes dieux ! — De n'aimer plus… quand… j'aime plus !<br> Roxane, qui allait refermer sa fenêtre, s'arrêtant.- Tiens ! mais cest mieux !<br> Christian, <span style=\"background-color: #c9daf8;\">même jeu</span>.- L'amour grandit bercé dans mon âme inquiète…<br>Christian, même jeu.- L'amour grandit bercé dans mon âme inquiète…",
-            "options": [
-                "Les didascalies",
-                "L'expresion mmême jeu",
-                "La négation"
-            ],
-            "answer": [0,1],
-            "explanation": " <span style=\"background-color: #c9daf8;\">les didascalies</span> 'à qui Christian souffle ses mots' puis <span style=\"background-color: #c9daf8;\">'même jeu'</span> montrent qu'il devient un souffleur de théâtre.  "
-        },
-        {
-            "id": "cyrano_q11",
-            "type": "QCM",
-            "question": "Pourquoi y a-t-il des points de suspension, à quoi servent-ils?",
-            "options": [
-                "Pour décorer la page",
-                "Pour mimer quelqu'un qui respire",
-                "Pour montrer les temps où Cyrano lui souffle ce qu'il doit dire"
-            ],
-            "answer": [2],
-            "explanation": "Les points de suspension miment les pauses nécessaires pour que Cyrano lui souffle ses mots."
-        },
-        {
-            "id": "cyrano_q12",
-            "type": "QCM_EXTRAIT",
-            "question": "Dans le mouvement 2 (Cyrano souffleur ) Que montre les didascalies associées à Roxane ?",
-            "extract": "Roxane : 'qui allait refermer sa fenêtre, s'arrêtant' puis 's'avançant sur le balcon' et 's'accoudant au balcon ». "
-            "options": [
-                "Qu'elle perd patience",
-                "Son intérêt pour les ouveaux mots qu'elle entend",
-                "Qu'elle est triste"
-            ],
-            "answer": [1],
-            "explanation": "Son mouvement monte son intérêt pour les nouveaux mots qu'elle entend. Elle commente d'ailleurs les propos de Christian à travers l'expression 'c'est mieux', répétée, qui illustre son contentement."
-        },
-        {
-            "id": "cyrano_q13",
-            "type": "QCM_EXTRAIT",
-            "question": "Dans le mouvement 2 (Cyrano souffleur) Comme les didascalies associéees aux mouvements de Roxane quels autres elements montre son intérêt pour les nouveau mot?",
-            "extract": "Roxane, <i>savançant sur le balcon.</i> - C est mieux ! — Mais, puisqu il est cruel, vous fûtes sot De ne pas, cet amour, létouffer au berceau !<br>Christian, <i>même jeu.</i> - Aussi lai-je tenté, mais… tentative nulle :Ce… nouveau-né, Madame, est un petit… Hercule.<br>Roxane.- <span style=\"background-color: #c9daf8;\">C'est mieux !</span><br>Christian, même jeu.- De sorte qu'il… strangula comme rien…Les deux serpents… Orgueil et… Doute.<br>Roxane, <i>saccoudant au balcon.</i>- <span style=\"background-color: #f4cccc;\">Ah !</span> <span style=\"background-color: #c9daf8;\">c'est très bien</span>."
-            "options": [
-                "le mot cruel"
-                "Une interjection",
-                "Des expressions du type c'est mieux"
-            ],
-            "answer": [1,2],
-            "explanation": "L'exclamation et l'interjection « Ah ! » (v.13) montrent son contentement (comme les didascalie qui décrive les mouvement de Roxane 's'avançant/s'arrêtant/s'accoudant...). À nouveau, ces réactions peuvent avoir un tour comique puisque le spectateur sait très bien que ce n'est pas le simple d'esprit Christian qui s'améliore, mais Cyrano qui s'exprime."
-        },
-        {
-            "id": "cyrano_q14",
-            "type": "QCM_EXTRAIT",
-            "question": "Le public s'aperçoit vite de la mîtrise de Cyrano du langage de l'amour. Quelle est la première figure de style qu'il souffle à Christian?",
-            "extract": "<b>Christian</b>, <i>à qui Cyrano souffle ses mots.</i>- M'accuser, — justes dieux ! —<br>De n'aimer plus… quand… jaime plus !",
-            "options": [
-                "Une métaphore"
-                "Une antithèse",
-                "Un chiasme"
-            ],
-            "answer": [1],
-            "explanation": "On observe dans la première réplique soufflée à Christian une antithèse « De n'aimer plus quand j'aime plus » (v.5). L'adverbe de négation 'plus' devient adverbe intensif. Il poursuit avec un langage imagé pour exprimer son amour."
-        },
-        {
-            "id": "cyrano_q15",
-            "type": "QCM_EXTRAIT",
-            "question": "Dans la métaphore ci-dessous à quoi Cyrano compare-t-il l'amour?",
-            "extract": "L'amour grandit bercé dans mon âme inquiète / Que ce cruel marmot prit pour barcelonnette ",
-            "options": [
-                "A une âme"
-                "A un enfant"
-            ],
-            "answer": [1],
-            "explanation": " Il utilise une métaphore qui compare l'amour à un enfant pour dire sa naissance et son épanouissement. Il complète cette métaphore grâce au champ lexical de la naissance (« grandit », « bercé », « marmot », « barcelonnette »). "
-        },
-        {
-            "id": "cyrano_q15",
-            "type": "VF",
-            "question": "AFFIRMATION : On perçoit la maitrise du langage de l'amour de Cyrano a travers les figure de style les mots rare (bercelonette) et la diérèse in-qui-è-té",
-            "answer": "Vrai",
-            "explanation": "Rappel. La dièrèse consiste à prononcer une syllabe en 2 sonorités distinctes."
-        },
-        {
-            "id": "cyrano_q15",
-            "type": "QCM_EXTRAIT",
-            "question": "Comment voit-on qu'un jeu galant s'instaure entre Roxane et Christian?",
-            "extract": "« Mais, puisqu'il est c<b>r</b>uel, vous fûtes sot / De ne pas, cet amou<b>r</b>, l'étouffer au be<b>r</b>ceau »",
-            "options": [
-                "Roxane reprend la métaphore avec le mot berceau",
-                "Roxane écoute béate"
-            ],
-            "answer": [0],
-            "explanation": "Les deux esprits se répondent. Roxane reprend la métaphore avec le mot « berceau ». Elle parle de la cruauté de cet amour qui ne fait que grandir en faisant une allitération en [r] qui la souligne et la met en avant "
-        },
-        {
-            "id": "cyrano_q16",
-            "type": "QCM_EXTRAIT",
-            "question": "Dans cet extrait, il y a une référence à hercule à travers un mot lequel?",
-            "extract": "« Mais, puisqu'il est c<b>r</b>uel, vous fûtes sot / De ne pas, cet amou<b>r</b>, l'étouffer au be<b>r</b>ceau »",
-            "options": [
-                "cruel",
-                "amour",
-                "étouffer",
-                "berceau"
-            ],
-            "answer": [2],
-            "explanation": "Dans la légende d'Hercule (ou Héraclès en grec), lorsqu'il était bébé, Héra (jalouse de l'enfant né des infidélités de Zeus) lui envoie deux énormes serpents dans son berceau pour l'étouffer et le tuer. Mais au lieu de se laisser faire, le petit Hercule, doté d'une force surnaturelle même tout jeune, attrape les serpents à mains nues… et les étouffe lui-même.<br>C'est pour cela que le verbe « étouffer » évoque cette référence mythologique : dans l'histoire, ce sont les serpents qui devaient l'étouffer, mais c'est lui qui les étouffe — cela devient un symbole de sa force prodigieuse dès la naissance. Cette référence met en avant la force de son amour"
-        },
-        {
-            "id": "cyrano_q17",
-            "type": "QCM_EXTRAIT",
-            "question": "Que fait Cyrano suite à l'évocation de la légende d'Hercule avec le verbe 'étouffer'ans cet extrait ?",
-            "extract": "Mais, puisqu'il est cruel, vous fûtes sot / De ne pas, cet amour, l'<b>étouffer</b> au berceau",
-            "options": [
-                "Il change de sujet",
-                "Il se saisie de cette réplique"            ],
-            "answer": [1],
-            "explanation": "Cyrano, à travers Christian, se saisit de cette réplique et notamment du verbe « étouffer » pour faire une référence mythologique à Hercule tout en continuant de filer la métaphore de la naissance (« nouveau-né », « petit »). Hercule, né de la relation adultère de Zeus avec une mortelle, s'attire les foudres d'Héra, la femme de Zeus qui lui envoie deux énormes serpents pour le tuer. Cependant, Hercule les tue et devient un symbole de sa force prodigieuse dès la naissance. Cette référence met en avant la force de son amour"
-        },
-        {
-            "id": "cyrano_q17",
-            "type": "QCM_EXTRAIT",
-            "question": " Dans cette réplique où il poursuit avec la référence à la légende d'Hercule que continue-t-il de mettre en avant?",
-            "extract": "<b>Christian</b>, <i>même jeu.</i>- De so<span style=\"background-color: #c9daf8;\">r</span>te qu'il… st<span style=\"background-color: #c9daf8;\">r</span>angula comme <span style=\"background-color: #c9daf8;\">r</span>ien…Les deux se<span style=\"background-color: #c9daf8;\">r</span>pents… O<span style=\"background-color: #c9daf8;\">r</span>gueil et… Doute.",
-            "options": [
-                "L'importance d'une naissance",
-                "La force de son amour",
-                "La force d'Hercule"
-            ],
-            "answer": [1],
-            "explanation": "Cette réplique continue de faire réference à la légende d'hercule pour exprimer la force de son amour mise en avant par l'allitération en [r], et deux allégories (discours qui utilise des métaphores) : « Orgueil » et « Doute »."
-        },
-        {
-            "id": "cyrano_q18",
-            "type": "QCM_EXTRAIT",
-            "question": "A la fin du mouvement 2, Cyrano parvient à charmer Roxane mais cela risque de ne pas durer, comment le voit-on?",
-            "extract": "Roxane, <i>s'accoudant au balcon.</i>- Ah ! c'est très bien. — Mais pourquoi parlez-vous de façon peu hâtive ? Auriez-vous donc la goutte à l'imaginative ?",
-            "options": [
-                "Elle semble étonné par ses hésitations",
-                "Elle lui demande s'il a une maladie de l'imagination",
-                "Elle a des gouttes de sueur"
-            ],
-            "answer": [0,1],
-            "explanation": "Les deux interrogatives de Roxane expriment son étonnement de le voir parler avec hésitation. La métaphore de la goutte (au sens de maladie) peut traduire son agacement face à la situation. Le jeu amoureux manque cruellement de fluidité ! Ces répliques, encore une fois, peuvent être comiques car le spectateur sait très bien pourquoi Christian hésite, ce qui peut le prêter à sourire"
-        },
-        {
-            "id": "cyrano_q19",
-            "type": "QCM",
-            "question": "Que fait cyrano dans le mouvement 3?",
-            "options": [
-                "Il prend la place de Christian et devient acteur de la scène de séduction",
-                "Il continue de se cacher pour souffler le discours amoureux à Christian"            
-            ],
-            "answer": [0],
-            "explanation": " La didascalie indique le changement qui s'opère. Cyrano devient acteur et prend le rôle de Christian."
-        },
-        {
-            "id": "cyrano_q18",
-            "type": "QCM_EXTRAIT",
-            "question": "Quelle est donc cette figure de style ?",
-            "extract": "<b>Roxane</b>.-       Aujourd'hui...,<br>Pourquoi ?",
-            "options": [
-                "Chiasme",
-                "Allégorie",
-                "Aposiopèse"
-            ],
-            "answer": [2],
-            "explanation": "Une aposiopèse : comme son nom l'indique (pause) c'est une longue pause. Cette aposiopèse et l'interrogation pourquoi exprime le trouble de Roxane. Mais Cyrano va reprendre le control en devenant acteur."
-        },
+        [
+            {
+                "id": "cyrano_q10",
+                "type": "QCM_EXTRAIT",
+                "question": "Qu'est ce qui nous montre que Cyrano devient souffleur de théatre ?",
+                "extract": "Christian, <span style=\"background-color: #c9daf8;\">à qui Cyrano souffle ses mots</span>.- M'accuser, — justes dieux ! — De n'aimer plus… quand… j'aime plus !<br> Roxane, qui allait refermer sa fenêtre, s'arrêtant.- Tiens ! mais cest mieux !<br> Christian, <span style=\"background-color: #c9daf8;\">même jeu</span>.- L'amour grandit bercé dans mon âme inquiète…<br>Christian, même jeu.- L'amour grandit bercé dans mon âme inquiète…",
+                "options": [
+                    "Les didascalies",
+                    "L'expression 'même jeu'",
+                    "La négation"
+                ],
+                "answer": [0,1],
+                "explanation": " <span style=\"background-color: #c9daf8;\">les didascalies</span> 'à qui Christian souffle ses mots' puis <span style=\"background-color: #c9daf8;\">'même jeu'</span> montrent qu'il devient un souffleur de théâtre.  "
+            },
+            {
+                "id": "cyrano_q11",
+                "type": "QCM",
+                "question": "Pourquoi y a-t-il des points de suspension, à quoi servent-ils?",
+                "options": [
+                    "Pour décorer la page",
+                    "Pour mimer quelqu'un qui respire",
+                    "Pour montrer les temps où Cyrano lui souffle ce qu'il doit dire"
+                ],
+                "answer": [2],
+                "explanation": "Les points de suspension miment les pauses nécessaires pour que Cyrano lui souffle ses mots."
+            },
+            {
+                "id": "cyrano_q12",
+                "type": "QCM_EXTRAIT",
+                "question": "Dans le mouvement 2 (Cyrano souffleur) Que montre les didascalies associées à Roxane ?",
+                "extract": "Roxane : 'qui allait refermer sa fenêtre, s'arrêtant' puis 's'avançant sur le balcon' et 's'accoudant au balcon ». ",
+                "options": [
+                    "Qu'elle perd patience",
+                    "Son intérêt pour les nouveaux mots qu'elle entend",
+                    "Qu'elle est triste"
+                ],
+                "answer": [1],
+                "explanation": "Son mouvement monte son intérêt pour les nouveaux mots qu'elle entend. Elle commente d'ailleurs les propos de Christian à travers l'expression 'c'est mieux', répétée, qui illustre son contentement."
+            },
+            {
+                "id": "cyrano_q13",
+                "type": "QCM_EXTRAIT",
+                "question": "Dans le mouvement 2 (Cyrano souffleur) Comme les didascalies associées aux mouvements de Roxane quels autres éléments montrent son intérêt pour les nouveaux mots ?",
+                "extract": "Roxane, <i>savançant sur le balcon.</i> - C est mieux ! — Mais, puisqu il est cruel, vous fûtes sot De ne pas, cet amour, létouffer au berceau !<br>Christian, <i>même jeu.</i> - Aussi lai-je tenté, mais… tentative nulle :Ce… nouveau-né, Madame, est un petit… Hercule.<br>Roxane.- <span style=\"background-color: #c9daf8;\">C'est mieux !</span><br>Christian, même jeu.- De sorte qu'il… strangula comme rien…Les deux serpents… Orgueil et… Doute.<br>Roxane, <i>saccoudant au balcon.</i>- <span style=\"background-color: #f4cccc;\">Ah !</span> <span style=\"background-color: #c9daf8;\">c'est très bien</span>.",
+                "options": [
+                    "le mot cruel",
+                    "Une interjection",
+                    "Des expressions du type 'c'est mieux'"
+                ],
+                "answer": [1,2],
+                "explanation": "L'exclamation et l'interjection « Ah ! » (v.13) montrent son contentement (comme les didascalie qui décrive les mouvement de Roxane 's'avançant/s'arrêtant/s'accoudant...). À nouveau, ces réactions peuvent avoir un tour comique puisque le spectateur sait très bien que ce n'est pas le simple d'esprit Christian qui s'améliore, mais Cyrano qui s'exprime."
+            },
+            {
+                "id": "cyrano_q14",
+                "type": "QCM_EXTRAIT",
+                "question": "Le public s'aperçoit vite de la maîtrise de Cyrano du langage de l'amour. Quelle est la première figure de style qu'il souffle à Christian?",
+                "extract": "<b>Christian</b>, <i>à qui Cyrano souffle ses mots.</i>- M'accuser, — justes dieux ! —<br>De n'aimer plus… quand… jaime plus !",
+                "options": [
+                    "Une métaphore",
+                    "Une antithèse",
+                    "Un chiasme"
+                ],
+                "answer": [1],
+                "explanation": "On observe dans la première réplique soufflée à Christian une antithèse « De n'aimer plus quand j'aime plus » (v.5). L'adverbe de négation 'plus' devient adverbe intensif. Il poursuit avec un langage imagé pour exprimer son amour."
+            },
+            {
+                "id": "cyrano_q15",
+                "type": "QCM_EXTRAIT",
+                "question": "Dans la métaphore ci-dessous à quoi Cyrano compare-t-il l'amour?",
+                "extract": "L'amour grandit bercé dans mon âme inquiète / Que ce cruel marmot prit pour barcelonnette ",
+                "options": [
+                    "A une âme",
+                    "A un enfant"
+                ],
+                "answer": [1],
+                "explanation": " Il utilise une métaphore qui compare l'amour à un enfant pour dire sa naissance et son épanouissement. Il complète cette métaphore grâce au champ lexical de la naissance (« grandit », « bercé », « marmot », « barcelonnette »). "
+            },
+            {
+                "id": "cyrano_q16",
+                "type": "VF",
+                "question": "AFFIRMATION : On perçoit la maîtrise du langage de l'amour de Cyrano à travers les figures de style, les mots rares (comme 'bercelonnette') et la diérèse 'in-qui-è-te'.",
+                "answer": "Vrai",
+                "explanation": "Rappel. La dièrèse consiste à prononcer une syllabe en 2 sonorités distinctes."
+            },
+            {
+                "id": "cyrano_q17",
+                "type": "QCM_EXTRAIT",
+                "question": "Comment voit-on qu'un jeu galant s'instaure entre Roxane et Christian?",
+                "extract": "« Mais, puisqu'il est c<b>r</b>uel, vous fûtes sot / De ne pas, cet amou<b>r</b>, l'étouffer au be<b>r</b>ceau »",
+                "options": [
+                    "Roxane reprend la métaphore avec le mot berceau",
+                    "Roxane écoute béate"
+                ],
+                "answer": [0],
+                "explanation": "Les deux esprits se répondent. Roxane reprend la métaphore avec le mot « berceau ». Elle parle de la cruauté de cet amour qui ne fait que grandir en faisant une allitération en [r] qui la souligne et la met en avant "
+            },
+            {
+                "id": "cyrano_q18",
+                "type": "QCM_EXTRAIT",
+                "question": "Dans cet extrait, il y a une référence à hercule à travers un mot lequel?",
+                "extract": "« Mais, puisqu'il est c<b>r</b>uel, vous fûtes sot / De ne pas, cet amou<b>r</b>, l'étouffer au be<b>r</b>ceau »",
+                "options": [
+                    "cruel",
+                    "amour",
+                    "étouffer",
+                    "berceau"
+                ],
+                "answer": [2],
+                "explanation": "Dans la légende d'Hercule (ou Héraclès en grec), lorsqu'il était bébé, Héra (jalouse de l'enfant né des infidélités de Zeus) lui envoie deux énormes serpents dans son berceau pour l'étouffer et le tuer. Mais au lieu de se laisser faire, le petit Hercule, doté d'une force surnaturelle même tout jeune, attrape les serpents à mains nues… et les étouffe lui-même.<br>C'est pour cela que le verbe « étouffer » évoque cette référence mythologique : dans l'histoire, ce sont les serpents qui devaient l'étouffer, mais c'est lui qui les étouffe — cela devient un symbole de sa force prodigieuse dès la naissance. Cette référence met en avant la force de son amour"
+            },
+            {
+                "id": "cyrano_q19",
+                "type": "QCM_EXTRAIT",
+                "question": "Que fait Cyrano suite à l'évocation de la légende d'Hercule avec le verbe 'étouffer' dans cet extrait ?",
+                "extract": "Mais, puisqu'il est cruel, vous fûtes sot / De ne pas, cet amour, l'<b>étouffer</b> au berceau",
+                "options": [
+                    "Il change de sujet",
+                    "Il se saisit de cette réplique"
+                ],
+                "answer": [1],
+                "explanation": "Cyrano, à travers Christian, se saisit de cette réplique et notamment du verbe « étouffer » pour faire une référence mythologique à Hercule tout en continuant de filer la métaphore de la naissance (« nouveau-né », « petit »). Hercule, né de la relation adultère de Zeus avec une mortelle, s'attire les foudres d'Héra, la femme de Zeus qui lui envoie deux énormes serpents pour le tuer. Cependant, Hercule les tue et devient un symbole de sa force prodigieuse dès la naissance. Cette référence met en avant la force de son amour"
+            },
+            {
+                "id": "cyrano_q20",
+                "type": "QCM_EXTRAIT",
+                "question": " Dans cette réplique où il poursuit avec la référence à la légende d'Hercule que continue-t-il de mettre en avant?",
+                "extract": "<b>Christian</b>, <i>même jeu.</i>- De so<span style=\"background-color: #c9daf8;\">r</span>te qu'il… st<span style=\"background-color: #c9daf8;\">r</span>angula comme <span style=\"background-color: #c9daf8;\">r</span>ien…Les deux se<span style=\"background-color: #c9daf8;\">r</span>pents… O<span style=\"background-color: #c9daf8;\">r</span>gueil et… Doute.",
+                "options": [
+                    "L'importance d'une naissance",
+                    "La force de son amour",
+                    "La force d'Hercule"
+                ],
+                "answer": [1],
+                "explanation": "Cette réplique continue de faire réference à la légende d'hercule pour exprimer la force de son amour mise en avant par l'allitération en [r], et deux allégories (discours qui utilise des métaphores) : « Orgueil » et « Doute »."
+            },
+            {
+                "id": "cyrano_q21",
+                "type": "QCM_EXTRAIT",
+                "question": "A la fin du mouvement 2, Cyrano parvient à charmer Roxane mais cela risque de ne pas durer, comment le voit-on?",
+                "extract": "Roxane, <i>s'accoudant au balcon.</i>- Ah ! c'est très bien. — Mais pourquoi parlez-vous de façon peu hâtive ? Auriez-vous donc la goutte à l'imaginative ?",
+                "options": [
+                    "Elle semble étonnée par ses hésitations",
+                    "Elle lui demande s'il a une maladie de l'imagination",
+                    "Elle a des gouttes de sueur"
+                ],
+                "answer": [0,1],
+                "explanation": "Les deux interrogatives de Roxane expriment son étonnement de le voir parler avec hésitation. La métaphore de la goutte (au sens de maladie) peut traduire son agacement face à la situation. Le jeu amoureux manque cruellement de fluidité ! Ces répliques, encore une fois, peuvent être comiques car le spectateur sait très bien pourquoi Christian hésite, ce qui peut le prêter à sourire"
+            },
+            {
+                "id": "cyrano_q22",
+                "type": "QCM",
+                "question": "Que fait cyrano dans le mouvement 3?",
+                "options": [
+                    "Il prend la place de Christian et devient acteur de la scène de séduction",
+                    "Il continue de se cacher pour souffler le discours amoureux à Christian"
+                ],
+                "answer": [0],
+                "explanation": " La didascalie indique le changement qui s'opère. Cyrano devient acteur et prend le rôle de Christian."
+            },
+            {
+                "id": "cyrano_q23",
+                "type": "QCM_EXTRAIT",
+                "question": "Quelle est donc cette figure de style ?",
+                "extract": "<b>Roxane</b>.-       Aujourd'hui...,<br>Pourquoi ?",
+                "options": [
+                    "Chiasme",
+                    "Allégorie",
+                    "Aposiopèse"
+                ],
+                "answer": [2],
+                "explanation": "Une aposiopèse : comme son nom l'indique (pause) c'est une longue pause. Cette aposiopèse et l'interrogation pourquoi exprime le trouble de Roxane. Mais Cyrano va reprendre le control en devenant acteur."
+            }
         
 
     ]
