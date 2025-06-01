@@ -93,7 +93,7 @@ function shuffleArray(array) {
 // --- initializeApp (semble correcte) ---
 function initializeApp() {
     textListContainer.innerHTML = ''; // Vide la liste précédente
-    textsData.forEach((text, index) => {
+    data.texts.forEach((text, index) => {
         const button = document.createElement('button'); // Crée le bouton
         button.textContent = `${text.title} ${text.author ? '(' + text.author + ')' : ''}`; // Définit le texte
         // Définit l'action au clic
@@ -129,13 +129,13 @@ function showScreen(screenName) {
 
 function startRevision(textIndex, mode) {
     // Vérification que l'index est valide
-     if (textIndex < 0 || textIndex >= textsData.length) {
+     if (textIndex < 0 || textIndex >= data.texts.length) {
         console.error("Index de texte invalide:", textIndex);
         alert("Erreur: Impossible de charger le texte sélectionné.");
         showScreen('selection');
         return;
     }
-    currentText = textsData[textIndex];
+    currentText = data.texts[textIndex];
 
     // Vérification que le texte et les questions existent
     if (!currentText || !currentText.questions) {
