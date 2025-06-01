@@ -1701,7 +1701,18 @@ const data = {
             ],
             "answer": [2],
             "explanation": "Christian est réduit à supplier Roxane avec l'expression « de grâce ! » qui appartient au lexique religieux. Roxane est ainsi divinisée. Elle représente la belle dame sans merci, issue de l'amour courtois, alors que Christian est l'amoureux transi qui ne parvient pas à passer les épreuves de sa belle afin de gagner son amour."
-        }
+        },
+        {"id": "cyrano_q9",
+            "type": "QCM",
+            "question": "Pour aider Christian dans son discours amoureux Cyrano intérvient de 2 façons. Lesquelles?",
+            "options": [
+                "Il utilise des ficelles pour faire bouger christian comme un pantin",
+                "Il devient le souffleur de Christian",
+                "Il devient le metteur en scène de la scène de séduction"
+            ],
+            "answer": [1,2],
+            "explanation": "Cyrano met enscène le premier discours mais c'est un echec, il devient alors souffleur puis sera contraint d'intervenir."
+        },
         {
                 "id": "cyrano_q10",
                 "type": "QCM_EXTRAIT",
