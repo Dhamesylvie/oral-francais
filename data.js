@@ -1633,4 +1633,5 @@ const data = {
 }*/
     // Ajoutez d'autres textes ici en suivant la même structure { id: ..., title: ..., author: ..., questions: [...] },
 ]
-}
+};
+const textsData = data.texts;
