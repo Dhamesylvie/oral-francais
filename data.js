@@ -1432,19 +1432,19 @@ const data = {
             "id": "badine_q13",
             "type": "QCM_EXTRAIT",
             "question": "Quelle figure de style retrouve-t-on ici?",
-            "extract": "<u>... revoir ni ce bois, ni <mark>cette pauvre petite fontaine qui nous regarde tout en larmes</mark>. ",
+            "extract": "<u>... revoir ni ce bois, ni <span style=\"background-color: #f4cccc;\">cette pauvre petite fontaine qui nous regarde tout en larmes</span>. ",
             "options": ["Anaphore", "Chiasme", "Metaphore", "Personnification"],
             "answer": [3],
-            "explanation": "Personnification de la fontaine pour donner une tonalité pathétique e exprimer le regret de Perdican"
+            "explanation": "<span style=\"background-color: #f4cccc;\">Personnification de la fontaine</span> pour donner une tonalité pathétique e exprimer le regret de Perdican"
         },
         {
             "id": "badine_q14",
             "type": "QCM_EXTRAIT",
-            "question": "La conjonction de coordination 'mais' annonce un changement, Camille est finalement venu. Quelle figure de style explique ce changement?</i>?",
-            "extract": "Tu voulais partir sans me serrer la main; ... <mark>mais</mark> <u>ton coeur</u> a battu; il a oublié <b>sa leçon</b>, lui qui ne sait pas <b>lire</b>",
+            "question": "La conjonction de coordination 'mais' annonce un changement, Camille est finalement venu. Quelle figure de style explique ce changement?",
+            "extract": "Tu voulais partir sans me serrer la main; ... <b>mais</b> <span style=\"background-color: #f4cccc;\">ton coeur</span> a battu; il a oublié <span style=\"background-color: #b6d7a8;\">sa leçon</span>, lui qui ne sait pas <b>lire</b>",
             "options": ["Des métaphores", "Des anaphores", "des periphrases"],
             "answer": [0],
-            "explanation": "Le coeur est la <u>métaphore des sentiments</u>, il est personnifié et il prend le dessus sur la <b>métaphore de l'éducation</b> qui traduit la doxa de la religion"
+            "explanation": "Le coeur est la <span style=\"background-color: #f4cccc;\">métaphore des sentiments</span>, il est personnifié et il prend le dessus sur la <span style=\"background-color: #b6d7a8;\">métaphore de l'éducation</span> qui traduit la doxa de la religion"
         },
         {
             "id": "badine_q15",
@@ -1464,18 +1464,18 @@ const data = {
         {
             "id": "badine_q17",
             "type": "VF",
-            "question": "AFFIRMATION : Perdican est ironique qand il dit 'Eh bien ! Camille, <mark><u>ces</u> femmes ont bien parlé</mark> ; <mark>elles t'ont mise dans le vrai chemin</mark> ' ",
+            "question": "AFFIRMATION : Perdican est ironique qand il dit '<span style=\"background-color: #f4cccc;\">Eh bien !</span> Camille, <span style=\"background-color: #b6d7a8;\"><u>ces</u> femmes ont bien parlé</span> ; <span style=\"background-color: #b6d7a8;\">elles t'ont mise dans le vrai chemin</span> ' ",
             "answer": "Vrai",
-            "explanation": "On note un changement de ton avec l'interjection 'Eh bien' il accuse les religieuses et leur discours avec l'ironie. Le <u>determinant démonstratif</u> montre qu'il met une distance critique entre lui et ces religieuses"
+            "explanation": "On note un changement de ton avec l'<span style=\"background-color: #f4cccc;\">interjection 'Eh bien'</span> il accuse les religieuses et leur discours avec l'ironie. Le <u>determinant démonstratif</u> montre qu'il met une distance critique entre lui et ces religieuses"
         },
         {
             "id": "badine_q18",
             "type": "QCM_EXTRAIT",
             "question": "Quelle est la figure de style ici?",
-            "extract": "Il pourra m'en couter le <mark>bonheur de ma vie</mark>; mais <u>dis</u>-leur cela de ma part: le ciel n'<b>est</b> pas pour elles",
+            "extract": "Il pourra m'en couter le <span style=\"background-color: #b6d7a8;\">bonheur de ma vie</span>; mais <u>dis</u>-leur cela de ma part: le ciel n'<b>est</b> pas pour elles",
             "options": ["Métaphores", "Anaphores", "Periphrases", "Hyperbole"],
             "answer": [3],
-            "explanation": "C'est une hyperbole (exagération) qui marque l'impossible union des deux jeunes. il accuse les religieuses et leur discours en utilisant l'ironie. Le déterminant démonstratif montre aussi qu’il met une distance critique entre lui et ces femmes, qu'il les méprise et dédaigne. L'impératif sonne comme une provocation et une vengeance à leur égard. Il utilise le présent de vérité générale pour les achever : le ciel, image du paradis, de Dieu qu'elles adorent, ne serait pas pour elles ; elles seraient donc dans le mensonge depuis toujours"
+            "explanation": "C'est une <span style=\"background-color: #b6d7a8;\">hyperbole (exagération)</span> qui marque l'impossible union des deux jeunes. il accuse les religieuses et leur discours en utilisant l'ironie. Le déterminant démonstratif montre aussi qu’il met une distance critique entre lui et ces femmes, qu'il les méprise et dédaigne. L'impératif sonne comme une provocation et une vengeance à leur égard. Il utilise le présent de vérité générale pour les achever : le ciel, image du paradis, de Dieu qu'elles adorent, ne serait pas pour elles ; elles seraient donc dans le mensonge depuis toujours"
         },
         {
             "id": "badine_q19",
