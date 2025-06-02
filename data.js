@@ -1907,7 +1907,7 @@ const data = {
                     "Car la nuit est le cadre des confidences et du secret amoureux"
                 ],
                 "answer": [1],
-                "explanation": "Il insiste sur le cadre temporel avec le mot « nuit » et « ombre » : c'est le cadre de la confidence et du secret amoureux, courant dans la littérature courtoise. ",
+                "explanation": "Il insiste sur le cadre temporel avec le mot « nuit » et « ombre » : c'est le cadre de la confidence et du secret amoureux, courant dans la littérature courtoise. "
             }
             {
                 "id": "cyrano_q26",
@@ -1932,7 +1932,7 @@ const data = {
                     "Non, elle objecte"
                 ],
                 "answer": [1],
-                "explanation": "Roxane objecte avec la négation, mais Cyrano rebondit immédiatement et propose un discours convaincant, organisé avec des connecteurs logiques (« puisque », « or », « d'ailleurs »). Il utilise aussi des antithèses pour opposer leur deux façons de parler, leurs deux postures d'amant à travers les pronoms « moi » et « vous » qui structurent le vers 22. ",
+                "explanation": "Roxane objecte avec la négation, mais Cyrano rebondit immédiatement et propose un discours convaincant, organisé avec des connecteurs logiques (« puisque », « or », « d'ailleurs »). Il utilise aussi des antithèses pour opposer leur deux façons de parler, leurs deux postures d'amant à travers les pronoms « moi » et « vous » qui structurent le vers 22. "
             }
             {
                 "id": "cyrano_q28",
@@ -1945,7 +1945,7 @@ const data = {
                     "Anthitèse"
                 ],
                 "answer": [2],
-                "explanation": "Ce sont des antithèses qu'il utilise pour pour opposer leur deux façons de parler, leurs deux postures d'amant marqués par les pronoms « moi » et « vous » qui structurent le vers 22. . ",
+                "explanation": "Ce sont des antithèses qu'il utilise pour pour opposer leur deux façons de parler, leurs deux postures d'amant marqués par les pronoms « moi » et « vous » qui structurent le vers 22. . "
             }
             {
                 "id": "cyrano_q29",
@@ -1958,7 +1958,7 @@ const data = {
                     "Anthitèse"
                 ],
                 "answer": [2],
-                "explanation": "Il structure le vers avec des antithèses et les pronoms « moi » et « vous » pour opposer leur deux façons de parler, leurs deux postures d'amant. Le but visé est toujours d'expliquer ses hésitations et de mener à bien la séduction amoureuse. ",
+                "explanation": "Il structure le vers avec des antithèses et les pronoms « moi » et « vous » pour opposer leur deux façons de parler, leurs deux postures d'amant. Le but visé est toujours d'expliquer ses hésitations et de mener à bien la séduction amoureuse. "
             }
             {
                 "id": "cyrano_q30",
@@ -1970,7 +1970,7 @@ const data = {
                     "A donner un ton plus poétique à l'extrait"
                 ],
                 "answer": [0],
-                "explanation": "La rapidité du langage de Roxane est mise en avant par l'allitération en [v] et la lenteur de celui de Cyrano est mise en avant par l'allitération en [m].",
+                "explanation": "La rapidité du langage de Roxane est mise en avant par l'allitération en [v] et la lenteur de celui de Cyrano est mise en avant par l'allitération en [m]."
             }
 
     ]
