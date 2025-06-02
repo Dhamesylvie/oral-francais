@@ -1901,7 +1901,7 @@ const data = {
                 "id": "cyrano_q25",
                 "type": "QCM_EXTRAIT",
                 "question": "Pourquoi insiste-t-il sur le cadre temporel avec les mots 'nuit' et 'ombre'?",
-                "extract": "<b>Cyrano</b>, <i>parlant à mi-voix, comme Christian.<:i>-       C'est qu'il fait <span style=\"background-color: #c9daf8;\">nuit,</span> <br>Dans cette <span style=\"background-color: #c9daf8;\">ombre</span>, à tâtons, ils cherchent votre oreille.<br>Roxane.- Les miens n'éprouvent pas difficulté pareille.<br>Cyrano.- Ils trouvent tout de suite ? oh ! cela va de soi, <br>Puisque c'est dans mon cœur, eux, que je les reçoi3 ; <br>Or, moi, j'ai le cœur grand, vous, l'oreille petite. <br>D'ailleurs vos mots à vous, descendent : ils vont vite, <br>Les miens montent, Madame : il leur faut plus de temps !",
+                "extract": "<b>Cyrano</b>, <i>parlant à mi-voix, comme Christian.</i>-       C'est qu'il fait <span style=\"background-color: #c9daf8;\">nuit,</span> <br>Dans cette <span style=\"background-color: #c9daf8;\">ombre</span>, à tâtons, ils cherchent votre oreille.<br>Roxane.- Les miens n'éprouvent pas difficulté pareille.<br>Cyrano.- Ils trouvent tout de suite ? oh ! cela va de soi, <br>Puisque c'est dans mon cœur, eux, que je les reçoi3 ; <br>Or, moi, j'ai le cœur grand, vous, l'oreille petite. <br>D'ailleurs vos mots à vous, descendent : ils vont vite, <br>Les miens montent, Madame : il leur faut plus de temps !",
                 "options": [
                     "Car la nuit les loups garous de réveillent",
                     "Car la nuit est le cadre des confidences et du secret amoureux"
@@ -1912,21 +1912,21 @@ const data = {
             {
                 "id": "cyrano_q26",
                 "type": "QCM_EXTRAIT",
-                "question": "Dans cette phrase que désigne le pronom 'Ils?",
-                "extract": "<b>Cyrano</b>, <i>parlant à mi-voix, comme Christian.<:i>-       C'est qu'il fait nuit, <br>Dans cette ombre, à tâtons, <span style=\"background-color: #c9daf8;\">ils</span> cherchent votre oreille.<br>Roxane.- Les miens n'éprouvent pas difficulté pareille.<br>Cyrano.- Ils trouvent tout de suite ? oh ! cela va de soi, <br>Puisque c'est dans mon cœur, eux, que je les reçoi3 ; <br>Or, moi, j'ai le cœur grand, vous, l'oreille petite. <br>D'ailleurs vos mots à vous, descendent : ils vont vite, <br>Les miens montent, Madame : il leur faut plus de temps !",
+                "question": "Dans cette phrase que désigne le pronom 'Ils'?",
+                "extract": "<b>Cyrano</b>, <i>parlant à mi-voix, comme Christian.</i>-       C'est qu'il fait nuit, <br>Dans cette ombre, à tâtons, <span style=\"background-color: #c9daf8;\">ils</span> cherchent votre oreille.<br>Roxane.- Les miens n'éprouvent pas difficulté pareille.<br>Cyrano.- Ils trouvent tout de suite ? oh ! cela va de soi, <br>Puisque c'est dans mon cœur, eux, que je les reçois ; <br>Or, moi, j'ai le cœur grand, vous, l'oreille petite. <br>D'ailleurs vos mots à vous, descendent : ils vont vite, <br>Les miens montent, Madame : il leur faut plus de temps !",
                 "options": [
                     "Ils = les admirateurs de Roxanes",
                     "Ils = cheuveux de roxanes",
                     "Ils = les mots de cyrano"
                 ],
                 "answer": [2],
-                "explanation": "Pour justifié son hésitation de la première partie il personnifie les mots Ce sont les mots ou les paroles de Cyrano qui, métaphoriquement, 'cherchent' loreille de Roxane. ",
+                "explanation": "Pour justifier son hésitation de la première partie il personnifie les mots Ce sont les mots ou les paroles de Cyrano qui, métaphoriquement 'cherchent' l'oreille de Roxane. ",
             }
             {
                 "id": "cyrano_q27",
                 "type": "QCM_EXTRAIT",
                 "question": "Roxane est-elle d'accord quand Cyrano personnifie les mots pour dire qu'ils ont besoin de temps pour monter?",
-                "extract": "<b>Cyrano</b>, <i>parlant à mi-voix, comme Christian.<:i>-       C'est qu'il fait nuit, <br>Dans cette ombre, à tâtons, <span style=\"background-color: #c9daf8;\">ils</span> cherchent votre oreille.<br>Roxane.- <span style=\"background-color: #f4cccc;\">Les miens n'éprouvent pas difficulté pareille.</span><br>Cyrano.- Ils trouvent tout de suite ? oh ! cela va de soi, <br>Puisque c'est dans mon cœur, eux, que je les reçoi ; <br>Or, moi, j'ai le cœur grand, vous, l'oreille petite. <br>D'ailleurs vos mots à vous, descendent : ils vont vite, <br>Les miens montent, Madame : il leur faut plus de temps !",
+                "extract": "<b>Cyrano</b>, <i>parlant à mi-voix, comme Christian.</i>-       C'est qu'il fait nuit, <br>Dans cette ombre, à tâtons, <span style=\"background-color: #c9daf8;\">ils</span> cherchent votre oreille.<br>Roxane.- <span style=\"background-color: #f4cccc;\">Les miens n'éprouvent pas difficulté pareille.</span><br>Cyrano.- Ils trouvent tout de suite ? oh ! cela va de soi, <br>Puisque c'est dans mon cœur, eux, que je les reçois ; <br>Or, moi, j'ai le cœur grand, vous, l'oreille petite. <br>D'ailleurs vos mots à vous, descendent : ils vont vite, <br>Les miens montent, Madame : il leur faut plus de temps !",
                 "options": [
                     "Oui, elle est d'accord",
                     "Non, elle objecte"
@@ -1938,27 +1938,26 @@ const data = {
                 "id": "cyrano_q28",
                 "type": "QCM_EXTRAIT",
                 "question": "Dans ce vers comment s'appelle la figure de style utilisée par Cyrano de Bergerac pour opposer leur 2 façons de parler et donc justifier ses hésitations?",
-                "extract": "<b>Cyrano</b>, <i>parlant à mi-voix, comme Christian.<:i>-       C'est qu'il fait nuit, <br>Dans cette ombre, à tâtons, ils cherchent votre oreille.<br>Roxane.- Les miens n'éprouvent pas difficulté pareille.<br>Cyrano.- Ils trouvent tout de suite ? oh ! cela va de soi, <br>Puisque c'est dans mon cœur, eux, que je les reçoi ; <br>Or, moi, j'ai le <span style=\"background-color: #c9daf8;\">cœur grand</span>, vous, l'<span style=\"background-color: #c9daf8;\">oreille petite</span>. <br>D'ailleurs vos mots à vous, <span style=\"background-color: #a2c4c9;\">descendent</span> : ils <span style=\"background-color: #f4cccc;\">vont vite</span>, <br>Les miens <span style=\"background-color: #a2c4c9;\">montent</span>, Madame : il leur faut <span style=\"background-color: #f4cccc;\">plus de temps</span> !",
+                "extract": "<b>Cyrano</b>, <i>parlant à mi-voix, comme Christian.</i>-       C'est qu'il fait nuit, <br>Dans cette ombre, à tâtons, ils cherchent votre oreille.<br>Roxane.- Les miens n'éprouvent pas difficulté pareille.<br>Cyrano.- Ils trouvent tout de suite ? oh ! cela va de soi, <br>Puisque c'est dans mon cœur, eux, que je les reçois ; <br>Or, moi, j'ai le <span style=\"background-color: #c9daf8;\">cœur grand</span>, vous, l'<span style=\"background-color: #c9daf8;\">oreille petite</span>. <br>D'ailleurs vos mots à vous, <span style=\"background-color: #a2c4c9;\">descendent</span> : ils <span style=\"background-color: #f4cccc;\">vont vite</span>, <br>Les miens <span style=\"background-color: #a2c4c9;\">montent</span>, Madame : il leur faut <span style=\"background-color: #f4cccc;\">plus de temps</span> !",
                 "options": [
                     "Hyperbole",
                     "Gradation",
                     "Anthitèse"
                 ],
                 "answer": [2],
-                "explanation": "Ce sont des antithèses qu'il utilise pour pour opposer leur deux façons de parler, leurs deux postures d'amant marqués par les pronoms « moi » et « vous » qui structurent le vers 22. . "
+                "explanation": "Ce sont des antithèses qu'il utilise pour pour opposer leur deux façons de parler, leurs deux postures d'amant marqués par les pronoms « moi » et « vous » qui structurent le vers 22."
             }
             {
                 "id": "cyrano_q29",
                 "type": "QCM_EXTRAIT",
-                "question": "Dans ce vers que veut faire Cyrano avec les alexandrins et les pronom 'vous' et 'moi'?",
-                "extract": "<b>Cyrano</b>, <i>parlant à mi-voix, comme Christian.<:i>-      <br>Roxane.- Les miens n'éprouvent pas difficulté pareille.<br>Cyrano.- .... oh ! cela va de soi, <br>Puisque c'est dans mon cœur, eux, que je les reçoi ; <br>Or, <b>moi</b>, j'ai le <span style=\"background-color: #c9daf8;\">cœur grand</span>, <b>vous</b>, l'<span style=\"background-color: #c9daf8;\">oreille petite</span>. <br>D'ailleurs <b>vos mots à vous</b>, <span style=\"background-color: #a2c4c9;\">descendent</span> : ils <span style=\"background-color: #f4cccc;\">vont vite</span>, <br><b>Les miens</b> <span style=\"background-color: #a2c4c9;\">montent</span>, Madame : il leur faut <span style=\"background-color: #f4cccc;\">plus de temps</span> !",
+                "question": "Dans ce vers que veut faire Cyrano avec les alexandrins et les pronoms 'vous' et 'moi'?",
+                "extract": "<b>Cyrano</b>, <i>parlant à mi-voix, comme Christian.</i>-      <br>Roxane.- Les miens n'éprouvent pas difficulté pareille.<br>Cyrano.- .... oh ! cela va de soi, <br>Puisque c'est dans mon cœur, eux, que je les reçois ; <br>Or, <b>moi</b>, j'ai le <span style=\"background-color: #c9daf8;\">cœur grand</span>, <b>vous</b>, l'<span style=\"background-color: #c9daf8;\">oreille petite</span>. <br>D'ailleurs <b>vos mots à vous</b>, <span style=\"background-color: #a2c4c9;\">descendent</span> : ils <span style=\"background-color: #f4cccc;\">vont vite</span>, <br><b>Les miens</b> <span style=\"background-color: #a2c4c9;\">montent</span>, Madame : il leur faut <span style=\"background-color: #f4cccc;\">plus de temps</span> !",
                 "options": [
-                    "Hyperbole",
-                    "Gradation",
-                    "Anthitèse"
+                    "Insiter sur leur 2 postures",
+                    "Montrer  son indifférence"
                 ],
-                "answer": [2],
-                "explanation": "Il structure le vers avec des antithèses et les pronoms « moi » et « vous » pour opposer leur deux façons de parler, leurs deux postures d'amant. Le but visé est toujours d'expliquer ses hésitations et de mener à bien la séduction amoureuse. "
+                "answer": [0],
+                "explanation": "Il structure le vers les pronoms « moi » et « vous » et des antitèses pour opposer leur deux façons de parler, leurs deux postures d'amant. Le but visé est toujours d'expliquer ses hésitations et de mener à bien la séduction amoureuse. "
             }
             {
                 "id": "cyrano_q30",
