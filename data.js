@@ -1883,12 +1883,12 @@ const data = {
                 ],
                 "answer": [2],
                 "explanation": "Une aposiopèse : comme son nom l'indique (pause) c'est une longue pause. Cette aposiopèse et l'interrogation pourquoi exprime le trouble de Roxane. Mais Cyrano va reprendre le control en devenant acteur."
-            }
+            },
             {
                 "id": "cyrano_q24",
                 "type": "QCM_EXTRAIT",
                 "question": "Après la longue pause de Roxane (Aposiopèse) et son 'Pourquoi' comment voit-on que Cyrano reprend le control de la dicussion?",
-                "extract": "<b>Cyrano</b>, <i>parlant à mi-voix, comme Christian.<:i>- C'est qu'il fait nuit, Dans cette ombre, à tâtons, ils cherchent votre oreille.<br>Roxane.- Les miens n'éprouvent pas difficulté pareille.<br>Cyrano.- Ils trouvent tout de suite ? oh ! cela va de soi, <br>Puisque c'est dans mon cœur, eux, que je les reçoi3 ; <br>Or, moi, j'ai le cœur grand, vous, l'oreille petite. <br>D'ailleurs vos mots à vous, descendent : ils vont vite, <br>Les miens montent, Madame : il leur faut plus de temps !",
+                "extract": "<b>Cyrano</b>, <i>parlant à mi-voix</i>, comme Christian.<:i>- C'est qu'il fait nuit, Dans cette ombre, à tâtons, ils cherchent votre oreille.<br>Roxane.- Les miens n'éprouvent pas difficulté pareille.<br>Cyrano.- Ils trouvent tout de suite ? oh ! cela va de soi, <br>Puisque c'est dans mon cœur, eux, que je les reçoi3 ; <br>Or, moi, j'ai le cœur grand, vous, l'oreille petite. <br>D'ailleurs vos mots à vous, descendent : ils vont vite, <br>Les miens montent, Madame : il leur faut plus de temps !",
                 "options": [
                     "Il entame un jeu d'acteur",
                     "Ses réponses sont brèves et assurées",
