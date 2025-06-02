@@ -1896,7 +1896,7 @@ const data = {
                 ],
                 "answer": [0,2],
                 "explanation": "Cyrano reprend le contrôle de la scène. Ses répliques se font plus assurées et plus longues que celles de Roxane : c'est lui qui domine maintenant le dialogue. La didascalie « parlant à mi-voix, comme Christian » montre son jeu d'acteur."
-            }
+            },
             {
                 "id": "cyrano_q25",
                 "type": "QCM_EXTRAIT",
@@ -1908,7 +1908,7 @@ const data = {
                 ],
                 "answer": [1],
                 "explanation": "Il insiste sur le cadre temporel avec le mot « nuit » et « ombre » : c'est le cadre de la confidence et du secret amoureux, courant dans la littérature courtoise. "
-            }
+            },
             {
                 "id": "cyrano_q26",
                 "type": "QCM_EXTRAIT",
@@ -1921,7 +1921,7 @@ const data = {
                 ],
                 "answer": [2],
                 "explanation": "Pour justifier son hésitation de la première partie il personnifie les mots Ce sont les mots ou les paroles de Cyrano qui, métaphoriquement 'cherchent' l'oreille de Roxane. ",
-            }
+            },
             {
                 "id": "cyrano_q27",
                 "type": "QCM_EXTRAIT",
@@ -1933,7 +1933,7 @@ const data = {
                 ],
                 "answer": [1],
                 "explanation": "Roxane objecte avec la négation, mais Cyrano rebondit immédiatement et propose un discours convaincant, organisé avec des connecteurs logiques (« puisque », « or », « d'ailleurs »). Il utilise aussi des antithèses pour opposer leur deux façons de parler, leurs deux postures d'amant à travers les pronoms « moi » et « vous » qui structurent le vers 22. "
-            }
+            },
             {
                 "id": "cyrano_q28",
                 "type": "QCM_EXTRAIT",
@@ -1946,7 +1946,7 @@ const data = {
                 ],
                 "answer": [2],
                 "explanation": "Ce sont des antithèses qu'il utilise pour pour opposer leur deux façons de parler, leurs deux postures d'amant marqués par les pronoms « moi » et « vous » qui structurent le vers 22."
-            }
+            },
             {
                 "id": "cyrano_q29",
                 "type": "QCM_EXTRAIT",
@@ -1958,7 +1958,7 @@ const data = {
                 ],
                 "answer": [0],
                 "explanation": "Il structure le vers les pronoms « moi » et « vous » et des antitèses pour opposer leur deux façons de parler, leurs deux postures d'amant. Le but visé est toujours d'expliquer ses hésitations et de mener à bien la séduction amoureuse. "
-            }
+            },
             {
                 "id": "cyrano_q30",
                 "type": "QCM_EXTRAIT",
