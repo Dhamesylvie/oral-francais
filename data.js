@@ -2057,23 +2057,18 @@ const data = {
             "explanation": "Mouvement 1 (l.1-6) : Perdican met en place sa comédie amoureuse pour susciter la jalousie de Camille. "
         },    
         {
-            "id": "On-ne-badine-pas2",
-            "title": "On ne badine pas avec l'amour - Acte3_scene3",
-            "author": " Alfred de Musset",
-            "questions": [
-                {
-                    "id": "on_ne_badine_pas2_q1",
-                    "type": "QCM_EXTRAIT",
-                    "question": "Comment s'appelle la situation au theatre où un personnage est caché  sur scène, souvent à l'insu des autres et observe et écoute (suvent pour creer un quiproquos, un malentendu ou comique de situation)?",
-                    "extract": "CAMILLE, <i>cachée, à part.</i>",
-                    "options": [
-                        "un mocos",
-                        "un locos",
-                        "un topos"
-                    ],
+            "id": "on_ne_badine_pas2_q1",
+            "type": "QCM_EXTRAIT",
+            "question": "Comment s'appelle la situation au theatre où un personnage est caché  sur scène, souvent à l'insu des autres et observe et écoute (suvent pour creer un quiproquos, un malentendu ou comique de situation)?",
+            "extract": "CAMILLE, <i>cachée, à part.</i>",
+            "options": [
+                  "un mocos",
+                  "un locos",
+                  "un topos"
+            ],
                     "answer": [2],
                     "explanation": "Le procédé est un topos au théâtre, notamment dans les <b>comédies</b>, mais il est ici mis au service d'un jeu cruel et non comique."
-                },    
+            }
             ]
 }
 ]
