@@ -1970,7 +1970,74 @@ const data = {
                 ],
                 "answer": [0],
                 "explanation": "La rapidité du langage de Roxane est mise en avant par l'allitération en [v] et la lenteur de celui de Cyrano est mise en avant par l'allitération en [m]."
+            },
+            {
+                "id": "cyrano_q31",
+                "type": "QCM_EXTRAIT",
+                "question": "Le coeur est une metaphore  traditionnelle du sentiment amoureux; Pourquoi l'utise-t-il 2 fois dans ce passage? ",
+                "extract": "Cyrano.- .... oh ! cela va de soi, <br>Puisque c'est dans mon <b>cœur</b>, eux, que je les reçois ; <br>Or, moi, j'ai le <b>cœur grand</b>, <b>vous</b>, l'oreille petite. <br>D'ailleurs <b>vos mots à vous</b>, descendent : ils vont vite, <br>Les miens montent, Madame : il leur faut plus de temps !",
+                "options": [
+                    "Pour montrer sa sinsérité",
+                    "Pour montrer sa solidarité"
+                ],
+                "answer": [0],
+                "explanation": "Il insiste sur le 'coeur' répété 2 fois qui une métaphore traditionnelle du sentiment amoureux pour montrer sa sincérité. Son discours a quelque chose de lyrique. L'apostrophe 'Madame' enfin, montre le respect qu'il a pour son amante qui est en position de force dans la relation amoureuse. On peut y voir de nouveau une référence à l'amour courtois. "
+            },
+            {
+                "id": "cyrano_q32",
+                "type": "QCM_EXTRAIT",
+                "question": "Ici l'échange redevient plus vif avec desrepliques courtes et des STICHOMITHIES. A quoi correspond cette figure de style?",
+                "extract": "<b>Roxane.</b>- Mais ils <span style=\"background-color: #a2c4c9;\">montent</span> bien mieux depuis quelques instants.<br><b>Cyrano.</b>- De cette gymnastique, ils ont pris l'habitude !<br><b>Roxane.</b>- Je vous parle en effet d'une vraie <span style=\"background-color: #a2c4c9;\">altitude</span> !<br><b>Cyrano.</b>- Certe, et vous me tueriez si de cette <span style=\"background-color: #a2c4c9;\">hauteur</span><br>Vous me laissiez tomber un mot dur sur le cœur !",
+                "options": [
+                    "Chaque réplique contient un mot qui rime avec le mot précedent",
+                    "Chaque réplique rebondit sur un mot de la réplique précédente"
+                ],
+                "answer": [0],
+                "explanation": "stichomythies. Chaque réplique rebondit sur un mot de la réplique précédente : « montent » « montent » / « altitude » « hauteur » »hauteur ». Cyrano poursuit les métaphores pour parler de son langage : celle de la « gymnastique » et du « mot dur » qui comme une roche l'étourdirait jetée de la hauteur du balcon. Cette dernière métaphore imagine la blessure d’amour de façon métaphore. Cyrano est à la merci de sa dame qui pourrait le « tuer ». L'allitération en [r] de ces vers met en valeur ce danger. De nouveau, Roxane apparaît comme la belle dame sans merci de l'amour courtois. "
+            },
+            {
+                "id": "cyrano_q33",
+                "type": "QCM_EXTRAIT",
+                "question": "Quels sont ici les 2 figures de style qui montrent ici que Cyrano de Bergerac est à la merci de Roxane?",
+                "extract": "<b>Roxane.</b>- Je vous parle en effet d'une vraie altitude !<br><b>Cyrano.</b>- Certe, et vous me tue<span style=\"background-color: #a2c4c9;\">r</span>te, et vous me tue<span style=\"background-color: #a2c4c9;\">r</span>te si de cette hauteu<span style=\"background-color: #a2c4c9;\">r</span><br>Vous me laissiez tombe<span style=\"background-color: #a2c4c9;\">r</span> un mot du<span style=\"background-color: #a2c4c9;\">r</span> su<span style=\"background-color: #a2c4c9;\">r</span> le cœu<span style=\"background-color: #a2c4c9;\">r</span> !",
+                "options": [
+                    "Chiasme",
+                    "Periphrase",
+                    "Metaphore",
+                    "Allitération"
+                ],
+                "answer": [2,3],
+                "explanation": "Cyrano poursuit les métaphores pour parler de son langage : celle de la '<span style=\"background-color: #f4cccc;\">gymnastique</span>' et du 'mot dur' qui comme une roche l'étourdirait jetée de la hauteur du balcon. Cette dernière métaphore imagine la <b>blessure d'amour</b> de façon métaphore. Cyrano est à la merci de sa dame qui pourrait le 'tuer'. L'allitération en [r] de ces vers met en valeur ce danger. De nouveau, Roxane apparaît comme la belle dame sans merci de l'amour courtois. "
+            },
+            {
+                "id": "cyrano_q34",
+                "type": "QCM_EXTRAIT",
+                "question": "Cyrano a été trop efficace et Roxane veut le voir.  A travers quels procédés est exprimée la panique qui gagne cyrano?",
+                "extract": "<b>Roxane</b>, avec un mouvement.- Je descends !<br><b>Cyrano</b>, vivement.-					Non !<br><b>Roxane</b>, lui montrant le banc qui est sous le balcon.- 	Grimpez sur le banc, alors, vite !<br><b>Cyrano</b>, reculant avec effroi dans la nuit.- Non !<br>Roxane.- 						Comment… non ?",
+                "options": [
+                    "Didascalies",
+                    "Periphrase",
+                    "Metaphore",
+                    "Négation"
+                ],
+                "answer": [0,3],
+                "explanation": "Les didascalies et la répétition de l'adverbe de négation « non » expriment la panique qui gagne Cyrano. Les didascalies sont d'ailleurs construites sous forme de gradation (la peur le prend de plus en plus). Alors que Roxane semble s'avancer (« avec un mouvement »), Cyrano recule (« reculant »). Elle est résolue à le voir comme le prouvent l'exclamation et la phrase simple « Je descends » puis l'impératif à valeur d'ordre « Grimpez » ou encore l'adverbe « vite ! » qui souligne son impatience. L'étonnement de Roxane face au refus de celui qu'elle pense être Christian est perceptible grâce à l'interrogation « Comment...non ? ». Tout cela crée un jeu de scène qui peut être comique pour le spectateur.  "
+            },
+            {
+                "id": "cyrano_q35",
+                "type": "QCM_EXTRAIT",
+                "question": "Comment fait Cyrano pour se sortir de la situation et éviter que Roxane descende le voir?",
+                "extract": "<b>Cyrano</b>, que l'émotion gagne de plus en plus.- 			Laissez un peu que l'on profite…<br>De cette occasion qui s'offre… de pouvoir Se parler doucement, sans se voir. [...]",
+                "options": [
+                    "Grâce à sa maitrise du langage",
+                    "Periphrase",
+                    "Diérèse (prononciation d'une sylabe en 2 temps)",
+                    "Négation"
+                ],
+                "answer": [0,2],
+                "explanation": " Cyrano se sort d'affaire grâce à sa maîtrise de la parole. S'il est d'abord hésitant (les points de suspension le prouvent), il trouve une solution en mettant en avant 'l'occasion' de se parler sans se voir. Le terme est accentué par la diérèse. Il fait ici appel à un motif traditionnel de la littérature amoureuse. Nombreux sont les amants qui se sont parlés sans se voir comme Psyché et Amour ou Pyrame et Thisbé qui communiquent à travers un mur. <br<TR : Cyrano imite Christian et parvient à séduire Roxane. En l'invitant à se parler sans se voir, il évite d'être démasqué. Mais ce nouveau stratagème va aussi lui permettre de lui faire une déclaration d'amour sincère. "
             }
+            
 
     ]
 }
