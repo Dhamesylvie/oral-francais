@@ -2036,10 +2036,45 @@ const data = {
                 ],
                 "answer": [0,2],
                 "explanation": " Cyrano se sort d'affaire grâce à sa maîtrise de la parole. S'il est d'abord hésitant (les points de suspension le prouvent), il trouve une solution en mettant en avant 'l'occasion' de se parler sans se voir. Le terme est accentué par la diérèse. Il fait ici appel à un motif traditionnel de la littérature amoureuse. Nombreux sont les amants qui se sont parlés sans se voir comme Psyché et Amour ou Pyrame et Thisbé qui communiquent à travers un mur. <br<TR : Cyrano imite Christian et parvient à séduire Roxane. En l'invitant à se parler sans se voir, il évite d'être démasqué. Mais ce nouveau stratagème va aussi lui permettre de lui faire une déclaration d'amour sincère. "
-            }
-            
-
+            }        
     ]
+},
+{
+    "id": "On-ne-badine-pas2",
+    "title": "On ne badine pas avec l'amour - Acte3_scene3",
+    "author": " Alfred de Musset",
+    "questions": [
+        {
+            "id": "on_ne_badine_pas2_q1",
+            "type": "QCM_EXTRAIT",
+            "question": "Que montre la première didascalie?",
+            "extract": "CAMILLE, <i>cachée, à part.</i><br>Que veut dire cela ? Il la fait asseoir près de lui ? Me demande-t-il un rendez-vous pour y venir causer avec une autre ? Je suis curieuse de savoir ce qu'il lui dit.",
+            "options": [
+                "Que camille joue à cache-cache avec Perdican",
+                "Que Camille est un témoin caché de la scène"
+            ],
+            "answer": [1],
+            "explanation": "Mouvement 1 (l.1-6) : Perdican met en place sa comédie amoureuse pour susciter la jalousie de Camille. "
+        },    
+        {
+            "id": "On-ne-badine-pas2",
+            "title": "On ne badine pas avec l'amour - Acte3_scene3",
+            "author": " Alfred de Musset",
+            "questions": [
+                {
+                    "id": "on_ne_badine_pas2_q1",
+                    "type": "QCM_EXTRAIT",
+                    "question": "Comment s'appelle la situation au theatre où un personnage est caché  sur scène, souvent à l'insu des autres et observe et écoute (suvent pour creer un quiproquos, un malentendu ou comique de situation)?",
+                    "extract": "CAMILLE, <i>cachée, à part.</i>",
+                    "options": [
+                        "un mocos",
+                        "un locos",
+                        "un topos"
+                    ],
+                    "answer": [2],
+                    "explanation": "Le procédé est un topos au théâtre, notamment dans les <b>comédies</b>, mais il est ici mis au service d'un jeu cruel et non comique."
+                },    
+            ]
 }
 ]
 };
