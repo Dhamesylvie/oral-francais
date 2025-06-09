@@ -2133,10 +2133,10 @@ const data = {
             "options": [
                 "Les didascalies",
                 "Les apostrophes",
-                "le chap lexical de l'amour"
+                "le mchap lexical de l'amour"
 
             ],
-            "answer": [2],
+            "answer": [0,2],
             "explanation": "le triangle amoureux est mis en place à travers le champ lexical de l'amour. Cependant, la didascalie met en lumière le jeu d'acteur de Perdican qui ne cherche qu'à rendre jalouse Camille. Il joue à l'amoureux transi emporté par la passion. Pour cela, il utilise un discours traditionnel, figé à travers la métonymie du 'cœur' et récite une véritable envolée lyrique que l'<b>exclamation</b> et la <b>juxtaposition</b> rendent exagérée. Nous assistons donc à une mise en abyme du théâtre. "
         }, 
         {
@@ -2197,7 +2197,145 @@ const data = {
             ],
             "answer": [0,1],
             "explanation": "L'interrogative montre la surprise de Rosette : la déclaration est doublement inattendue puisqu'ils n'appartiennent pas à la même classe sociale. La précision « en or » le rappelle. Leur union serait une mésalliance. Cette différence de classe sociale est perceptible à travers l'utilisation du vouvoiement qui contraste avec le tutoiement utilisé par Perdican pour s'adresser à elle. On note aussi la simplicité et la taille de la réplique face à celle de Perdican. Rosette représente bien ici le personnage de l'ingénue."
-        }       
+        },
+        {
+            "id": "on_ne_badine_pas2_q12",
+            "type": "QCM",
+            "question": "Après le collier quel autre accéssoire utilise Perdican pour poursuivre son jeu amoureux?",
+            "options": [
+                "Une montre",
+                "Une bracelet",
+                "Une bague"
+            ],
+            "answer": [2],
+            "explanation": "Une bague.Perdican met donc en place sa comédie amoureuse : à travers Rosette, c'est à Camille qu'il s'adresse. Il met un collier autour de son cou puis il poursuit son jeu amoureu avec une bague"
+        },
+        {
+            "id": "on_ne_badine_pas2_q13",
+            "type": "QCM_EXTRAIT",
+            "question": "Quel procédé nous permet de voir que Perdican se transforme en véritable metteur en scène ?",
+            "extract": "<s>Regarde</s> à présent cette bague. <s>Lève-toi</s> et <s>approchons-nous</s> de cette fontaine. Nous <s>vois-tu</s> tous les deux, dans la source, appuyés l'un sur l'autre ? <s>Vois-tu</s> tes beaux yeux près des miens, ta main dans la mienne ? <s>Regarde<s> tout cela s'effacer. (Il jette sa bague dans l'eau.) <s>Regarde</s> comme notre image a disparu;   la voilà qui revient peu à peu; l'eau qui s'était troublée reprend son équilibre; elle tremble encore;   de grands cercles noirs courent à sa surface;   patience, nous reparaissons; déjà je distingue de nouveau tes bras enlacés dans les miens;   encore une minute, et il n'y aura plus une ride sur ton joli visage : regarde!   c'était une bague que m'avait donnée Camille.",
+            "options": [
+                "Utilisation de l'impératif",
+                "Utilisation de l'imparfait"
+            ],
+            "answer": [0],
+            "explanation": "À travers les impératifs, Perdican se révèle metteur en scène ; il guide les mouvements de Rosette et crée toute une mise en scène à côté de la fontaine organisée autour d'un accessoire clé : la bague. "
+        },   
+        {
+            "id": "on_ne_badine_pas2_q14",
+            "type": "QCM_EXTRAIT",
+            "question": "Grâce à quels procédés voit-on encore plus la perversité de Perdican ?",
+            "extract": "<s>Regarde</s> à présent cette bague. <s>Lève-toi</s> et <s>approchons-nous</s> de cette fontaine. Nous <s>vois-tu</s> tous les deux, dans la source, appuyés l'un sur l'autre ? <s>Vois-tu</s> tes beaux yeux près des miens, ta main dans la mienne ? <s>Regarde<s> tout cela s'effacer. (Il jette sa bague dans l'eau.) <s>Regarde</s> comme notre image a disparu;   la voilà qui revient peu à peu; l'eau qui s'était troublée reprend son équilibre; elle tremble encore;   de grands cercles noirs courent à sa surface;   patience, nous reparaissons; déjà je distingue de nouveau tes bras enlacés dans les miens;   encore une minute, et il n'y aura plus une ride sur ton joli visage : regarde!   c'était une bague que m'avait donnée Camille.",
+            "options": [
+                "Le/la propiétaire de la bague n'est relelé(e) qu'a la fin (Camille) ",
+                "Impératif du verbe regarde (4x)",
+                "Exclamation pour attirer encore plus l'attention",
+                "Anaphore (répétition) de 'vois-tu'"
+            ],
+            "answer": [0,1,2,3],
+            "explanation": "Le propriétaire de la bague, Camille, n'est révélé qu'à la fin de la tirade. Cette révélation montre toute la cruauté de Perdican. On comprend donc que la répétition du verbe à l'impératif 'regarde' (4x) et l'anaphore de 'vois-tu' sont moins destinés à Rosette qu'à Camille. L'exclamation qui accompagne le dernier 'regarde' cherche d'ailleurs à attirer encore davantage l'attention de Camille. Son discours amoureux est double "
+        }, 
+        {
+            "id": "on_ne_badine_pas2_q15",
+            "type": "QCM_EXTRAIT",
+            "question": "Perdican décrit ce qu'il voit dans l'eau comme si c'était tableau, comme pour fixer cette image et figer cet instant il utilise:",
+            "extract": "<s>Regarde</s> à présent cette bague. <s>Lève-toi</s> et <s>approchons-nous</s> de cette fontaine. Nous <s>vois-tu</s> tous les deux, dans la source, appuyés l'un sur l'autre ? <s>Vois-tu</s> tes beaux yeux près des miens, ta main dans la mienne ? <s>Regarde<s> tout cela s'effacer. (Il jette sa bague dans l'eau.) <s>Regarde</s> comme notre image a disparu;   la voilà qui revient peu à peu; l'eau qui s'était troublée reprend son équilibre; elle tremble encore;   de grands cercles noirs courent à sa surface;   patience, nous reparaissons; déjà je distingue de nouveau tes bras enlacés dans les miens;   encore une minute, et il n'y aura plus une ride sur ton joli visage : regarde!   c'était une bague que m'avait donnée Camille.",
+            "options": [
+                "l'impératif",
+                "des propositions juxtaposées",
+                "Le champ lexical de la vue"
+            ],
+            "answer": [1,2],
+            "explanation": " Dans une grande partie de la tirade, Perdican décrit ce qu'il voit dans l'eau comme s'il s'agissait d'un tableau. La série de propositions juxtaposées montrent les efforts de Perdican pour fixer l'image perceptible dans l'eau. Il allonge le temps. Tout cela est pour laisser à Camille le soin de contempler la scène. À travers le champ lexical de la vue, on assiste alors à une mise en abyme du regard complexe (lecteurs/spectateurs qui 'regardent' la scène→ Camille qui regarde Perdican et Rosette → Perdican et Rosette qui se regardent dans l'eau)."
+        }, 
+        {
+            "id": "on_ne_badine_pas2_q16",
+            "type": 'VF',
+            "question": "AFFIRMATION : À travers le champ lexical de la vue, on assiste à une mise en abyme du regard complexe (lecteurs/spectateurs qui 'regardent' la scène→ Camille qui regarde Perdican et Rosette → Perdican et Rosette qui se regardent dans l'eau) ",
+            "answer": 'Vrai',
+            "explanation": "À travers le champ lexical de la vue, on assiste à une mise en abyme du regard complexe (lecteurs/spectateurs qui 'regardent' la scène→ Camille qui regarde Perdican et Rosette → Perdican et Rosette qui se regardent dans l'eau)."
+        }, 
+        {
+            "id": "on_ne_badine_pas2_q17",
+            "type": "QCM",
+            "question": "Le jet de la bague dans l'eau a un aspect très solennel mais que qymbolise ce geste en réalité?",
+            "options": [
+                "Une cérémonie d'adieu",
+                "Une fête de bienvenue"
+            ],
+            "answer": [0],
+            "explanation": "= cérémonie d'adieu. En jetant la bague de Camille dans l'eau, il noie son amour pour elle, rompt avec elle. Le tableau idéal du couple Perdican/Rosette est quant à lui troublé, comme l'eau, par la présence de Camille symbolisée par la bague."
+        },
+        {
+            "id": "on_ne_badine_pas2_q18",
+            "type": "QCM",
+            "question": "En tant que spectatrice, Camille commente la scène dans l' aparté: 'Il a jeté ma bague'. Que cré ce commentaire ?",
+            "options": [
+                "Un sentiment de joie",
+                "Une connivence avec le spectateur"
+            ],
+            "answer": [1],
+            "explanation": "Ce commentaire crée une connivence avec le spectateur et prend une tonalité pathétique. Elle est l'une des victimes de la cruelle comédie de Perdican."
+        },
+        {
+            "id": "on_ne_badine_pas2_q19",
+            "type": "QCM_EXTRAIT",
+            "question": "Que montre la construction cyclique <i>(répétition de la même phrase au début & à la fin)</i> de la réplique de Perdican ? ",
+            "extract": "<s>Sais-tu ce que c'est que l'amour, Rosette?</s> Écoute ! le vent se tait; la pluie du matin roule en perles sur les feuilles séchées que le soleil ranime. Par la lumière du ciel, par le soleil que voilà, je t'aime ! Tu veux bien de moi, n'est-ce pas ? On n'a pas flétri ta jeunesse ; on n'a pas infiltré dans ton sang vermeil les restes d'un sang affadi ? Tu ne veux pas te faire religieuse ; te voilà jeune et belle dans les bras d'un jeune homme. Ô Rosette, Rosette!  <s>sais-tu ce que c'est que l'amour</s> ?.",
+            "options": [
+                "Le partage peu équitable de la parole",
+                "Son ammour pour Rosette",
+                "Le partage équitable de la parole"
+            ],
+            "answer": [0],
+            "explanation": "Construction cyclique révélatrice du partage peu équitable de la parole. Même si Perdican pose des question à Rosette, il ne lui laisse pas l'occasion de répondre (donc = questionsrhétoriques. L'impératif 'écoute' juste après la question est donc surprenant (ce serait à lui d'écouter son interlocutrice…) La question rhétorique 'Tu veux bien de moi, n'est-ce pas ?' montre qu'il n'a aucun doute sur les sentiments de Rosette qui lui semblent acquis, contrairement à ceux de Camille"
+        }, 
+        {
+            "id": "on_ne_badine_pas2_q20",
+            "type": "QCM_EXTRAIT",
+            "question": "Perdican s'emporte de nouveau dans un élan Lyrique et passionné. Quels procédés le montrent? ",
+            "extract": "<s>Sais-tu ce que c'est que l'amour, Rosette?</s> Écoute ! le vent se tait; la pluie du matin roule en perles sur les feuilles séchées que le soleil ranime. Par la lumière du ciel, par le soleil que voilà, je t'aime ! Tu veux bien de moi, n'est-ce pas ? On n'a pas flétri ta jeunesse ; on n'a pas infiltré dans ton sang vermeil les restes d'un sang affadi ? Tu ne veux pas te faire religieuse ; te voilà jeune et belle dans les bras d'un jeune homme. Ô Rosette, Rosette!  <s>sais-tu ce que c'est que l'amour</s> ?.",
+            "options": [
+                "Répétion du mot amour",
+                "Apostrophe Lyrique 'Rosette'",
+                "Exclamation",
+                "Imopératif"
+            ],
+            "answer": [0,1,2],
+            "explanation": " Perdican s'emporte dans un élan passionné et lyrique. Nous notons mot 'amour', apostrophe lyrique 'Rosette', répétition de l'exclamation. La tirade se teinte de romantisme en mêlant l'exaltation des sentiments à la nature "
+        }, 
+        {
+            "id": "on_ne_badine_pas2_q20",
+            "type": "QCM_EXTRAIT",
+            "question": "Cette tirade lyrique se teinte de romantisme en mélant <b>exaltation des sentiments</b> et <b>nature</b>. Quelles figures de style melent nature et sentiments? ",
+            "extract": "<s>Sais-tu ce que c'est que l'amour, Rosette?</s> Écoute ! <span style=\"background-color: #c9daf8;\">le vent se tait</span>; <span style=\"background-color: #f4cccc;\">la pluie du matin roule en perles sur les feuilles séchées</span> que le soleil ranime. <span style=\"background-color: #FAFAD2;\">Par la lumière du ciel</span>, <span style=\"background-color: #FAFAD2;\">par le soleil</span> que voilà, je t'aime ! Tu veux bien de moi, n'est-ce pas ? On n'a pas flétri ta jeunesse ; on n'a pas infiltré dans ton sang vermeil les restes d'un sang affadi ? Tu ne veux pas te faire religieuse ; te voilà jeune et belle dans les bras d'un jeune homme. Ô Rosette, Rosette!  <s>sais-tu ce que c'est que l'amour</s> ?.",
+            "options": [
+                "Métaphore",
+                "Personnification",
+                "Antitèse",
+                "Anaphore",
+                "Champ lexical de la lumière"
+            ],
+            "answer": [0,1,3,4],
+            "explanation": "Le Vent est <span style=\"background-color: #c9daf8;\">personnifié</span>. <br><span style=\"background-color: #f4cccc;\">Métaphore</span> de la rosée qui est comparée à des perles. <br> Utilisation du champ lexical de la lumière et invocation de la nature à travers une <span style=\"background-color: #FAFAD2;\">anaphore</span> "
+        }, 
+        {
+            "id": "on_ne_badine_pas2_q21",
+            "type": "QCM_EXTRAIT",
+            "question": "Dans cette tirade à travers quelle fgure de style oppose-t-il Rosetta et Camille? ",
+            "extract": "... je t'aime ! Tu veux bien de moi, n'est-ce pas ? On n'a pas flétri <span style=\"background-color: #FAFAD2;\">ta jeunesse</span> ; on n'a pas infiltré dans <span style=\"background-color: #FAFAD2;\">ton sang vermeil</span> les restes <span style=\"background-color: #FAFAD2;\">d'un sang affadi</span> ? Tu ne veux pas te faire <span style=\"background-color: #FAFAD2;\">religieuse</span> ; te voilà <span style=\"background-color: #FAFAD2;\">jeune et belle dans les bras d'un jeune homme</span>. Ô Rosette, Rosette!  <s>sais-tu ce que c'est que l'amour</s> ?.",
+            "options": [
+                "Métaphore",
+                "Personnification",
+                "Antitèse"
+            ],
+            "answer": [2],
+            "explanation": " Camille et Rosette à travers des antithèses. Rosette est associée à la jeunesse, à la vitalité (« sang vermeil »), d'où peut-être le champ lexical de la lumière, alors que Camille est associée à la fadeur (« sang affadi »). Rosette est « dans les bras d'un jeune homme » alors que Camille est « religieuse » et rejette l'amour. Le pronom indéfini « on » renvoie à la religion que Perdican accuse. (= clin d'œil à la scène 5 de l'acte II de la pièce)"
+        }
+        
+
+
             ]
 }
 ]
