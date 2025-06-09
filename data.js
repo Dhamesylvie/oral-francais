@@ -1234,7 +1234,7 @@ const data = {
             id: "manon_q35",
             type: "QCM_EXTRAIT",
             question: "Pourquoi le verbe envoyer est répété 2 fois.",
-            extract: "elle y était <b>envoyée</b> par ses parents pour être religieuse..., que je regardai ce dessein ... <u>c\'était malgré elle</u> qu\'on l\'<b>envoyait</> au couvent,",
+            extract: "elle y était <b>envoyée</b> par ses parents pour être religieuse..., que je regardai ce dessein ... <u>c\'était malgré elle</u> qu'on l'<b>envoyait</> au couvent,",
             options: [
                 "Pour faire un parallele avec l\'envoi d\'un courrier",
                 "Pour insister sur sa situation",
@@ -2046,6 +2046,17 @@ const data = {
     "questions": [
         {
             "id": "on_ne_badine_pas2_q1",
+            "type": "QCM",
+            "question": "De quoi parle le mouvement 1 du texte On ne badine pas avec l'amour Acte 3 scene 3?",
+            "options": [
+                "Perdican met en place sa comédie amoureuse pour susciter la jalousie de Camille.",
+                "Parle d'une bague : objet cruel de la comédie"
+            ],
+            "answer": [0],
+            "explanation": "Mouvement 1 (l.1-6) : Perdican met en place sa comédie amoureuse pour susciter la jalousie de Camille.<br>Mouvement 2 (l.7-15) : Perdican parle d'une bague : objet cruel de la comédie.<br>Mouvement 3 (l.16-34) :  le portrait antithétique des deux femmes mis au service dun discours sur l'amour ."
+        },  
+        {
+            "id": "on_ne_badine_pas2_q2",
             "type": "QCM_EXTRAIT",
             "question": "Que montre la première didascalie?",
             "extract": "CAMILLE, <i>cachée, à part.</i><br>Que veut dire cela ? Il la fait asseoir près de lui ? Me demande-t-il un rendez-vous pour y venir causer avec une autre ? Je suis curieuse de savoir ce qu'il lui dit.",
@@ -2054,12 +2065,12 @@ const data = {
                 "Que Camille est un témoin caché de la scène"
             ],
             "answer": [1],
-            "explanation": "Mouvement 1 (l.1-6) : Perdican met en place sa comédie amoureuse pour susciter la jalousie de Camille. "
+            "explanation": "La didascalie indique que Camille est un témoin caché de la scène. Le procédé est un topos au théâtre, notamment dans les comédies, mais il est ici mis au service d'un jeu cruel. "
         },    
         {
-            "id": "on_ne_badine_pas2_q1",
+            "id": "on_ne_badine_pas2_q3",
             "type": "QCM_EXTRAIT",
-            "question": "Comment s'appelle la situation au theatre où un personnage est caché  sur scène, souvent à l'insu des autres et observe et écoute (suvent pour creer un quiproquos, un malentendu ou comique de situation)?",
+            "question": "Comment s'appelle la situation au theatre où un personnage est caché  sur scène, souvent à l'insu des autres et observe et écoute <i>(souvent pour creer un quiproquos, un malentendu ou comique de situation)?</i>",
             "extract": "CAMILLE, <i>cachée, à part.</i>",
             "options": [
                   "un mocos",
@@ -2068,7 +2079,125 @@ const data = {
             ],
                     "answer": [2],
                     "explanation": "Le procédé est un topos au théâtre, notamment dans les <b>comédies</b>, mais il est ici mis au service d'un jeu cruel et non comique."
-            }
+        },
+        {
+            "id": "on_ne_badine_pas2_q4",
+            "type": "QCM_EXTRAIT",
+            "question": "Que permet l'<span style=\"background-color: #a2c4c9;\">l'aparté</span> en début de texte et comment s'appelle ce procédé ?",
+            "extract": "CAMILLE, <i>cachée, à part.</i><br><span style=\"background-color: #a2c4c9;\">Que veut dire cela <b>?</b> Il la fait asseoir près de lui <b>?</b> Me demande-t-il un rendez-vous pour y venir causer avec une autre <b>?</b></span> Je suis curieuse de savoir ce qu'il lui dit.",
+            "options": [
+                "Permet de savoir ce que pense Camille (=Double énonciation)",
+                "Sert à faire joli (=questionnement interrogatif)",
+                "Permet de savoir ce que pense Camille (=Double prononciation)",
+                "Sert à faire joli (=Double pronociation)"
+            ],
+            "answer": [0],
+            "explanation": "L'aparté permet d'entendre les réactions de Camille (=double énonciation : util pour la scène & le public) et de montrer cette cruauté du jeu de Perdican. Les trois interrogatives expriment la surprise de Camille. Elles sont de plus en plus longues créant ainsi une gradation qui soulève le paradoxe de la démarche de Perdican : sans le savoir, elle est l'objet de sa manipulation. Sa dernière phrase relève ainsi de l'ironie dramatique : alors qu'elle se sent manipulée, elle se laisse manipuler. "
+        }, 
+        {
+            "id": "on_ne_badine_pas2_q5",
+            "type": "QCM_EXTRAIT",
+            "question": "Que peut-on dire des 3 questions qui constituent l'aparté ?",
+            "extract": "CAMILLE, <i>cachée, à part.</i><br>Que veut dire cela <b>?</b> Il la fait asseoir près de lui <b>?</b> Me demande-t-il un rendez-vous pour y venir causer avec une autre <b>?</b> Je suis curieuse de savoir ce qu'il lui dit.",
+            "options": [
+                "Sont contradictoires",
+                "Exprime la surprise de Camille",
+                "Sont de plus en plus courtes (dégradation :-))",
+                "Sont de plus en plus longues (gradation)",
+                "Montrent qu'elle est l'objet d'une manipulation"
+
+            ],
+            "answer": [1,3,4],
+            "explanation": "L'aparté est constitué de 3 interrogatives qui expriment la <b>surprise</b> de Camille. Elles sont de plus en plus longues créant ainsi une <b>gradation</b> qui soulève le paradoxe de la démarche de Perdican : sans le savoir, elle est l'objet de sa manipulation. Sa dernière phrase relève ainsi de l'ironie dramatique : alors qu'elle crois être simple spectatrice, elle se fait manipuler. "
+        }, 
+        {
+            "id": "on_ne_badine_pas2_q6",
+            "type": "QCM_EXTRAIT",
+            "question": "Après les 3 questions en gradation de l'aparté que révèle la dernière phrase ?",
+            "extract": "CAMILLE, <i>cachée, à part.</i><br>Que veut dire cela <b>?</b> Il la fait asseoir près de lui <b>?</b> Me demande-t-il un rendez-vous pour y venir causer avec une autre <b>?</b> <span style=\"background-color: #f4cccc;\">Je suis curieuse de savoir ce qu'il lui dit.</span>",
+            "options": [
+                "Un sens du partage",
+                "Une pause délicieuse",
+                "Une ironie dramatique",
+                "Un gentille attention"
+
+            ],
+            "answer": [2],
+            "explanation": "C'est 1 ironie dramatique (=quand le spectateur sait quelque-chose que le personnage ignore. <br>Camille pense qu'elle est simple spectatrice. Sans se douter qu'elle est la cible de Perdican . Du coup elle se laisse manipuler. <br>Le spectateur sait Perdican fait exprès de parler à Camille devant elle pour la rendre jalouse )  "
+        }, 
+        {
+            "id": "on_ne_badine_pas2_q7",
+            "type": "QCM_EXTRAIT",
+            "question": "Camille assiste a une déclaration d'amour. A travers quoi est mis en place le triangle amoureux?",
+            "extract": "<b>PERDICAN</b>, <i>à haute voix, de manière que Camille l'entende.</i><br><span style=\"background-color: #a2c4c9;\">Je t'aime, Rosette!</span> toi seule au monde tu n'as rien oublié de nos beaux jours passés; ma vie nouvelle; toi seule tu te souviens de la vie qui n'est plus; prends ta part de ma nouvelle vie; donne -moi <span style=\"background-color: #a2c4c9;\">ton cœur</span>, chère enfant; voilà le <span style=\"background-color: #a2c4c9;\">gage de notre amour</span>.<br>(Il lui pose sa chaîne sur le cou.)",
+            "options": [
+                "Les didascalies",
+                "Les apostrophes",
+                "le chap lexical de l'amour"
+
+            ],
+            "answer": [2],
+            "explanation": "le triangle amoureux est mis en place à travers le champ lexical de l'amour. Cependant, la didascalie met en lumière le jeu d'acteur de Perdican qui ne cherche qu'à rendre jalouse Camille. Il joue à l'amoureux transi emporté par la passion. Pour cela, il utilise un discours traditionnel, figé à travers la métonymie du 'cœur' et récite une véritable envolée lyrique que l'<b>exclamation</b> et la <b>juxtaposition</b> rendent exagérée. Nous assistons donc à une mise en abyme du théâtre. "
+        }, 
+        {
+            "id": "on_ne_badine_pas2_q8",
+            "type": "QCM_EXTRAIT",
+            "question": "Quels sont les procédés utilisés par Perdican pour jouer l'amoureux transi ?",
+            "extract": "<b>PERDICAN</b>, <i>à haute voix, de manière que Camille l'entende.</i><br><span style=\"background-color: #a2c4c9;\">Je t'aime, <s>Rosette!</s> toi seule au monde tu n'as rien oublié de nos beaux jours passés<s>;</s> ma vie nouvelle<s>;</s> toi seule tu te souviens de la vie qui n'est plus<s>;</s> prends ta part de ma nouvelle vie<s>;</s> donne -moi <span style=\"background-color: #a2c4c9;\">ton cœur</span>, chère enfant<s>;</s>    voilà le <span style=\"background-color: #a2c4c9;\">gage de notre amour</span>.<br>(Il lui pose sa chaîne sur le cou.)",
+            "options": [
+                "Discours traditionnel(discours amoureux classique)",
+                "Discours narratif (qui décrit une histoire)",
+                "le champ lexical de l'amour",
+                "Metonymie du coeur (utilisation d'un concept pour désigner un autre concept)",
+                "Exclamation & juxtaposition"
+
+            ],
+            "answer": [0,2,3,4],
+            "explanation": " Il joue à l'amoureux transi grâce à un discours traditionnel, figé à travers la métonymie du 'cœur' et récite une véritable envolée lyrique que l'<b>exclamation</b> et la <b>juxtaposition</b>(plusieurs proposition juxtaposé avec des ;) rendent exagérée. Nous assistons donc à une mise en abyme du théâtre. "
+        }, 
+        {
+            "id": "on_ne_badine_pas2_q9",
+            "type": "QCM_EXTRAIT",
+            "question": "Quels sont les figures de style permettant d'opposer Camille et Rosette ?",
+            "extract": "<b>PERDICAN</b>, <i>à haute voix, de manière que Camille l'entende.</i><br>Je t'aime, Rosette! <span style=\"background-color: #b6d7a8;\">toi seule</span> au monde tu n'as rien oublié de nos beaux jours passés; <span style=\"background-color: #f4cccc;\">ma vie nouvelle</span>; <span style=\"background-color: #b6d7a8;\">toi seule</span> tu te souviens <span style=\"background-color: #f4cccc;\">de la vie qui n'est plus</span>; prends ta part de ma nouvelle vie; donne-moi ton cœur, chère enfant; voilà le gage de notre amour.<br>(Il lui pose sa chaîne sur le cou.)",
+            "options": [
+                "Antitèse",
+                "le champ lexical de l'amour",
+                "Anaphore",
+                "Exclamation & juxtaposition"
+
+            ],
+            "answer": [0,2],
+            "explanation": "Permet d'opposer Camille & Rosette : <span style=\"background-color: #b6d7a8;\">Anaphore</span> (répétition) du pronom de 2e personne & <span style=\"background-color: #f4cccc;\">Anthitèse</span> (opposition de sens) Camille est celle qui a oublié leur vie passée contrairement à Rosette. La réplique de Perdican s'adresse donc bien plus à Camille qu'à Rosette et ne cherche qu'à piquer cette première. "
+        }, 
+        {
+            "id": "on_ne_badine_pas2_q10",
+            "type": "QCM_EXTRAIT",
+            "question": "Pourquoi la dernière <span style=\"background-color: #FAFAD2;\">didascalie</span> à été ajoutée ?",
+            "extract": "<b>PERDICAN</b>, <i>à haute voix, de manière que Camille l'entende.</i><br>Je t'aime, Rosette! <span style=\"background-color: #b6d7a8;\">toi seule</span> au monde tu n'as rien oublié de nos beaux jours passés; <span style=\"background-color: #f4cccc;\">ma vie nouvelle</span>; <span style=\"background-color: #b6d7a8;\">toi seule</span> tu te souviens <span style=\"background-color: #f4cccc;\">de la vie qui n'est plus</span>; prends ta part de ma nouvelle vie; donne-moi ton cœur, chère enfant; voilà le gage de notre amour.<br><span style=\"background-color: #FAFAD2;\">(Il lui pose sa chaîne sur le cou.)</span>",
+            "options": [
+                "C'est une référence à la tradition de lla littérature courtoise",
+                "Pour indiquer qu'il accompagne ses gestes de paroles",
+                "Pour faire un paralllele entre la chaine et la télévision"
+
+            ],
+            "answer": [0,1],
+            "explanation": "La didascalie indique qu'il accompagne ses paroles d'un geste symbolique en offrant à Rosette un gage de son amour. L'accessoire a donc ici une portée symbolique. Par le don de cet objet, il reprend toute une tradition de la littérature courtoise où il est commun de voir l'amant offrir à son amie un objet précieux en gage de son amour "
+        }, 
+        {
+            "id": "on_ne_badine_pas2_q11",
+            "type": "QCM_EXTRAIT",
+            "question": "4 choses sont à noter dans cette réplique (<span style=\"background-color: #c9daf8;\">vouvoiement</span>, <span style=\"background-color: #FAFAD2;\">la précision du type de métal</span>, <span style=\"background-color: #b6d7a8;\">le point d'interrogation</span>), la petite taille de la réplique, pourquoi?",
+            "extract": "<b>ROSETTE</b> <span style=\"background-color: #c9daf8;\">Vous<span> me donnez votre chaîne d'<span style=\"background-color: #FAFAD2;\">or</span> <span style=\"background-color: #b6d7a8;\">?</span>",
+            "options": [
+                "Marque la surprise de Rosetta",
+                "Marque la différence de classe (Perdican la tutoie)",
+                "Marque la surprise de Perdican",
+                "La réplique est courte pour montrer que Rosette est ingénue/naïve"
+            ],
+            "answer": [0,1],
+            "explanation": "L'interrogative montre la surprise de Rosette : la déclaration est doublement inattendue puisqu'ils n'appartiennent pas à la même classe sociale. La précision « en or » le rappelle. Leur union serait une mésalliance. Cette différence de classe sociale est perceptible à travers l'utilisation du vouvoiement qui contraste avec le tutoiement utilisé par Perdican pour s'adresser à elle. On note aussi la simplicité et la taille de la réplique face à celle de Perdican. Rosette représente bien ici le personnage de l'ingénue."
+        }       
             ]
 }
 ]
@@ -2076,7 +2205,7 @@ const data = {
 
 
 
-/* Prochaine = curiosité= peche originel..
+// Prochaine = curiosité= peche originel..
 /*{
     id: 'test-multiple',
     title: 'Modele',
