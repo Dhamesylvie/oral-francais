@@ -2324,17 +2324,118 @@ const data = {
             "id": "on_ne_badine_pas2_q21",
             "type": "QCM_EXTRAIT",
             "question": "Dans cette tirade à travers quelle fgure de style oppose-t-il Rosetta et Camille? ",
-            "extract": "... je t'aime ! Tu veux bien de moi, n'est-ce pas ? On n'a pas flétri <span style=\"background-color: #FAFAD2;\">ta jeunesse</span> ; on n'a pas infiltré dans <span style=\"background-color: #FAFAD2;\">ton sang vermeil</span> les restes <span style=\"background-color: #FAFAD2;\">d'un sang affadi</span> ? Tu ne veux pas te faire <span style=\"background-color: #FAFAD2;\">religieuse</span> ; te voilà <span style=\"background-color: #FAFAD2;\">jeune et belle dans les bras d'un jeune homme</span>. Ô Rosette, Rosette!  <s>sais-tu ce que c'est que l'amour</s> ?.",
+            "extract": "... je t'aime ! Tu veux bien de moi, n'est-ce pas ? <span style=\"background-color: #b6d7a8;\">On n'a pas</span> flétri <span style=\"background-color: #FAFAD2;\">ta jeunesse</span> ; <span style=\"background-color: #b6d7a8;\">on n'a pas</span> infiltré dans <span style=\"background-color: #FAFAD2;\">ton sang vermeil</span> les restes <span style=\"background-color: #FAFAD2;\">d'un sang affadi</span> ? Tu ne veux pas te faire <span style=\"background-color: #FAFAD2;\">religieuse</span> ; te voilà <span style=\"background-color: #FAFAD2;\">jeune et belle dans les bras d'un jeune homme</span>. Ô Rosette, Rosette!  <s>sais-tu ce que c'est que l'amour</s> ?.",
             "options": [
                 "Métaphore",
                 "Personnification",
-                "Antitèse"
+                "Antitèse",
+                "Anaphore"
             ],
-            "answer": [2],
-            "explanation": " Camille et Rosette à travers des antithèses. Rosette est associée à la jeunesse, à la vitalité (« sang vermeil »), d'où peut-être le champ lexical de la lumière, alors que Camille est associée à la fadeur (« sang affadi »). Rosette est « dans les bras d'un jeune homme » alors que Camille est « religieuse » et rejette l'amour. Le pronom indéfini « on » renvoie à la religion que Perdican accuse. (= clin d'œil à la scène 5 de l'acte II de la pièce)"
-        }
-        
-
+            "answer": [2,3],
+            "explanation": " Camille et Rosette à travers <span style=\"background-color: #FAFAD2;\">des antithèses</span>. Rosette est associée à la jeunesse, à la vitalité (« sang vermeil »), d'où peut-être le champ lexical de la lumière, alors que Camille est associée à la fadeur (« sang affadi »). Rosette est « dans les bras d'un jeune homme » alors que Camille est « religieuse » et rejette l'amour. Le pronom indéfini « on » renvoie à la religion que Perdican accuse. <br>L'anaphore « on n'a pas » montre en creux (sous-entendu) tout ce qu' « on a » fait sur Camille dans un <b>rythme binaire qui oppose les deux jeunes femmes</b>. <br>Le pronom indéfini « on » renvoie à la religion que Perdican accuse.(= clin d'œil à la scène 5 de l'acte II de la pièce)"
+        },
+        {
+            "id": "on_ne_badine_pas2_q22",
+            "type": "QCM_EXTRAIT",
+            "question": "Dans cette nouvelle réplique comment vois-ton la simplicité de Rosette ?",
+            "extract": "<span style=\"background-color: #FAFAD2;\">Hélas !</span> <span style=\"background-color: #b6d7a8;\">monsieur le docteur</span>, je <span style=\"background-color: #b6d7a8;\">vous</span> aimerai comme je pourrai.",
+            "options": [
+                "Titre honorifique & vouvoiement",
+                "Anaphore",
+                "Interjection",
+                "Réponse brève"
+            ],
+            "answer": [0,2,3],
+            "explanation": "De nouveau, la brièveté de la réplique de Rosette contraste avec l'épanchement de Perdican. De nouveau, également, nous remarquons la simplicité de Rosette qui ne répond pas à l'interrogation totale par oui ou par non, mais par une <span style=\"background-color: #FAFAD2;\">interjection</span>. Sa simplicité est aussi visible grâce à l'utilisation d'un <span style=\"background-color: #b6d7a8;\">titre honorifique</span> en plus du vouvoiement pour s'adresser à Perdican. Sa réplique est pleine de modestie. "
+        },
+        {
+            "id": "on_ne_badine_pas2_q23",
+            "type": "QCM_EXTRAIT",
+            "question": "Perdican répète les mots de rosetta à travers des poliptotes (répetition d'un mot sous une forme différente) et utilise le futur de certitude, pourquoi ?",
+            "extract": "Hélas ! monsieur le docteur, je vous <span style=\"background-color: #a2c4c9;\">aimerai</span> comme je <span style=\"background-color: #a2c4c9;\">pourrai</span><br>Oui, comme tu pourras ; et tu m'<span style=\"background-color: #a2c4c9;\">aimeras</span> mieux, <span style=\"background-color: #f4cccc;\">tout docteur que je suis et toute paysanne que tu es</span>,...",
+            "options": [
+                "En répondant ainsi, il compare l'amour de Rosette et celui de camille",
+                "Il veut se rssurer sur son amour pour Rosette"
+            ],
+            "answer": [0],
+            "explanation": "Perdican répète les paroles de Rosette à travers des <span style=\"background-color: #a2c4c9;\">polyptotes</span> et en utilisant le <span style=\"background-color: #a2c4c9;\">futur de certitude</span> pour comparer son amour à celui de Camille. De nouveau, il brosse le portrait en creux de cette dernière et oppose les deux femmes. "
+        },
+        {
+            "id": "on_ne_badine_pas2_q23",
+            "type": "QCM_EXTRAIT",
+            "question": "Perdican répète les mots de rosetta à travers des poliptotes (répetition d'un mot sous une forme différente) et utilise le futur de certitude, pourquoi ?",
+            "extract": "Oui, comme tu pourras ; et tu m'<span style=\"background-color: #a2c4c9;\">aimeras</span> mieux, <span style=\"background-color: #f4cccc;\">tout docteur que je suis et toute paysanne que tu es</span>,...",
+            "options": [
+                "En répondant ainsi, il compare l'amour de Rosette et celui de camille",
+                "Il veut se rassurer sur son amour pour Rosette"
+            ],
+            "answer": [0],
+            "explanation": "Perdican répète les paroles de Rosette à travers des <span style=\"background-color: #a2c4c9;\">polyptotes</span> et en utilisant le <span style=\"background-color: #a2c4c9;\">futur de certitude</span> pour comparer son amour à celui de Camille. De nouveau, il brosse le portrait en creux de cette dernière et oppose les deux femmes. "
+        },
+        {
+            "id": "on_ne_badine_pas2_q24",
+            "type": "QCM_EXTRAIT",
+            "question": "Avec quelles figures de style Perdican continue de dresser un portrait en creux (sous entendu) de camille et oppose les deux femmes ?",
+            "extract": "Oui, comme tu pourras ; et tu m'<span style=\"background-color: #a2c4c9;\">aimeras</span> mieux, <span style=\"background-color: #f4cccc;\">tout docteur que je suis et toute paysanne que tu es</span>, que <span style=\"background-color: #c9daf8;\">ces pâles statues fabriquées par les nonnes</span>, qui ont <span style=\"background-color: #c9daf8;\">la tête à la place du cœur</span>, et qui sortent des cloîtres pour venir répandre dans la vie <span style=\"background-color: #c9daf8;\">l'atmosphère humide de leurs cellules</span> ; tu ne sais rien ; tu ne lirais pas dans un livre la prière que ta mère t'apprend, comme elle l'a apprise de sa mère ; tu ne comprends même pas le sens des paroles que tu répètes, quand tu t'agenouilles au pied de ton lit ; mais tu comprends bien que tu pries...",
+            "options": [
+                "Périphrase Péjorative",
+                "Antithèse",
+                "Métaphore",
+                "Anaphore"
+            ],
+            "answer": [0,2],
+            "explanation": "Il brosse le portrait en creux (par des sous entendus) de Camille grâce à la <span style=\"background-color: #c9daf8;\">périphrase péjorative</span> « ces pâles statues fabriquées par les nonnes » désigne donc Camille. Cette dernière est caractérisée par la froideur comme le montrent l'expression « la tête à la place du coeur » ou la <span style=\"background-color: #c9daf8;\">métaphore de la statue</span>. Sa conception de la religion est aussi associée à l'idée d'enfermement (« cellule ») et à une tristesse presque mortifère qui s'oppose à la vitalité de Rosette (« pour répandre dans la vie l'atmosphère humide de leurs cellules »)."
+        },
+        {
+            "id": "on_ne_badine_pas2_q25",
+            "type": "QCM_EXTRAIT",
+            "question": "Quels procédés permettent de dresser un portrait peu flatteur de l'ignorance de Rosette ?",
+            "extract": "Oui, comme tu pourras ; et tu m'<span style=\"background-color: #a2c4c9;\">aimeras</span> mieux, <span style=\"background-color: #f4cccc;\">tout docteur que je suis et toute paysanne que tu es</span>, que <span style=\"background-color: #c9daf8;\">ces pâles statues fabriquées par les nonnes</span>, qui ont <span style=\"background-color: #c9daf8;\">la tête à la place du cœur</span>, et qui sortent des cloîtres pour venir répandre dans la vie <span style=\"background-color: #c9daf8;\">l'atmosphère humide de leurs cellules</span> ; <s>tu ne sais rien</s> ; <s>tu ne lirais pas</s> dans un livre la prière que ta mère t'apprend, comme elle l'a apprise de sa mère ; <s>tu ne comprends même pas</s> le sens des paroles que tu répètes, quand tu t'agenouilles au pied de ton lit ; <s>mais tu comprends bien</s> que tu pries...",
+            "options": [
+                "Périphrase Péjorative",
+                "gradation",
+                "Métaphore",
+                "Anaphore"
+            ],
+            "answer": [1],
+            "explanation": " L'ignorance de Rosettte est décrite de façon peu flatteuse à travers une <s>gradation</s>, la conjonction de coordination « mais »   permet finalement de la valoriser. "
+        },
+        {
+            "id": "on_ne_badine_pas2_q26",
+            "type": "QCM_EXTRAIT",
+            "question": "Quel est le nom du procédé de construction en <span style=\"background-color: #f4cccc;\">orange</pan> et à quoi sert-il ?",
+            "extract": "...tu m'<span style=\"background-color: #a2c4c9;\">aimeras</span> mieux, <span style=\"background-color: #f4cccc;\">tout docteur que je suis et toute paysanne que tu es</span>, que <span style=\"background-color: #c9daf8;\">ces pâles statues fabriquées par les nonnes</span>, qui ont <span style=\"background-color: #c9daf8;\">la tête à la place du cœur</span>, et qui sortent des cloîtres pour venir répandre dans la vie <span style=\"background-color: #c9daf8;\">l'atmosphère humide de leurs cellules</span> ; <s>tu ne sais rien</s> ; <s>tu ne lirais pas</s> dans un livre la prière que ta mère t'apprend, comme elle l'a apprise de sa mère ; <s>tu ne comprends même pas</s> le sens des paroles que tu répètes, quand tu t'agenouilles au pied de ton lit ; <s>mais tu comprends bien</s> que tu pries...",
+            "options": [
+                "Périphrase Péjorative pour accentuer son amour pour Rosette",
+                "parallélime de construction pour monter la différence de classe"
+            ],
+            "answer": [1],
+            "explanation": " <span style=\"background-color: #f4cccc;\">Parallélisme de construction</span> mettre en évidence la différence de classe sociale mais dans la rhétorique de Perdican, ils sont sur un pied d'égalité ce que symbolise la conjonction de coordination «et». "
+        },
+        {
+            "id": "on_ne_badine_pas2_q27",
+            "type": "QCM_EXTRAIT",
+            "question": "A quoi est associé le <span style=\"background-color: #FAFAD2;\">champ lexical de la nature</span> dans cette réplique ?",
+            "extract": " Tu ne sais pas lire ; mais tu sais ce que disent <span style=\"background-color: #FAFAD2;\">ces bois et ces prairies, ces tièdes rivières, ces beaux champs couverts de moissons, toute cette nature splendide de jeunesse.</span> Tu reconnais tous ces milliers de frères, et moi pour l'un d'entre eux ; lève-toi, tu seras ma femme et nous <span style=\"background-color: #f4cccc;\">prendrons racine ensemble dans la sève du monde tout-puissant.</span>",
+            "options": [
+                "A la mort",
+                "A la vie"
+            ],
+            "answer": [1],
+            "explanation": " le <span style=\"background-color: #FAFAD2;\">champ lexical de la nature</span> est associé à la vie (« splendide de jeunesse ») et avec qui ils sont en communion (« ces milliers de frères »). La nature est ici opposée à la culture. Grâce au futur de certitude, il proclame leur union dans une métaphore finale.  "
+        },
+        {
+            "id": "on_ne_badine_pas2_q28",
+            "type": "QCM_EXTRAIT",
+            "question": "Que proclame Perdican dans la <span style=\"background-color: #f4cccc;\">métaphore finale</span> ?",
+            "extract": " Tu ne sais pas lire ; mais tu sais ce que disent <span style=\"background-color: #FAFAD2;\">ces bois et ces prairies, ces tièdes rivières, ces beaux champs couverts de moissons, toute cette nature splendide de jeunesse.</span> Tu reconnais tous ces milliers de frères, et moi pour l'un d'entre eux ; lève-toi, tu seras ma femme et nous <span style=\"background-color: #f4cccc;\">prendrons racine ensemble dans la sève du monde tout-puissant.</span>",
+            "options": [
+                "A la mort",
+                "A la vie"
+            ],
+            "answer": [1],
+            "explanation": " le <span style=\"background-color: #FAFAD2;\">champ lexical de la nature</span> est associé à la vie (« splendide de jeunesse ») et avec qui ils sont en communion (« ces milliers de frères »). La nature est ici opposée à la culture. Grâce au futur de certitude, il proclame leur union dans une métaphore finale.  "
+        },
 
             ]
 }
